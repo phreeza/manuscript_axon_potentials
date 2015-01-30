@@ -12,10 +12,10 @@ Introduction
 
 - EFPs have recently been shown to be not only of synaptic origin
 
-- The aim of this study is to understand how the neurophonic EFP is influenced by the anatomical
+- The aim of this study is to understand how the EFP is influenced by the anatomical
 structure of the axons which are the source of the potential.
 
-- This study is mainly concerned with click responses, which have two main components (Fig 1A&B)
+<!-- This study is mainly concerned with click responses, which have two main components (Fig 1A&B)
 
 - Low frequency click response shows polarity reversal. (Fig 1C)
     * Similar effect seen in chicken and mamals.
@@ -24,6 +24,7 @@ structure of the axons which are the source of the potential.
 
 - Basic idea outline
     * interplay of bifurcations and terminations leads to dipole-like behaviour (Fig 1D)
+-->
 
 Methods
 ==============
@@ -33,20 +34,15 @@ Methods
 
 Results
 ==============
-- Intuitive explanation
-    * Single axon tree potentials (Fig 1D)
-- Population response has three main characteristics (Fig 2)
-    1. The low-frequency component shows a polarity reversal in the center of NL
-    2. The low-frequency component exceeds NL in reach, while the high-frequency component is present
-mainly inside NL.
-    3. The high-frequency component shows a steady increase in latency with depth, while the low-frequency
-component is stationary
-- Data overview (Fig 3)
-    * Shares same characteristics seen in model
-- Analytical results
-    * decompose response into two components
-    * high-pass low-reach/low-pass high-reach (Fig 4)
-    * Simulation with fiber bundle also reproduces 3 characteristics (Fig 5)
+- General results for axonal projections:
+    - We can identify two main frequency components which show distinct behaviour
+    - The low-frequency component is governed by the local density of bifurcations and terminations
+    - The high-frequency is governed by the local fiber density
+    - The low-frequency component exceeds the high-frequency component in reach
+- Results specific to projections with distinct bifurcation and termination zones (like NL):
+    - Low-frequency component is dipole-like, cancels out in the middle.
+    - The high-frequency component shows a steady increase in latency with
+      depth, while the low-frequency is stationary
 
 Discussion
 ==============
