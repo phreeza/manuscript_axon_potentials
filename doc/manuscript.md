@@ -2,7 +2,7 @@
 geometry: a4paper
 documentclass: article
 author: 'Thomas McColgan, Hermann Wagner, Richard Kempter'
-title: Extracellular potentials of coherently stimulated populations of parallel axons
+title: Extracellular potentials of axonal projections including terminations and bifurcations
     
 date: \today
 ...
@@ -54,7 +54,7 @@ Discussion
     - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn)
 - compare to other fiber bundle systems
 
-
+<!--
 ![Introduction Figure](../figs/fig_1.pdf)
 
 
@@ -66,3 +66,4 @@ Discussion
 ![Impulse responses (left column) and frequency responses (right column) of the regular weighting functions $w$ (a-b) and the derivative $w'$ (c-d).](../../axon_lfp/figures/filters.pdf)
 
 ![Minimal model of a bifurcating axon bundle. The number of fibers is a piecewise constant function of recording depth, shown on the left hand side. The center and right column show the field potential responses at various depths. The low-frequency component of the response, shown in the right column, shows a characteristic dipole-like behavior. The distance from the bundle was $\rho=200\mu$m, and the velocity $v=5$m/s.](../../axon_lfp/figures/minimal_model.pdf)
+-->
