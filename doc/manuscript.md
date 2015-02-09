@@ -18,12 +18,12 @@ structure of the axons which are the source of the potential.
 <!-- This study is mainly concerned with click responses, which have two main components (Fig 1A&B)
 
 - Low frequency click response shows polarity reversal. (Fig 1C)
-    * Similar effect seen in chicken and mamals.
-    * Previous models focus on dendrites, but there are no dendrites in high-f NL.
+    - Similar effect seen in chicken and mamals.
+    - Previous models focus on dendrites, but there are no dendrites in high-f NL.
 
 
 - Basic idea outline
-    * interplay of bifurcations and terminations leads to dipole-like behaviour (Fig 1D)
+    - interplay of bifurcations and terminations leads to dipole-like behaviour (Fig 1D)
 -->
 
 Methods
@@ -48,8 +48,8 @@ Discussion
 ==============
 
 - Relevance of Findings
-    * Interpretation of CSD
-    * Dipole has far field, ABR response?
+    - Interpretation of CSD
+    - Dipole has far field, ABR response?
 - Compare to other auditory systems (Chicken NL, MSO)
     - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn)
 - compare to other fiber bundle systems
