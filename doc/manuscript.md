@@ -4,7 +4,7 @@ documentclass: article
 author: 'Thomas McColgan, Hermann Wagner, Richard Kempter'
 title: Extracellular potentials of axonal projections including terminations and bifurcations
     
-date: \today
+date: February 6, 2015
 ...
 
 Introduction
@@ -34,15 +34,17 @@ Methods
 
 Results
 ==============
+- Axonal projections generate a dipole-like field potential
+    - long range
+    - low frequency
 - General results for axonal projections:
-    - We can identify two main frequency components which show distinct behaviour
-    - The low-frequency component is governed by the local density of bifurcations and terminations
-    - The high-frequency is governed by the local fiber density
+    - The low-frequency (eg population rate pulse) parts are governed by the local density of bifurcations and terminations
+    - The high-frequency (eg individual spikes, 'noise', neurophonic) parts are governed by the local fiber density
     - The low-frequency component exceeds the high-frequency component in reach
-- Results specific to projections with distinct bifurcation and termination zones (like NL):
-    - Low-frequency component is dipole-like, cancels out in the middle.
-    - The high-frequency component shows a steady increase in latency with
-      depth, while the low-frequency is stationary
+    - The high-frequency component shows a steady increase in latency along the
+      projections' depth, while the low-frequency can have stationary parts
+      caused by sharp increases or decreases of fiber number (bifurcations or
+      terminations).
 
 Discussion
 ==============
