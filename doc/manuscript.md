@@ -3,28 +3,72 @@ geometry: a4paper
 documentclass: article
 author: 'Thomas McColgan, Hermann Wagner, Richard Kempter'
 title: Extracellular potentials of axonal projections including terminations and bifurcations
-    
-date: February 6, 2015
+
+date: \today
 ...
 
 Introduction
 ==============
 
-- EFPs have recently been shown to be not only of synaptic origin
+Extracellular field potentials (EFPs) in the brain were long thought to be
+primarily synaptic in origin (Buzaki et al, 2012). However, a number of recent
+data analysis and modeling studies have shown that active, non-synaptic
+membrane currents can play a role in generating EFPs (Reimann et al, ...). 
 
-- The aim of this study is to understand how the EFP is influenced by the anatomical
-structure of the axons which are the source of the potential.
+It has been shown (Kuokannen et al), that with sufficient spatial and temporal
+organization purely axonal extracellular fields can reach strengths on the
+order of several mV. Here we extend this finding to include more general axon
+bundles, including those recieving input with less temporal precision.
 
-<!-- This study is mainly concerned with click responses, which have two main components (Fig 1A&B)
+The aim of this study is to understand how the EFP is influenced by
+the anatomical structure of the axons which are the source of the potential. In
+particular, we explain how typical projection patterns in which an axon bundle
+widens and then terminates in its projection area affect the EFP.
 
-- Low frequency click response shows polarity reversal. (Fig 1C)
-    - Similar effect seen in chicken and mamals.
-    - Previous models focus on dendrites, but there are no dendrites in high-f NL.
+Such axon bundles exist throughout the peripheral and central nervous system.
+(Examples...) The white matter of the brain can be viewed as an aglomeration of
+such bundles. (ref) The study of the fields has clinical relevance (motor
+nerve, ABR, EEG?)
 
+We characterize three principal effects of axon structure on the EFP, and
+demonstrate them using two models of varying complexity, as well as a set of
+electrophysiological recordings from the barn owl brain stem.
 
-- Basic idea outline
-    - interplay of bifurcations and terminations leads to dipole-like behaviour (Fig 1D)
--->
+- cite: holt&koch, gold&koch, trayanova, gydkov, plonsey, rall, Rinzel, einevol, Destexe, Brette, nunez&..., kuokkanen, telenzuk, rattay&danner
+
+Results
+==============
+- Axonal projections generate a dipole-like field potential (**Fig 1A**)
+    - long range
+    - low frequency
+    - Examples of phenomenology from literature
+- General results for axonal projections :
+    - The low-frequency (eg population rate pulse) parts are governed by the 
+      local density of bifurcations and terminations(**Fig 1B**)
+    - The high-frequency (eg individual spikes, 'noise', neurophonic) parts
+      are governed by the local fiber density(**Fig 1C**)
+    - The low-frequency component exceeds the high-frequency component in reach (**Fig 2**)
+- The barn owl neurophonic as an example that shows these properties(**Fig 3**)
+    - The high-frequency component shows a steady increase in latency along the
+      projections' depth, while the low-frequency can have stationary parts
+      caused by sharp increases or decreases of fiber number (bifurcations or
+      terminations).
+    - These aspects are reflected in the model
+- Ways of understanding the effect
+    - Single AP along single axon(**Fig 4**)
+    - Analytical model(**Fig 5**)
+
+Discussion
+==============
+
+- Relevance of Findings
+    - Interpretation of CSD
+        - Classical CSD: constant fiber density, variable currents
+        - Here: variable fiber density, constant currents
+    - Dipole has far field, ABR response?
+- Compare to other auditory systems (Chicken NL, MSO)
+    - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn)
+- compare to other fiber bundle systems
 
 Methods
 ==============
@@ -32,40 +76,58 @@ Methods
 - Multicompartment Model
 - Analytical Model
 
-Results
-==============
-- Axonal projections generate a dipole-like field potential
-    - long range
-    - low frequency
-- General results for axonal projections:
-    - The low-frequency (eg population rate pulse) parts are governed by the local density of bifurcations and terminations
-    - The high-frequency (eg individual spikes, 'noise', neurophonic) parts are governed by the local fiber density
-    - The low-frequency component exceeds the high-frequency component in reach
-    - The high-frequency component shows a steady increase in latency along the
-      projections' depth, while the low-frequency can have stationary parts
-      caused by sharp increases or decreases of fiber number (bifurcations or
-      terminations).
+![Axonal projections generate a dipole-like extracellular field potential.
+Extracellular evoked potential due to a pulse of activity in a generic fiber
+bundle. (**A**) shows the structure of the bundle, as well as EFP responses at
+various locations, indicated by blue dots. Scaling of traces indicated by
+colorbar. Relative strength of high-frequency noise relative to the
+low-frequency pulse decays with distance. The low frequency pulse switches
+polarity along the nerve bundles termination zone. (**B**) shows the density of
+bifurcations and terminations at varying depths, overlayed with the peak
+amplitude of the low frequency component. (**C**) shows the fiber density
+overlayed with the strength of the high-frequency EFP component.
+](../figs/mockups/fig1.pdf)
 
-Discussion
-==============
+\clearpage
 
-- Relevance of Findings
-    - Interpretation of CSD
-    - Dipole has far field, ABR response?
-- Compare to other auditory systems (Chicken NL, MSO)
-    - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn)
-- compare to other fiber bundle systems
+![Low-frequency component of the axon bundle EFP exceeds high frequency in
+reach. (**A**) shows the behaviour of different spectral components (frequency
+indicated by colorbar) in a double logarithmic plot. The slope indicates the
+scaling coefficient in this frequency band. (**B**) shows this scaling
+coefficient for different frequencies. Low frequencies have the least negative
+coefficient, indicating the furthest reach.](../figs/mockups/fig2.pdf)
 
-<!--
-![Introduction Figure](../figs/fig_1.pdf)
+\clearpage
 
+![Data from the barn owl shows the expected behaviour predicted by the model.
+(**A**) shows data from the barn owls nucleus laminaris in response to an
+auditory click stimulus, compared to a simulation of the axonal structure and
+activation in (**B**). The click stimulus induces a pulse of activity in the
+afferent axon bundle. The low-frequency components (**Ab** and **Bb**) show the
+polarity reversal. The high frequency component (**Ac** and **Bc**, does not
+show such a reversal, but rather shows a steady increase in phase with
+depth.](../figs/mockups/fig3.pdf)
 
-![](../../axon_lfp/figures/raw_filt_traces_ipsi_thinned_mod.pdf)
+\clearpage
 
+![The dipolar behaviour can be understood by examining individual action
+potentials on a single axon tree. Comparing the low frequency owl data (**A**)
+to a single axon and action potential in model (**B**) shows a similar
+behaviour. In particular, the potential at a termination and that at a
+bifurcation (red and green curves in **B**) are approximately
+inverted.](../figs/mockups/fig4.pdf)
 
-![](../../axon_lfp/figures/sim_filt_traces_mod_n5000.pdf)
+\clearpage
 
-![Impulse responses (left column) and frequency responses (right column) of the regular weighting functions $w$ (a-b) and the derivative $w'$ (c-d).](../../axon_lfp/figures/filters.pdf)
-
-![Minimal model of a bifurcating axon bundle. The number of fibers is a piecewise constant function of recording depth, shown on the left hand side. The center and right column show the field potential responses at various depths. The low-frequency component of the response, shown in the right column, shows a characteristic dipole-like behavior. The distance from the bundle was $\rho=200\mu$m, and the velocity $v=5$m/s.](../../axon_lfp/figures/minimal_model.pdf)
--->
+![Analytical model of the axon bundle potential explains the effects observed
+in the numerical model and example data. (**A**) shows the behaviour of a
+simplified fiber bundle with a piecewise constant fiber density (**Aa**). The
+high frequency component (**Ab**) shows no polarity reversal, while the
+high-frequency component (**Ac**) does, as expected from the data and
+modelling. This can be understood by decomposing the signal into two
+components. The first component is governed by the bifurcation and termination
+density, and is filtered by the regular weighting function (**Ba**), which acts
+as a low-pass filter (**Bb**). The second component is governed by the
+fiber density, and is filtered by the derivative of the weighting function
+(**Bc**), which acts as a high- or band-pass filter
+(**Bd**).](../figs/mockups/fig5.pdf)
