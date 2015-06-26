@@ -11,11 +11,11 @@ Introduction
 ==============
 
 Extracellular field potentials (EFPs) in the brain were long thought to be
-primarily synaptic in origin (Buzaki et al, 2012). However, a number of recent
+primarily synaptic in origin [@BuzsAki2012Origin]. However, a number of recent
 data analysis and modeling studies have shown that active, non-synaptic
-membrane currents can play a role in generating EFPs (Reimann et al, ...). 
+membrane currents can play a role in generating EFPs [@Reimann2013Biophysically]. 
 
-It has been shown (Kuokannen et al), that with sufficient spatial and temporal
+It has been shown [@Kuokkanen2010Origin], that with sufficient spatial and temporal
 organization purely axonal extracellular fields can reach strengths on the
 order of several mV. Here we extend this finding to include more general axon
 bundles, including those recieving input with less temporal precision.
@@ -30,11 +30,14 @@ Such axon bundles exist throughout the peripheral and central nervous system.
 such bundles. (ref) The study of the fields has clinical relevance (motor
 nerve, ABR, EEG?)
 
-We characterize three principal effects of axon structure on the EFP, and
-demonstrate them using two models of varying complexity, as well as a set of
-electrophysiological recordings from the barn owl brain stem.
+Based on a forward model of the extracellular field potential
+[@Holt1999Electrical,@Gold2006Origin], we characterize three principal effects
+of axon bundle structure on the EFP, and demonstrate them using two models of
+varying complexity, as well as a set of electrophysiological recordings from
+the barn owl brain stem.
 
-- cite: holt&koch, gold&koch, trayanova, gydkov, plonsey, rall, Rinzel, einevol, Destexe, Brette, nunez&..., kuokkanen, telenzuk, rattay&danner
+- cite: holt&koch, gold&koch, trayanova, gydkov, plonsey, rall, Rinzel, einevol,
+  Destexe, Brette, nunez&..., kuokkanen, telenzuk, rattay&danner, cec email ref
 
 Results
 ==============
