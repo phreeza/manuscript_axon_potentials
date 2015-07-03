@@ -11,8 +11,8 @@ Introduction
 ==============
 
 Extracellular field potentials (EFPs) in the brain were long thought to be
-primarily synaptic in origin [@BuzsAki2012Origin]. However, a number of recent
-data analysis and modeling studies have shown that active, non-synaptic
+primarily synaptic in origin [@Buzsaki2012Origin]. However, a number of recent
+data analysis and modeling studies have revealed that active, non-synaptic
 membrane currents can play a role in generating EFPs [@Reimann2013Biophysically]. 
 
 It has been shown [@Kuokkanen2010Origin], that with sufficient spatial and temporal
@@ -27,17 +27,24 @@ widens and then terminates in its projection area affect the EFP.
 
 Such axon bundles exist throughout the peripheral and central nervous system.
 (Examples...) The white matter of the brain can be viewed as an aglomeration of
-such bundles. (ref) The study of the fields has clinical relevance (motor
-nerve, ABR, EEG?)
+such bundles. (ref) 
 
 Based on a forward model of the extracellular field potential
-[@Holt1999Electrical,@Gold2006Origin], we characterize three principal effects
+[@Holt1999Electrical;@Gold2006Origin], we characterize three principal effects
 of axon bundle structure on the EFP, and demonstrate them using two models of
 varying complexity, as well as a set of electrophysiological recordings from
-the barn owl brain stem.
+the barn owl brain stem. These effects are elaborations of the properties of
+such bundles described in past
+[@Gydikov1986Influence;@Gydikov1986Extracellular;@Plonsey1977Action].
 
-- cite: holt&koch, gold&koch, trayanova, gydkov, plonsey, rall, Rinzel, einevol,
-  Destexe, Brette, nunez&..., kuokkanen, telenzuk, rattay&danner, cec email ref
+The study of the fields is relevant in many measurement methods which rely on
+the extracellular field potential. The relevance may also including noninvasive
+methods, where the underlying mechansms of far field generation are often
+poorly understood.
+
+Relationship to CSD
+
+- cite: rall, Rinzel, einevoll, Destexe, Brette, nunez&srinivasan, telenzuk, rattay&danner, cec email ref
 
 Results
 ==============
@@ -134,3 +141,8 @@ as a low-pass filter (**Bb**). The second component is governed by the
 fiber density, and is filtered by the derivative of the weighting function
 (**Bc**), which acts as a high- or band-pass filter
 (**Bd**).](../figs/mockups/fig5.pdf)
+
+\clearpage
+
+Bibliophraphy
+===
