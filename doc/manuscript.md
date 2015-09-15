@@ -11,52 +11,53 @@ Introduction
 ==============
 
 Extracellular field potentials (EFPs) in the brain were long thought to be
-primarily synaptic in origin [@Buzsaki2012Origin]. However, a number of recent
-data analysis and modeling studies have revealed that active, non-synaptic
-membrane currents can play a role in generating EFPs [@Reimann2013Biophysically]. 
+primarily synaptic in origin [@Buzsaki2012Origin]. The study of the fields is
+relevant for the interpretation of data collected with measurement methods
+which rely on the extracellular field potential [@Brette2012Handbook].
+Extracellular fields are also at the base of many noninvasive measurement
+methods [@Nunez2006Electric], where the underlying mechanisms of far field
+generation are often poorly understood [@Rattay2014Peak].
 
-The study of the fields is relevant in many measurement methods which rely on
-the extracellular field potential. The relevance may also including noninvasive
-methods, where the underlying mechanisms of far field generation are often
-poorly understood [@Rattay2014Peak].
-
-- Make a distinction here between somatic EAPs and axonal EAPs. Reference
-  recent and older work on somatodendritic EAPs.
+Many modelling studies focus on the extracellular fields induced by currents on
+the dendrites and soma of the postsynaptic neuron [@Gold2006Origin;@Holt1999Electrical;@Einevoll2013Modelling;@Linden2011Modeling;@Linden2010Intrinsic]. However, a number of
+recent data analysis and modeling studies have revealed that active,
+non-synaptic membrane currents can play a role in generating EFPs
+[@Reimann2013Biophysically;@Anastassiou2015Cell;@Schomburg2012Spiking]. 
 
 The aim of this study is to understand how the EFP is influenced by the
 anatomical structure of the axons. In particular, we explain how typical
 projection patterns in which an axon bundle widens and then terminates in its
-projection area affect the EFP.
+projection area affect the EFP. Such axon bundles, sometimes called nerves or
+facicles, exist throughout the peripheral and central nervous system
+[@kandel2000principles;@Hentschel1999Models;@Nornes1972Temporal;@Goodman1984Cell].
+The white matter of the brain can be viewed as an agglomeration of such bundles
+[@Schuz2002Human].
 
-Such axon bundles exist throughout the peripheral and central nervous system.
-(Examples...) The white matter of the brain can be viewed as an agglomeration of
-such bundles. (ref) 
-
-It has been shown [@Kuokkanen2010Origin], that with sufficient spatial and
+It has been shown [@Kuokkanen2010Origin;@Linden2011Modeling;@Denker2011Local] that with sufficient spatial and
 temporal organization extracellular fields of axonal and synaptic sources can
 reach strengths on the order of several mV. Here we extend this finding to
 include more general axon bundles, including those receiving input with less
 temporal precision.
 
 We characterize three principal effects of axon bundle structure on the EFP.
-These effects are elaborations of the properties of such bundles described in
-past [@Gydikov1986Influence;@Gydikov1986Extracellular;@Plonsey1977Action]. We
-find that the low-frequency components of the EFP are governed by the local
-density of bifurcations and terminations. The high-frequency components are
-governed by the local fiber density. Furthermore we show that the
-low-frequency components exceed the high-frequency components in spatial reach.
+These effects are elaborations of the properties described in past
+[@Gydikov1986Influence;@Gydikov1986Extracellular;@Plonsey1977Action] for
+peripheral nerves. We find that the low-frequency components of the EFP are
+governed by the local density of bifurcations and terminations. The
+high-frequency components are governed by the local fiber density. Furthermore
+we show that the low-frequency components exceed the high-frequency components
+in spatial reach.
 
 We demonstrate these properties using two models of varying complexity, both of
 them based on a forward model of the extracellular field potential
 [@Holt1999Electrical;@Gold2006Origin]. The first model includes a detailed
 multicompartment model of the axon population. The second is an analytically
-tractable simplification of the axon bundle. Finally, we demonstrate the
+tractable simplification of a generic bundle of axons. Finally, we demonstrate the
 properties in real data using as a set of in-vivo electrophysiological
 recordings from the barn owl brain stem. 
 
-- cite: rall, Rinzel, einevoll, Destexe, Brette, nunez&srinivasan, telenzuk
-- Some more refs to add: Denker et al 2011 Schomburg et al 2011 Ray Maunsell
-  2011, Belluscio 2012)
+- cite: rall, Rinzel, Goldwyn, telenzuk
+- Some more refs to add: Ray Maunsell 2011, Belluscio 2012, Weiss 2010)
 
 Results
 ==============
