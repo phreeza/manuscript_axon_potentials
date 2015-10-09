@@ -87,7 +87,14 @@ individual spikes. This component diminishes more rapidly in the radial
 direction, meaning that at larger radial distances the low-frequency component
 dominates the response.
 
-The high-frequency component changes its amplitude in the longitudinal direction in accordance to the local fiber density (Figure 1D), while the 
+*Frequency components are related to different anatomical features* The
+high-frequency component changes its amplitude in the longitudinal direction in
+accordance to the local fiber density (Figure 1D). It has an approximately
+constant amplitude along the nerve trunk and then increases in amplitude as the
+fiber density is increased by bifurcations. As the fibers terminate and fiber
+density decreases, so does the amplitude of the high-frequency component. The
+low-frequency component shows a different behaviour: it is governed by the
+local density of bifurcations and terminations. 
 
 - Examples of similar phenomenology from literature
 - The low-frequency (eg population rate pulse) parts are governed by the 
