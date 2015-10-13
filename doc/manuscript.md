@@ -89,18 +89,26 @@ dominates the response.
 
 *Frequency components are related to different anatomical features* The
 high-frequency component changes its amplitude in the longitudinal direction in
-accordance to the local fiber density (Figure 1D). It has an approximately
+accordance to the local fiber density (Figure 1C). It has an approximately
 constant amplitude along the nerve trunk and then increases in amplitude as the
 fiber density is increased by bifurcations. As the fibers terminate and fiber
-density decreases, so does the amplitude of the high-frequency component. The
-low-frequency component shows a different behaviour: it is governed by the
-local density of bifurcations and terminations. 
+density decreases, so does the amplitude of the high-frequency component.
+
+The low-frequency component shows a different behaviour: it is governed by the
+local density of bifurcations and terminations (Figure 1D). Along the nerve
+trunk the fiber density is constant, and the low frequency component is
+unchanged. As the axon bundle reaches its projection zone, the number of
+bifurcations increases (Fig 1D), and the low frequency component increases in
+amplitude (Row 1-5 in Figure 1B). In the middle of the projection zone, the
+number of bifurcations and terminations cancels out. Correspondingly, the
+low-frequency component amplitude reaches a local minimum (Row 6 in Figure 1B).
+As the end of the projection zone approaches, the terminations outweigh the
+bifurcations, and the amplitude increases, but the polarity is reversed (Rows
+7&8 in Figure 1B). As the axon bundle ends, there are no longer any
+bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
 - Examples of similar phenomenology from literature
-- The low-frequency (eg population rate pulse) parts are governed by the 
-  local density of bifurcations and terminations(**Fig 1B**)
-- The high-frequency (eg individual spikes, 'noise', neurophonic) parts
-  are governed by the local fiber density(**Fig 1C**)
+    - Blot & Barbour
 - The low-frequency component exceeds the high-frequency component in reach (**Fig 2**)
 
 *The barn owl neurophonic as an example that shows these properties*(**Fig 3**)
