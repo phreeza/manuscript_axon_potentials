@@ -113,8 +113,12 @@ bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
 *The barn owl neurophonic as an example that shows these properties*(**Fig 3**)
 
+- To test the model, we tried it on the barn owl
+- Stimulated with clicks and recorded at different depths
+- model anatomy and nerve cell response (with refractory period)
 - The high-frequency component shows a steady increase in latency along the
-  projections' depth, while the low-frequency can have stationary parts
+  projections' depth
+- the low-frequency can have stationary parts
   caused by sharp increases or decreases of fiber number (bifurcations or
   terminations).
 
