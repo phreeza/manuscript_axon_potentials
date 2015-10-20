@@ -113,6 +113,8 @@ bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
 *The barn owl neurophonic as an example that shows these properties*(**Fig 3**)
 
+In order to test our model of the extracellular field of axon bundles, we compared it to recordings from the barn owl auditory brain stem. 
+
 - To test the model, we tried it on the barn owl
 - Stimulated with clicks and recorded at different depths
 - model anatomy and nerve cell response (with refractory period)
@@ -125,6 +127,46 @@ bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 *Mechanism underlying the observed properties*
 
 - Single AP along single axon(**Fig 4**)
+
+We begin by looking at the response of a single axon tree to a single spike at
+various locations along the tree. This gives can already give us a rough idea
+about the origin of the observed polarity reversal.
+
+The extracellular response at a recording location along a continuation of the
+axon, i.e.\ not close to a bifurcation or termination, is triphasic (blue trace in
+Figure 4B). It has been noted that this shape is
+approximated by the second derivative of the membrane voltage: the first
+positive peak is the initial bend to the rising flank of the action potential,
+the main dip corresponds to the high curvature at the peak of the action
+potential, and the final, positive peak corresponds to the bend from
+hyperpolarization to recovery.
+
+The potential near a bifurcation (red trace in Figure 4B)
+has a more biphasic shape. There is a small initial peak, but the response is
+dominated by the second, negative and the third, positive peak. This can be
+understood by comparing the shape to the previous example of along a
+non-bifurcating axon: The initial shape resembles the non-bifurcating case,
+because the action potential is still mainly within the segments before the
+bifurcation. As the action potential passes the bifurcation, there are now two
+instances of the action potential, and the second and third peak are doubled in
+size, leading to the more biphasic response.
+
+The same reasoning can be applied to the case of the biphasic response at a
+termination (green trace in Figure 4B): here there is an
+approaching action potential, leading to an initial positive peak, but as the
+termination is reached, the current flow ceases, and there is only a reduced
+second peak, and the third peak, associated with the action potential moving
+away from the recording location, disappears completely.
+
+The interesting thing to note here is that the potential at the bifurcation and
+termination are similar in shape, but opposite in polarity. This resembles the
+observed polarity reversal. It is thus not hard to imagine that the effect is
+caused by the response being dominated by bifurcations in the early part of NL
+where the axons branch out, and then by terminations in the later part, where
+terminations are more prevalent, with the two canceling out in the middle. We
+will test this intuition in the following section by simulating a full bundle
+of axons with realistic firing statistics.
+
 - Analytical model(**Fig 5**)
 
 Discussion
