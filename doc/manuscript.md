@@ -111,18 +111,23 @@ bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
     - Blot & Barbour
 - The low-frequency component exceeds the high-frequency component in reach (**Fig 2**)
 
-*The barn owl neurophonic as an example that shows these properties*(**Fig 3**)
+*The barn owl neurophonic as an example that shows these properties*
 
-In order to test our model of the extracellular field of axon bundles, we compared it to recordings from the barn owl auditory brain stem. 
+In order to test our model of the extracellular field of axon bundles, we
+compared it to recordings from the barn owl auditory brain stem. We adjusted
+the model parameters to match the anatomy and physiology of nucleus laminaris
+(NL), and set the activation statistics to match measured PSTHs in response to
+stimulation by a click, and then simulated the resulting EFP at varying depths,
+corresponding to recording depths in the experiment. The resulting recordings
+from experiment and simulation are shown in Figure 3.
 
-- To test the model, we tried it on the barn owl
-- Stimulated with clicks and recorded at different depths
-- model anatomy and nerve cell response (with refractory period)
-- The high-frequency component shows a steady increase in latency along the
-  projections' depth
-- the low-frequency can have stationary parts
-  caused by sharp increases or decreases of fiber number (bifurcations or
-  terminations).
+The resulting simulation showed several characteristics that are also observed in the data.
+firstly, The high-frequency component shows a steady increase in latency along
+the projections' depth, and has its maximum in amplitude in the middle of NL.
+The low-frequency component reverses polarity along the depth of NL, and almost
+vanishes in the middle of NL.
+
+- explain this in more detail
 
 *Mechanism underlying the observed properties*
 
@@ -197,6 +202,8 @@ Action potentials were initiated in the axons by injecting a current pulse into
 the first node of Ranvier of the axon. The times of the injections were chosen by
 drawing from an inhomogeneous Poisson distribution based on the firing
 statistics of NM units in response to a given stimulus.
+
+- Split barn owl and general axon bundle
 
 Axon branching patterns were generated procedurally, **better wording** starting with the root
 segment, placed at the border of NL. In order to avoid artifacts from the
