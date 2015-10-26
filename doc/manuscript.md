@@ -111,29 +111,46 @@ bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
     - Blot & Barbour
 - The low-frequency component exceeds the high-frequency component in reach (**Fig 2**)
 
-*The barn owl neurophonic as an example that shows these properties*
-
-In order to test our model of the extracellular field of axon bundles, we
-compared it to recordings from the barn owl auditory brain stem. We adjusted
-the model parameters to match the anatomy and physiology of nucleus laminaris
-(NL), and set the activation statistics to match measured PSTHs in response to
+*The barn owl neurophonic as an example that shows these properties* In order
+to test our model of the extracellular field of axon bundles, we compared it to
+recordings from the barn owl auditory brain stem. We adjusted the model
+parameters to match the anatomy and physiology of nucleus laminaris (NL), and
+set the activation statistics to match measured PSTHs in response to
 stimulation by a click, and then simulated the resulting EFP at varying depths,
 corresponding to recording depths in the experiment. The resulting recordings
 from experiment and simulation are shown in Figure 3.
 
 The resulting simulation showed several characteristics that are also observed in the data.
-firstly, The high-frequency component shows a steady increase in latency along
+Firstly, the high-frequency component shows a steady increase in latency along
 the projections' depth, and has its maximum in amplitude in the middle of NL.
 The low-frequency component reverses polarity along the depth of NL, and almost
-vanishes in the middle of NL.
+vanishes in the middle of NL. This is the same behaviour as shown for the
+generic axon bundle in the previous section.
 
-- explain this in more detail
+- Relate to MSO models
 
-*Mechanism underlying the observed properties I*
+![Low-frequency component of the axon bundle EFP exceeds high frequency in
+reach. (**A**) shows the behaviour of different spectral components (frequency
+indicated by colorbar) in a double logarithmic plot. The slope indicates the
+scaling coefficient in this frequency band. (**B**) shows this scaling
+coefficient for different frequencies. Low frequencies have the least negative
+coefficient, indicating the furthest reach.
+](../figs/import/bundle_pulse_freq_slope.pdf)
 
-We begin by looking at the response of a single axon tree to a single spike at
-various locations along the tree, as shown in Figure 4. This gives can already
-give us a rough idea about the origin of the observed polarity reversal.
+
+![Data from the barn owl shows the expected behaviour predicted by the model.
+(**A**-**C**) shows data from the barn owls nucleus laminaris in response to an
+auditory click stimulus, compared to a simulation of the axonal structure and
+activation in (**D**-**F**). The click stimulus induces a pulse of activity in the
+afferent axon bundle. The low-frequency components (**B** and **E**) show the
+polarity reversal. The high frequency component (**C** and **F**), does not
+show such a reversal, but rather shows a steady increase in phase with
+depth.](../figs/import/traces_combined_mod_log_n5000.pdf)
+
+*Mechanism underlying the observed properties I* We begin by looking at the
+response of a single axon tree to a single spike at various locations along the
+tree, as shown in Figure 4. This gives can already give us a rough idea about
+the origin of the observed polarity reversal.
 
 The extracellular response at a recording location along a continuation of the
 axon, i.e.\ not close to a bifurcation or termination, is triphasic (blue trace in
@@ -170,13 +187,21 @@ terminations are more prevalent, with the two canceling out in the middle. We
 will test this intuition in the following by examining the properties of a full
 bundle of axons in a simplified analytical model.
 
-*Mechanism underlying the observed properties II*
+![The dipolar behaviour can be understood by examining individual action
+potentials on a single axon tree. Comparing the low frequency owl data (**A**)
+to a single axon and action potential in model (**B**) shows a similar
+behaviour. In particular, the potential at a termination and that at a
+bifurcation (red and green curves in **B**) are approximately
+inverted.](../figs/mockups/fig4.pdf)
 
+*Mechanism underlying the observed properties II* In the case of a simplified
+one-dimensional axon bundle, the EFP at a given location may be described by
+the formula $\Phi(\mathbf{r},t) = \left[\left\{n(z)\cdot
+i_\lambda(z,t)\right\}\ast w(a,z)\right]_z$ (see Methods and appendix).
 Assuming that the weighting function $w$ tends to 0 for large $\left|z\right|$,
 and with the introduction of the single axon current integral
-$I_\lambda(z,t)=\int_{-\infty}^zi_\infty(z',t)dz'$ equation
-\ref{eqn:switchedpotend} can be split (for a derivation, see appendix) into two
-components:
+$I_\lambda(z,t)=\int_{-\infty}^zi_\infty(z',t)dz'$, the equation can be split
+(for a derivation, see appendix) into two components:
 
 \begin{align}
   \label{eqn:splitpot} 
@@ -220,7 +245,7 @@ The first component can be viewed as a filtered version of $I_\lambda$, in the
 same way as shown in section \ref{ssec:spatialfilt} for an infinite axon
 bundle. In this case, however, the filter is $w'$, which is an antisymmetric
 function, and as such a high-pass or band-pass filter which tends to zero for
-low frequencies (Figure \ref{fig:Impulse-response}).  Thus, this component
+low frequencies (Figure 5B).  Thus, this component
 contributes a local (meaning depending on recording location) version of the
 signal, with the low frequencies removed.
 
@@ -233,6 +258,23 @@ If the changes in the membrane currents are slow compared to $(z_1-z_0)/v$, we
 can conclude that $I_\lambda(z_0,t) \approx I_\lambda(z_1,t)$, and the second
 and third component will cancel each other out at a point $z_c$ that fulfills
 $(n_1-n_0)w(\rho,z_c-z_0) = n_1 w(\rho,z_c-z_1)$.
+
+- simplify even and move more to methods/appendix.
+- explain why this is a dipole
+- relate this back to the properties.
+
+![Analytical model of the axon bundle potential explains the effects observed
+in the numerical model and example data. (**A**) shows the behaviour of a
+simplified fiber bundle with a piecewise constant fiber density (**Aa**). The
+high frequency component (**Ab**) shows no polarity reversal, while the
+high-frequency component (**Ac**) does, as expected from the data and
+modelling. This can be understood by decomposing the signal into two
+components. The first component is governed by the bifurcation and termination
+density, and is filtered by the regular weighting function (**Ba**), which acts
+as a low-pass filter (**Bb**). The second component is governed by the
+fiber density, and is filtered by the derivative of the weighting function
+(**Bc**), which acts as a high- or band-pass filter
+(**Bd**).](../figs/mockups/fig5.pdf)
 
 
 Discussion
@@ -249,6 +291,13 @@ Discussion
 
 Methods
 ==============
+
+Experimental recordings
+-----------------------
+
+
+Numerical model
+---------------------
 
 We modeled the axons using NEURON [@Hines1997NEURON;@Hines2009NEURON] in a model based on previous work by
 (**refs**), including the high and low threshold potassium channels used by (**refs**).
@@ -319,7 +368,8 @@ node currents, and did not include the line source approximation used by @Holt19
   \label{tab:modparam}
 \end{table}
 
-\subsection{Simplified axon bundle model}
+==Simplified axon bundle model==
+
 \label{sec:efpresp}
 
 We define the spatial dimension in cylindrical coordinates $\mathbf{r}=(\rho,\varphi,z)$ such that $z$ is the
@@ -427,52 +477,6 @@ With the average current in a single infinite fiber stimulated with $\lambda$, w
   \label{eqn:switchedpotend}
 \end{align}
 
-\clearpage
-
-![Low-frequency component of the axon bundle EFP exceeds high frequency in
-reach. (**A**) shows the behaviour of different spectral components (frequency
-indicated by colorbar) in a double logarithmic plot. The slope indicates the
-scaling coefficient in this frequency band. (**B**) shows this scaling
-coefficient for different frequencies. Low frequencies have the least negative
-coefficient, indicating the furthest reach.
-](../figs/import/bundle_pulse_freq_slope.pdf)
-
-\clearpage
-
-![Data from the barn owl shows the expected behaviour predicted by the model.
-(**A**-**C**) shows data from the barn owls nucleus laminaris in response to an
-auditory click stimulus, compared to a simulation of the axonal structure and
-activation in (**D**-**F**). The click stimulus induces a pulse of activity in the
-afferent axon bundle. The low-frequency components (**B** and **E**) show the
-polarity reversal. The high frequency component (**C** and **F**), does not
-show such a reversal, but rather shows a steady increase in phase with
-depth.](../figs/import/traces_combined_mod_log_n5000.pdf)
-
-\clearpage
-
-![The dipolar behaviour can be understood by examining individual action
-potentials on a single axon tree. Comparing the low frequency owl data (**A**)
-to a single axon and action potential in model (**B**) shows a similar
-behaviour. In particular, the potential at a termination and that at a
-bifurcation (red and green curves in **B**) are approximately
-inverted.](../figs/mockups/fig4.pdf)
-
-\clearpage
-
-![Analytical model of the axon bundle potential explains the effects observed
-in the numerical model and example data. (**A**) shows the behaviour of a
-simplified fiber bundle with a piecewise constant fiber density (**Aa**). The
-high frequency component (**Ab**) shows no polarity reversal, while the
-high-frequency component (**Ac**) does, as expected from the data and
-modelling. This can be understood by decomposing the signal into two
-components. The first component is governed by the bifurcation and termination
-density, and is filtered by the regular weighting function (**Ba**), which acts
-as a low-pass filter (**Bb**). The second component is governed by the
-fiber density, and is filtered by the derivative of the weighting function
-(**Bc**), which acts as a high- or band-pass filter
-(**Bd**).](../figs/mockups/fig5.pdf)
-
-\clearpage
 
 Bibliophraphy
 ===
