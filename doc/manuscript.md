@@ -129,13 +129,11 @@ vanishes in the middle of NL.
 
 - explain this in more detail
 
-*Mechanism underlying the observed properties*
-
-- Single AP along single axon(**Fig 4**)
+*Mechanism underlying the observed properties I*
 
 We begin by looking at the response of a single axon tree to a single spike at
-various locations along the tree. This gives can already give us a rough idea
-about the origin of the observed polarity reversal.
+various locations along the tree, as shown in Figure 4. This gives can already
+give us a rough idea about the origin of the observed polarity reversal.
 
 The extracellular response at a recording location along a continuation of the
 axon, i.e.\ not close to a bifurcation or termination, is triphasic (blue trace in
@@ -169,10 +167,73 @@ observed polarity reversal. It is thus not hard to imagine that the effect is
 caused by the response being dominated by bifurcations in the early part of NL
 where the axons branch out, and then by terminations in the later part, where
 terminations are more prevalent, with the two canceling out in the middle. We
-will test this intuition in the following section by simulating a full bundle
-of axons with realistic firing statistics.
+will test this intuition in the following by examining the properties of a full
+bundle of axons in a simplified analytical model.
 
-- Analytical model(**Fig 5**)
+*Mechanism underlying the observed properties II*
+
+Assuming that the weighting function $w$ tends to 0 for large $\left|z\right|$,
+and with the introduction of the single axon current integral
+$I_\lambda(z,t)=\int_{-\infty}^zi_\infty(z',t)dz'$ equation
+\ref{eqn:switchedpotend} can be split (for a derivation, see appendix) into two
+components:
+
+\begin{align}
+  \label{eqn:splitpot} 
+  \Phi(\mathbf{r},t) = &\left[\left\{n(z)\cdot I_\lambda(z,t)\right\}\ast w'(\rho,z)\right]_z \\
+  & - \left[\left\{n'(z)\cdot I_\lambda(z,t)\right\}\ast w(\rho,z)\right]_z 
+\end{align}
+
+In the first component the single axon current integral $I_\lambda(z,t)$ is
+multiplied by the local density of the fibers $n$, while the weighting function
+is replaced by its spatial derivative $w'$. In the second component,
+$I_\lambda$ is multiplied by the derivative of the density $n'$, but here the
+weighting function $w$ is unchanged.
+
+The utility of this decomposition will become clear when considering a minimal
+example of a fiber density distribution in the shape of a piecewise constant
+function:
+
+\begin{equation}
+  n(z) = \left\{
+     \begin{array}{ll}
+       n_0 & \textrm{for } z < z_0\\
+       n_1 & \textrm{for } z_0 < z < z_1 \\
+       0   & \textrm{for } z_1 < z
+     \end{array}
+   \right.  
+  \label{eqn:piecewise-density}
+\end{equation}
+
+In this case, the field potential can be approximated as:
+
+- this may be wrong, double check
+
+\begin{align}
+  \label{eqn:minimalpot} 
+  \Phi(\mathbf{r},t) \approx \, & - n(z)\left[w'(\rho,z)\ast I_\lambda(z,t)\right]_z \\ 
+  & + (n_1-n_0)I_\lambda(z_0,t)w(\rho,z-z_0) \\  
+  & - n_1 I_\lambda(z_1,t)w(\rho,z-z_1)
+\end{align}
+
+The first component can be viewed as a filtered version of $I_\lambda$, in the
+same way as shown in section \ref{ssec:spatialfilt} for an infinite axon
+bundle. In this case, however, the filter is $w'$, which is an antisymmetric
+function, and as such a high-pass or band-pass filter which tends to zero for
+low frequencies (Figure \ref{fig:Impulse-response}).  Thus, this component
+contributes a local (meaning depending on recording location) version of the
+signal, with the low frequencies removed.
+
+The timecourse of the second and third component does not depend on $I_\lambda$
+at the recording location $z$, but rather at the locations of the bifurcations
+and terminations, $z_0$ and $z_1$, and the amplitudes are attenuated according
+to $w$ by the distance between these points and the recording location.
+
+If the changes in the membrane currents are slow compared to $(z_1-z_0)/v$, we
+can conclude that $I_\lambda(z_0,t) \approx I_\lambda(z_1,t)$, and the second
+and third component will cancel each other out at a point $z_c$ that fulfills
+$(n_1-n_0)w(\rho,z_c-z_0) = n_1 w(\rho,z_c-z_1)$.
+
 
 Discussion
 ==============
