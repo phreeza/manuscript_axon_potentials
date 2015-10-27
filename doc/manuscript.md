@@ -9,23 +9,24 @@ date: \today
 
 Introduction
 ==============
+The study of extracellular field potentials (EFPs) is relevant for the
+interpretation of data collected with measurement methods which rely on the
+extracellular field potential [@Brette2012Handbook].  Extracellular fields are
+also at the base of many noninvasive measurement methods [@Nunez2006Electric],
+where the underlying mechanisms of far-field generation are often poorly
+understood [@Rattay2014Peak].
 
-Extracellular field potentials (EFPs) in the brain were long thought to be
-primarily synaptic in origin [@Buzsaki2012Origin]. The study of the fields is
-relevant for the interpretation of data collected with measurement methods
-which rely on the extracellular field potential [@Brette2012Handbook].
-Extracellular fields are also at the base of many noninvasive measurement
-methods [@Nunez2006Electric], where the underlying mechanisms of far field
-generation are often poorly understood [@Rattay2014Peak].
-
-Many modelling studies focus on the extracellular fields induced by currents on
-the dendrites and soma of the postsynaptic neuron [@Gold2006Origin;@Holt1999Electrical;@Einevoll2013Modelling;@Linden2011Modeling;@Linden2010Intrinsic]. However, a number of
-recent data analysis and modeling studies have revealed that active,
+EFPs in the brain were long thought to be primarily synaptic in origin
+[@Buzsaki2012Origin]. As a consequence, many modeling studies focus on the
+extracellular fields induced by currents on the dendrites and soma of the
+postsynaptic neuron [@Gold2006Origin;@Holt1999Electrical;
+@Einevoll2013Modelling;@Linden2011Modeling;@Linden2010Intrinsic].  However, a
+number of recent data analysis and modeling efforts have revealed that active,
 non-synaptic membrane currents can play a role in generating EFPs
 [@Reimann2013Biophysically;@Anastassiou2015Cell;@Schomburg2012Spiking]. 
 
-The aim of this study is to understand how the EFP is influenced by the
-anatomical structure of the axons. In particular, we explain how typical
+The aim of this study is to understand how the EFP of axons is influenced by the
+axons anatomical structure. In particular, we explain how typical
 projection patterns in which an axon bundle widens and then terminates in its
 projection area affect the EFP. Such axon bundles, sometimes called nerves or
 facicles, exist throughout the peripheral and central nervous system
@@ -33,11 +34,11 @@ facicles, exist throughout the peripheral and central nervous system
 The white matter of the brain can be viewed as an agglomeration of such bundles
 [@Schuz2002Human].
 
-It has been shown [@Kuokkanen2010Origin;@Linden2011Modeling;@Denker2011Local] that with sufficient spatial and
-temporal organization extracellular fields of axonal and synaptic sources can
-reach strengths on the order of several mV. Here we extend this finding to
-include more general axon bundles, including those receiving input with less
-temporal precision.
+It has been shown [@Kuokkanen2010Origin;@Linden2011Modeling;@Denker2011Local]
+that with sufficient spatial and temporal organization extracellular fields of
+axonal and synaptic sources can reach strengths on the order of several mV.
+Here we extend this finding to include more general axon bundles, including
+those receiving input with less temporal precision.
 
 We characterize three principal effects of axon bundle structure on the EFP.
 These effects are elaborations of the properties described in past
@@ -52,15 +53,31 @@ We demonstrate these properties using two models of varying complexity, both of
 them based on a forward model of the extracellular field potential
 [@Holt1999Electrical;@Gold2006Origin]. The first model includes a detailed
 multicompartment model of the axon population. The second is an analytically
-tractable simplification of a generic bundle of axons. Finally, we demonstrate the
-properties in real data using as a set of in-vivo electrophysiological
+tractable simplification of a generic bundle of axons. Finally, we demonstrate
+the properties in real data using as a set of in-vivo electrophysiological
 recordings from the barn owl brain stem. 
 
-- Some more refs to add: Ray Maunsell 2011, Belluscio 2012, Weiss 2010, rall, Rinzel, Goldwyn, telenzuk
+- Some more refs to add: Ray Maunsell 2011, Belluscio 2012, Weiss 2010, rall,
+  Rinzel, Goldwyn, telenzuk
 
 
 Results
 ==============
+*Axonal projections generate a dipole-like field potential* To understand the
+effect of axon geometry on the EFP, we began by simulating a fiber bundle which at first
+runs at constant diameter and without bifurcations, then reaches a bifurcation
+zone with an increasing number of fibers, before terminating (Figure 1A). The bundle fibers
+were stimulated with a background spontaneous rate, upon which a pulse of
+increased activity was added. The resulting extracellular potential was
+generated for several locations (Figure 1B) along the axon trunk. The most
+salient feature of the response traces is a biphasic deflection evoked by the
+rate pulse. The deflection is visible at all locations, and its peak-to-peak
+amplitude is indicated by the color code in figures 1A and 1B. Close to the
+trunk there is also a strong high-frequency noise component, generated by 
+individual spikes. This component diminishes more rapidly in the radial
+direction, meaning that at larger radial distances the low-frequency component
+dominates the response.
+
 ![Axonal projections generate a dipole-like extracellular field potential.
 Extracellular evoked potential due to a pulse of activity in a generic fiber
 bundle. (**A**) shows the structure of the bundle, next to (**B**) EFP
@@ -72,20 +89,6 @@ density overlayed with the strength of the high-frequency EFP component.
 (**D**) shows the density of bifurcations and terminations at varying depths.
 ](../figs/import/bundle_pulse_potentials.pdf)
 
-*Axonal projections generate a dipole-like field potential* To understand the
-effect of axon geometry on the EFP, we began by simulating a fiber bundle which
-runs at constant diameter and without bifurcations, then reaches a bifurcation
-zone with increasing density, before terminating (Figure 1A). The bundle fibers
-were stimulated with a background spontaneous rate, upon which a pulse of
-increased activity was added. The resulting extracellular potential was
-generated for several locations (Figure 1B) along the axon trunk. The most
-salient feature of the response traces is a biphasic deflection evoked by the
-rate pulse. The deflection is visible at all locations, and its peak-to-peak
-amplitude is indicated by the color code in figures 1A and 1B. Close to the
-trunk there is also a strong high-frequency noise component, generated by the
-individual spikes. This component diminishes more rapidly in the radial
-direction, meaning that at larger radial distances the low-frequency component
-dominates the response.
 
 *Frequency components are related to different anatomical features* The
 high-frequency component changes its amplitude in the longitudinal direction in
@@ -116,11 +119,11 @@ to test our model of the extracellular field of axon bundles, we compared it to
 recordings from the barn owl auditory brain stem. We adjusted the model
 parameters to match the anatomy and physiology of nucleus laminaris (NL), and
 set the activation statistics to match measured PSTHs in response to
-stimulation by a click, and then simulated the resulting EFP at varying depths,
+stimulation by a click. We then simulated the resulting EFP at varying depths,
 corresponding to recording depths in the experiment. The resulting recordings
 from experiment and simulation are shown in Figure 3.
 
-The resulting simulation showed several characteristics that are also observed in the data.
+The simulated EFPs showed several characteristics that are also observed in the data.
 Firstly, the high-frequency component shows a steady increase in latency along
 the projections' depth, and has its maximum in amplitude in the middle of NL.
 The low-frequency component reverses polarity along the depth of NL, and almost
@@ -149,7 +152,7 @@ depth.](../figs/import/traces_combined_mod_log_n5000.pdf)
 
 *Mechanism underlying the observed properties I* We begin by looking at the
 response of a single axon tree to a single spike at various locations along the
-tree, as shown in Figure 4. This gives can already give us a rough idea about
+tree, as shown in Figure 4. This can already give us a rough idea about
 the origin of the observed polarity reversal.
 
 The extracellular response at a recording location along a continuation of the
@@ -164,7 +167,7 @@ hyperpolarization to recovery.
 The potential near a bifurcation (red trace in Figure 4B)
 has a more biphasic shape. There is a small initial peak, but the response is
 dominated by the second, negative and the third, positive peak. This can be
-understood by comparing the shape to the previous example of along a
+understood by comparing the shape to the previous example along a
 non-bifurcating axon: The initial shape resembles the non-bifurcating case,
 because the action potential is still mainly within the segments before the
 bifurcation. As the action potential passes the bifurcation, there are now two
@@ -180,7 +183,7 @@ away from the recording location, disappears completely.
 
 The interesting thing to note here is that the potential at the bifurcation and
 termination are similar in shape, but opposite in polarity. This resembles the
-observed polarity reversal. It is thus not hard to imagine that the effect is
+observed polarity reversal. It is thus not hard to imagine that this effect is
 caused by the response being dominated by bifurcations in the early part of NL
 where the axons branch out, and then by terminations in the later part, where
 terminations are more prevalent, with the two canceling out in the middle. We
@@ -214,6 +217,8 @@ multiplied by the local density of the fibers $n$, while the weighting function
 is replaced by its spatial derivative $w'$. In the second component,
 $I_\lambda$ is multiplied by the derivative of the density $n'$, but here the
 weighting function $w$ is unchanged.
+
+- relate to the two components right here
 
 The utility of this decomposition will become clear when considering a minimal
 example of a fiber density distribution in the shape of a piecewise constant
@@ -268,7 +273,7 @@ in the numerical model and example data. (**A**) shows the behaviour of a
 simplified fiber bundle with a piecewise constant fiber density (**Aa**). The
 high frequency component (**Ab**) shows no polarity reversal, while the
 high-frequency component (**Ac**) does, as expected from the data and
-modelling. This can be understood by decomposing the signal into two
+modeling. This can be understood by decomposing the signal into two
 components. The first component is governed by the bifurcation and termination
 density, and is filtered by the regular weighting function (**Ba**), which acts
 as a low-pass filter (**Bb**). The second component is governed by the
@@ -368,7 +373,8 @@ node currents, and did not include the line source approximation used by @Holt19
   \label{tab:modparam}
 \end{table}
 
-==Simplified axon bundle model==
+Simplified axon bundle model
+----------------------------
 
 \label{sec:efpresp}
 
