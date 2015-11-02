@@ -131,7 +131,13 @@ The low-frequency component reverses polarity along the depth of NL, and almost
 vanishes in the middle of NL. This is the same behaviour as shown for the
 generic axon bundle in the previous section.
 
-- Relate to MSO models
+It is interesting to note that a similar reversal of polarity in NL has been
+reported for chicken [@Schwarz1992Can], as well as in the mamalian analog to
+NL, the medial superior olive [@Laughlin2010Oscillatory]. The phase reversal in
+this case has been modeled based on the assumption that the postsynaptic NL and
+MSO dendrites with their bipolar morphology have a dipolar EFP response
+[@Laughlin2010Oscillatory; Goldwyn2014Model]. However, in the owl this dipolar
+morphology is largely absent [@carr90], making dendritic sources unlikely.
 
 ![Low-frequency component of the axon bundle EFP exceeds high frequency in
 reach. (**A**) shows the behaviour of different spectral components (frequency
