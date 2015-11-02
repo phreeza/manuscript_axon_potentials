@@ -9,40 +9,41 @@ date: \today
 
 Introduction
 ==============
-The study of extracellular field potentials (EFPs) is relevant for the
-interpretation of data collected with measurement methods which rely on the
-extracellular field potential [@Brette2012Handbook].  Extracellular fields are
-also at the base of many noninvasive measurement methods [@Nunez2006Electric],
-where the underlying mechanisms of far-field generation are often poorly
-understood [@Rattay2014Peak].
+Extracellular field potentials (EFPs) are at the heart of many experimental
+methods used to examine the inner workings of the brain.  This includes
+invasive (Local Field Potentials, Current Source Density, Multiunit Activity)
+as well as noninvasive (EEG, ECoG, ABR) methods [@Brette2012Handbook;
+@Nunez2006Electric]. The origins of these EFPs, especially in cases in which
+the activity is not clearly attributable to a single cell, is often a matter of
+debate.
 
 EFPs in the brain were long thought to be primarily synaptic in origin
 [@Buzsaki2012Origin]. As a consequence, many modeling studies focus on the
-extracellular fields induced by currents on the dendrites and soma of the
-postsynaptic neuron [@Gold2006Origin;@Holt1999Electrical;
-@Einevoll2013Modelling;@Linden2011Modeling;@Linden2010Intrinsic].  However, a
+extracellular fields induced by synaptic currents on the dendrites and soma of the
+postsynaptic neuron [@Gold2006Origin; @Holt1999Electrical;
+@Einevoll2013Modelling; @Linden2011Modeling; @Linden2010Intrinsic]. However, a
 number of recent data analysis and modeling efforts have revealed that active,
-non-synaptic membrane currents can play a role in generating EFPs
-[@Reimann2013Biophysically;@Anastassiou2015Cell;@Schomburg2012Spiking]. 
+non-synaptic membrane currents can play an important role in generating EFPs
+[@Reimann2013Biophysically; @Anastassiou2015Cell; @Schomburg2012Spiking]. 
 
-The aim of this study is to understand how the EFP of axons is influenced by the
-axons anatomical structure. In particular, we explain how typical
+The aim of this study is to understand how the EFP of axons is influenced by
+the axons anatomical structure. In particular, we aim to explain how typical
 projection patterns in which an axon bundle widens and then terminates in its
 projection area affect the EFP. Such axon bundles, sometimes called nerves or
-facicles, exist throughout the peripheral and central nervous system
-[@kandel2000principles;@Hentschel1999Models;@Nornes1972Temporal;@Goodman1984Cell].
-The white matter of the brain can be viewed as an agglomeration of such bundles
-[@Schuz2002Human].
+facicles, exist throughout the peripheral and central nervous system of most
+animals [@kandel2000principles; @Hentschel1999Models; @Nornes1972Temporal;
+@Goodman1984Cell].  The white matter of the mamalian brain can be viewed as an
+agglomeration of such bundles [@Schuz2002Human].
 
-It has been shown [@Kuokkanen2010Origin;@Linden2011Modeling;@Denker2011Local]
-that with sufficient spatial and temporal organization extracellular fields of
-axonal and synaptic sources can reach strengths on the order of several mV.
-Here we extend this finding to include more general axon bundles, including
-those receiving input with less temporal precision.
+It has been shown [@Kuokkanen2010Origin; @Linden2011Modeling; @Denker2011Local]
+that with sufficient spatial organization and temporal synchronicity,
+extracellular fields of axonal and synaptic sources can reach strengths on the
+order of several mV.  Here we extend this finding to include more general axon
+bundles, including those receiving input with less temporal precision.
 
 We characterize three principal effects of axon bundle structure on the EFP.
-These effects are elaborations of the properties described in past
-[@Gydikov1986Influence;@Gydikov1986Extracellular;@Plonsey1977Action] for
+These effects are elaborations of the properties described in the past
+[@Gydikov1986Influence; @Gydikov1986Extracellular; @Plonsey1977Action] for
 peripheral nerves. We find that the low-frequency components of the EFP are
 governed by the local density of bifurcations and terminations. The
 high-frequency components are governed by the local fiber density. Furthermore
@@ -51,10 +52,10 @@ in spatial reach.
 
 We demonstrate these properties using two models of varying complexity, both of
 them based on a forward model of the extracellular field potential
-[@Holt1999Electrical;@Gold2006Origin]. The first model includes a detailed
+[@Holt1999Electrical; @Gold2006Origin]. The first model includes a detailed
 multicompartment model of the axon population. The second is an analytically
 tractable simplification of a generic bundle of axons. Finally, we demonstrate
-the properties in real data using as a set of in-vivo electrophysiological
+the properties in experimental data using as a set of in-vivo electrophysiological
 recordings from the barn owl brain stem. 
 
 - Some more refs to add: Ray Maunsell 2011, Belluscio 2012, Weiss 2010, rall,
@@ -216,11 +217,17 @@ In the first component the single axon current integral $I_\lambda(z,t)$ is
 multiplied by the local density of the fibers $n$, while the weighting function
 is replaced by its spatial derivative $w'$. In the second component,
 $I_\lambda$ is multiplied by the derivative of the density $n'$, but here the
-weighting function $w$ is unchanged.
+weighting function $w$ is unchanged. The functions $w$ and $w'$ are shown in the time and frequency domain in figure 4.
 
-- relate to the two components right here
+Further inspection of the two components shows an intriguing similarity to the
+properties of the response observed in the previous sections. The first
+component is high-pass filtered, and is related to the fiber density, just like
+'noise' component in Figure 1 and the high-frequency component in the barn owl
+data and model. The second component is low-pass filtered, and related to the
+derivative of the fiber density, just like the firing rate pulse related
+deflection in Figure 1, and the low-frequency component in the barn owl.
 
-The utility of this decomposition will become clear when considering a minimal
+The origin of the distinct components will become even clear when considering a minimal
 example of a fiber density distribution in the shape of a piecewise constant
 function:
 
@@ -304,7 +311,7 @@ Experimental recordings
 Numerical model
 ---------------------
 
-We modeled the axons using NEURON [@Hines1997NEURON;@Hines2009NEURON] in a model based on previous work by
+We modeled the axons using NEURON [@Hines1997NEURON; @Hines2009NEURON] in a model based on previous work by
 (**refs**), including the high and low threshold potassium channels used by (**refs**).
 The axon was modeled as a sequence of active nodes and passive myelinated
 segments. The parameters for the active and passive segments are described in
