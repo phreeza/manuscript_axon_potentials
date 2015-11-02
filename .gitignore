@@ -1,0 +1,7 @@
+*.swp
+.*
+*.html
+doc/*pdf
+doc/*html
+doc/*docx
+doc/*tex
