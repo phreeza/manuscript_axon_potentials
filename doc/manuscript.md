@@ -19,12 +19,15 @@ debate.
 
 EFPs in the brain were long thought to be primarily synaptic in origin
 [@Buzsaki2012Origin]. As a consequence, many modeling studies focus on the
-extracellular fields induced by synaptic currents on the dendrites and soma of the
-postsynaptic neuron [@Gold2006Origin; @Holt1999Electrical;
-@Einevoll2013Modelling; @Linden2011Modeling; @Linden2010Intrinsic]. However, a
-number of recent data analysis and modeling efforts have revealed that active,
-non-synaptic membrane currents can play an important role in generating EFPs
-[@Reimann2013Biophysically; @Anastassiou2015Cell; @Schomburg2012Spiking]. 
+extracellular fields induced by synaptic currents on the dendrites and soma of
+the postsynaptic neuron [@Gold2006Origin; @Holt1999Electrical;
+@Einevoll2013Modelling; @Linden2011Modeling; @Linden2010Intrinsic;
+@FernandezRuiz2013Cytoarchitectonic]. However, a number of recent data analysis
+and modeling efforts have revealed that active, non-synaptic membrane currents
+can play an important role in generating EFPs [@Reimann2013Biophysically;
+@Anastassiou2015Cell; @Schomburg2012Spiking; Ray2011Different;
+Belluscio2012CrossFrequency], including far reaching potentials detectable at
+the scalp [@Telenczuk2011Highfrequency]. 
 
 The aim of this study is to understand how the EFP of axons is influenced by
 the axons anatomical structure. In particular, we aim to explain how typical
@@ -57,10 +60,6 @@ multicompartment model of the axon population. The second is an analytically
 tractable simplification of a generic bundle of axons. Finally, we demonstrate
 the properties in experimental data using as a set of in-vivo electrophysiological
 recordings from the barn owl brain stem. 
-
-- Some more refs to add: Ray Maunsell 2011, Belluscio 2012, Weiss 2010, rall,
-  Rinzel, Goldwyn, telenzuk
-
 
 Results
 ==============
@@ -188,11 +187,11 @@ termination is reached, the current flow ceases, and there is only a reduced
 second peak, and the third peak, associated with the action potential moving
 away from the recording location, disappears completely.
 
-The interesting thing to note here is that the potential at the bifurcation and
-termination are similar in shape, but opposite in polarity. This resembles the
-observed polarity reversal. It is thus not hard to imagine that this effect is
-caused by the response being dominated by bifurcations in the early part of NL
-where the axons branch out, and then by terminations in the later part, where
+A notable point here is that the potential at the bifurcation and termination
+are similar in shape, but opposite in polarity. This resembles the observed
+polarity reversal. It is thus not hard to imagine that this effect is caused by
+the response being dominated by bifurcations in the early part of NL where the
+axons branch out, and then by terminations in the later part, where
 terminations are more prevalent, with the two canceling out in the middle. We
 will test this intuition in the following by examining the properties of a full
 bundle of axons in a simplified analytical model.
@@ -233,7 +232,7 @@ data and model. The second component is low-pass filtered, and related to the
 derivative of the fiber density, just like the firing rate pulse related
 deflection in Figure 1, and the low-frequency component in the barn owl.
 
-The origin of the distinct components will become even clear when considering a minimal
+The origin of the distinct components will become even clearer when considering a minimal
 example of a fiber density distribution in the shape of a piecewise constant
 function:
 
@@ -259,8 +258,11 @@ In this case, the field potential can be approximated as:
   & - n_1 I_\lambda(z_1,t)w(\rho,z-z_1)
 \end{align}
 
-The first component can be viewed as a filtered version of $I_\lambda$, in the
-same way as shown in section \ref{ssec:spatialfilt} for an infinite axon
+The first component can be viewed as a filtered version of $I_\lambda$
+
+- add distance dependent filtering
+
+for an infinite axon
 bundle. In this case, however, the filter is $w'$, which is an antisymmetric
 function, and as such a high-pass or band-pass filter which tends to zero for
 low frequencies (Figure 5B).  Thus, this component
@@ -304,7 +306,8 @@ Discussion
         - Here: variable fiber density, constant currents
     - Dipole has far field, ABR response?
 - Compare to other auditory systems (Chicken NL, MSO)
-    - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn)
+    - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn, Weiss 2010, Einevoll&Panzeri review)
+- Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
 - compare to other fiber bundle systems
 
 Methods
