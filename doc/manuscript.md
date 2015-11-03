@@ -39,7 +39,7 @@ animals [@kandel2000principles; @Hentschel1999Models; @Nornes1972Temporal;
 agglomeration of such bundles [@Schuz2002Human].
 
 It has been shown [@Kuokkanen2010Origin; @Linden2011Modeling; @Denker2011Local]
-that with sufficient spatial organization and temporal synchronicity,
+that with sufficient spatial organization and temporal correlation,
 extracellular fields of axonal and synaptic sources can reach strengths on the
 order of several mV.  Here we extend this finding to include more general axon
 bundles, including those receiving input with less temporal precision.
@@ -110,8 +110,7 @@ bifurcations, and the amplitude increases, but the polarity is reversed (Rows
 7&8 in Figure 1B). As the axon bundle ends, there are no longer any
 bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
-- Examples of similar phenomenology from literature
-    - Blot & Barbour
+- Examples of similar phenomenology from literature (Blot & Barbour, find more?)
 - The low-frequency component exceeds the high-frequency component in reach (**Fig 2**)
 
 *The barn owl neurophonic as an example that shows these properties* In order
