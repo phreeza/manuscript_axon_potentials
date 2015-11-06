@@ -84,6 +84,8 @@ explicitly related to the anatomy of the axon bundle. @Blot2014Ultrarapid
 report an extracellular field with the characteristic dipolar structure
 recorded from the vicinity of cerebellar Purkinje cell axons.
 
+- find more examples in literature
+
 ![Axonal projections generate a dipole-like extracellular field potential.
 Extracellular evoked potential due to a pulse of activity in a generic fiber
 bundle. (**A**) shows the structure of the bundle, next to (**B**) EFP
@@ -116,8 +118,6 @@ bifurcations, and the amplitude increases, but the polarity is reversed (Rows
 7&8 in Figure 1B). As the axon bundle ends, there are no longer any
 bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
-- Examples of similar phenomenology from literature (Blot & Barbour, find
-  more?)
 - The low-frequency component exceeds the high-frequency component in reach
   (**Fig 2**)
 
