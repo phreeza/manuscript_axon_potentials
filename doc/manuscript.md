@@ -114,9 +114,9 @@ bifurcations, and the amplitude increases, but the polarity is reversed (Rows
 bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
 - The low-frequency component exceeds the high-frequency component in reach
-  - dipole effect
-  - spatial filtering effect
   (**Fig 2**)
+    - dipole effect
+    - spatial filtering effect
 - Summary paragraph of model predictions
 
 *The barn owl neurophonic as an example that shows these properties.* In order
