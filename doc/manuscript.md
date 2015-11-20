@@ -22,12 +22,16 @@ EFPs in the brain were long thought to be primarily synaptic in origin
 extracellular fields induced by synaptic currents on the dendrites and soma of
 the postsynaptic neuron [@Gold2006Origin; @Holt1999Electrical;
 @Einevoll2013Modelling; @Linden2011Modeling; @Linden2010Intrinsic;
-@FernandezRuiz2013Cytoarchitectonic]. However, a number of recent data analysis
-and modeling efforts have revealed that active, non-synaptic membrane currents
-can play an important role in generating EFPs [@Reimann2013Biophysically;
-@Anastassiou2015Cell; @Schomburg2012Spiking; @Ray2011Different;
-@Belluscio2012CrossFrequency], including far reaching potentials detectable at
-the scalp [@Telenczuk2011Highfrequency]. 
+@FernandezRuiz2013Cytoarchitectonic]. One of the reasons for the traditional
+assumption that axonal currents contribute little to the EFP is that the far
+field of an action potential traveling along a straight axon is quadrupolar,
+meaning that its far field decays faster with distance than synaptic sources
+which are thought to be dipolar [@Nunez2006Electric]. However, a number of
+recent data analysis and modeling efforts have revealed that active,
+non-synaptic membrane currents can play an important role in generating EFPs
+[@Reimann2013Biophysically; @Anastassiou2015Cell; @Schomburg2012Spiking;
+@Ray2011Different; @Belluscio2012CrossFrequency], including far reaching
+potentials detectable at the scalp [@Telenczuk2011Highfrequency].
 
 The aim of this study is to understand how the EFP of axons is influenced by
 the axons' anatomical structure. In particular, we aim to explain how typical
@@ -38,12 +42,6 @@ animals [@kandel2000principles; @Hentschel1999Models; @Nornes1972Temporal;
 @Goodman1984Cell]. The white matter of the mammalian brain can be viewed as an
 agglomeration of such bundles [@Schuz2002Human].
 
-It has been shown [@Kuokkanen2010Origin; @Linden2011Modeling; @Denker2011Local]
-that with sufficient spatial organization and temporal correlation,
-extracellular fields of axonal and synaptic sources can reach strengths on the
-order of several mV.  Here we extend this finding to include more general axon
-bundles, including those receiving input with less temporal precision.
-
 We characterize three principal effects of axon bundle structure on the EFP.
 These effects are elaborations of the properties described in the past
 [@Gydikov1986Influence; @Gydikov1986Extracellular; @Plonsey1977Action] for
@@ -51,7 +49,9 @@ peripheral nerves. We find that the low-frequency components of the EFP are
 governed by the local densities of bifurcations and terminations. The
 high-frequency components are governed by the local fiber density. Furthermore
 we show that the low-frequency components exceed the high-frequency components
-in spatial reach.
+in spatial reach. The low-frequency components can show dipolar
+behaviour, exceeding the reach of the presumed quadrupolar nature of axonal
+EFPs.
 
 We demonstrate these properties using two models of varying complexity, both of
 them based on a forward model of the extracellular field potential
