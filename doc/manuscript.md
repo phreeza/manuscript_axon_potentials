@@ -53,7 +53,7 @@ Results
 ==============
 We characterize three principal effects of axon bundle structure on the EFP.
 Firstly, the low-frequency components of the EFP are governed by the densities
-of bifurcations and terminations and can have a dipolar structure. The
+of bifurcations and terminations and can have a dipolar structure. Secondly, the
 high-frequency components are governed by the local fiber density. Furthermore
 we show that the low-frequency components exceed the high-frequency components
 in spatial reach. In particular, the dipolar low-frequency components exceed
@@ -61,12 +61,12 @@ the reach of the presumed quadrupolar nature of axonal EFPs.
 
 These properties are first investigated by numerical model based on a forward
 simulation of the extracellular field potential [@Holt1999Electrical;
-@Gold2006Origin]. This first model includes a large scale multicompartment model
+@Gold2006Origin]. This first model includes a large-scale multicompartment model
 of the axon population. We then show a concrete example of the effects in
 experimental data using as a set of multi-site in-vivo electrophysiological
 recordings from the barn owl brain stem. Finally, we show the mechanisms
-underlying the observed effects by means of a second, analytically tractable
-model of a simplification of the generic axon bundle. 
+underlying the observed effects by means of a second, analytically tractable,
+model of a generic axon bundle. 
 
 *Axonal projections generate a dipole-like field potential.* To understand the
 effect of axon geometry on the EFP, we simulated a fiber bundle that at first
@@ -114,6 +114,8 @@ bifurcations, and the amplitude increases, but the polarity is reversed (Rows
 bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
 - The low-frequency component exceeds the high-frequency component in reach
+  - dipole effect
+  - spatial filtering effect
   (**Fig 2**)
 - Summary paragraph of model predictions
 
