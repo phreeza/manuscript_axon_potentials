@@ -149,7 +149,7 @@ indicated by colorbar) in a double logarithmic plot. The slope indicates the
 scaling coefficient in this frequency band. (**B**) shows this scaling
 coefficient for different frequencies. Low frequencies have the least negative
 coefficient, indicating the furthest reach.
-](../figs/import/bundle_pulse_freq_slope.pdf)
+](../figs/fig_2.pdf)
 
 
 ![Data from the barn owl shows the expected behaviour predicted by the model.
