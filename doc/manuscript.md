@@ -146,12 +146,12 @@ performed a further simulation of an axon bundle, this time omitting the
 bifurcations, and letting the fibers terminate directly. The resulting distance
 decay profiles are shown in Figure 2. In axial direction, the low-frequency
 component has a further reach than the high frequency component in the
-bifurcating case (Figure 1A), but not in the non-bifurcating case (Figure 1C).
+bifurcating case (Figure 2A), but not in the non-bifurcating case (Figure 2C).
 In the radial direction, the situation is different: the bifurcating (Figure
-1B) and non-bifurcating (Figure 1D) case both show a faster decay of the
+2B) and non-bifurcating (Figure 2D) case both show a faster decay of the
 high-frequency component than of the low-frequency component. To assure that
 the effect was due to the bifurcations themselves and not due to the fanned out
-structure of the bifurcating bundle seen in Figures 1A and 1D, we here changed
+structure of the bifurcating bundle seen in Figures 2A and 2D, we here changed
 the layout of both bundles to have constant widths.
 
 ![Low-frequency component of the axon bundle EFP exceeds high-frequency
