@@ -78,7 +78,7 @@ potential was calculated for several locations along the axon trunk (Figure
 1B).
 
 - split into two frequency components
-- show different reaches with contour plots (A and D
+- show different reaches with contour plots (A and D)
 - qualitative behaviour with traces (B and E)
     - what we see for lf
     - what we see for hf
@@ -92,14 +92,21 @@ rapidly in the radial direction, meaning that at larger radial distances the
 low-frequency component dominates the response.
 
 ![Axonal projections generate a dipole-like extracellular field potential (EFP)
-when stimulated with  a pulse of activity. (**A**) Structure of the fiber
-bundle. (**B**) EFP responses at various locations, indicated by colored dots.
-Scaling of traces indicated by colorbar. Relative strength of high-frequency
-noise relative to the low-frequency pulse decays with distance.  The
-low-frequency pulse switches polarity along the nerve bundle's termination
-zone. (**C**) Fiber density overlayed with the strength of the high-frequency
-EFP component.  (**D**) Density of bifurcations and terminations at varying
-depths.  ](../figs/import/bundle_pulse_potentials.pdf)
+when stimulated with  a pulse of activity. **A** shows the modeled axon bundle
+in black, along with iso-amplitude lines for the low-pass filtered EFP
+signature of the activity pulse. The contours show the typical double-lobe of a
+dipole. The waveforms, recorded at the locations of the colored dots in **A**
+and shown in **B**, also show a polarity reversal. The most salient locations
+are highlighted with the gray box. The transition ocurrs by inverting the
+envelope with aproximately constant phase, not by a shifting of phase with
+constant envelope. **C** shows the progression of the maximum amplitude with
+depth (red line). It closely follows the local density of bifurcations and
+terminations (black histogram). The situation is different for the
+high-frequency component. The iso-amlitude contours shown in **D** do not
+exhibit the same double-lobe structure, and the waveforms (**C**) also don't
+reverse polarity. The amplitude envelope of the high-frequency component (red
+line in **E**) follows the density of fibers (black histogram in **E**.
+](../figs/fig_1.pdf)
 
 *Frequency components are related to different anatomical features.* The
 high-frequency component changes its amplitude in the longitudinal direction in
@@ -121,7 +128,7 @@ bifurcations, and the amplitude increases, but the polarity is reversed (Rows
 7&8 in Figure 1B). As the axon bundle ends, there are no longer any
 bifurcations or terminations, and the amplitude decays (Row 9 in Figure 1B).
 
-- The low-frequency component exceeds the high-frequency component in reach
+- The low-frequency component exceeds the high-frequency component in axial reach
   (**Fig 2**)
     - dipole effect
     - spatial filtering effect
