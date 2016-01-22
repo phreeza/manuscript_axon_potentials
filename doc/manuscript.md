@@ -85,7 +85,7 @@ The distribution of maximum amplitudes, shown by the contour lines in Figure
 the high-frequency maximum responses (Fig. 1D). The low-frequency waveforms
 (Fig 1B) show a biphasic deflection that is elicited by the population firing
 rate pulse. This deflection was visible at all recoring locations. It reversed
-polarity in the middle of the bifurcation zone of the bundle.
+polarity in the middle of the bifurcation zone of the bundle (red box in Figure 1B).
 
 The same distribution of maximum amplitudes for the high-frequency component,
 shown in Figure 1D, did not show the same lobed shape. Instead it decayed much
@@ -101,7 +101,7 @@ in black, along with iso-amplitude lines for the low-pass filtered EFP
 signature of the activity pulse. The contours show the typical double-lobe of a
 dipole. The waveforms, recorded at the locations of the colored dots in **A**
 and shown in **B**, also show a polarity reversal. The most salient locations
-are highlighted with the gray box. The transition ocurrs by inverting the
+are highlighted with the red box. The transition ocurrs by inverting the
 envelope with aproximately constant phase, not by a shifting of phase with
 constant envelope. **C** shows the progression of the maximum amplitude with
 depth (red line). It closely follows the local density of bifurcations and
@@ -109,7 +109,7 @@ terminations (black histogram). The situation is different for the
 high-frequency component. The iso-amlitude contours shown in **D** do not
 exhibit the same double-lobe structure, and the waveforms (**C**) also don't
 reverse polarity. The amplitude envelope of the high-frequency component (red
-line in **E**) follows the density of fibers (black histogram in **E**.
+line in **E**) follows the density of fibers (black histogram in **E**).
 ](../figs/fig_1.pdf)
 
 *Frequency components are related to different anatomical features.*
@@ -127,7 +127,7 @@ amplitude. In the middle of the projection zone, the number of bifurcations and
 terminations cancels out.  Correspondingly, the low-frequency component
 amplitude reaches a local minimum.  As the end of the projection zone
 approaches, the terminations outweigh the bifurcations, and the amplitude
-increases, but the polarity is reversed (Rows 7&8 in Figure 1B). As the axon
+increases, but the polarity is reversed (red box in Figure 1B). As the axon
 bundle ends, there are no longer any bifurcations or terminations, and the
 amplitude decays.
 
