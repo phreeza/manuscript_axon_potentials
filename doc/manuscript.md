@@ -27,37 +27,33 @@ recent data analysis and modeling efforts have revealed that active,
 non-synaptic membrane currents can play an important role in generating EFPs
 [@Reimann2013Biophysically; @Anastassiou2015Cell; @Schomburg2012Spiking;
 @Ray2011Different; @Belluscio2012CrossFrequency], including far reaching
-potentials detectable at the scalp [@Telenczuk2011Highfrequency].
+potentials detectable at the scalp
+[@Telenczuk2011Highfrequency; @Telenczuk2015Correlates].
 
 One of the reasons for the traditional assumption that axonal currents
 contribute little to the EFP is that the far field of an action potential
 traveling along an idealized straight axon is quadrupolar, meaning that its far
 field decays faster with distance than synaptic sources which are thought to be
-dipolar [@Nunez2006Electric]. In experimental studies that recoded the EFP of
+dipolar [@Nunez2006Electric]. However, in experimental studies that recorded the EFP of
 axonal responses, the EFP often has a dipolar structure. For example,
 @Blot2014Ultrarapid report an EFP with the characteristic dipolar structure
 recorded from the vicinity of cerebellar Purkinje cell axons.
 
 - find more examples in literature
 
-The aim of this study is to show how these effects in the EFP of axons are influenced by
-the axons' anatomical structure. In particular, we aim to explain how typical
-projection patterns in which axons bifurcate and then terminate in their
-projection area affect the EFP. Such axon bundles, sometimes called nerves or
-facicles, exist throughout the peripheral and central nervous system of most
-animals [@kandel2000principles; @Hentschel1999Models; @Nornes1972Temporal;
-@Goodman1984Cell]. The white matter of the mammalian brain can be viewed as an
-agglomeration of such bundles [@Schuz2002Human].
+This discrepancy raises the open question of how axons are able to generate
+dipolar field potentials in the actual organism, when conventional simulation
+results lead one to expect quardupolar structures.
 
-Results
-==============
-We characterize three principal effects of axon bundle structure on the EFP.
-Firstly, the low-frequency components of the EFP are governed by the densities
-of bifurcations and terminations and can have a dipolar structure. Secondly, the
-high-frequency components are governed by the local fiber density. Furthermore
-we show that the low-frequency components exceed the high-frequency components
-in spatial reach. In particular, the dipolar low-frequency components exceed
-the reach of the presumed quadrupolar nature of axonal EFPs.
+The aim of this study is to show how these effects in the EFP of axons can be
+explained by the axons' anatomical structure. In particular, we aim to explain
+how typical projection patterns in which axons bifurcate and then terminate in
+their projection area lead to a dipolar EFP structure. Such axon bundles,
+sometimes called nerves or facicles, exist throughout the peripheral and
+central nervous system of most animals [@kandel2000principles;
+@Hentschel1999Models; @Nornes1972Temporal; @Goodman1984Cell]. The white matter
+of the mammalian brain can be viewed as an agglomeration of such bundles
+[@Schuz2002Human].
 
 These properties are first investigated by numerical model based on a forward
 simulation of the extracellular field potential [@Holt1999Electrical;
@@ -67,24 +63,45 @@ experimental data using as a set of multi-site in-vivo electrophysiological
 recordings from the barn owl brain stem. Finally, we show the mechanisms
 underlying the observed effects by means of a second, analytically tractable,
 model of a generic axon bundle. 
+Results
+==============
+<!-- To discussion?
+We characterize three principal effects of axon bundle structure on the EFP.
+Firstly, the low-frequency components of the EFP are governed by the densities
+of bifurcations and terminations and can have a dipolar structure. Secondly, the
+high-frequency components are governed by the local fiber density. Furthermore
+we show that the low-frequency components exceed the high-frequency components
+in spatial reach. In particular, the dipolar low-frequency components exceed
+the reach of the presumed quadrupolar nature of axonal EFPs.-->
 
-*Axonal projections generate a dipole-like field potential.* To understand the
-effect of axon geometry on the EFP, we simulated a fiber bundle that at first
-runs at constant diameter and without bifurcations, then reaches a bifurcation
-zone with an increasing number of fibers, before finally terminating (Figure 1A
-and 1D). The bundle fibers were stimulated with a background spontaneous rate,
-upon which a pulse of increased activity was added. The resulting extracellular
-potential was calculated for several locations along the axon trunk. The
-spatial behaviour of the low-frequency component of the EFP differed strongly
-from that of the high-frequency component, so we analyzed them separately.
-Low-frequency responses are shown in the top half of Figure 1, and
-low-frequency responses are shown in the lower half.
+*Axonal projections generate a dipole-like field potential.* To understand how
+axons can generate a dipolar EFP, we simulated a parallel fiber bundle that at
+first runs at constant diameter and without bifurcations, then reaches a
+bifurcation zone with an increasing number of fibers, and finally reaches a
+termination zone, in which the number of fibers decreases to zero. (Figure 1A
+and 1D).
+
+To simulate the spiking activity of a generic axon bundle, the fibers were
+stimulated with a background spontaneous firing rate of 100 Hz, upon which a pulse of
+increased activity was added. This pulse of activity could relate to any kind
+of evoked activity in the nervous system, such as a sensory stimulation, motor
+activity or a spontaneous transient increase in population spiking activity. We
+chose a gaussian pulse with an amplitude of 2900 spikes/second and a standard
+deviation of 2.8ms.
+
+To characterize the spatiotemporal dynamics of the evoked EFP, the potential
+was calculated for several locations along the axon trunk.
+
+<!--The spatial behaviour of the low-frequency component of the EFP differed
+strongly from that of the high-frequency component, so we analyzed them
+separately.  Low-frequency responses are shown in the top half of Figure 1, and
+high-frequency responses are shown in the lower half.-->
 
 The distribution of maximum amplitudes, shown by the contour lines in Figure
 1A, showed the double-lobed shape typical of a dipole, and exceeds the reach of
 the high-frequency maximum responses (Fig. 1D). The low-frequency waveforms
 (Fig 1B) show a biphasic deflection that is elicited by the population firing
-rate pulse. This deflection was visible at all recoring locations. It reversed
+rate pulse. This deflection was visible at all recording locations. It reversed
 polarity in the middle of the bifurcation zone of the bundle (red box in Figure 1B).
 
 The same distribution of maximum amplitudes for the high-frequency component,
