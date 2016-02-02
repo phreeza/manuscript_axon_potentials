@@ -63,8 +63,10 @@ experimental data using as a set of multi-site in-vivo electrophysiological
 recordings from the barn owl brain stem. Finally, we show the mechanisms
 underlying the observed effects by means of a second, analytically tractable,
 model of a generic axon bundle. 
+
 Results
 ==============
+
 <!-- To discussion?
 We characterize three principal effects of axon bundle structure on the EFP.
 Firstly, the low-frequency components of the EFP are governed by the densities
@@ -78,39 +80,60 @@ the reach of the presumed quadrupolar nature of axonal EFPs.-->
 axons can generate a dipolar EFP, we simulated a parallel fiber bundle that at
 first runs at constant diameter and without bifurcations, then reaches a
 bifurcation zone with an increasing number of fibers, and finally reaches a
-termination zone, in which the number of fibers decreases to zero. (Figure 1A
-and 1D).
+termination zone, in which the number of fibers decreases to zero. (Figure 1A).
 
-To simulate the spiking activity of a generic axon bundle, the fibers were
-stimulated with a background spontaneous firing rate of 100 Hz, upon which a pulse of
-increased activity was added. This pulse of activity could relate to any kind
-of evoked activity in the nervous system, such as a sensory stimulation, motor
-activity or a spontaneous transient increase in population spiking activity. We
-chose a gaussian pulse with an amplitude of 2900 spikes/second and a standard
-deviation of 2.8ms.
+The spiking activity of a generic axon bundle was simulated by stimulating the
+fibers with a background spontaneous firing rate of 100 spikes/second, upon
+which a pulse of increased activity was added. This pulse of activity could
+relate to any kind of evoked activity in the nervous system, such as a sensory
+stimulation, motor activity or a spontaneous transient increase in population
+spiking activity. We chose a gaussian pulse with an amplitude of 2900
+spikes/second and a standard deviation of 2.8ms.
 
 To characterize the spatiotemporal dynamics of the evoked EFP, the potential
-was calculated for several locations along the axon trunk.
+was calculated for several locations along the axon trunk. Because we first
+want to study the effect of the rate pulse on the EFP, we low-pass filtered the
+response the responses with a cut-off frequency of 1kHz. Figures 1A-C all show
+these low-pass filtered responses. The distribution of maximum amplitudes of
+these responses are shown by the contour lines in Figure 1A. Surrounding the
+projection zone of the axon bundle, they show the double-lobed shape typical
+of a dipole.
 
+Shown alongside the contour lines are dots representing recording locations,
+also colored according to the maximum amplitude at their location.  The
+waveforms recorded at these locations are shown in Figure 1B. The scale of the
+waveforms are indicated by the color of the trace. The responses show a
+biphasic deflection that is elicited by the population firing rate pulse. This
+deflection was visible at all recording locations. It reverses polarity in the
+middle of the bifurcation zone of the bundle (red box in Figure 1B). The
+polarity reversal occurs by a decrease of the amplitude to zero and subsequent
+reappearance with reversed polarity, as opposed to a polarity reversal through
+a gradual shift in phase. This behaviour is also typical of a dipolar field
+potential.
+
+The point of the polarity reversal coincides roughly with the middle of the
+projection zone. This means that the absolute value of the response amplitude
+reaches a local minimum, just when the number of axonal fibers reaches a
+maximum. To better understand how anatomical features and response amplitude
+are related, we compared the value of the EFP corresponding to the maximum
+absolute amplitude with the difference in branchings and terminations (Figure
+1C). The amplitude of the maximum response (red trace) follows the distribution
+of branchings and terminations(black histogram). 
 <!--The spatial behaviour of the low-frequency component of the EFP differed
 strongly from that of the high-frequency component, so we analyzed them
 separately.  Low-frequency responses are shown in the top half of Figure 1, and
 high-frequency responses are shown in the lower half.-->
 
-The distribution of maximum amplitudes, shown by the contour lines in Figure
-1A, showed the double-lobed shape typical of a dipole, and exceeds the reach of
-the high-frequency maximum responses (Fig. 1D). The low-frequency waveforms
-(Fig 1B) show a biphasic deflection that is elicited by the population firing
-rate pulse. This deflection was visible at all recording locations. It reversed
-polarity in the middle of the bifurcation zone of the bundle (red box in Figure 1B).
-
-The same distribution of maximum amplitudes for the high-frequency component,
-shown in Figure 1D, did not show the same lobed shape. Instead it decayed much
-faster with distance in both axial and radial direction. This was also
-reflected in the waveforms (Fig 1E). There is an increase in amplitude due to
-the firing rate pulse at locations close to the nerve bundle, but at locations
-further away from the trunk it is no longer distinguishable from the background
-activity.
+Along the nerve trunk the fiber density is constant, and the amplitude is
+unchanged. As the axon bundle reaches its projection zone, the number of
+bifurcations increases, and the response increases in amplitude. In the middle
+of the projection zone, the number of bifurcations and terminations cancels
+out. At the same depth, the amplitude crosses zero.  As the end of the
+projection zone approaches, the terminations outweigh the bifurcations, and the
+amplitude increases, but the polarity is reversed. This transition also
+corresponds to the traces in the red box in Figure 1B. As the axon bundle ends,
+there are no longer any bifurcations or terminations, and the amplitude decays
+toward zero.
 
 ![Axonal projections generate a dipole-like extracellular field potential (EFP)
 when stimulated with  a pulse of activity. **A** shows the modeled axon bundle
@@ -129,8 +152,7 @@ reverse polarity. The amplitude envelope of the high-frequency component (red
 line in **E**) follows the density of fibers (black histogram in **E**).
 ](../figs/fig_1.pdf)
 
-*Frequency components are related to different anatomical features.*
-To better understand the relationship between axonal anatomy and this spatial
+<!--To better understand the relationship between axonal anatomy and this spatial
 structure of the EFP, we plotted the change in density of the bundle, meaning
 the number of terminations subtracted from the number of bifurcations at a
 given 
@@ -148,28 +170,46 @@ increases, but the polarity is reversed (red box in Figure 1B). As the axon
 bundle ends, there are no longer any bifurcations or terminations, and the
 amplitude decays.
 
+The same distribution of maximum amplitudes for the high-frequency component,
+shown in Figure 1D, did not show the same lobed shape. Instead it decayed much
+faster with distance in both axial and radial direction. This was also
+reflected in the waveforms (Fig 1E). There is an increase in amplitude due to
+the firing rate pulse at locations close to the nerve bundle, but at locations
+further away from the trunk it is no longer distinguishable from the background
+activity.-->
+
+To understand the contributions related to individual spikes, we next turned
+our attention to the high-frequency range. We filtered the EFP responses with a
+high-pass filter, using the same cut-off frequency of 1kHz as before. The
+maximum amplitudes for this frequency band did not show a double-lobe, but
+rather appeared like an ellipsoid centered at the projection zone (Figure 1D).
+The waveforms are more disparate across recording locations, suggesting a more
+local nature. There is no visible polarity reversal (Figure 1E). 
+
 The high-frequency component changes its amplitude in the longitudinal direction in
-accordance to the local fiber density. It has an approximately
+accordance to the local fiber density (Figure 1F). It has an approximately
 constant amplitude along the nerve trunk and then increases in amplitude as the
 fiber density is increased by bifurcations. As the fibers terminate and fiber
 density decreases, so does the amplitude of the high-frequency component.
 
-These relationships suggest that the particular structure of the axon bundle
-gives rise to the dipolar field potential. Because dipolar fields are
-associated with a longer spatial reach that the quarupolar fields typically
-associated with axonal spikes, we decided to investigate the effect that axon
-structure has on the spatial reach of the frequency components. To do this we
+We have thus shown a qualitatively different behaviour in the low- and
+high-frequency components of the EFP. Both appear to be related to anatomy,
+though each in a different way.  Together, these relationships suggest that the
+particular branching and terminating structure of the axon bundle gives rise to
+the dipolar field potential. Because dipolar fields are associated with a
+longer spatial reach than the quadrupolar fields typically associated with
+axonal spikes, we decided to investigate the effect that axon structure has on
+the spatial reach of the frequency components (Figure 2). To do this we
 performed a further simulation of an axon bundle, this time omitting the
-bifurcations, and letting the fibers terminate directly. The resulting distance
-decay profiles are shown in Figure 2. In axial direction, the low-frequency
-component has a further reach than the high frequency component in the
-bifurcating case (Figure 2A), but not in the non-bifurcating case (Figure 2C).
-In the radial direction, the situation is different: the bifurcating (Figure
-2B) and non-bifurcating (Figure 2D) case both show a faster decay of the
-high-frequency component than of the low-frequency component. To assure that
-the effect was due to the bifurcations themselves and not due to the fanned out
-structure of the bifurcating bundle seen in Figures 2A and 2D, we here changed
-the layout of both bundles to have constant widths.
+bifurcations, and letting the fibers terminate directly. In axial direction,
+the low-frequency component has a further reach than the high frequency
+component in the bifurcating case (Figure 2A), but not in the non-bifurcating
+case (Figure 2C).  In the radial direction, the situation is different: the
+bifurcating (Figure 2B) and non-bifurcating (Figure 2D) case both show a faster
+decay of the high-frequency component than of the low-frequency component. To
+assure that the effect was due to the bifurcations themselves and not due to
+the fanned out structure of the bifurcating bundle seen in Figures 2A and 2D,
+we here changed the layout of both bundles to have constant widths.
 
 ![Low-frequency component of the axon bundle EFP exceeds high-frequency
 component in reach, modulated by axon structure. All plots show the scaling of
