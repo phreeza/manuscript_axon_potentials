@@ -218,9 +218,9 @@ we here changed the layout of both bundles to have constant widths.
 component in reach, modulated by axon structure. All plots show the scaling of
 the low-frequency (blue lines) and high-frequency (green lines) frequency
 components on a doubly-logarithmic scale. Amplitudes were normalized to unit
-value at the end of the tuft in axial direction (**A** and **C**) and from the
-trunk in radial direction (**B** and **D**). **A** and **B** show the behaviour
-in the case of a bifurcating bundle, while **C** and **D** show the
+value at the end of the tuft in axial direction (**A** and **B**) and from the
+trunk in radial direction (**C** and **D**). **A** and **C** show the behaviour
+in the case of a bifurcating bundle, while **B** and **D** show the
 nonbifurcating case. In the bifurcating case, the low-frequency component
 exceeds the reach of the high-frequency comonent in both directions. In the
 non-bifurcating case, the decay is the same for both components in the axial
