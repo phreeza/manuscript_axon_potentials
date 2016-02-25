@@ -107,11 +107,11 @@ lines in Figure 1A and the colored traces in Figure 1B. Surrounding the
 projection zone of the axon bundle, amplitudes show the double-lobed shape
 typical of a dipole.
 
-In Figure 1B, all the responses showed a
-biphasic deflection that was elicited by the population firing rate pulse. This
-deflection was visible at all recording locations. The biphasic deflection reverses polarity in the
-middle of the bifurcation zone of the bundle (red box in Figure 1B). The
-polarity reversal occurs by a decrease of the amplitude to zero and subsequent
+In Figure 1B, all the responses showed a biphasic deflection that was elicited
+by the population firing rate pulse. This deflection was visible at all
+recording locations. The biphasic deflection reverses polarity in the middle of
+the bifurcation zone of the bundle (red box in Figure 1B). The polarity
+reversal occurs by a decrease of the amplitude to zero and subsequent
 reappearance with reversed polarity, as opposed to a polarity reversal through
 a gradual shift in phase. This behaviour is also typical for a dipolar field
 potential.
@@ -123,39 +123,35 @@ a maximum. To better understand how anatomical features and response amplitude
 are related, we compared the signed maximum value (meaning the *signed* value
 corresponding to the maximum *absolute* amplitude) of the EFP  with the
 difference in the density of branchings and terminations (Figure 1C).
+
+Along the nerve trunk the fiber density is constant. As the axon bundle reaches
+its projection zone, the number of bifurcations increases. In the middle of the
+projection zone, the number of bifurcations and terminations cancels out. At
+the same depth, the amplitude crosses zero.  As the end of the projection zone
+approaches, the terminations outweigh the bifurcations. As the axon bundle
+ends, there are no longer any bifurcations or terminations, and the density
+decays toward zero.
+
+- Compare B and C
+
 Interestingly, the amplitude of the maximum response (red trace) follows the
 distribution of branchings and terminations (black histogram). 
-<!--The spatial behaviour of the low-frequency component of the EFP differed
-strongly from that of the high-frequency component, so we analyzed them
-separately.  Low-frequency responses are shown in the top half of Figure 1, and
-high-frequency responses are shown in the lower half.-->
-
-Along the nerve trunk the fiber density is constant, and the amplitude is
-unchanged. As the axon bundle reaches its projection zone, the number of
-bifurcations increases, and the response increases in amplitude. In the middle
-of the projection zone, the number of bifurcations and terminations cancels
-out. At the same depth, the amplitude crosses zero.  As the end of the
-projection zone approaches, the terminations outweigh the bifurcations, and the
-amplitude increases, but the polarity is reversed. This transition also
-corresponds to the traces in the red box in Figure 1B. As the axon bundle ends,
-there are no longer any bifurcations or terminations, and the amplitude decays
-toward zero.
 
 ![Axonal projections generate a dipole-like extracellular field potential (EFP)
-when stimulated with  a pulse of activity. **A** shows the modeled axon bundle
-in black, along with iso-amplitude lines for the low-pass filtered EFP
-signature of the activity pulse. The contours show the typical double-lobe of a
-dipole. The waveforms, recorded at the locations of the colored dots in **A**
-and shown in **B**, also show a polarity reversal. The most salient locations
-are highlighted with the red box. The transition ocurrs by inverting the
-envelope with aproximately constant phase, not by a shifting of phase with
-constant envelope. **C** shows the progression of the maximum amplitude with
-depth (red line). It closely follows the local density of bifurcations and
-terminations (black histogram). The situation is different for the
-high-frequency component. The iso-amlitude contours shown in **D** do not
-exhibit the same double-lobe structure, and the waveforms (**C**) also don't
-reverse polarity. The amplitude envelope of the high-frequency component (red
-line in **E**) follows the density of fibers (black histogram in **E**).
+when stimulated with  a pulse of activity. **A** Modeled axon bundle in black,
+along with iso-amplitude lines for the low-pass filtered EFP signature of the
+activity pulse. The contours (maximum amplitude in mV as indicated by colorbar)
+show the typical double-lobe of a dipole. **B** The waveforms, recorded at the
+locations of the colored dots in *A* also show a polarity reversal (red box).
+The reversal ocurrs by inverting the envelope with aproximately constant phase,
+not by a shifting of phase with constant envelope. **C** Progression of the
+maximum amplitude with depth (red line). It closely follows the local
+difference in density between bifurcations and terminations (black histogram).
+**D** Iso-amlitude contours for the high-frequency component, which do not
+exhibit a doiuble-lobed structure. **E** Response waveforms of the
+low-frequency component. The responses do not reverse their polarity. **F**
+Maximum amplitude of the high-frequency component (red line) follows the
+density of fibers (black histogram).
 ](../figs/fig_1.pdf)
 
 <!--To better understand the relationship between axonal anatomy and this spatial
@@ -227,19 +223,20 @@ in the case of a bifurcating bundle, while **B** and **D** show the
 nonbifurcating case. In the bifurcating case, the low-frequency component
 exceeds the reach of the high-frequency comonent in both directions. In the
 non-bifurcating case, the decay is the same for both components in the axial
-direction. This is consistent with the presence of a low-frequency dipole-like
-potential in the bifurcating bundle but not in the non-bifurcating
-bundle.](../figs/fig_2.pdf)
+direction. The scaling behaviours are consistent with the presence of
+a low-frequency dipole-like potential in the bifurcating bundle but not in the
+non-bifurcating bundle.](../figs/fig_2.pdf)
 
 *The barn owl neurophonic as an example that shows these properties.* In order
 to test our model of the extracellular field of axon bundles, we compared it to
-recordings from the barn owl auditory brain stem. We adjusted the model
-parameters to match the anatomy and physiology of nucleus laminaris (NL), and
-set the activation statistics to match measured PSTHs in response to
-stimulation by a click sound presented to one ear. We then simulated the
-resulting EFP at varying depths, corresponding to recording depths in the
-experiment. The resulting recordings from experiment and simulation are shown
-in Figure 3.
+recordings from the barn owl auditory brain stem.
+
+We adjusted the model parameters to match the anatomy and physiology of nucleus
+laminaris (NL), and set the activation statistics to match measured PSTHs in
+response to stimulation by a click sound presented to one ear. We then
+simulated the resulting EFP at varying depths, corresponding to recording
+depths in the experiment. The resulting recordings from experiment and
+simulation are shown in Figure 3.
 
 The simulated EFPs showed several characteristics that are also observed in the
 data.  Firstly, the high-frequency component shows a steady increase in latency
