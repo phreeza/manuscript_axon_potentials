@@ -152,7 +152,7 @@ exhibit a doiuble-lobed structure. **E** Response waveforms of the
 low-frequency component. The responses do not reverse their polarity. **F**
 Maximum amplitude of the high-frequency component (red line) follows the
 density of fibers (black histogram).
-](../figs/fig_1.pdf)
+](../figs/fig_2.pdf)
 
 <!--To better understand the relationship between axonal anatomy and this spatial
 structure of the EFP, we plotted the change in density of the bundle, meaning
@@ -225,7 +225,7 @@ exceeds the reach of the high-frequency comonent in both directions. In the
 non-bifurcating case, the decay is the same for both components in the axial
 direction. The scaling behaviours are consistent with the presence of
 a low-frequency dipole-like potential in the bifurcating bundle but not in the
-non-bifurcating bundle.](../figs/fig_2.pdf)
+non-bifurcating bundle.](../figs/fig_3.pdf)
 
 *The barn owl neurophonic as an example that shows these properties.* In order
 to test our model of the extracellular field of axon bundles, we compared it to
@@ -261,7 +261,7 @@ activation in (**C**,**D**). The click stimulus induces a pulse of activity in t
 afferent axon bundle. The low-frequency components (**A** and **C**) show the
 polarity reversal. The high frequency component (**B** and **D**), does not
 show such a reversal, but rather shows a steady increase in phase with
-depth.](../figs/fig_3.pdf)
+depth.](../figs/fig_4.pdf)
 
 *Mechanism underlying the observed properties I.* We begin by looking at the
 response of a single axon tree to a single spike at various locations along the
@@ -606,7 +606,6 @@ With the average current in a single infinite fiber stimulated with $\lambda$, w
 Todos
 =====
 - Code
-    - implement new simplification
     - adapt generic bundle params to be more typical
     - make click psth more generic
     - pandoc figure refs
@@ -621,9 +620,6 @@ Todos
 - Figures
     - New Figure 1
         - better alignment in D
-        - Figures E and F
-          - PSTH
-          - CSD
     - Figure 1
         - lower density of axons
         - Add scalebar for time
@@ -648,6 +644,8 @@ Todos
 
 Done
 ====
+* Code
+    - implement new simplification
 - Figures
     - New Figure 1
         - single axons
@@ -658,6 +656,9 @@ Done
         - single axons
             - multibranch
             - endings and snips
+        - Figures E and F
+          - PSTH
+          - CSD
     - Figure 1
         - version with MUA
 
