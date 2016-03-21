@@ -111,22 +111,22 @@ spikes/second and a standard deviation of 2.8 ms.
 ![Relationship between axon structure and extracellular potential. The top row
 shows simulated action potentials travelling along a single axon with varying
 morphologies, as indicated by the diagram in the left side of each subfigure.
-Action potential propagation direction indicated by the arrow. All waveforms
-recorded at a distance of 150$\mu$m from the axon, and at the depth indicated
-by plot position, spaced by 200$\mu$m. (**A**) An action potential in an
-infinitely long, straight axon. (**B**) Effect of a terminatiing axon. Action
-potential waveform closest to the termination thickened for emphasis. (**C**)
-Effect of a branching axon. The axon branches multiple times in the range of
-200$\mu$m. Thicker waveform at the center of the bifurcation zone. **D**
-Combined effect of bifurcations and terminations. Lower row shows responses of
-a population of 100 randomly branching and termnating axons. Three sample
-morphologies are shown to the left. **E** Extracellular waveform in response
-a spike initiated simultaneously in all axons. Spike initiation time indicated
-by the raster lines at the top. **F** CSD calculated from the waveforms shown
-in E. **G** Response to spontaneous activity superimposed with a pulse of
-hightened spike rate, averaged over 100 trials. Example spike times shown by
-the raster plot at top.**H** CSD calculated from the pulse response in
-G.](../figs/fig_1.pdf){#fig:simpletree}
+The lower row shows responses of a population of 100 randomly branching and
+termnating axons. Three sample morphologies are shown to the left of the lower
+row. Action potential propagation direction indicated by the arrow. All
+waveforms recorded at a distance of 150$\mu$m from the axon, and at the depth
+indicated by plot position, spaced by 200$\mu$m. (**A**) An action potential in
+an infinitely long, straight axon. (**B**) Effect of a terminatiing axon.
+Action potential waveform closest to the termination thickened for emphasis.
+(**C**) Effect of a branching axon. The axon branches multiple times in the
+range of 200$\mu$m. Thicker waveform at the center of the bifurcation zone.
+(**D**) Combined effect of bifurcations and terminations. (**E**) Extracellular
+waveform in response a spike initiated simultaneously in all axons. Spike
+initiation time indicated by the raster lines at the top. (**F**) CSD
+calculated from the waveforms shown in E. (**G**) Response to spontaneous
+activity superimposed with a pulse of hightened spike rate, averaged over 100
+trials. Example spike times shown by the raster plot at top. (**H**) CSD
+calculated from the pulse response in G.](../figs/fig_1.pdf){#fig:simpletree}
 
 To characterize the spatiotemporal dynamics of the evoked EFP, the potential
 was calculated for several locations along the axon trunk. Because we first
