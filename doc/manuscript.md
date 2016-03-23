@@ -112,7 +112,7 @@ spikes/second and a standard deviation of 2.8 ms.
 shows simulated action potentials travelling along a single axon with varying
 morphologies, as indicated by the diagram in the left side of each subfigure.
 The lower row shows responses of a population of 100 randomly branching and
-termnating axons. Three sample morphologies are shown to the left of the lower
+terminating axons. Three sample morphologies are shown to the left of the lower
 row. Action potential propagation direction indicated by the arrow. All
 waveforms recorded at a distance of 150$\mu$m from the axon, and at the depth
 indicated by plot position, spaced by 200$\mu$m. (**A**) An action potential in
@@ -650,8 +650,12 @@ Todos
     - Add more biological motivation for [@fig:distscaling] normalization
 - Figures
     - [@fig:simpletree]
-        - caption
-        - better alignment in D
+        - add input intensity gaussian
+        - use labels E1, E2, E3, F1, F2
+        - switch E2 and E3
+        - more space between panels
+        - add scalebars to each panel
+        - superimpose CSD and EFP?
     - [@fig:bigtree]
         - lower density of axons
         - Add scalebar for time
@@ -660,6 +664,8 @@ Todos
         - add PSTH
         - align zeros in C
         - add contour labels?
+    - [@fig:barnowl]
+        - redo with new data
     - [@fig:distscaling]
         - add diagrams
         - space between B and C
@@ -680,7 +686,8 @@ Done
     - pandoc figure refs
     - implement new simplification
 - Figures
-    - New [@fig:bigtree]
+    - [@fig:simpletree]
+        - caption
         - single axons
             - straight
             - branching
@@ -692,6 +699,7 @@ Done
         - Figures E and F
           - PSTH
           - CSD
+        - better alignment in D
     - [@fig:bigtree]
         - version with MUA
 
