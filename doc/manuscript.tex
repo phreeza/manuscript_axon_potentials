@@ -156,6 +156,58 @@ bundle.
 
 \section{Results}\label{results}
 
+\emph{Effects of axonal morphologies on extracellular action potentials}
+In order to understand the way that common anatomical structures affect
+the extracellular waveform associated with a single action potential, we
+simulated simple axons that showed isolated instances of these features
+in order to inspect their contributions to the EFP. We began by
+simulating an infinitely long axon following a straight line path,
+neither bifurcating nor terminating ({[}fig:simpletree{]}A).
+
+Next we simulated the response of an axon that terminates
+({[}fig:simpletree{]}B). Here the approaching action potential (top
+traces) can be seen to have the same, triphasic shape as in the
+non-branching case. When it approaches the termination, it gradually
+deforms into a biphasic response, with the positive peak preceding the
+negative peak.
+
+The other structure commonly found in axons is a bifurcation. We
+simulated a single axon which bifurcates three times on each branch
+within a distance of 50 \(\mu\)m, leading to a total number of 8 fibers
+leaving the bifurcation zone ({[}fig:simpletree{]}C). The potential near
+this bifurcating axon also has a more biphasic shape. There is a small
+initial peak, but the response is dominated by the second, negative and
+the third, positive peak. This can be understood by comparing the shape
+to the previous example along a non-bifurcating axon: The initial peak
+resembles the non-bifurcating case, because the action potential is
+still mainly within the segments before the bifurcation. As the action
+potential passes the bifurcation, there are now several instances of the
+action potential, and the second and third peak are multiplied in size,
+leading to the more biphasic response. In the case of a single
+bifurcation, this effect is also present, but the amplification of the
+second and third peak relative to the first peak is not as notable as in
+this example.
+
+To understand how bifurcations and terminations interact when they are
+present in the same axon (as they must always be in a real axon), we
+simulated an axon with an identical number of bifurcations as in the
+previous case, but then added terminations to all the fibers 200
+\(\mu\)m after the bifurcation zone ({[}fig:simpletree{]}D). We found
+that this leads to the same biphasic responses observed as observed in
+the cases of the isolated anatomical features, with the triphasic
+response occurring briefly in-between the two features.
+
+A notable point here is that the potential at the bifurcation and
+termination are similar in shape, but opposite in polarity.
+
+\begin{itemize}
+\tightlist
+\item
+  why this is interesting.
+\item
+  why we now move to a bundle
+\end{itemize}
+
 \emph{Axonal projections generate a dipole-like field potential.} To
 understand how axons can generate a dipolar EFP, we simulated a parallel
 fiber bundle that at first runs at constant diameter without
@@ -180,7 +232,7 @@ deviation of 2.8 ms.
 extracellular potential. The top row shows simulated action potentials
 travelling along a single axon with varying morphologies, as indicated
 by the diagram in the left side of each subfigure. The lower row shows
-responses of a population of 100 randomly branching and termnating
+responses of a population of 100 randomly branching and terminating
 axons. Three sample morphologies are shown to the left of the lower row.
 Action potential propagation direction indicated by the arrow. All
 waveforms recorded at a distance of 150\(\mu\)m from the axon, and at
@@ -374,51 +426,9 @@ high frequency component (\textbf{B} and \textbf{D}), does not show such
 a reversal, but rather shows a steady increase in phase with depth.}
 \end{figure}
 
-\emph{Mechanism underlying the observed properties I.} We begin by
-looking at the response of a single axon tree to a single spike at
-various locations along the tree, as shown in Figure 4. This can already
-give us a rough idea about the origin of the observed polarity reversal.
-
-The extracellular response at a recording location along a continuation
-of the axon, i.e.~not close to a bifurcation or termination, is
-triphasic (blue trace in Figure 4B). It has been noted that this shape
-is approximated by the second derivative of the membrane voltage: the
-first positive peak is the initial bend to the rising flank of the
-action potential, the main dip corresponds to the high curvature at the
-peak of the action potential, and the final, positive peak corresponds
-to the bend from hyperpolarization to recovery.
-
-The potential near a bifurcation (red trace in Figure 4B) has a more
-biphasic shape. There is a small initial peak, but the response is
-dominated by the second, negative and the third, positive peak. This can
-be understood by comparing the shape to the previous example along a
-non-bifurcating axon: The initial shape resembles the non-bifurcating
-case, because the action potential is still mainly within the segments
-before the bifurcation. As the action potential passes the bifurcation,
-there are now two instances of the action potential, and the second and
-third peak are doubled in size, leading to the more biphasic response.
-
-The same reasoning can be applied to the case of the biphasic response
-at a termination (green trace in Figure 4B): here there is an
-approaching action potential, leading to an initial positive peak, but
-as the termination is reached, the current flow ceases, and there is
-only a reduced second peak, and the third peak, associated with the
-action potential moving away from the recording location, disappears
-completely.
-
-A notable point here is that the potential at the bifurcation and
-termination are similar in shape, but opposite in polarity. This
-resembles the observed polarity reversal. It is thus not hard to imagine
-that this effect is caused by the response being dominated by
-bifurcations in the early part of NL where the axons branch out, and
-then by terminations in the later part, where terminations are more
-prevalent, with the two canceling out in the middle. We will test this
-intuition in the following by examining the properties of a full bundle
-of axons in a simplified analytical model.
-
-\emph{Mechanism underlying the observed properties II.} In the case of a
-simplified one-dimensional axon bundle, the EFP at a given location may
-be described by the formula
+\emph{A simplified model of axon bundle field potentials} In the case of
+a simplified one-dimensional axon bundle, the EFP at a given location
+may be described by the formula
 \(\Phi(\mathbf{r},t) = \left[\left\{n(z)\cdot i_\lambda(z,t)\right\}\ast w(a,z)\right]_z\)
 (see Methods and appendix). Assuming that the weighting function \(w\)
 tends to 0 for large \(\left|z\right|\), and with the introduction of
@@ -773,9 +783,17 @@ gives us
     \begin{itemize}
     \tightlist
     \item
-      caption
+      add input intensity gaussian
     \item
-      better alignment in D
+      use labels E1, E2, E3, F1, F2
+    \item
+      switch E2 and E3
+    \item
+      more space between panels
+    \item
+      add scalebars to each panel
+    \item
+      superimpose CSD and EFP?
     \end{itemize}
   \item
     Figure~\ref{fig:bigtree}
@@ -796,6 +814,14 @@ gives us
       align zeros in C
     \item
       add contour labels?
+    \end{itemize}
+  \item
+    Figure~\ref{fig:barnowl}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      redo with new data
     \end{itemize}
   \item
     Figure~\ref{fig:distscaling}
@@ -858,10 +884,12 @@ gives us
   \begin{itemize}
   \tightlist
   \item
-    New Figure~\ref{fig:bigtree}
+    Figure~\ref{fig:simpletree}
 
     \begin{itemize}
     \tightlist
+    \item
+      caption
     \item
       single axons
 
@@ -892,6 +920,8 @@ gives us
       PSTH
     \item
       CSD
+    \item
+      better alignment in D
     \end{itemize}
   \item
     Figure~\ref{fig:bigtree}
