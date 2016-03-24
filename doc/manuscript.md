@@ -61,15 +61,16 @@ from the auditory brainstem of the barn owl.
 This discrepancy between theory and experiment raises the open question of how
 axons are able to generate dipolar field potentials.
 
-The aim of this study is to show how dipolar far fields in the EFP of axons can be
-explained by the axons' anatomical structure. In particular, we show that the branchings and terminations of axons in
-their projection area lead to a dipolar EFP structure. Such axon bundles,
-often also called nerves or fascicles, exist throughout the peripheral and
-central nervous system of most animals [@kandel2000principles;
-@Hentschel1999Models; @Nornes1972Temporal; @Goodman1984Cell]. The white matter
-of the mammalian brain can be viewed as an agglomeration of such bundles
-[@Schuz2002Human]. We therefore predict pronounced contributions of nerves or
-fascicles to EFPs, which are neglected in all current models.
+The aim of this study is to show how dipolar far fields in the EFP of axons can
+be explained by the axons' anatomical structure. In particular, we show that
+the branchings and terminations of axons in their projection area lead to
+a dipolar EFP structure. Such axon bundles, often also called nerves or
+fascicles, exist throughout the peripheral and central nervous system of most
+animals [@kandel2000principles; @Hentschel1999Models; @Nornes1972Temporal;
+@Goodman1984Cell]. The white matter of the mammalian brain can be viewed as an
+agglomeration of such bundles [@Schuz2002Human]. We therefore predict
+pronounced contributions of nerves or fascicles to EFPs, which are neglected in
+all current models.
 
 Properties of the EFP due to axonal projections are first investigated by
 a numerical model based on forward simulation [@Holt1999Electrical;
@@ -82,7 +83,6 @@ model of a generic axon bundle.
 
 Results
 ==============
-
 <!-- TODO: To discussion?
 We characterize three principal effects of axon bundle structure on the EFP.
 Firstly, the low-frequency components of the EFP are governed by the densities
@@ -91,6 +91,48 @@ high-frequency components are governed by the local fiber density. Furthermore
 we show that the low-frequency components exceed the high-frequency components
 in spatial reach. In particular, the dipolar low-frequency components exceed
 the reach of the presumed quadrupolar nature of axonal EFPs.-->
+
+*Effects of axonal morphologies on extracellular action potentials*
+In order to understand the way that common anatomical structures affect the
+extracellular waveform associated with a single action potential, we simulated
+simple axons that showed isolated instances of these features in order to
+inspect their contributions to the EFP. We began by simulating an infinitely long axon
+following a straight line path, neither bifurcating nor terminating ([fig:simpletree]A).
+
+Next we simulated the response of an axon that terminates ([fig:simpletree]B).
+Here the approaching action potential (top traces) can be seen to have the
+same, triphasic shape as in the non-branching case. When it approaches the
+termination, it gradually deforms into a biphasic response, with the positive
+peak preceding the negative peak.
+
+The other structure commonly found in axons is a bifurcation. We simulated
+a single axon which bifurcates three times on each branch within a distance of
+50 $\mu$m, leading to a total number of 8 fibers leaving the bifurcation zone
+([fig:simpletree]C). The potential near this bifurcating axon also has a more
+biphasic shape. There is a small initial peak, but the response is dominated by
+the second, negative and the third, positive peak. This can be understood by
+comparing the shape to the previous example along a non-bifurcating axon: The
+initial peak resembles the non-bifurcating case, because the action potential
+is still mainly within the segments before the bifurcation. As the action
+potential passes the bifurcation, there are now several instances of the action
+potential, and the second and third peak are multiplied in size, leading to the
+more biphasic response. In the case of a single bifurcation, this effect is
+also present, but the amplification of the second and third peak relative to
+the first peak is not as notable as in this example.
+
+To understand how bifurcations and terminations interact when they are present
+in the same axon (as they must always be in a real axon), we simulated an axon
+with an identical number of bifurcations as in the previous case, but then
+added terminations to all the fibers 200 $\mu$m after the bifurcation zone
+([fig:simpletree]D). We found that this leads to the same biphasic responses
+observed as observed in the cases of the isolated anatomical features, with the
+triphasic response occurring briefly in-between the two features.
+
+A notable point here is that the potential at the bifurcation and termination
+are similar in shape, but opposite in polarity. 
+
+- why this is interesting.
+- why we now move to a bundle
 
 *Axonal projections generate a dipole-like field potential.* To understand how
 axons can generate a dipolar EFP, we simulated a parallel fiber bundle that at
@@ -106,7 +148,6 @@ relate to any kind of evoked activity in the nervous system, such as a sensory
 stimulation, motor activity or a spontaneous transient increase in population
 spiking activity. We chose a gaussian pulse with an amplitude of 2900
 spikes/second and a standard deviation of 2.8 ms.
-
 
 ![Relationship between axon structure and extracellular potential. The top row
 shows simulated action potentials travelling along a single axon with varying
@@ -294,45 +335,6 @@ polarity reversal. The high frequency component (**B** and **D**), does not
 show such a reversal, but rather shows a steady increase in phase with
 depth.](../figs/fig_4.pdf){#fig:barnowl}
 
-*Mechanism underlying the observed properties I.* We begin by looking at the
-response of a single axon tree to a single spike at various locations along the
-tree, as shown in Figure 4. This can already give us a rough idea about
-the origin of the observed polarity reversal.
-
-The extracellular response at a recording location along a continuation of the
-axon, i.e.\ not close to a bifurcation or termination, is triphasic (blue trace in
-Figure 4B). It has been noted that this shape is
-approximated by the second derivative of the membrane voltage: the first
-positive peak is the initial bend to the rising flank of the action potential,
-the main dip corresponds to the high curvature at the peak of the action
-potential, and the final, positive peak corresponds to the bend from
-hyperpolarization to recovery.
-
-The potential near a bifurcation (red trace in Figure 4B)
-has a more biphasic shape. There is a small initial peak, but the response is
-dominated by the second, negative and the third, positive peak. This can be
-understood by comparing the shape to the previous example along a
-non-bifurcating axon: The initial shape resembles the non-bifurcating case,
-because the action potential is still mainly within the segments before the
-bifurcation. As the action potential passes the bifurcation, there are now two
-instances of the action potential, and the second and third peak are doubled in
-size, leading to the more biphasic response.
-
-The same reasoning can be applied to the case of the biphasic response at a
-termination (green trace in Figure 4B): here there is an
-approaching action potential, leading to an initial positive peak, but as the
-termination is reached, the current flow ceases, and there is only a reduced
-second peak, and the third peak, associated with the action potential moving
-away from the recording location, disappears completely.
-
-A notable point here is that the potential at the bifurcation and termination
-are similar in shape, but opposite in polarity. This resembles the observed
-polarity reversal. It is thus not hard to imagine that this effect is caused by
-the response being dominated by bifurcations in the early part of NL where the
-axons branch out, and then by terminations in the later part, where
-terminations are more prevalent, with the two canceling out in the middle. We
-will test this intuition in the following by examining the properties of a full
-bundle of axons in a simplified analytical model.
 <!--
 ![The dipolar behaviour can be understood by examining individual action
 potentials on a single axon tree. Comparing the low frequency owl data (**A**)
@@ -341,7 +343,7 @@ behaviour. In particular, the potential at a termination and that at a
 bifurcation (red and green curves in **B**) are approximately
 inverted.](../figs/mockups/fig4.pdf) -->
 
-*Mechanism underlying the observed properties II.* In the case of a simplified
+*A simplified model of axon bundle field potentials* In the case of a simplified
 one-dimensional axon bundle, the EFP at a given location may be described by
 the formula $\Phi(\mathbf{r},t) = \left[\left\{n(z)\cdot
 i_\lambda(z,t)\right\}\ast w(a,z)\right]_z$ (see Methods and appendix).
