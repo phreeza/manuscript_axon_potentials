@@ -97,9 +97,9 @@ In order to understand the way that common anatomical structures affect the
 extracellular waveform associated with a single action potential, we simulated
 simple axons that showed isolated instances of these features in order to
 inspect their contributions to the EFP. We began by simulating an infinitely long axon
-following a straight line path, neither bifurcating nor terminating ([fig:simpletree]A).
+following a straight line path, neither bifurcating nor terminating ([@fig:simpletree]A).
 
-Next we simulated the response of an axon that terminates ([fig:simpletree]B).
+Next we simulated the response of an axon that terminates ([@fig:simpletree]B).
 Here the approaching action potential (top traces) can be seen to have the
 same, triphasic shape as in the non-branching case. When it approaches the
 termination, it gradually deforms into a biphasic response, with the positive
@@ -108,7 +108,7 @@ peak preceding the negative peak.
 The other structure commonly found in axons is a bifurcation. We simulated
 a single axon which bifurcates three times on each branch within a distance of
 50 $\mu$m, leading to a total number of 8 fibers leaving the bifurcation zone
-([fig:simpletree]C). The potential near this bifurcating axon also has a more
+([@fig:simpletree]C). The potential near this bifurcating axon also has a more
 biphasic shape. There is a small initial peak, but the response is dominated by
 the second, negative and the third, positive peak. This can be understood by
 comparing the shape to the previous example along a non-bifurcating axon: The
@@ -124,7 +124,7 @@ To understand how bifurcations and terminations interact when they are present
 in the same axon (as they must always be in a real axon), we simulated an axon
 with an identical number of bifurcations as in the previous case, but then
 added terminations to all the fibers 200 $\mu$m after the bifurcation zone
-([fig:simpletree]D). We found that this leads to the same biphasic responses
+([@fig:simpletree]D). We found that this leads to the same biphasic responses
 observed as observed in the cases of the isolated anatomical features, with the
 triphasic response occurring briefly in-between the two features.
 
@@ -152,22 +152,26 @@ spikes/second and a standard deviation of 2.8 ms.
 ![Relationship between axon structure and extracellular potential. The top row
 shows simulated action potentials travelling along a single axon with varying
 morphologies, as indicated by the diagram in the left side of each subfigure.
-The lower row shows responses of a population of 100 randomly branching and
-terminating axons. Three sample morphologies are shown to the left of the lower
-row. Action potential propagation direction indicated by the arrow. All
-waveforms recorded at a distance of 150$\mu$m from the axon, and at the depth
-indicated by plot position, spaced by 200$\mu$m. (**A**) An action potential in
-an infinitely long, straight axon. (**B**) Effect of a terminatiing axon.
-Action potential waveform closest to the termination thickened for emphasis.
-(**C**) Effect of a branching axon. The axon branches multiple times in the
-range of 200$\mu$m. Thicker waveform at the center of the bifurcation zone.
-(**D**) Combined effect of bifurcations and terminations. (**E**) Extracellular
-waveform in response a spike initiated simultaneously in all axons. Spike
-initiation time indicated by the raster lines at the top. (**F**) CSD
-calculated from the waveforms shown in E. (**G**) Response to spontaneous
-activity superimposed with a pulse of hightened spike rate, averaged over 100
-trials. Example spike times shown by the raster plot at top. (**H**) CSD
-calculated from the pulse response in G.](../figs/fig_1.pdf){#fig:simpletree}
+Action potential propagation direction indicated by the arrow. All waveforms
+recorded at a distance of 150$\mu$m from the axon, and at the depth indicated
+by plot position, spaced by 200$\mu$m. (**A**) An action potential in an
+infinitely long, straight axon. (**B**) Effect of a terminatiing axon.  Action
+potential waveform closest to the termination thickened for emphasis. Scale of
+A and B is indicated by the scalebar in their middle.  (**C**) Effect of a
+branching axon. The axon branches multiple times in the range of 200$\mu$m.
+Thicker waveform at the center of the bifurcation zone.  (**D**) Combined
+effect of bifurcations and terminations. Scale for C and D is reduced by a
+factor of 8, indicated by scalebar in their middle. The lower row shows
+responses of a population of 100 randomly branching and terminating axons.
+(**E**) Three sample morphologies are shown to the left of the lower row.
+(**F**) Extracellular waveform in response a spike initiated simultaneously in
+all axons. Spike initiation time indicated by the raster lines at the top.
+(**G**) CSD calculated from the waveforms shown in E. (**H**) Response to
+spontaneous activity superimposed with a pulse of hightened spike rate. Gray
+lines show activity averaged over 40 trials, while the black lines show the
+limit of ininitely many trials. Example spike times shown by the raster plot at
+top.  (**I**) CSD calculated from the pulse response in
+G.](../figs/fig_1.pdf){#fig:simpletree}
 
 To characterize the spatiotemporal dynamics of the evoked EFP, the potential
 was calculated for several locations along the axon trunk. Because we first
@@ -239,50 +243,54 @@ amplitude. In the middle of the projection zone, the number of bifurcations and
 terminations cancels out.  Correspondingly, the low-frequency component
 amplitude reaches a local minimum.  As the end of the projection zone
 approaches, the terminations outweigh the bifurcations, and the amplitude
-increases, but the polarity is reversed (red box in [@fig:bigtree]B). As the axon
-bundle ends, there are no longer any bifurcations or terminations, and the
+increases, but the polarity is reversed (red box in [@fig:bigtree]B). As the
+axon bundle ends, there are no longer any bifurcations or terminations, and the
 amplitude decays.
 
 The same distribution of maximum amplitudes for the high-frequency component,
-shown in [@fig:bigtree]D, did not show the same lobed shape. Instead it decayed much
-faster with distance in both axial and radial direction. This was also
+shown in [@fig:bigtree]D, did not show the same lobed shape. Instead it decayed
+much faster with distance in both axial and radial direction. This was also
 reflected in the waveforms (Fig 1E). There is an increase in amplitude due to
 the firing rate pulse at locations close to the nerve bundle, but at locations
 further away from the trunk it is no longer distinguishable from the background
 activity.-->
 
 To understand the contributions related to individual spikes, we next turned
-our attention to the high-frequency range. We filtered the EFP responses with a
-high-pass filter, using the same cut-off frequency of 1kHz as before. The
+our attention to the high-frequency range. We filtered the EFP responses with
+a high-pass filter, using the same cut-off frequency of 1kHz as before. The
 maximum amplitudes for this frequency band did not show a double-lobe, but
-rather appeared like an ellipsoid centered at the projection zone ([@fig:bigtree]D).
-The waveforms are more disparate across recording locations, suggesting a more
-local nature. There is no visible polarity reversal ([@fig:bigtree]E). 
+rather appeared like an ellipsoid centered at the projection zone
+([@fig:bigtree]D). The waveforms are more disparate across recording locations,
+suggesting a more local nature. There is no visible polarity reversal
+([@fig:bigtree]E). 
 
-The high-frequency component changes its amplitude in the longitudinal direction in
-accordance to the local fiber density ([@fig:bigtree]F). It has an approximately
-constant amplitude along the nerve trunk and then increases in amplitude as the
-fiber density is increased by bifurcations. As the fibers terminate and fiber
-density decreases, so does the amplitude of the high-frequency component.
+The high-frequency component changes its amplitude in the longitudinal
+direction in accordance to the local fiber density ([@fig:bigtree]F). It has an
+approximately constant amplitude along the nerve trunk and then increases in
+amplitude as the fiber density is increased by bifurcations. As the fibers
+terminate and fiber density decreases, so does the amplitude of the
+high-frequency component.
 
 We have thus shown a qualitatively different behaviour in the low- and
 high-frequency components of the EFP. Both appear to be related to anatomy,
 though each in a different way.  Together, these relationships suggest that the
 particular branching and terminating structure of the axon bundle gives rise to
-the dipolar field potential. Because dipolar fields are associated with a
-longer spatial reach than the quadrupolar fields typically associated with
+the dipolar field potential. Because dipolar fields are associated with
+a longer spatial reach than the quadrupolar fields typically associated with
 axonal spikes, we decided to investigate the effect that axon structure has on
-the spatial reach of the frequency components ([@fig:distscaling]). To do this we
-performed a further simulation of an axon bundle, this time omitting the
+the spatial reach of the frequency components ([@fig:distscaling]). To do this
+we performed a further simulation of an axon bundle, this time omitting the
 bifurcations, and letting the fibers terminate directly. In axial direction,
 the low-frequency component has a further reach than the high frequency
-component in the bifurcating case ([@fig:distscaling]A), but not in the non-bifurcating
-case ([@fig:distscaling]C).  In the radial direction, the situation is different: the
-bifurcating ([@fig:distscaling]B) and non-bifurcating ([@fig:distscaling]D) case both show a faster
-decay of the high-frequency component than of the low-frequency component. To
-assure that the effect was due to the bifurcations themselves and not due to
-the fanned out structure of the bifurcating bundle seen in [@fig:distscaling]A and [@fig:distscaling]D,
-we here changed the layout of both bundles to have constant widths.
+component in the bifurcating case ([@fig:distscaling]A), but not in the
+non-bifurcating case ([@fig:distscaling]C).  In the radial direction, the
+situation is different: the bifurcating ([@fig:distscaling]B) and
+non-bifurcating ([@fig:distscaling]D) case both show a faster decay of the
+high-frequency component than of the low-frequency component. To assure that
+the effect was due to the bifurcations themselves and not due to the fanned out
+structure of the bifurcating bundle seen in [@fig:distscaling]A and
+[@fig:distscaling]D, we here changed the layout of both bundles to have
+constant widths.
 
 ![Low-frequency component of the axon bundle EFP exceeds high-frequency
 component in reach, modulated by axon structure. All plots show the scaling of
@@ -323,8 +331,6 @@ this case has been modeled based on the assumption that the postsynaptic NL and
 MSO dendrites with their bipolar morphology have a dipolar EFP response
 [@Laughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
 morphology is largely absent [@carr90], making dendritic sources unlikely.
-
-
 
 ![Data from the barn owl shows the expected behaviour predicted by the model.
 (**A**,**B**) shows data from the barn owls nucleus laminaris in response to an
