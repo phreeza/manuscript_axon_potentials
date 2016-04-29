@@ -43,17 +43,17 @@ tex:	clean $(TEX)
 docx:	clean $(DOCX)
 
 %.docx:	%.md
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w docx -S --filter pandoc-crossref/.cabal-sandbox/bin/pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w docx -S --filter pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
 %.html:	%.md
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S  --filter pandoc-crossref/.cabal-sandbox/bin/pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S  --filter pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
 %.tex:	%.md
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w latex -s -S --filter pandoc-crossref/.cabal-sandbox/bin/pandoc-crossref --latex-engine=pdflatex --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w latex -s -S --filter pandoc-crossref --latex-engine=pdflatex --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
 
 %.pdf:	%.md
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -s -S --latex-engine=pdflatex  --filter pandoc-crossref/.cabal-sandbox/bin/pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -s -S --latex-engine=pdflatex  --filter pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
 clean:
 	rm -f *.html *.pdf *.tex *.docx

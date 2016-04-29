@@ -256,20 +256,17 @@ further away from the trunk it is no longer distinguishable from the background
 activity.-->
 
 To understand the contributions related to individual spikes, we next turned
-our attention to the high-frequency range. We filtered the EFP responses with
-a high-pass filter, using the same cut-off frequency of 1kHz as before. The
-maximum amplitudes for this frequency band did not show a double-lobe, but
-rather appeared like an ellipsoid centered at the projection zone
-([@fig:bigtree]D). The waveforms are more disparate across recording locations,
-suggesting a more local nature. There is no visible polarity reversal
-([@fig:bigtree]E). 
-
+our attention to the high-frequency range. We calculated the Multi-Unit
+Activity (MUA) of the response (see Methods), which reflects the high-frequency
+(>1kHz) components of the response, and is thought to reflect spiking activity
+in extracellular recordings. The MUA did not show a double-lobe, but rather
+appeared like an ellipsoid centered at the projection zone ([@fig:bigtree]D).
+ 
 The high-frequency component changes its amplitude in the longitudinal
 direction in accordance to the local fiber density ([@fig:bigtree]F). It has an
 approximately constant amplitude along the nerve trunk and then increases in
 amplitude as the fiber density is increased by bifurcations. As the fibers
-terminate and fiber density decreases, so does the amplitude of the
-high-frequency component.
+terminate and fiber density decreases, so does the amplitude of the MUA.
 
 We have thus shown a qualitatively different behaviour in the low- and
 high-frequency components of the EFP. Both appear to be related to anatomy,
@@ -340,104 +337,6 @@ afferent axon bundle. The low-frequency components (**A** and **C**) show the
 polarity reversal. The high frequency component (**B** and **D**), does not
 show such a reversal, but rather shows a steady increase in phase with
 depth.](../figs/fig_4.pdf){#fig:barnowl}
-
-<!--
-![The dipolar behaviour can be understood by examining individual action
-potentials on a single axon tree. Comparing the low frequency owl data (**A**)
-to a single axon and action potential in model (**B**) shows a similar
-behaviour. In particular, the potential at a termination and that at a
-bifurcation (red and green curves in **B**) are approximately
-inverted.](../figs/mockups/fig4.pdf) -->
-
-*A simplified model of axon bundle field potentials* In the case of a simplified
-one-dimensional axon bundle, the EFP at a given location may be described by
-the formula $\Phi(\mathbf{r},t) = \left[\left\{n(z)\cdot
-i_\lambda(z,t)\right\}\ast w(a,z)\right]_z$ (see Methods and appendix).
-Assuming that the weighting function $w$ tends to 0 for large $\left|z\right|$,
-and with the introduction of the single axon current integral
-$I_\lambda(z,t)=\int_{-\infty}^zi_\infty(z',t)dz'$, the equation can be split
-(for a derivation, see appendix) into two components:
-
-\begin{align}
-  \label{eqn:splitpot} 
-  \Phi(\mathbf{r},t) = &\left[\left\{n(z)\cdot I_\lambda(z,t)\right\}\ast w'(\rho,z)\right]_z \\
-  & - \left[\left\{n'(z)\cdot I_\lambda(z,t)\right\}\ast w(\rho,z)\right]_z 
-\end{align}
-
-In the first component the single axon current integral $I_\lambda(z,t)$ is
-multiplied by the local density of the fibers $n$, while the weighting function
-is replaced by its spatial derivative $w'$. In the second component,
-$I_\lambda$ is multiplied by the derivative of the density $n'$, but here the
-weighting function $w$ is unchanged. The functions $w$ and $w'$ are shown in
-the time and frequency domain in Figure 4.
-
-Further inspection of the two components shows an intriguing similarity to the
-properties of the response observed in the previous sections. The first
-component is high-pass filtered, and is related to the fiber density, just like
-'noise' component in [@fig:bigtree] and the high-frequency component in the barn owl
-data and model. The second component is low-pass filtered, and related to the
-derivative of the fiber density, just like the firing rate pulse related
-deflection in [@fig:bigtree], and the low-frequency component in the barn owl.
-
-<!--The origin of the distinct components will become even clearer when considering
-a minimal example of a fiber density distribution in the shape of a piecewise
-constant function:
-
-\begin{equation}
-  n(z) = \left\{
-     \begin{array}{ll}
-       n_0 & \textrm{for } z < z_0\\
-       n_1 & \textrm{for } z_0 < z < z_1 \\
-       0   & \textrm{for } z_1 < z
-     \end{array}
-   \right.  
-  \label{eqn:piecewise-density}
-\end{equation}
-
-In this case, the field potential can be approximated as:
-
-- this may be wrong, double check
-
-\begin{align}
-  \label{eqn:minimalpot} 
-  \Phi(\mathbf{r},t) \approx \, & - n(z)\left[w'(\rho,z)\ast I_\lambda(z,t)\right]_z \\ 
-  & + (n_1-n_0)I_\lambda(z_0,t)w(\rho,z-z_0) \\  
-  & - n_1 I_\lambda(z_1,t)w(\rho,z-z_1)
-\end{align}
-
-The first component can be viewed as a filtered version of $I_\lambda$ for an
-infinite axon bundle. Due to the constant propagation velocity, the filtering
-in space can be seen as an equivalent filter in time. In this case
-the filter is $w'$, which is an antisymmetric function, and as such a high-pass
-or band-pass filter, and the frequency response tends to zero for low
-frequencies (Figure 5B).  Thus, this component contributes a local (meaning
-depending on recording location) version of the signal, with the low
-frequencies removed.
-
-The timecourse of the second and third component does not depend on $I_\lambda$
-at the recording location $z$, but rather at the locations of the bifurcations
-and terminations, $z_0$ and $z_1$, and the amplitudes are attenuated according
-to $w$ by the distance between these points and the recording location.
-
-If the changes in the membrane currents are slow compared to $(z_1-z_0)/v$, we
-can conclude that $I_\lambda(z_0,t) \approx I_\lambda(z_1,t)$, and the second
-and third component will cancel each other out at a point $z_c$ that fulfills
-$(n_1-n_0)w(\rho,z_c-z_0) = n_1 w(\rho,z_c-z_1)$.
--->
-
-![Analytical model of the axon bundle potential explains the effects observed
-in the numerical model and example data. (**A**) shows the behaviour of a
-simplified fiber bundle with a piecewise constant fiber density (**Aa**). The
-high-frequency component (**Ab**) shows no polarity reversal, while the
-low-frequency component (**Ac**) does, as expected from the data and
-modeling. This can be understood by decomposing the signal into two
-components. The first component is governed by the bifurcation and termination
-density, and is filtered by the regular weighting function (**Ba**), which acts
-as a low-pass filter (**Bb**). The second component is governed by the
-fiber density, and is filtered by the derivative of the weighting function
-(**Bc**), which acts as a high- or band-pass filter
-(**Bd**).](../figs/mockups/fig5.pdf){#fig:anamodel}
-
 
 Discussion
 ==============
