@@ -54,6 +54,7 @@ axonal responses, the EFP often has a dipolar structure. For example,
 recorded from the vicinity of cerebellar Purkinje cell axons.
 
 - find more examples in literature
+    - Swadlow
 
 In the results section we will present a further new example of such a field potential
 from the auditory brainstem of the barn owl.
@@ -155,7 +156,7 @@ morphologies, as indicated by the diagram in the left side of each subfigure.
 Action potential propagation direction indicated by the arrow. All waveforms
 recorded at a distance of 150$\mu$m from the axon, and at the depth indicated
 by plot position, spaced by 200$\mu$m. (**A**) An action potential in an
-infinitely long, straight axon. (**B**) Effect of a terminatiing axon.  Action
+infinitely long, straight axon. (**B**) Effect of a terminating axon.  Action
 potential waveform closest to the termination thickened for emphasis. Scale of
 A and B is indicated by the scalebar in their middle.  (**C**) Effect of a
 branching axon. The axon branches multiple times in the range of 200$\mu$m.
@@ -163,15 +164,12 @@ Thicker waveform at the center of the bifurcation zone.  (**D**) Combined
 effect of bifurcations and terminations. Scale for C and D is reduced by a
 factor of 8, indicated by scalebar in their middle. The lower row shows
 responses of a population of 100 randomly branching and terminating axons.
-(**E**) Three sample morphologies are shown to the left of the lower row.
-(**F**) Extracellular waveform in response a spike initiated simultaneously in
-all axons. Spike initiation time indicated by the raster lines at the top.
-(**G**) CSD calculated from the waveforms shown in E. (**H**) Response to
-spontaneous activity superimposed with a pulse of hightened spike rate. Gray
-lines show activity averaged over 40 trials, while the black lines show the
-limit of ininitely many trials. Example spike times shown by the raster plot at
-top.  (**I**) CSD calculated from the pulse response in
-G.](../figs/fig_1.pdf){#fig:simpletree}
+(**E**) Response in a population of randomized morphologies, three of which
+are shown schematically. Activity consists of spontaneous background activity
+superimposed with a pulse of heightened spike rate. Spike rate and example spike
+times for the three morphologies are shown at the top. Gray lines show activity
+averaged over 40 trials, while the black lines show the limit of infinitely many
+trials.](../figs/fig_1_nocsd.pdf){#fig:simpletree}
 
 To characterize the spatiotemporal dynamics of the evoked EFP, the potential
 was calculated for several locations along the axon trunk. Because we first
