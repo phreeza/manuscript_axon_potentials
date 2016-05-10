@@ -393,12 +393,12 @@ calculated the extracellular fields. The procedure for this is described in
 detail by @Gold2006Origin, among others. Briefly, the extracellular medium is
 assumed to be a homogeneous volume conductor with conductivity $\sigma_e$, and a quasi-static approximation
 of the electrical field potential $\phi$ is made. The extracellular potential
-due to a current distribution $i(\mathbf{r},t)$ is then governed by the
-equation $\Delta \phi = \frac{1}{\sigma_e} i(\mathbf{r},t)$, with $\Delta$
-denoting the Laplace operator. If the currents $i$ are constrained to a volume
+due to a current distribution $I(\mathbf{r},t)$ is then governed by the
+equation $\Delta \phi = \frac{1}{\sigma_e} I(\mathbf{r},t)$, with $\Delta$
+denoting the Laplace operator. If the currents $I$ are constrained to a volume
 $V$, this equation has the solution:
 \begin{equation}
-  \phi(\mathbf{r},t)=\frac{1}{4\pi\sigma_{e}}\int_{V}\frac{i(\mathbf{r}',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'
+  \phi(\mathbf{r},t)=\frac{1}{4\pi\sigma_{e}}\int_{V}\frac{I(\mathbf{r}',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'
   \label{eqn:basic}
 \end{equation}
 Since the currents though the myelinated segments were negligible, and the
@@ -409,42 +409,45 @@ Simplified axon bundle model
 ----------------------------
 
 \label{sec:efpresp}
-
-$$\frac{dV}{dx} = \frac{1}{v}\frac{dV}{dt}$$
-$$I(z,t) = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)$$
-$$I(z,t) = \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)$$
-
-$$\tilde{I}(z,\omega) = i\frac{dn}{dz}(z)\cdot\frac{\omega}{v}\tilde{V}(z,\omega)-n(z)\cdot\frac{\omega^2}{v^2}\tilde{V}(z,\omega)$$
-$$\left|\tilde{I}(z,\omega)\right| = \sqrt{\left(\frac{dn}{dz}(z)\right)^2+\left(n(z)\cdot\frac{\omega^2}{v^2}\right)^2}\cdot\frac{\omega}{v}\left|\tilde{V}(z,\omega)\right|$$
-
-
 We define the spatial dimension in cylindrical coordinates
 $\mathbf{r}=(\rho,\varphi,z)$. We further define $\hat{\mathbf{e}}_{z}$ as the
 unit vector in $z$ direction, and $\hat{\mathbf{e}}_{\rho}$ as an arbitrary
 unit vector perpendicular to the $z$ direction.
 
-Let us first consider a simple model axon that extends infinitely in $z$
-direction and lays at 0 in the remaining coordinates. Furthermore, we consider
-a single action potential propagating along this axon. This axon then has a
-non-zero current density only at $\rho=0$, which we denote
-$i_{\text{spike}}(z,t)$, meaning that in this case
-$i(\mathbf{r},t)=\delta(\rho)i_{\text{spike}}(z,t)$. Applying this to equation
-\ref{eqn:basic}, corresponding response $\Phi_{\text{spike}}(\mathbf{r},t)$ of
-an action potential propagating through such a line-axon is then 
+Let us consider a simple model axon bundle that extends infinitely in $z$
+direction and lays at 0 in the remaining coordinates. The bundle has a variable
+number of fibers along the $z$ axis, denoted by $n(z)$. We assume the axons to
+be perfect transmission lines, meaning that the action potential acts like a
+travelling wave with velocity $v$ along the axon. This means that the membrane
+potential $V$ obeys the following identity at any point:
 
-\begin{align} \Phi_{\text{spike}}(\mathbf{r},t) &
-=\frac{1}{4\pi\sigma_{e}}\int_{V}\frac{\delta(\rho')I_{\text{spike}}(z',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'\label{eq:halfline}\\
+$$\frac{dV}{dz} = \frac{1}{v}\frac{dV}{dt}$$
+
+In particular, we neglect any delays and distortions which can be induced when
+an axon branches or terminates. From a given distribution of membrane
+potentials $V$ we can then derive the membrane currents flowing at a given
+location:
+\begin{align}
+I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\\
+&= \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)
+\end{align}
+
+Applying this membrane current to equation \ref{eqn:basic}, the corresponding
+extracellular field potential $\Phi(\mathbf{r},t)$ of a given $V$ propagating
+through such an axon bundle is then 
+
+\begin{align} \Phi(\mathbf{r},t) &
+=\frac{1}{4\pi\sigma_{e}}\int_{V}\frac{\delta(\rho')I(z',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'\label{eq:halfline}\\
 &
-=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I_{\text{spike}}(z',t)}{|\mathbf{r}-z'\hat{\mathbf{e}}_{z}|}\textrm{d}z'
-\end{align} We will call this response a spike kernel because it will take the
-role of an integral kernel in the following.
+=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{|\mathbf{r}-z'\hat{\mathbf{e}}_{z}|}\textrm{d}z'
+\end{align} 
 
-Due to the rotational symmetry, the kernel at a distance $\rho$ from the axon,
+Due to the rotational symmetry, the kernel at a distance $\rho$ from the axon bundle,
 regardless of $\varphi$, can then be described by \begin{align}
-\label{eqn:infkern} \Phi_{\text{spike}}(\mathbf{r},t) &
-=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I_{\text{spike}}(z',t)}{|(z-z')\hat{\mathbf{e}}_{z}
+\label{eqn:infkern} \Phi(\mathbf{r},t) &
+=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{|(z-z')\hat{\mathbf{e}}_{z}
 + \rho\hat{\mathbf{e}}_{\rho}|}\textrm{d}z' \\ &
-=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I_{\text{spike}}(z',t)}{\sqrt{(z-z')^2
+=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{\sqrt{(z-z')^2
 + \rho^2}}\textrm{d}z' \end{align}
 
 Equation \ref{eqn:infkern} has the form of a convolution with a weighting
@@ -454,11 +457,19 @@ function $w$: \begin{equation} w(\rho,z) =
 
 The convolution can then be written as:
 
-\begin{equation} \Phi_{\text{spike}}(\mathbf{r},t) =
-\left[I_{\text{spike}}(z,t)\ast w(\rho,z)\right]_z \end{equation}
+\begin{equation} \Phi(\mathbf{r},t) =
+\left[I(z,t)\ast w(\rho,z)\right]_z \end{equation}
 
 with the operator $\left[\cdot\ast\cdot\right]_z$ denoting the convolution with
 respect to the variable $z$.
+
+* Show how a dipole emerges in simple case
+* Flesh out frequency response
+* Can the inverse problem be solved ($v$,$n$,$V$)?
+
+$$\tilde{I}(z,\omega) = i\frac{dn}{dz}(z)\cdot\frac{\omega}{v}\tilde{V}(z,\omega)-n(z)\cdot\frac{\omega^2}{v^2}\tilde{V}(z,\omega)$$
+$$\left|\tilde{I}(z,\omega)\right| = \sqrt{\left(\frac{dn}{dz}(z)\right)^2+\left(n(z)\cdot\frac{\omega}{v}\right)^2}\cdot\frac{\omega}{v}\left|\tilde{V}(z,\omega)\right|$$
+
 
 Todos
 =====
