@@ -53,8 +53,12 @@ axonal responses, the EFP often has a dipolar structure. For example,
 @Blot2014Ultrarapid report an EFP with the characteristic dipolar structure
 recorded from the vicinity of cerebellar Purkinje cell axons.
 
-- find more examples in literature
-    - Swadlow
+@Swadlow2002Activation showed the field potentials due to single
+thalamocortical afferents in the rabbit somatosensory cortex. Here the axonal
+EFP was distinguished from the synaptic contribution by a difference in timing
+and the invariance of the amplitude under different interspike intervals. In
+this study the axonal part of the EFP also showed a polarity reversal as
+associated with a dipolar source in several of the examples shown.
 
 In the results section we will present a further new example of such a field potential
 from the auditory brainstem of the barn owl.
@@ -122,18 +126,17 @@ also present, but the amplification of the second and third peak relative to
 the first peak is not as notable as in this example.
 
 To understand how bifurcations and terminations interact when they are present
-in the same axon (as they must always be in a real axon), we simulated an axon
-with an identical number of bifurcations as in the previous case, but then
-added terminations to all the fibers 200 $\mu$m after the bifurcation zone
-([@fig:simpletree]D). We found that this leads to the same biphasic responses
-observed as observed in the cases of the isolated anatomical features, with the
-triphasic response occurring briefly in-between the two features.
+in the same axon, we simulated an axon with an identical number of bifurcations
+as in the previous case, but then added terminations to all the fibers 200
+$\mu$m after the bifurcation zone ([@fig:simpletree]D). We found that this
+leads to the same biphasic responses observed as observed in the cases of the
+isolated anatomical features, with the triphasic response occurring briefly
+in-between the two features.
 
 A notable point here is that the potential at the bifurcation and termination
-are similar in shape, but opposite in polarity. 
-
-- why this is interesting.
-- why we now move to a bundle
+are similar in shape, but opposite in polarity. This is similar to the polarity
+reversal associated with a dipole observed in experimental studies
+(@Swadlow2002Activation; @Blot2014Ultrarapid; this study).
 
 *Axonal projections generate a dipole-like field potential.* To understand how
 axons can generate a dipolar EFP, we simulated a parallel fiber bundle that at
@@ -191,24 +194,27 @@ potential.
 
 The point of the polarity reversal coincides roughly with the middle of the
 projection zone. This means that the absolute value of the response amplitude
-reaches a local minimum just when the number of axonal fibers reaches
-a maximum. To better understand how anatomical features and response amplitude
+reaches a local minimum just when the number of axonal fibers reaches a
+maximum. To better understand how anatomical features and response amplitude
 are related, we compared the signed maximum value (meaning the *signed* value
-corresponding to the maximum *absolute* amplitude) of the EFP  with the
-difference in the density of branchings and terminations ([@fig:bigtree]C).
+corresponding to the maximum *absolute* amplitude) of the EFP (red line in
+[@fig:bigtree]C) with the difference in the density of branchings and
+terminations (black histogram in [@fig:bigtree]C).
 
 Along the nerve trunk the fiber density is constant. As the axon bundle reaches
 its projection zone, the number of bifurcations increases. In the middle of the
 projection zone, the number of bifurcations and terminations cancels out. At
-the same depth, the amplitude crosses zero.  As the end of the projection zone
-approaches, the terminations outweigh the bifurcations. As the axon bundle
-ends, there are no longer any bifurcations or terminations, and the density
-decays toward zero.
+the same depth, the amplitude of the low-frequency component crosses zero.  As
+the end of the projection zone approaches, the terminations outweigh the
+bifurcations. As the axon bundle ends, there are no longer any bifurcations or
+terminations, and the density decays toward zero. Overall, the amplitude of the
+maximum response (red trace) follows the distribution of branchings and
+terminations (black histogram). 
 
-- Compare B and C
-
-Interestingly, the amplitude of the maximum response (red trace) follows the
-distribution of branchings and terminations (black histogram). 
+The progression of amplitudes in the low-frequency components seen in
+[@fig:bigtree]C is also visible in [@fig:bigtree]B, most clearly in the first
+column. The polarity reversal in the red box in [@fig:bigtree]B corresponds to
+the crossing of zero amplitude in figure [@fig:bigtree]C.
 
 ![Axonal projections generate a dipole-like extracellular field potential (EFP)
 when stimulated with  a pulse of activity. **A** Modeled axon bundle in black,
@@ -259,12 +265,19 @@ Activity (MUA) of the response (see Methods), which reflects the high-frequency
 (>1kHz) components of the response, and is thought to reflect spiking activity
 in extracellular recordings. The MUA did not show a double-lobe, but rather
 appeared like an ellipsoid centered at the projection zone ([@fig:bigtree]D).
- 
-The high-frequency component changes its amplitude in the longitudinal
-direction in accordance to the local fiber density ([@fig:bigtree]F). It has an
-approximately constant amplitude along the nerve trunk and then increases in
-amplitude as the fiber density is increased by bifurcations. As the fibers
-terminate and fiber density decreases, so does the amplitude of the MUA.
+
+The waveform of the MUA response was not modulated heavily in space, with the
+exception of the scaling of the amplitude ([@fig:bigtree]E). The amplitude
+decays with radial distance from the trunk. The amplitude reaches its maximum
+at the middle of the fiber bundle.
+
+The longitudinal behaviour is further examined in [@fig:bigtree]F. The
+amplitude of the MUA component (red trace) changes its amplitude in the
+longitudinal direction in accordance to the local fiber density (black
+histogram). It has an approximately constant amplitude along the nerve trunk
+and then increases in amplitude as the fiber density is increased by
+bifurcations. As the fibers terminate and fiber density decreases, so does the
+amplitude of the MUA.
 
 We have thus shown a qualitatively different behaviour in the low- and
 high-frequency components of the EFP. Both appear to be related to anatomy,
