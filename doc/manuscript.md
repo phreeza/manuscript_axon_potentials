@@ -86,14 +86,6 @@ model of a generic axon bundle.
 
 Results
 ==============
-<!-- TODO: To discussion?
-We characterize three principal effects of axon bundle structure on the EFP.
-Firstly, the low-frequency components of the EFP are governed by the densities
-of bifurcations and terminations and can have a dipolar structure. Secondly, the
-high-frequency components are governed by the local fiber density. Furthermore
-we show that the low-frequency components exceed the high-frequency components
-in spatial reach. In particular, the dipolar low-frequency components exceed
-the reach of the presumed quadrupolar nature of axonal EFPs.-->
 
 *Effects of axonal morphologies on extracellular action potentials*
 In order to understand the way that common anatomical structures affect the
@@ -363,12 +355,34 @@ depth.](../figs/fig_4.pdf){#fig:barnowl}
 
 Discussion
 ==============
+Based on numerical simulations, analytical calculations and experimental data,
+we show that axonal fiber bundles can contribute significantly to the EFP, and
+how the contributions are shaped by axonal morphology. We characterize three
+principal effects of axon bundle structure on the EFP. Firstly, the
+low-frequency components of the EFP are governed by the densities of
+bifurcations and terminations and can have a dipolar structure. Secondly, the
+high-frequency components are governed by the local fiber density. Furthermore
+we show that the low-frequency components exceed the high-frequency components
+in spatial reach. In particular, the dipolar low-frequency components exceed
+the reach of the presumed quadrupolar nature of axonal EFPs.
+
+- one paragraph for each of these effects, with examples
+
+These findings relate to the interpretation of a wide range of
+electrophysiological data. Heuristics which are valid for the analysis of EFPs
+of synaptic, dendritic, or somatic currents may not be valid for axon bundles.
+When performing a typical current source density analysis, the underlying
+assumption is that the local fiber density is constant among recording
+locations, while the membrane voltage varies with time and location
+independently. In the case of an axonal fiber bundle as discussed here, the
+opposite is the case: fiber density is variable in space, in particular in the
+projection zone, but the membrane voltage is highly correlated over space and
+time.
 
 - Relevance of Findings
-    - Interpretation of CSD
-        - Classical CSD: constant fiber density, variable currents
-        - Here: variable fiber density, constant currents
+nt currents
     - Dipole has far field, ABR response?
+    - more methods?
 - Compare to other auditory systems (Chicken NL, MSO)
     - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn, Weiss 2010, Einevoll&Panzeri review)
 - Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
