@@ -23,44 +23,42 @@ Introduction
 ==============
 Extracellular field potentials (EFPs) are at the heart of many experimental
 methods used to examine the inner workings of the brain.  This includes
-invasive methods such as Local Field Potentials (LFP), Current Source Density
-(CSD) and Multiunit Activity (MUA) as well as noninvasive methods such as
-Electroencephalogram (EEG), Electrocorticogram (ECoG) and the auditory
+invasively recorded signals such as Local Field Potentials (LFP), Current Source Density
+(CSD) and Multiunit Activity (MUA) as well as the noninvasively recorded 
+Electroencephalogram (EEG), Electrocorticogram (ECoG) and auditory
 brainstem response (ABR) [@Brette2012Handbook; @Nunez2006Electric]. The origins
 of these EFPs, especially in cases in which the activity is not clearly
 attributable to a single cell, is a matter of debate.
 
 EFPs in the brain were long thought to be primarily synaptic in origin
 [@Buzsaki2012Origin]. As a consequence, many modeling studies focussed on the
-extracellular fields induced by synaptic currents on the dendrites and the soma of
-a postsynaptic neuron [@Gold2006Origin; @Holt1999Electrical;
+extracellular fields induced by synaptic currents on the dendrites and the soma
+of a postsynaptic neuron [@Gold2006Origin; @Holt1999Electrical;
 @Einevoll2013Modelling; @Linden2011Modeling; @Linden2010Intrinsic;
-@FernandezRuiz2013Cytoarchitectonic]. However, a number of
-recent data analysis and modeling efforts have revealed that active,
-non-synaptic membrane currents can play an important role in generating EFPs
-[@Reimann2013Biophysically; @Anastassiou2015Cell; @Schomburg2012Spiking;
-@Ray2011Different; @Belluscio2012CrossFrequency], including far reaching
-potentials detectable at the scalp
-[@Telenczuk2011Highfrequency; @Telenczuk2015Correlates]. However, currents from
-the axon are still thought to be so small as to be of minor importance for the EFP.
+@FernandezRuiz2013Cytoarchitectonic]. However, a number of recent data analysis
+and modeling efforts have revealed that active, non-synaptic membrane currents
+can play an important role in generating EFPs [@Reimann2013Biophysically;
+@Anastassiou2015Cell; @Schomburg2012Spiking; @Ray2011Different;
+@Belluscio2012CrossFrequency], including far reaching potentials detectable at
+the scalp [@Telenczuk2011Highfrequency; @Telenczuk2015Correlates]. However,
+currents from the axon are still thought to be so small as to be of minor
+importance for the EFP.
 
 One of the reasons for the traditional assumption that axonal currents
 contribute little to the EFP is that the far field of an action potential
 traveling along an idealized straight axon is quadrupolar, meaning that its far
-field decays faster with distance than synaptic sources, which are thought to be
-dipolar [@Nunez2006Electric]. However, in experimental studies that recorded the EFP of
-axonal responses, the EFP often has a dipolar structure. For example,
-@Blot2014Ultrarapid report an EFP with the characteristic dipolar structure
-recorded from the vicinity of cerebellar Purkinje cell axons.
-
+field decays faster with distance than synaptic sources, which are thought to
+be dipolar [@Nunez2006Electric]. However, in experimental studies that recorded
+the EFP of axonal responses, the EFP often has a dipolar structure. For
+example, @Blot2014Ultrarapid report an EFP with the characteristic dipolar
+structure recorded from the vicinity of cerebellar Purkinje cell axons.
 @Swadlow2002Activation showed the field potentials due to single
 thalamocortical afferents in the rabbit somatosensory cortex. Here the axonal
 EFP was distinguished from the synaptic contribution by a difference in timing
 and the invariance of the amplitude under different interspike intervals. In
 this study the axonal part of the EFP also showed a polarity reversal as
-associated with a dipolar source in several of the examples shown.
-
-In the results section we will present a further new example of such a field potential
+associated with a dipolar source in several of the examples shown. In the
+results section we will present a further new example of such a field potential
 from the auditory brainstem of the barn owl.
 
 This discrepancy between theory and experiment raises the open question of how
@@ -102,7 +100,11 @@ In order to understand the way that common anatomical structures affect the
 extracellular waveform associated with a single action potential, we simulated
 simple axons that showed isolated instances of these features in order to
 inspect their contributions to the EFP. We began by simulating an infinitely long axon
-following a straight line path, neither bifurcating nor terminating ([@fig:simpletree]A).
+following a straight line path, neither bifurcating nor terminating
+([@fig:simpletree]A). The extracellular action potential has the characteristic
+triphasic shape. As the action potential travels from top to bottom, the
+waveform is translated in time with the conduction velocity, but is otherwise
+unchanged.
 
 Next we simulated the response of an axon that terminates ([@fig:simpletree]B).
 Here the approaching action potential (top traces) can be seen to have the
@@ -133,9 +135,19 @@ leads to the same biphasic responses observed as observed in the cases of the
 isolated anatomical features, with the triphasic response occurring briefly
 in-between the two features.
 
-A notable point here is that the potential at the bifurcation and termination
-are similar in shape, but opposite in polarity. This is similar to the polarity
-reversal associated with a dipole observed in experimental studies
+In the next step we considered a population of axons with slightly altered
+characteristics. The basic structure for each axon in the population was
+the same as in [@fig:simpletree]D, but we randomly perturbed the precise
+locations of each bifurcation and termination in the tree. We then stimulated
+the axons with a simulated spike train containing a pulse of activity. The
+resultin extracellular potential showed a polarity reversal similar to that
+seen in the single axon potentials, with the difference that at the center of
+the projection zone, the average response decreases in amplitude.
+
+A notable point here is that the potential at the single-axon bifurcation and
+termination are similar in shape, but opposite in polarity. The same is
+observed for the population response. This is similar to the polarity reversal
+associated with a dipole observed in experimental studies
 (@Swadlow2002Activation; @Blot2014Ultrarapid; this study).
 
 *Axonal projections generate a dipole-like field potential.* To understand how
@@ -177,11 +189,11 @@ trials.](../figs/fig_1_nocsd.pdf){#fig:simpletree}
 To characterize the spatiotemporal dynamics of the evoked EFP, the potential
 was calculated for several locations along the axon trunk. Because we first
 want to study the effect of the rate pulse on the EFP, we low-pass filtered the
-EFP responses with a cut-off frequency of 1 kHz ([@fig:bigtree]B). The distribution
-of maximum amplitudes of these responses are shown by the  colored contour
-lines in [@fig:bigtree]A and the colored traces in [@fig:bigtree]B. Surrounding the
-projection zone of the axon bundle, amplitudes show the double-lobed shape
-typical of a dipole.
+EFP responses with a cut-off frequency of 1 kHz ([@fig:bigtree]B). The
+distribution of maximum amplitudes of these responses are shown by the  colored
+contour lines in [@fig:bigtree]A and the colored traces in [@fig:bigtree]B.
+Surrounding the projection zone of the axon bundle, amplitudes show the
+double-lobed shape typical of a dipole.
 
 In [@fig:bigtree]B, all the responses showed a biphasic deflection that was elicited
 by the population firing rate pulse. This deflection was visible at all
