@@ -336,13 +336,6 @@ NL.  The low-frequency component reverses polarity along the depth of NL, and
 almost vanishes in the middle of NL. This is the same behaviour as shown for
 the generic axon bundle in the previous section.
 
-It is interesting to note that a similar reversal of polarity in NL has been
-reported for chicken [@Schwarz1992Can], as well as in the mammalian analog to
-NL, the medial superior olive [@Laughlin2010Oscillatory]. The phase reversal in
-this case has been modeled based on the assumption that the postsynaptic NL and
-MSO dendrites with their bipolar morphology have a dipolar EFP response
-[@Laughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
-morphology is largely absent [@carr90], making dendritic sources unlikely.
 
 ![Data from the barn owl shows the expected behaviour predicted by the model.
 (**A**,**B**) shows data from the barn owls nucleus laminaris in response to an
@@ -366,7 +359,13 @@ we show that the low-frequency components exceed the high-frequency components
 in spatial reach. In particular, the dipolar low-frequency components exceed
 the reach of the presumed quadrupolar nature of axonal EFPs.
 
-- one paragraph for each of these effects, with examples
+The two frequency components show qualitatively different behaviour across
+recording locations. The low-frequency component is a largely
+stationary phenomenon, while the high-frequency component is shifted in space
+according to the axonal conduction velocity. Due to the difference in reach,
+the high-frequency component is most suitable for the study of local phenomena,
+while the low-frequency component can radiate to more distant recording
+locations.
 
 These findings relate to the interpretation of a wide range of
 electrophysiological data. Heuristics which are valid for the analysis of EFPs
@@ -388,6 +387,14 @@ nt currents
 - Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
 - compare to other fiber bundle systems
 
+<!--TODO: adapt this paragraph for new context -->
+It is interesting to note that a similar reversal of polarity in NL has been
+reported for chicken [@Schwarz1992Can], as well as in the mammalian analog to
+NL, the medial superior olive [@Laughlin2010Oscillatory]. The phase reversal in
+this case has been modeled based on the assumption that the postsynaptic NL and
+MSO dendrites with their bipolar morphology have a dipolar EFP response
+[@Laughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
+morphology is largely absent [@carr90], making dendritic sources unlikely.
 Methods
 ==============
 
