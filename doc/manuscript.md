@@ -305,18 +305,18 @@ structure of the bifurcating bundle seen in [@fig:distscaling]A and
 constant widths.
 
 ![Low-frequency component of the axon bundle EFP exceeds high-frequency
-component in reach, modulated by axon structure. All plots show the scaling of
-the low-frequency (blue lines) and high-frequency (green lines) frequency
-components on a doubly-logarithmic scale. Amplitudes were normalized to unit
-value at the end of the tuft in axial direction (**A** and **B**) and from the
-trunk in radial direction (**C** and **D**). **A** and **C** show the behaviour
-in the case of a bifurcating bundle, while **B** and **D** show the
-nonbifurcating case. In the bifurcating case, the low-frequency component
-exceeds the reach of the high-frequency comonent in both directions. In the
-non-bifurcating case, the decay is the same for both components in the axial
-direction. The scaling behaviours are consistent with the presence of
-a low-frequency dipole-like potential in the bifurcating bundle but not in the
-non-bifurcating bundle.](../figs/fig_3.pdf){#fig:distscaling}
+component in reach, modulated by axon structure. Sublots **A**-**D** show the
+scaling of the low-frequency (blue lines) and high-frequency (green lines)
+frequency components for the bifurcating (solid lines) and non-bifurcating
+(dashed lines) on a doubly-logarithmic scale. **A** shows the scaling behaviour
+in the axial direction for the low-frequency component. **B** shows the
+behaviour of the high-frequency components in the same direction. **C** and
+**D** show the scaling behaviour of low- and high-frequency components in the
+radial direction. The next panels show the dipole moment (**F**) and quadrupole
+moment (**G**) of the bifurcating and non-bifurcating bundles as a function of
+frequency. Finally, **G** shows the ratio of the dipole moment (red line) and
+quadrupole moment (black line) between bifurcating and nonbifurcating case.
+](../figs/fig_3.pdf){#fig:distscaling}
 
 *The barn owl neurophonic as an example that shows these properties.* In order
 to test our model of the extracellular field of axon bundles, we compared it to
