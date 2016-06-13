@@ -9,7 +9,7 @@ header-includes:
     - \doublespacing
 author: 
     - Thomas McColgan
-title: Multipole moments
+title: Frequency resolved multipole moments
 date: \today
 ...
 
@@ -41,8 +41,10 @@ In this case we have $n(z) = \Theta(z)$, where $\Theta$ is the Heaviside step fu
 If we consider the potential along the extension of the bundle at $\rho=0$ for $z>0$, this becomes
 $$\tilde{\Phi}(\mathbf{r},\omega) =  \frac{1}{4\pi\sigma_{e}}\cdot\frac{\omega}{v}\tilde{V}(0,\omega)\left(\frac{i}{z}+\frac{\omega e^{\frac{i \omega z}{v}} \left(\text{Ei}\left(-\frac{i \omega z}{v}\right)+i \pi \right)}{v}\right)$$
 
-where $\text{Ei}$ is the exponential integral.
+where $\text{Ei}$ is the exponential integral. Using the series expansion of $Ei$ for large $z$ we can approximate $\tilde{\Phi}$ as 
+$$\tilde{\Phi}(\mathbf{r},\omega) \approx  \frac{1}{4\pi\sigma_{e}}\cdot\frac{\omega}{v}\tilde{V}(0,\omega)\left(\frac{i \pi  w e^{\frac{i \omega z}{v}}}{v}-\frac{v}{\omega z^2}-\frac{2 i v^2}{\omega^2 z^3} \right)$$
 
+What does this mean?
 
 Gaussian projection zone with neglected trunk
 ===
@@ -54,3 +56,10 @@ multipole analysis.
 The monopole charge $q(\omega)=\int \tilde{I}(z,\omega) \textrm{d}z$ is zero, as expected due to the conservation of charge in the system. The dipole moment $\mathbf{p}$ is zero in the radial direction for reasons of symmetry, and $$\tilde{p}_z(\omega)=\int z\tilde{I}(z,\omega)\textrm{d}z= i\tilde{V}(0,\omega)\cdot\sqrt{\pi }\frac{ a \omega}{v}  e^{-\frac{a^2 w^2}{4 v^2}}$$
 
 This means that the relative amount of the signal passed on in a dipolar fashion from the membrane voltage, ie $\frac{\left|\tilde{p}_z(\omega)\right|}{\left|V(0,\omega)\right|}$ is a function of $\omega$ and has its maximum at $\omega_\textrm{dipole}=\sqrt{2}\frac{v}{a}$.
+
+Todos
+==
+
+- Double check analytics 
+- compare with numerical results
+- Find an analytically tractable bundle and projection zone version

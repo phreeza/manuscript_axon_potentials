@@ -395,6 +395,7 @@ this case has been modeled based on the assumption that the postsynaptic NL and
 MSO dendrites with their bipolar morphology have a dipolar EFP response
 [@Laughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
 morphology is largely absent [@carr90], making dendritic sources unlikely.
+
 Methods
 ==============
 
