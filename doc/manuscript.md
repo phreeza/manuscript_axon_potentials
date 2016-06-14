@@ -285,38 +285,91 @@ amplitude of the MUA.
 
 We have thus shown a qualitatively different behaviour in the low- and
 high-frequency components of the EFP. Both appear to be related to anatomy,
-though each in a different way.  Together, these relationships suggest that the
+though each in a different way. Together, these relationships suggest that the
 particular branching and terminating structure of the axon bundle gives rise to
-the dipolar field potential. Because dipolar fields are associated with
-a longer spatial reach than the quadrupolar fields typically associated with
+the dipolar field potential. Because dipolar fields are associated with a
+longer spatial reach than the quadrupolar fields typically associated with
 axonal spikes, we decided to investigate the effect that axon structure has on
 the spatial reach of the frequency components ([@fig:distscaling]). To do this
-we performed a further simulation of an axon bundle, this time omitting the
-bifurcations, and letting the fibers terminate directly. In axial direction,
-the low-frequency component has a further reach than the high frequency
-component in the bifurcating case ([@fig:distscaling]A), but not in the
-non-bifurcating case ([@fig:distscaling]C).  In the radial direction, the
-situation is different: the bifurcating ([@fig:distscaling]B) and
-non-bifurcating ([@fig:distscaling]D) case both show a faster decay of the
-high-frequency component than of the low-frequency component. To assure that
-the effect was due to the bifurcations themselves and not due to the fanned out
-structure of the bifurcating bundle seen in [@fig:distscaling]A and
-[@fig:distscaling]D, we here changed the layout of both bundles to have
-constant widths.
+we performed a further simulation of an axon bundle. In this case we simulated
+two versions of the axon bundle, one containing a projection zone with
+bifurcations, and one without bifurcations, in which a fixed number of fibers
+arrives and then terminates. To avoid confounding effects in the spatial reach
+of the potentials, we omitted the radial fanning out of the bundle in the
+projection zone used in the simulation of [@fig:bigtree].
 
-![Low-frequency component of the axon bundle EFP exceeds high-frequency
-component in reach, modulated by axon structure. Sublots **A**-**D** show the
-scaling of the low-frequency (blue lines) and high-frequency (green lines)
-frequency components for the bifurcating (solid lines) and non-bifurcating
-(dashed lines) on a doubly-logarithmic scale. **A** shows the scaling behaviour
-in the axial direction for the low-frequency component. **B** shows the
-behaviour of the high-frequency components in the same direction. **C** and
-**D** show the scaling behaviour of low- and high-frequency components in the
-radial direction. The next panels show the dipole moment (**F**) and quadrupole
-moment (**G**) of the bifurcating and non-bifurcating bundles as a function of
-frequency. Finally, **G** shows the ratio of the dipole moment (red line) and
+The dipole-like component observed in [@fig:bigtree] had it's dipole axis
+aligned with the axon trunk. We therefor expect the field potential to decay
+quadratically in this direction, which we call the axial direction. To test
+this, we plotted the amplitude of the low-frequency component for low
+frequencies in axial direction in [@fig:distscaling]A. The plot is on a double
+logarithmic scale, meaning that the slope of the curve corresponds to the
+scaling exponent, and the y-axis offset corresponds to the amplitude of the
+component. We observe that both cases show quadratic scaling with distance for
+distances larger than 1mm, and that the amplitude of the low-frequency
+component remains larger in the bifurcating case (solid line) than in the
+non-bifurcating case (dashed line). Next we examined the high-frequency
+component ([@fig:distscaling]B). Here the asymptotic scaling is also quadratic.
+The difference between the amplitudes is however much smaller than in the
+low-frequency case. This is despite the fact that the difference in amplitudes
+is the same for short distances, due to the difference in the number of fibers
+between the cases. From this we were able to conclude that the projection zone
+contributes mainly to the low-frequency dipole moment of the EFP.
+
+Next we studied the scaling behaviour in the radial direction, perpendicular to
+the axial direction. Since the dipole component becomes zero in the direction
+perpendicular to the dipole axis, we expected quadrupolar or higher-order
+scaling behaviour in this case. In [@fig:distscaling]C we can see that this is
+indeed the case for the low-frequency component. The potentials scale as
+$r^{-3}$, and the amplitude is roughly unchanged. The high-frequency component
+also decayed cubically in the radial direction ([@fig:distscaling]D), and the
+difference in amplitude was slightly diminished.
+
+To better understand the frequency-specific contributions to the dipole
+moments, we calculated the scaling behaviour for each frequency individually
+and determined the amplitude of the dipole moment by fitting a straight line
+with slope -2 to the double logarithmic scaling. The y-intecept of this
+straight line then gave us the dipole moments. These dipole moments are shown
+in [@fig:distscaling]E. We can see that the dipole moment in the bifurcating
+case (solid line) exceeds the non-bifurcating case (dashed line) for low
+frequencies. The dipole moment of the bifurcating case has a maximum at around
+1 kHz, while in the non-bifurcating case it decays monotonically. For higher
+frequencies, the moments become roughly equal. Next we performed the same
+analysis for the quadrupole moments ([@fig:distscaling]F). Here the moments are
+similar for very low frequencies, then diverge at intermediate frequencies,
+before aproaching each other again for high frequencies. The quadrupole moment
+of the bifurcating case has a maximum at around 2kHz.
+
+In [@fig:distscaling]G we compare the relative impact of the projection zone on
+dipole (red line) and quadrupole moments (black line), by plotting their ratios
+of across frequencies. Here we can see that for low frequencies, the ratio for
+the quadrupole moment approaches 1, meaning that there is no additional
+contribution from the projection zone. The dipole moment approaches a factor of
+10, meaning that the projection zone contributes. In both components, the
+contribution is maximal for intermediate frequencies, with the maximal dipolar
+contribution lying at lower frequencies than the quadrupolar component. For
+very high frequencies, both contributions return to 1. Both components exceed
+the ratio of 10, which is the maximal increase in the number of fibers in the
+bifurcating case compared to the non-bifurcating case.
+
+Together, these observations show us that the projection makes a strong
+contribution to the far-reaching dipole field potential of the axon bundle. At
+higher frequencies, the more local quadrupolar potential is also affected.
+
+![The low-frequency component of the axon bundle EFP exceeds the high-frequency
+component in reach, in a manner depending on axon structure. Subplots
+**A**-**D** show the scaling of the low-frequency (blue lines) and
+high-frequency (green lines) frequency components for the bifurcating (solid
+lines) and non-bifurcating (dashed lines) on a doubly-logarithmic scale. All
+distances are calculated from the center of the projection zone. (**A**)
+Scaling behaviour in the axial direction for the low-frequency component.
+(**B** ) Behaviour of the high-frequency components in the axial direction.
+(**C**) and (**D**) Scaling behaviour of low- and high-frequency components in
+the radial direction. The next panels show the (**E**) dipole moment and
+(**F**) quadrupole moment of the bifurcating and non-bifurcating bundles as a
+function of frequency. (**G**) Ratio of the dipole moment (red line) and
 quadrupole moment (black line) between bifurcating and nonbifurcating case.
-](../figs/fig_3.pdf){#fig:distscaling}
+](../figs/fig_3.pdf){#fig:distscaling height=115%}
 
 *The barn owl neurophonic as an example that shows these properties.* In order
 to test our model of the extracellular field of axon bundles, we compared it to
