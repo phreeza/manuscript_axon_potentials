@@ -159,12 +159,12 @@ a dipole observed in experimental studies (@Swadlow2002Activation;
 
 - Motivation for figure 2, radial fanning out, more diverse morphologies
 
-To further understand how
-axons can generate a dipolar EFP, we simulated a parallel fiber bundle that at
-first runs at constant diameter without bifurcations and then reaches
-a projection zone. Within this projection zone, the fibers first bifurcate,
-which increases the number of fibers. Finally, the axons reach a termination
-zone, in which the number of fibers decreases to zero ([@fig:bigtree]A).
+To further understand how axons can generate a dipolar EFP, we simulated a
+parallel fiber bundle that at first runs at constant diameter without
+bifurcations and then reaches a projection zone. Within this projection zone,
+the fibers first bifurcate, which increases the number of fibers. Finally, the
+axons reach a termination zone, in which the number of fibers decreases to zero
+([@fig:bigtree]A).
 
 The spiking activity of a generic axon bundle was simulated by stimulating the
 fibers with a background spontaneous firing rate of 100 spikes/second, upon
@@ -200,7 +200,7 @@ was calculated for several locations along the axon trunk. Because we first
 want to study the effect of the rate pulse on the EFP, we low-pass filtered the
 EFP responses with a cut-off frequency of 1 kHz ([@fig:bigtree]B). The
 distribution of maximum amplitudes of these responses are shown by the  colored
-contour lines in [@fig:bigtree]A and the colored traces in [@fig:bigtree]B.
+contour lines in [@fig:bigtree]A and the colored voltage traces in [@fig:bigtree]B.
 Surrounding the projection zone of the axon bundle, amplitudes show the
 double-lobed shape typical of a dipole.
 
@@ -208,7 +208,7 @@ In [@fig:bigtree]B, all the responses showed a biphasic deflection that was elic
 by the population firing rate pulse. This deflection was visible at all
 recording locations. The biphasic deflection reverses polarity in the middle of
 the bifurcation zone of the bundle (red box in [@fig:bigtree]B). The polarity
-reversal occurs by a decrease of the amplitude to zero and subsequent
+reversal occurs by a decrease of the amplitude to zero and a subsequent
 reappearance with reversed polarity, as opposed to a polarity reversal through
 a gradual shift in phase. This behaviour is also typical for a dipolar field
 potential.
@@ -281,8 +281,8 @@ further away from the trunk it is no longer distinguishable from the background
 activity.-->
 
 To understand the contributions related to individual spikes, we next turned
-our attention to the high-frequency range. We calculated the Multi-Unit
-Activity (MUA) of the response (see Methods), which reflects the high-frequency
+our attention to the high-frequency range. We calculated the multi-unit
+activity (MUA) of the response (see Methods), which reflects the high-frequency
 (>1kHz) components of the response, and is thought to reflect spiking activity
 in extracellular recordings. The MUA did not show a double-lobe, but rather
 appeared like an ellipsoid centered at the projection zone ([@fig:bigtree]D).
@@ -310,7 +310,7 @@ axonal spikes, we decided to investigate the effect that axon structure has on
 the spatial reach of the frequency components ([@fig:distscaling]). To do this
 we performed a further simulation of an axon bundle. In this case we simulated
 two versions of the axon bundle, one containing a projection zone with
-bifurcations, and one without bifurcations in which a fixed number of fibers
+bifurcations, and one Without bifurcations in which a fixed number of fibers
 arrives and then terminates. To avoid confounding effects in the spatial reach
 of the potentials, we omitted the radial fanning out of the bundle in the
 projection zone used in the simulation of [@fig:bigtree].
@@ -322,45 +322,53 @@ this, we plotted the amplitude of the low-frequency component for low
 frequencies in axial direction in [@fig:distscaling]A. The plot is on a double
 logarithmic scale, meaning that the slope of the curve corresponds to the
 scaling exponent, and the vertical offset corresponds to the amplitude of the
-component. We observe quadratic scaling with distance for
-distances larger than $\approx 1$mm, and that the amplitude of the low-frequency
-component remains larger in the bifurcating case (solid line) than in the
+component. We observe quadratic scaling with distance for distances larger than
+$\approx 1$ mm, but the amplitude of the low-frequency component remains an
+order of magnitude larger in the bifurcating case (solid line) than in the
 non-bifurcating case (dashed line). Next we examined the high-frequency
-component ([@fig:distscaling]B). Here the asymptotic scaling is also quadratic.
-The difference between the amplitudes is however much smaller than in the
-low-frequency case. This is despite the fact that the difference in amplitudes
-is the same for short distances, due to the difference in the number of fibers
-between the cases. From this we were able to conclude that the projection zone
-contributes mainly to the low-frequency dipole moment of the EFP.
+component ([@fig:distscaling]B). Here the asymptotic scaling is also quadratic
+for distances $\gtrsim 1$ mm, but the amplitudes are similar. The difference
+between the amplitudes is much smaller than in the low-frequency case, even
+though amplitudes are the same at short distances $\lesssim 100 \mu$m. At these
+distances, the difference is proportional to the number of fibers, which is
+larger in the bifurcating case. To conclude, the projection zone contributes
+mainly to the low-frequency dipole moment of the EFP.
 
-Next we studied the scaling behaviour in the radial direction, perpendicular to
-the axial direction. Since the dipole component becomes zero in the direction
-perpendicular to the dipole axis, we expected quadrupolar or higher-order
-scaling behaviour in this case. In [@fig:distscaling]C we can see that this is
-indeed the case for the low-frequency component. The potentials scale as
-$r^{-3}$, and the amplitude is roughly unchanged. The high-frequency component
-also decayed cubically in the radial direction ([@fig:distscaling]D), and the
-difference in amplitude was slightly diminished.
+In contrast to the axial direction, the dipole hypothesis predicts a different
+scaling behaviour of the EFP for the radial direction. The dipole component becomes
+zero in the direction perpendicular to the dipole axis, and we thus expected quadrupolar
+or higher-order scaling behaviour in this case. In [@fig:distscaling]C we can
+see that this is indeed the case for the low-frequency component. The
+potentials scale as $r^{-3}$, and the amplitude is roughly unchanged. The
+high-frequency component also decayed cubically in the radial direction
+([@fig:distscaling]D), and the difference in amplitudes was slightly diminished.
 
 To better understand the frequency-specific contributions to the dipole
-moments, we calculated the scaling behaviour for each frequency individually
-and determined the amplitude of the dipole moment by fitting a straight line
-with slope -2 to the double logarithmic scaling. The y-intecept of this
-straight line then gave us the dipole moments. These dipole moments are shown
-in [@fig:distscaling]E. We can see that the dipole moment in the bifurcating
-case (solid line) exceeds the non-bifurcating case (dashed line) for low
+moments, we calculated the scaling behaviour as a function of frequency. The
+amplitude of the dipole moment was determined by fitting a straight line with
+slope $-2$ to the double logarithmic scaling of the power spectral density. The
+power spectral density was averaged over a frequency band 500 Hz wide, and the
+fit was performed for distances $> 1$ mm. The y-intecept of this straight line
+then gave the dipole moments. Frequency-specific dipole moments are shown in
+[@fig:distscaling]E. We can see that the dipole moment in the bifurcating case
+(solid line) exceeds the non-bifurcating case (dashed line) for low
 frequencies. The dipole moment of the bifurcating case has a maximum at around
 1 kHz, while in the non-bifurcating case it decays monotonically. For higher
-frequencies, the moments become roughly equal. Next we performed the same
-analysis for the quadrupole moments ([@fig:distscaling]F). Here the moments are
-similar for very low frequencies, then diverge at intermediate frequencies,
-before aproaching each other again for high frequencies. The quadrupole moment
-of the bifurcating case has a maximum at around 2kHz.
+frequencies, the moments become roughly equal.
+
+The dipolar component will dominate the EFP at long distances in all directions
+except for those perpendicular to the dipole axis. At shorter distances, and in
+the plane perpendicular to the dipole axis, the quadrupolar component becomes
+important. For this reason we performed the same analysis for the quadrupole
+moments ([@fig:distscaling]F). Here the moments are similar for very low
+frequencies, then diverge at intermediate frequencies, before approaching each
+other again for high frequencies. The quadrupole moment of the bifurcating case
+has a maximum at around 2kHz.
 
 In [@fig:distscaling]G we compare the relative impact of the projection zone on
 dipole (red line) and quadrupole moments (black line), by plotting their ratios
 of across frequencies. Here we can see that for low frequencies, the ratio for
-the quadrupole moment approaches 1, meaning that there is no additional
+the quadrupole moment approaches unity, meaning that there is no additional
 contribution from the projection zone. The dipole moment approaches a factor of
 10, meaning that the projection zone contributes. In both components, the
 contribution is maximal for intermediate frequencies, with the maximal dipolar
@@ -407,14 +415,14 @@ almost vanishes in the middle of NL. This is the same behaviour as shown for
 the generic axon bundle in the previous section.
 
 
-![Data from the barn owl shows the expected behaviour predicted by the model.
-(**A**,**B**) shows data from the barn owls nucleus laminaris in response to an
-auditory click stimulus, compared to a simulation of the axonal structure and
-activation in (**C**,**D**). The click stimulus induces a pulse of activity in the
-afferent axon bundle. The low-frequency components (**A** and **C**) show the
-polarity reversal. The high frequency component (**B** and **D**), does not
-show such a reversal, but rather shows a steady increase in phase with
-depth.](../figs/fig_4.pdf){#fig:barnowl}
+![Axonal field potentials from the barn owl follow structure predicted by
+model. (**Aa**) High-frequency component of the EFP in response to a click
+stimulus at $t=0$ ms, at different depths in nucleus laminaris. Recorded responses (green
+lines) are shown along with model fit (red lines). (**Ab**) Low frequency
+responses in recordings (green) and model (red). (**B**) Average membrane
+voltage in a single fiber in the model when fit to the data shown in A.
+(**C**) Fiber density in the model fit at the recording
+locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
 
 Discussion
 ==============
@@ -587,7 +595,7 @@ respect to the variable $z$.
 $$\tilde{I}(z,\omega) = i\frac{dn}{dz}(z)\cdot\frac{\omega}{v}\tilde{V}(z,\omega)-n(z)\cdot\frac{\omega^2}{v^2}\tilde{V}(z,\omega)$$
 $$\left|\tilde{I}(z,\omega)\right| = \sqrt{\left(\frac{dn}{dz}(z)\right)^2+\left(n(z)\cdot\frac{\omega}{v}\right)^2}\cdot\frac{\omega}{v}\left|\tilde{V}(z,\omega)\right|$$
 
-
+<!--
 Todos
 =====
 - Code
@@ -656,7 +664,7 @@ Done
         - better alignment in D
     - [@fig:bigtree]
         - version with MUA
-
+-->
 
 Bibliophraphy
 ===
