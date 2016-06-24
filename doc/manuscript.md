@@ -416,19 +416,44 @@ voltage in a single fiber in the model when fit to the data shown in A.
 locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
 
 
-The resulting EFP responses and the model fit are shown in [@fig:barnowl]A. The left column ([@fig:barnowl]Aa) shows the high-frequency response. The green lines show the actual responses in the data. The responses are have a Gabor-like shape, as expected [@wagner09], and have their maximal amplitude in the middle of the recording array. Toward the edges, the amplitude decays. In the central region, a systematic shift in delay can be observed, while the response seems to be stationary in the more dorsal and ventral electrodes. The shift in delay increases from ventral to dorsal, which is consistent with the anatomy. All these aspects are qualitatively reproduced by the model (red traces). The main deviation between model and data lies in a slightly diminished amplitude of the oscillation at the most central electrode sites.
+The resulting EFP responses and the model fit are shown in [@fig:barnowl]A. The
+left column ([@fig:barnowl]Aa) shows the high-frequency response. The green
+lines show the actual responses in the data. The responses are have a
+Gabor-like shape, as expected [@wagner09], and have their maximal amplitude in
+the middle of the recording array. Toward the edges, the amplitude decays. In
+the central region, a systematic shift in delay can be observed, while the
+response seems to be stationary in the more dorsal and ventral electrodes. The
+shift in delay increases from ventral to dorsal, which is consistent with the
+anatomy. All these aspects are qualitatively reproduced by the model (red
+traces). The main deviation between model and data lies in a slightly
+diminished amplitude of the oscillation at the most central electrode sites.
 
-The right column ([@fig:barnowl]Ab) shows the low-frequency responses. Here we can see the typical polarity reversal observed in earlier figures. The responses at the dorsal and ventral edges show the same shape, but with the polarity inverted. The central responses show a diminished maximum amplitude, but not a total cancellation of the response. This is due to the contribution of the more local quadruposle component at this location relatively close to the activated fibers. The model is able to capture the behaviour of this component as well, with some slight deviations in the amplitude of the peak at ventral locations, and a small oscillation with period of $\approx 1$ ms in the center of the recording.
+The right column ([@fig:barnowl]Ab) shows the low-frequency responses. Here we
+can see the typical polarity reversal observed in earlier figures. The
+responses at the dorsal and ventral edges show the same shape, but with the
+polarity inverted. The central responses show a diminished maximum amplitude,
+but not a total cancellation of the response. This is due to the contribution
+of the more local quadruposle component at this location relatively close to
+the activated fibers. The model is able to capture the behaviour of this
+component as well, with some slight deviations in the amplitude of the peak at
+ventral locations, and a small oscillation with period of $\approx 1$ ms in the
+center of the recording.
 
-[@fig:barnowl]B shows the membrane voltage that was inferred in order to fit the
-model to the data. It is composed of high and low-frequency components similar
-to those observed in the data. The most salient difference is that in the EFP,
-the low-frequency component has a comparable amplitude to the high-frequency
-component, but in the membrane voltage the low-frequency component is much
-larger. This is due to the fact that the second derivative term in the current
-equation essentially imposes a high-pass filter on the membrane voltage.
+[@fig:barnowl]B shows the membrane voltage that was inferred in order to fit
+the model to the data. It is composed of high and low-frequency components
+similar to those observed in the data. The most salient difference is that in
+the EFP, the low-frequency component has a comparable amplitude to the
+high-frequency component, but in the membrane voltage the low-frequency
+component is much larger. This is due to the fact that the second derivative
+term in the current equation essentially imposes a high-pass filter on the
+membrane voltage.
 
-The inferred fiber density is shown in [@fig:barnowl]C. The density has its maximum at the center of the electrode array, and decays steadily to both sides. This is consistent with the known anatomy of axons in NL. The density does not decay to zero on either side, which may be due to the limited range of recording locations. The fiber density beyond the border of the nucleus in dorsal direction should be zero.
+The inferred fiber density is shown in [@fig:barnowl]C. The density has its
+maximum at the center of the electrode array, and decays steadily to both
+sides. This is consistent with the known anatomy of axons in NL. The density
+does not decay to zero on either side, which may be due to the limited range of
+recording locations. The fiber density beyond the border of the nucleus in
+dorsal direction should be zero.
 
 Discussion
 ==============
