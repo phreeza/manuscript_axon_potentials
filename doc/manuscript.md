@@ -400,29 +400,35 @@ quadrupole moment (black line) between bifurcating and nonbifurcating case.
 to test our model of the extracellular field of axon bundles, we compared it to
 recordings from the barn owl auditory brain stem.
 
-We adjusted the model parameters to match the anatomy and physiology of nucleus
-laminaris (NL), and set the activation statistics to match measured PSTHs in
-response to stimulation by a click sound presented to one ear. We then
-simulated the resulting EFP at varying depths, corresponding to recording
-depths in the experiment. The resulting recordings from experiment and
-simulation are shown in [@fig:barnowl].
+The barn owl is well known for it's highly developed auditory system. One of the features of the system is the strong frequency following response in the EFP recorded in the nucleus laminaris (NL), called the neurophonic. In NL the azimuth input from both ears is first integrated to calculate the azimuthal location of a sound source. In previous studies it has been shown that the EFP in this region is mainly due to the efferent axons and synaptic currents, and the spiking contribution of postsynaptic neurons is minimal [@Kuokkanen2010Origin]. Furthermore, the anatomy of the efferent axons is well known and follows a stereotypical pattern [@carr90]. Two fiber bundles enter the nucleus, with fibers from the contralateral ear entering ventrally, and from the ipsilateral ear dorsally. This well studied physiology and anatomy makes the system an ideal candidate to study the EFPs of axon bundles.
 
-The simulated EFPs showed several characteristics that are also observed in the
-data.  Firstly, the high-frequency component shows a steady increase in latency
-along the projections' depth, and has its maximum in amplitude in the middle of
-NL.  The low-frequency component reverses polarity along the depth of NL, and
-almost vanishes in the middle of NL. This is the same behaviour as shown for
-the generic axon bundle in the previous section.
+We performed simultaneous recordings of the EFP response in NL to ipsilateral monaural click stimuli in order to study the spatiotemporal structure of this field potential and compare the data to predictions from our model. The click responses showed a distinct high- and low-frequency component as previously reported [@wagner09]. We filtered the data to roughly separate these components. The cutoff to split the components was set to 2 kHz.
 
+The model fit to the data by performing a nonlinear least squares optimization, with the fiber density at each recording location, the membrane potential in a single fiber at the location next to the most dorsal electrode, and the conduction velocity and distance between bundle and electrode as free parameters.
 
 ![Axonal field potentials from the barn owl follow structure predicted by
 model. (**Aa**) High-frequency component of the EFP in response to a click
-stimulus at $t=0$ ms, at different depths in nucleus laminaris. Recorded responses (green
+stimulus at $t=0$ ms, at different depths in nucleus laminaris. The depth is measured in the direction from dorsal to ventral. Recorded responses (green
 lines) are shown along with model fit (red lines). (**Ab**) Low frequency
 responses in recordings (green) and model (red). (**B**) Average membrane
 voltage in a single fiber in the model when fit to the data shown in A.
 (**C**) Fiber density in the model fit at the recording
 locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
+
+
+The resulting EFP responses and the model fit are shown in [@fig:barnowl]A. The left column ([@fig:barnowl]Aa) shows the high-frequency response. The green lines show the actual responses in the data. The responses are have a Gabor-like shape, as expected [@wagner09], and have their maximal amplitude in the middle of the recording array. Toward the edges, the amplitude decays. In the central region, a systematic shift in delay can be observed, while the response seems to be stationary in the more dorsal and ventral electrodes. The shift in delay increases from ventral to dorsal, which is consistent with the anatomy. All these aspects are qualitatively reproduced by the model (red traces). The main deviation between model and data lies in a slightly diminished amplitude of the oscillation at the most central electrode sites.
+
+The right column ([@fig:barnowl]Ab) shows the low-frequency responses. Here we can see the typical polarity reversal observed in earlier figures. The responses at the dorsal and ventral edges show the same shape, but with the polarity inverted. The central responses show a diminished maximum amplitude, but not a total cancellation of the response. This is due to the contribution of the more local quadruposle component at this location relatively close to the activated fibers. The model is able to capture the behaviour of this component as well, with some slight deviations in the amplitude of the peak at ventral locations, and a small oscillation with period of $\approx 1$ ms in the center of the recording.
+
+[@fig:barnowl]B shows the membrane voltage that was inferred in order to fit the
+model to the data. It is composed of high and low-frequency components similar
+to those observed in the data. The most salient difference is that in the EFP,
+the low-frequency component has a comparable amplitude to the high-frequency
+component, but in the membrane voltage the low-frequency component is much
+larger. This is due to the fact that the second derivative term in the current
+equation essentially imposes a high-pass filter on the membrane voltage.
+
+The inferred fiber density is shown in [@fig:barnowl]C. The density has its maximum at the center of the electrode array, and decays steadily to both sides. This is consistent with the known anatomy of axons in NL. The density does not decay to zero on either side, which may be due to the limited range of recording locations. The fiber density beyond the border of the nucleus in dorsal direction should be zero.
 
 Discussion
 ==============
