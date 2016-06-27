@@ -588,51 +588,51 @@ Simplified axon bundle model
 
 \label{sec:efpresp}
 We define the spatial dimension in cylindrical coordinates
-$\mathbf{r}=(\rho,\varphi,z)$. We further define $\hat{\mathbf{e}}_{z}$ as the
-unit vector in $z$ direction, and $\hat{\mathbf{e}}_{\rho}$ as an arbitrary
-unit vector perpendicular to the $z$ direction.
+$\mathbf{r}=(\rho,\varphi,z)$, and consider a simple model axon bundle that
+extends infinitely in $z$ direction and lays at $\rho=0$. The bundle has a
+variable number of fibers along the $z$ axis, denoted by $n(z)$. We assume the
+axons to be perfect transmission lines, meaning that the action potential acts
+like a travelling wave with velocity $v$ along the axon.
+<!--This means that the
+membrane potential $V$ obeys the following identity at any point:
 
-Let us consider a simple model axon bundle that extends infinitely in $z$
-direction and lays at 0 in the remaining coordinates. The bundle has a variable
-number of fibers along the $z$ axis, denoted by $n(z)$. We assume the axons to
-be perfect transmission lines, meaning that the action potential acts like a
-travelling wave with velocity $v$ along the axon. This means that the membrane
-potential $V$ obeys the following identity at any point:
-
-$$\frac{dV}{dz} = \frac{1}{v}\frac{dV}{dt}$$
-
+\begin{align}\frac{\partial V}{\partial z} = \frac{1}{v}\frac{\partial V}{\partial t}\end{align}-->
 In particular, we neglect any delays and distortions which can be induced when
 an axon branches or terminates. 
 
-From cable theory we get 
-$$ I = dv/dx $$
+In this case, the membrane voltage is the same in each fiber for a given $z$
+coordinate. From cable theory, we can then obtain the following expression for
+the total transmembrane current $I$:
+\begin{align}
+I(z,t)& = \frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right)\\
+&= \frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t) 
+\end{align}
 
-from which, together with the fact that the axial conductivity is proportional to the number of fibers $g_{tot}=ng$ we can then derive the membrane currents flowing at a given
-location:
+<!--
+\\
+&= \frac{\partial n}{\partial z}(z)\cdot\frac{1}{v}\frac{\partial V}{\partial t}(z,t)+n(z)\cdot\frac{1}{v^2}\frac{\partial ^2V}{\partial t^2}(z,t)
+
+from which, together with the fact that the axial conductivity is proportional
+to the number of fibers $g_{tot}=ng$ we can then derive the membrane currents
+flowing at a given location:
+
 \begin{align}
 I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\\
 &= \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)
 \end{align}
+-->
+Applying this membrane current to equation \ref{eqn:basic} we can then
+calculate the corresponding extracellular field potential $\Phi(\mathbf{r},t)$
+of a given $V$ propagating through such an axon bundle. Due to the rotational
+symmetry of the system, and the fact that the only current flows at $\rho = 0$,
+we get 
 
-Applying this membrane current to equation \ref{eqn:basic}, the corresponding
-extracellular field potential $\Phi(\mathbf{r},t)$ of a given $V$ propagating
-through such an axon bundle is then 
+\begin{align}\Phi(\mathbf{r},t) =\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
+\end{align}
+<!--
+&=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{\frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
 
-\begin{align} \Phi(\mathbf{r},t) &
-=\frac{1}{4\pi\sigma_{e}}\int_{V}\frac{\delta(\rho')I(z',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'\label{eq:halfline}\\
-&
-=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{|\mathbf{r}-z'\hat{\mathbf{e}}_{z}|}\textrm{d}z'
-\end{align} 
-
-Due to the rotational symmetry, the kernel at a distance $\rho$ from the axon bundle,
-regardless of $\varphi$, can then be described by \begin{align}
-\label{eqn:infkern} \Phi(\mathbf{r},t) &
-=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{|(z-z')\hat{\mathbf{e}}_{z}
-+ \rho\hat{\mathbf{e}}_{\rho}|}\textrm{d}z' \\ &
-=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{\sqrt{(z-z')^2
-+ \rho^2}}\textrm{d}z' \end{align}
-
-<!--Equation \ref{eqn:infkern} has the form of a convolution with a weighting
+Equation \ref{eqn:infkern} has the form of a convolution with a weighting
 function $w$: \begin{equation} w(\rho,z) =
 \frac{1}{4\pi\sigma_e}\frac{1}{\sqrt{z^2+\rho^2}} \label{eqn:weighting}
 \end{equation}
@@ -657,17 +657,17 @@ $t_m$: $\epsilon =
 \frac{1}{NM}\sum_{n=0}^{N}\sum_{m=0}^{M}\left(\Phi_\text{measured}(z_n,t_m)-\Phi_\text{model}(z_n,t_m)\right)^2$.
 We achieved this using the "optimize.minimize" routine provided by the
 \textsc{SciPy} package [@scipy]. The free parameters to be determined by the
-optimization routine were the distance $\rho$, the concuction velocity $v$, the
+optimization routine were the distance $\rho$, the conduction velocity $v$, the
 fiber density $n(z_n)$ for each measurement location, and the membrane voltage
 next to the first electrode $V(z_0,t_m)$ for each timepoint. The membrane
 voltage at the other locations was then determined by the traveling wave
 assumption: $V(z_n,t_m) = V(z_0,t_m-\frac{z_n-z_0}{v})$, using linear
 interpolation between timepoints. To aid the convergence of the algorithm, an
 initial guess for the density of the fibers was set by hand. Initializing the
-guess to constant or fully random density caused a failure to converge, but we found that
-several gaussian-like initial guesses converged to an almost identical
-solution, meaning that the specific initial guess did not significantly alter
-the fit result.
+guess to constant or fully random density caused a failure to converge, but we
+found that several gaussian-like initial guesses converged to an almost
+identical solution, meaning that the specific initial guess did not
+significantly alter the fit result.
 <!--
 * Show how a dipole emerges in simple case
 * Flesh out frequency response
