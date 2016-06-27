@@ -621,12 +621,12 @@ I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\\
 \end{align}
 -->
 Applying this membrane current to equation \ref{eqn:basic} we can then
-calculate the corresponding extracellular field potential $\Phi(\mathbf{r},t)$
+calculate the corresponding extracellular field potential $\phi(\mathbf{r},t)$
 of a given $V$ propagating through such an axon bundle. Due to the rotational
 symmetry of the system, and the fact that the only current flows at $\rho = 0$,
 we get 
 
-\begin{align}\Phi(\mathbf{r},t) =\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
+\begin{align}\phi(\mathbf{r},t) =\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
 \end{align}
 <!--
 &=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{\frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
@@ -650,10 +650,10 @@ Model fitting to experimental data
 
 In order to fit the model to experimentally obtained data, we performed a
 nonlinear least squares fit, minimizing the mean squared error $\epsilon$
-between the measured potential $\Phi_\text{measured}$ and the model prediction
-$\Phi_\text{model}$ for all $N$ measurement locations $z_n$ and $M$ timepoints
+between the measured potential $\phi_\text{measured}$ and the model prediction
+$\phi_\text{model}$ for all $N$ measurement locations $z_n$ and $M$ timepoints
 $t_m$: $\epsilon =
-\frac{1}{NM}\sum_{n=0}^{N}\sum_{m=0}^{M}\left(\Phi_\text{measured}(z_n,t_m)-\Phi_\text{model}(z_n,t_m)\right)^2$.
+\frac{1}{NM}\sum_{n=0}^{N}\sum_{m=0}^{M}\left(\phi_\text{measured}(z_n,t_m)-\phi_\text{model}(z_n,t_m)\right)^2$.
 We achieved this using the "optimize.minimize" routine provided by the
 \textsc{SciPy} package [@scipy]. The free parameters to be determined by the
 optimization routine were the distance $\rho$, the conduction velocity $v$, the
