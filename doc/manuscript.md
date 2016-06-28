@@ -532,6 +532,11 @@ Methods
 Experimental recordings
 -----------------------
 
+- barn owls
+- anesthesia
+- recording equipment
+- analysis software
+
 
 Numerical model
 ---------------------
@@ -546,7 +551,7 @@ active and passive segment in each resulting branch.
 
 Action potentials were initiated in the axons by temporarily activating a
 special conductivity at the time of spike initiation in the first node of
-Ranvier of the axon. The soma was not modeled explicitly.
+Ranvier of the axon. The soma and axon initial segment was not modeled explicitly.
 
 In the simplified axon geometries used in [@fig:simpletree], the branching
 pattern was fixed by hand as described in the caption, with the exception of
