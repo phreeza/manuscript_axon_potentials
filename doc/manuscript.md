@@ -94,15 +94,32 @@ extracellular action potential has the characteristic triphasic shape. As the
 action potential travels from top to bottom, the waveform is translated in time
 with the conduction velocity, but is otherwise unchanged.
 
-- Explain why triphasic
+There are two ways of understanding the triphasic shape of the extracellular
+waveform. The first is by attribution of the peaks of the response to
+individual current types. The first, positive peak corresponds to the capacitive
+current, the large second peak to the sodium current, and the final peak to the
+potassium current [@Gold2006Origin]. A second approach is specific to the
+nature of the axon. Due to Kirchoff's law and cable theory, the total
+transmembrane current in a single axon is proportional to the second derivative
+of the membrane voltage along the direction of the axon. Because the action
+potential is roughly a travelling wave, the currents are also proportional to
+the second temporal derivative of the membrane potential. The peaks of the EFP
+are therefor related to the points of high curvature in the action potential
+waveform, namely the onset, the maximum and the end of the spike.
 
 Next we simulated the response of an axon that terminates ([@fig:simpletree]B).
 Here the approaching action potential (top traces) can be seen to have the
-same, triphasic shape as in the non-branching case. When it approaches the
+same, triphasic shape as in the non-branching case. When it reaches the
 termination, it gradually deforms into a biphasic response, with the positive
-peak preceding the negative peak.
-
-- Explain why
+peak preceding the negative peak. The biphasic appearance can be understood by
+considering the locations of the currents as they are summed up. As the action
+potential approaches the recording location, the majority of the currents flow
+before the termination, and are identical to those in the non-terminating case,
+and the first peak is not affected. In the second half of the action potential,
+the majority of the currents in the non-bifurcating axon flow after the
+electrode location. Because the axon terminates here, these currents are no
+longer present, leading to a partial suppression of the second peak and a
+complete suppression of the third peak.
 
 A common structure found in axons is a bifurcation. We simulated a single axon
 which bifurcates three times on each branch within a distance of 50 $\mu$m,
@@ -334,6 +351,8 @@ distances, the difference is proportional to the number of fibers, which is
 larger in the bifurcating case. To conclude, the projection zone contributes
 mainly to the low-frequency dipole moment of the EFP.
 
+- transition to analytical model
+
 In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component becomes
 zero in the direction perpendicular to the dipole axis, and we thus expected quadrupolar
@@ -388,7 +407,7 @@ high-frequency (green lines) frequency components for the bifurcating (solid
 lines) and non-bifurcating (dashed lines) on a doubly-logarithmic scale. All
 distances are calculated from the center of the projection zone. (**A**)
 Scaling behaviour in the axial direction for the low-frequency component.
-(**B** ) Behaviour of the high-frequency components in the axial direction.
+(**B**) Behaviour of the high-frequency components in the axial direction.
 (**C**) and (**D**) Scaling behaviour of low- and high-frequency components in
 the radial direction. The next panels show the (**E**) dipole moment and
 (**F**) quadrupole moment of the bifurcating and non-bifurcating bundles as a
