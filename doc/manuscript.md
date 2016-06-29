@@ -322,16 +322,30 @@ We have thus shown a qualitatively different behaviour in the low- and
 high-frequency components of the EFP. Both appear to be related to anatomy,
 though each in a different way. Together, these relationships suggest that the
 particular branching and terminating structure of the axon bundle gives rise to
-the dipolar field potential. Because dipolar fields are associated with a
-longer spatial reach than the quadrupolar fields typically associated with
-axonal spikes, we decided to investigate the effect that axon structure has on
-the spatial reach of the frequency components ([@fig:distscaling]). To do this
-we performed a further simulation of an axon bundle. In this case we simulated
-two versions of the axon bundle, one containing a projection zone with
-bifurcations, and one Without bifurcations in which a fixed number of fibers
-arrives and then terminates. To avoid confounding effects in the spatial reach
-of the potentials, we omitted the radial fanning out of the bundle in the
-projection zone used in the simulation of [@fig:bigtree].
+the dipolar field potential.
+
+*Effects of anatomy on distance scaling behaviour of EFPs*
+
+Because dipolar fields are associated with a longer spatial reach than the
+quadrupolar fields typically associated with axonal spikes, we decided to
+investigate the effect that axon structure has on the spatial reach of the
+frequency components ([@fig:distscaling]). To do this we performed a further
+simulation of an axon bundle. In this case we simulated two versions of the
+axon bundle, one containing a projection zone with bifurcations, and one
+Without bifurcations in which a fixed number of fibers arrives and then
+terminates.
+
+To avoid confounding effects in the spatial reach of the potentials, and afford
+better analytic tractability, we transitioned to a simplified model of the axon
+bundle. This model omitted the radial fanning out of the bundle in the
+projection zone used in the simulation of [@fig:bigtree]. Furthermore, the
+simplified model discarded the detailed conductance-based simulation of the
+membrane potential, and instead assumed a given membrane potential travelling
+along the axon trunk with constant propagation velocity. Using linear cable
+theory, it was then possible to calculate the membrane currents necessary for
+determination of the EFP. The simplified model also allowed us to consider a
+continuous fiber density instead of simulating discrete bifurcations and
+bifurcations. All following simulations are based on this simplified model.
 
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
 aligned with the axon trunk. We therefore expect the field potential to decay
@@ -351,8 +365,6 @@ though amplitudes are the same at short distances $\lesssim 100 \mu$m. At these
 distances, the difference is proportional to the number of fibers, which is
 larger in the bifurcating case. To conclude, the projection zone contributes
 mainly to the low-frequency dipole moment of the EFP.
-
-- transition to analytical model
 
 In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component becomes
@@ -455,7 +467,6 @@ responses in recordings (green) and model (red). (**B**) Average membrane
 voltage in a single fiber in the model when fit to the data shown in A. (**C**)
 Fiber density in the model fit at the recording
 locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
-
 
 The resulting EFP responses and the model fit are shown in [@fig:barnowl]A. The
 left column ([@fig:barnowl]Aa) shows the high-frequency response. The green
