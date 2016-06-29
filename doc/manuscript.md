@@ -168,20 +168,21 @@ axon containing bifurcations and terminations in [@fig:simpletree]D, but the
 sustained activity leads the potential to largely cancel out in the middle of
 the projection zone. This is similar to the polarity reversal associated with
 a dipole observed in experimental studies (@Swadlow2002Activation;
-@Blot2014Ultrarapid; this study).
-
-- Conclusion paragraph/sentence
+@Blot2014Ultrarapid; this study). We have shown that simple model axon
+structures can produce complex and diverse spatiotemporal responses comparable
+to some responses found in experiments.
 
 *Axonal projections generate a dipole-like field potential.*
-
-- Motivation for figure 2, radial fanning out, more diverse morphologies
 
 To further understand how axons can generate a dipolar EFP, we simulated a
 parallel fiber bundle that at first runs at constant diameter without
 bifurcations and then reaches a projection zone. Within this projection zone,
 the fibers first bifurcate, which increases the number of fibers. Finally, the
 axons reach a termination zone, in which the number of fibers decreases to zero
-([@fig:bigtree]A).
+([@fig:bigtree]A). To model more closely the actual axonal structures found in
+nature, we also extended the model axons to include a radial fanning out of the
+branches, as well as a more diverse set of morphologies including a variable
+number of bifurcations and terminations.
 
 The spiking activity of a generic axon bundle was simulated by stimulating the
 fibers with a background spontaneous firing rate of 100 spikes/second, upon
@@ -535,6 +536,7 @@ nt currents
     - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn, Weiss 2010, Einevoll&Panzeri review)
 - Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
 - compare to other fiber bundle systems
+- Importance of preferential direction of axonal arbor. Compare tu Cuntz approach.
 
 <!--TODO: adapt this paragraph for new context -->
 It is interesting to note that a similar reversal of polarity in NL has been
