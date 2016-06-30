@@ -734,17 +734,12 @@ respect to the variable $z$.
 Model fitting to experimental data
 ----------------------------
 
-- state values of $N$ and $M$
-- double check off-by-one in $N$ and $M$
-- motivate $\rho$
-- explicitly state gaussian guess
-
 In order to relate the model to experimentally obtained data, we performed a
 nonlinear least squares fit, minimizing the mean squared error $\epsilon$
 between the measured potential $\phi_\text{measured}$ and the model prediction
-$\phi_\text{model}$ for all $N$ measurement locations $z_n$ and $M$ timepoints
+$\phi_\text{model}$ for all $N = 32$ measurement locations $z_n$ and $M = 600$ timepoints
 $t_m$: $\epsilon =
-\frac{1}{NM}\sum_{n=0}^{N}\sum_{m=0}^{M}\left[\phi_\text{measured}(z_n,t_m)-\phi_\text{model}(z_n,t_m)\right]^2$.
+\frac{1}{NM}\sum_{n=0}^{N-1}\sum_{m=0}^{M-1}\left[\phi_\text{measured}(z_n,t_m)-\phi_\text{model}(z_n,t_m)\right]^2$.
 We achieved this using the "optimize.minimize" routine provided by the
 \textsc{SciPy} package [@scipy]. The free parameters to be determined by the
 optimization routine were the distance $\rho$, the conduction velocity $v$, the
@@ -752,12 +747,19 @@ fiber density $n(z_n)$ for each measurement location, and the membrane voltage
 next to the first electrode $V(z_0,t_m)$ for each timepoint. The membrane
 voltage at the other locations was then determined by the traveling wave
 assumption: $V(z_n,t_m) = V(z_0,t_m-\frac{z_n-z_0}{v})$, using linear
-interpolation between timepoints. To aid the convergence of the algorithm, an
+interpolation between timepoints. The model assumption of a single line of
+axons at a fixed distance is a strong simplification, since the fibers are most
+likely distributed all around the electrode. The distance parameter $\rho$ can
+be thought of as an average distance in this simplification.
+
+To aid the convergence of the algorithm, an
 initial guess for the density of the fibers was set by hand. Initializing the
 guess to constant or fully random density caused a failure to converge, but we
 found that several gaussian-like initial guesses converged to an almost
 identical solution, meaning that the specific initial guess did not
-significantly alter the fit result.
+significantly alter the fit result. The results shown here were obtained with
+an initial guess of a gaussian with amplitude 12, mean at penetration depth
+$725 \mu$m, and standard deviation $400 \mu$m.
 <!--
 * Show how a dipole emerges in simple case
 * Flesh out frequency response
