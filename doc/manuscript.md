@@ -777,6 +777,7 @@ identical solution, meaning that the specific initial guess did not
 significantly alter the fit result. The results shown here were obtained with
 an initial guess of a gaussian with amplitude 12, mean at penetration depth
 725 $\mu$m, and standard deviation 400 $\mu$m.
+
 <!--
 * Show how a dipole emerges in simple case
 * Flesh out frequency response
