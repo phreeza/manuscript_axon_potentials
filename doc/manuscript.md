@@ -692,8 +692,9 @@ In particular, we neglect any delays and distortions that can be induced when
 an axon branches or terminates. 
 
 In this case, the membrane voltage is the same in each fiber for a given $z$
-coordinate. From linear cable theory [e.g. @Jack75Electric], we can then obtain the following expression for
-the total transmembrane current $I(z,t)$ from a given membrane potential $V(z,t)$:
+coordinate. From linear cable theory [e.g. @Jack75Electric], we can then obtain
+the following expression for the total transmembrane current $I(z,t)$ from a
+given membrane potential $V(z,t)$:
 \begin{align}
 I(z,t)& = \frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right)\\
 &= \frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t) 
