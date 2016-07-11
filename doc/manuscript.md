@@ -554,6 +554,8 @@ opposite is the case: fiber density is variable in space, in particular in the
 projection zone, but the membrane voltage is highly correlated over space and
 time.
 
+
+
 - Relevance of Findings
 nt currents
     - Dipole has far field, ABR response?
