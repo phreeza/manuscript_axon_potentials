@@ -579,17 +579,29 @@ twice, based on different physiological substrates. This might point towards an
 evolutionary pressure favouring the emergence of such a potential in
 coincidence detection systems, and indeed @Goldwyn2016Neuronal have proposed a
 model in which this potential enhances the function of coincidence detectors
-through a form of ephaptic interaction. Their dendritic approach is not directly
-transferable, but it seems possible that a similar mechanism might arise in the
-barn owl NL based on axonal EFPs.
+through a form of ephaptic interaction. Their dendritic approach is not
+directly transferable, but it seems possible that a similar mechanism might
+arise in the barn owl NL based on axonal EFPs.
+**possibly add something here about ephaptics in other systems (weiss 2010, Anastasiou, see JC list**)
 
-- Compare to other auditory systems (Chicken NL, MSO)
-    - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn, Weiss 2010, Einevoll&Panzeri review)
+One assumption underlying our modelling of axonal geometries is that there
+exists a preferential direction of growth of the axon arbor. In many structures
+this is the case, for example in the parts of the auditory brainstem we studied
+here. In other brain regions, this tendency is not as prominent, with a
+spectrum existing between completely directed and undirected growth. More
+undirected growth would lead to a more diffuse response in the EFP, and
+eventually to a cancellation of the dipolar field potentials. @Cuntz2010One and @Budd2010Neocortical
+studied the principles underlying the growth patterns of axons and found that
+the degree of direction in the growth of an axon depends on the balance struck
+between conduction delay and wiring cost. Optimizing for minimal conduction
+time leads to highly directed structures, while optimizing wiring cost leads to
+more tortuous, undirected growth. This leads to the conclusion that directed
+structures and thus also strong, dipolar axonal EFPs will be more prevalent in
+systems which require high temporal precision.  
+
 - Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
 - compare to other fiber bundle systems
-- Importance of preferential direction of axonal arbor. Compare tu Cuntz approach.
-
-<!--TODO: adapt this paragraph for new context -->
+* Add **evidence** from results to conclusions
 
 Methods
 ==============
