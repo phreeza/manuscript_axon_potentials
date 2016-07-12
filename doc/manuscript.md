@@ -532,34 +532,57 @@ low-frequency components of the EFP are governed by the densities of
 bifurcations and terminations and can have a dipolar structure. Secondly, the
 high-frequency components are governed by the local fiber density. Furthermore
 we show that the low-frequency components exceed the high-frequency components
-in spatial reach. In particular, the dipolar low-frequency components exceed
-the reach of the presumed quadrupolar nature of axonal EFPs.
+in spatial reach. In particular, the dipolar low-frequency components are not
+negligible and exceed the reach of the presumed quadrupolar nature of axonal
+EFPs.
 
 The two frequency components show qualitatively different behaviour across
 recording locations. The low-frequency component is a largely
 stationary phenomenon, while the high-frequency component is shifted in space
 according to the axonal conduction velocity. Due to the difference in reach,
 the high-frequency component is most suitable for the study of local phenomena,
-while the low-frequency component can radiate to more distant recording
-locations.
+while the low-frequency component bears information about locations more
+distant from the recording site.
 
 These findings relate to the interpretation of a wide range of
 electrophysiological data. Heuristics which are valid for the analysis of EFPs
 of synaptic, dendritic, or somatic currents may not be valid for axon bundles.
 When performing a typical current source density analysis, the underlying
 assumption is that the local fiber density is constant among recording
-locations, while the membrane voltage varies with time and location
+locations (**references**), while the membrane voltage varies with time and location
 independently. In the case of an axonal fiber bundle as discussed here, the
 opposite is the case: fiber density is variable in space, in particular in the
 projection zone, but the membrane voltage is highly correlated over space and
 time.
 
+Dipolar fields are also play an important role in the generation of electrical
+field potentials at greater distances from the brain. The most prominent of
+these is the EEG, which is commonly attributed to the dipolar contributions of
+pyramidal cells (**refs**). We propose that axonal contributions might also be
+relevant in the analysis of these fields. This is particularly true for the
+auditory brainstem response, which is closely related to the EEG and involves
+brain structures that display high degrees of phase locking as well as 
+axonal organization (**where exactly?**), and are therefor ideal candidates for
+the generation of axonal field potentials visible at long ranges. This would in
+turn have implications for the interpretation of the ABR in clinical contexts.
 
+It is interesting to note that a similar dipole-like reversal of polarity as
+shown here for the barn owl NL has been reported in the chicken NL
+[@Schwarz1992Can], as well as in the mammalian analog to NL, the medial
+superior olive [@Laughlin2010Oscillatory]. The phase reversal in this case has
+been modeled based on the assumption that the postsynaptic NL and MSO dendrites
+with their bipolar morphology have a dipolar EFP response
+[@Laughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
+morphology is largely absent [@carr90], making dendritic sources unlikely. This
+poses the question if the dipolar field potential in owls and mammals arose
+twice, based on different physiological substrates. This might point towards an
+evolutionary pressure favouring the emergence of such a potential in
+coincidence detection systems, and indeed @Goldwyn2016Neuronal have proposed a
+model in which this potential enhances the function of coincidence detectors
+through a form of ephaptic interaction. Their dendritic approach is not directly
+transferable, but it seems possible that a similar mechanism might arise in the
+barn owl NL based on axonal EFPs.
 
-- Relevance of Findings
-nt currents
-    - Dipole has far field, ABR response?
-    - more methods?
 - Compare to other auditory systems (Chicken NL, MSO)
     - Speculate on functional relevance of polarity shift (a la Rinzel & Goldwyn, Weiss 2010, Einevoll&Panzeri review)
 - Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
@@ -567,13 +590,6 @@ nt currents
 - Importance of preferential direction of axonal arbor. Compare tu Cuntz approach.
 
 <!--TODO: adapt this paragraph for new context -->
-It is interesting to note that a similar reversal of polarity in NL has been
-reported for chicken [@Schwarz1992Can], as well as in the mammalian analog to
-NL, the medial superior olive [@Laughlin2010Oscillatory]. The phase reversal in
-this case has been modeled based on the assumption that the postsynaptic NL and
-MSO dendrites with their bipolar morphology have a dipolar EFP response
-[@Laughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
-morphology is largely absent [@carr90], making dendritic sources unlikely.
 
 Methods
 ==============
