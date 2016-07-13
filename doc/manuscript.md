@@ -599,9 +599,8 @@ more tortuous, undirected growth. This leads to the conclusion that directed
 structures and thus also strong, dipolar axonal EFPs will be more prevalent in
 systems which require high temporal precision.  
 
-- Two simultaneous modes: stationary dipole and continuous (cf Mc Laughlin, etc).
-- compare to other fiber bundle systems
-* Add **evidence** from results to conclusions
+* Add **evidence** from results to mini-conclusions made above
+* add final but non-redundant conclusion
 
 Methods
 ==============
@@ -613,9 +612,9 @@ The experiments were conducted at the Department of Biology of the University
 Maryland. Data was collected from three barn owls (Tyto furcata pratincola.
 Procedures conformed to NIH Guidelines for Animal Research and were approved by
 the Animal Care and Use Committee of the University of Maryland. Anaesthesia
-was induced by intramuscular injections of $XX-YY$~mg/kg/hr urethane.
-Supplementary doses were administered to maintain a suitable plane of
-anaesthesia. Body temperature was maintained at $39^\circ$C by a
+was induced prior to each experiment by intramuscular injection of a total of
+$8-10$~ml/kg of $20\%$ urethane divided into three to four injections over the
+course of $3$~hours. Body temperature was maintained at $39^\circ$C by a
 feedback-controlled heating blanket.
 
 Recordings were made in a sound-attenuating chamber (Acoustic Systems Inc.).
