@@ -85,7 +85,10 @@ electrophysiological recordings from the barn owl brain stem.
 Results
 ==============
 
-*Effects of axonal bifurcations and terminations on extracellular action potentials* To
+Effects of axonal bifurcations and terminations on extracellular action potentials
+----
+
+To
 understand how the geometry of an axon affects the extracellular waveform
 associated with a single action potential, we numerically simulated action
 potentials propagating along generic axons and calculated their contribution to
@@ -172,7 +175,8 @@ dipole observed in experimental studies (@Swadlow2002Activation;
 structures can produce complex and diverse spatiotemporal responses comparable
 to some responses found in experiments.
 
-*Axonal projections generate a dipole-like field potential.*
+Axonal projections generate a dipole-like field potential
+-----
 
 To understand how axons can generate a dipolar EFP, we simulated a
 parallel fiber bundle that at first runs at constant diameter without
@@ -325,7 +329,8 @@ though each in a different way. Together, these relationships suggest that the
 particular branching and terminating structure of the axon bundle gives rise to
 the dipolar field potential.
 
-*Effects of anatomy on distance scaling behaviour of EFPs*
+Effects of anatomy on distance scaling behaviour of EFPs
+--------
 
 Because dipolar fields are associated with a longer spatial reach than the
 quadrupolar fields typically associated with axonal spikes, we decided to
@@ -427,12 +432,11 @@ the radial direction. (**E**) Dipole moment and
 (**F**) quadrupole moment of the bifurcating and non-bifurcating bundles as a
 function of frequency. (**G**) Ratio of the dipole moment (red line) and
 quadrupole moment (black line) between bifurcating and non-bifurcating cases.
-
 **mention scaling comparison lines**
 ](../figs/fig_3.pdf){#fig:distscaling height=115%}
 
-*The barn owl neurophonic potential in nucleus laminaris as an example for a
-dipolar field in an axonal projection zone.*
+The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal projection zone.
+----
 
 In order to test our model of the extracellular field of axon bundles, we
 compared it to recordings from the barn owl auditory brain stem.
@@ -452,7 +456,7 @@ dorsally. This well studied physiology and anatomy makes the system an ideal
 candidate to study the EFPs of axon bundles.
 
 To study the spatiotemporal structure of the EFP in NL, we performed
-simultaneous recordings of the response in NL to ipsilateral monaural click
+simultaneous recordings of the response in NL to contralateral monaural click
 stimuli. The click responses showed a distinct high- and low-frequency
 component as previously reported [@wagner09]. The high-frequency ringing
 corresponds to the position on the frequency map within NL being recorded from.
@@ -480,20 +484,22 @@ The resulting EFP responses and the model fit are shown in [@fig:barnowl]A.
 [@fig:barnowl]A shows the high-frequency ($\geq 2$ kHz) response. The green
 lines show the actual responses in the data. The responses are have a
 Gabor-like shape, as expected [@wagner09], and have their maximal amplitude in
-the center of the recording array, at around $850 \mu$m recording depth. Toward
-the edges, the amplitude decays. In the central region, a systematic shift in
-delay can be observed, while the response seems to be stationary in the more
-dorsal and ventral electrodes. The shift in delay increases from ventral to
-dorsal, which is consistent with the anatomy. All these aspects are
-qualitatively reproduced by the model (red traces). The main deviation between
-model and data lies in a slightly diminished amplitude of the oscillation at
-the most central electrode sites. Because the phase shift in the central region
-is mainly determined by the conduction velocity, this might be due to the model
-being unable to track a slightly changing conduction velocity in the nucleus. A
-diminished amplitude in the model fit could reflect an inability to exactly
-match the phase progression. Another possible explanation is that the
-additional amplitude could be due to non-axonal sources such as postsynaptic
-spikes, which do not follow the assumptions underlying the model being fit.
+the center of the recording array, at around $850 \mu$m recording depth. The
+velocity was fit as 4.0 m/s. A previously published estimate of this velocity
+was 1.6 m/s in [@McColgan2014Functional]. Toward the edges, the amplitude
+decays. In the central region, a systematic shift in delay can be observed,
+while the response seems to be stationary in the more dorsal and ventral
+electrodes. The shift in delay increases from ventral to dorsal, which is
+consistent with the anatomy. All these aspects are qualitatively reproduced by
+the model (red traces). The main deviation between model and data lies in a
+slightly diminished amplitude of the oscillation at the most central electrode
+sites. Because the phase shift in the central region is mainly determined by
+the conduction velocity, this might be due to the model being unable to track a
+slightly changing conduction velocity in the nucleus. A diminished amplitude in
+the model fit could reflect an inability to exactly match the phase
+progression. Another possible explanation is that the additional amplitude
+could be due to non-axonal sources such as postsynaptic spikes, which do not
+follow the assumptions underlying the model being fit.
 
 [@fig:barnowl]B shows the low-frequency ($30$ Hz - $2$ kHz) responses. Here we
 can see the typical polarity reversal observed in earlier figures. The
