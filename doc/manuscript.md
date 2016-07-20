@@ -329,7 +329,7 @@ though each in a different way. Together, these relationships suggest that the
 particular branching and terminating structure of the axon bundle gives rise to
 the dipolar field potential.
 
-Effects of anatomy on distance scaling behaviour of EFPs
+Effects of bifurcations and terminations on distance scaling behaviour of EFPs
 --------
 
 Because dipolar fields are associated with a longer spatial reach than the
@@ -817,6 +817,12 @@ identical solution, meaning that the specific initial guess did not
  alter the fit result. The results shown in @fig:barnowl were obtained with
 an initial guess of a Gaussian with amplitude 12, centered at penetration depth
 725 $\mu$m, and standard deviation 400 $\mu$m.
+
+Acknowledgements
+====
+This work was supported by the German Federal Ministry for Education and
+Research Grants 01GQ1001A and 01GQ0972 and by NIH DCD 000436. The authors wish
+to thank Anna Kraemer for help with animal handling and surgery.
 
 <!--
 * Show how a dipole emerges in simple case
