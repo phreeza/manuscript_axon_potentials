@@ -572,7 +572,7 @@ the case of an axonal fiber bundle as discussed here, the opposite is the case:
 fiber density is variable in space, in particular in the projection zone, but
 the membrane voltages are highly correlated over space and time. The sink and
 source distribution found in classical CSD analysis of axon bundles
-[@Mitzdorf1978Prominent,@Mitzdorf1985Current,@Mitzdorf1977Laminar], show a
+[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show a
 dipolar structure in projection zones. Our modelling approach provides a novel
 way of interpreting these findings.
 
@@ -583,7 +583,7 @@ pyramidal cells [@Nunez2006Electric]. We propose that axonal contributions might
 relevant in the analysis of these fields. This is particularly true for the
 auditory brainstem response, which is closely related to the EEG and involves
 brain structures that display high degrees of phase locking as well as 
-axonal organization (**where exactly?**), and are therefor ideal candidates for
+axonal organization, and are therefor ideal candidates for
 the generation of axonal field potentials visible at long ranges. This would in
 turn have implications for the interpretation of the ABR in clinical contexts.
 
