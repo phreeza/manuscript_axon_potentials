@@ -267,21 +267,22 @@ column. The polarity reversal in the center of [@fig:bigtree]B corresponds to
 the crossing of zero amplitude in figure [@fig:bigtree]C.
 
 ![An activity pulse in an axonal projections generates a dipole-like
-extracellular field potential (EFP). (**A**) Modeled axon bundle in black, along
-with iso-amplitude lines for the low-pass filtered EFP signature of the
+extracellular field potential (EFP). (**A**) Modeled axon bundle in black,
+along with iso-amplitude lines for the low-pass filtered EFP signature of the
 activity pulse. The contours (maximum amplitude in mV as indicated by colorbar)
-show the typical double-lobe of a dipole. (**B**) The waveforms, recorded at the
-locations of the colored dots in *A*, also show a polarity reversal.
-The reversal ocurrs by inverting the envelope with aproximately constant phase,
+show the typical double-lobe of a dipole. (**B**) The waveforms, recorded at
+the locations of the colored dots in *A*, also show a polarity reversal. The
+reversal ocurrs by inverting the amplitude with aproximately unchanged shape,
 not by a shifting of phase with constant envelope. (**C**) Progression of the
-maximum amplitude with depth (red line). It closely follows the local
-difference in density between bifurcations and terminations (black histogram).
-(**D**) Iso-amlitude contours for the high-pass filtered component, which do not
-exhibit a double-lobed structure. (**E**) Response waveforms of the
-low-pass filtered component. The responses do not reverse their polarity. (**F**)
-Maximum amplitude of the high-pass filtered component (red line) follows the
-density of fibers (black histogram).
-](../figs/fig_2.pdf){#fig:bigtree}
+maximum amplitude with depth (black line). It closely follows the local
+difference in density between bifurcations and terminations (blue histogram).
+(**D**) Iso-amlitude contours for the MUA component, which does not exhibit a
+double-lobed structure. (**E**) Response waveforms of the MUA component. The
+responses do not reverse their polarity. The same is true for the high-pass
+filtered components, example shown in black trace. (**F**) Maximum amplitude of
+the high-pass filtered component (black line) follows the density of fibers
+(green histogram).
+](../figs/fig_2.pdf){#fig:bigtree height=110%}
 
 <!--To better understand the relationship between axonal anatomy and this spatial
 structure of the EFP, we plotted the change in density of the bundle, meaning
@@ -430,15 +431,15 @@ component in reach, in a manner depending on axon structure. Subplots
 **A**-**D** show the scaling of the low-frequency (blue lines) and
 high-frequency (green lines) frequency components for the bifurcating (solid
 lines) and non-bifurcating (dashed lines) on a doubly-logarithmic scale. All
-distances are calculated from the center of the projection zone. (**A**)
-Scaling behaviour in the axial direction for the low-frequency component.
-(**B**) Scaling of the high-frequency components in the axial direction.
-(**C**) and (**D**) Scaling behaviour of low- and high-frequency components in
-the radial direction. (**E**) Dipole moment and
+distances are calculated from the center of the projection zone. For
+comparison, pure scalings that follow $r^{-2}$ (red lines) and $r^{-3}$ (black
+lines) are also shown. (**A**) Scaling behaviour in the axial direction for the
+low-frequency component. (**B**) Scaling of the high-frequency components in
+the axial direction. (**C**) and (**D**) Scaling behaviour of low- and
+high-frequency components in the radial direction. (**E**) Dipole moment and
 (**F**) quadrupole moment of the bifurcating and non-bifurcating bundles as a
 function of frequency. (**G**) Ratio of the dipole moment (red line) and
 quadrupole moment (black line) between bifurcating and non-bifurcating cases.
-**mention scaling comparison lines**
 ](../figs/fig_3.pdf){#fig:distscaling height=115%}
 
 The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal projection zone.
@@ -480,8 +481,8 @@ the distance between bundle and electrode array.
 model of axonal field potentials. (**A**) High-frequency component of the EFP
 in response to a click stimulus at $t=0$ ms, at different depths in nucleus
 laminaris. The depth is measured in the direction from dorsal to ventral.
-Recorded responses (purple lines) are shown along with model fit (orange lines).
-(**B**) Low frequency responses in recordings (purple) and model (orange). (**C**)
+Recorded responses (orange lines) are shown along with model fit (purple lines).
+(**B**) Low frequency responses in recordings (orange) and model (purple). (**C**)
 Average membrane voltage across fibers in the model when fit to the data
 shown in A. (**D**) Fitted fiber density in the model at the recording
 locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
