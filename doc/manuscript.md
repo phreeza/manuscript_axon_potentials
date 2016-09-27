@@ -53,7 +53,7 @@ the EFP is that the far field of an action potential traveling along an
 idealized straight axon is quadrupolar, meaning that it decays faster with
 distance than synaptic sources, which are typically dipolar
 [@Nunez2006Electric]. However, in experimental studies that recorded the EFP of
-axonal responses, the EFP can have a dipolar structure. For example,
+axonal responses, the EFP can also have a dipolar structure. For example,
 @Blot2014Ultrarapid recorded from the vicinity of cerebellar Purkinje cell
 axons and reported an EFP with a characteristic dipolar structure.
 @Swadlow2002Activation showed that the axonal part of the EFP of
@@ -94,9 +94,9 @@ Effects of axonal bifurcations and terminations on extracellular action potentia
 ----
 
 To understand how the geometry of an axon affects the extracellular waveform
-associated with a single action potential, we numerically simulated action
+associated with action potentials, we numerically simulated single action
 potentials propagating along generic axons and calculated their contribution to
-the EFP recorded at locations along the axon. We began by simulating an
+the EFP along the axon. We began by simulating an
 infinitely long axon following a straight line path, neither bifurcating nor
 terminating ([@fig:simpletree]A). The extracellular action potential has the
 characteristic triphasic shape. As the action potential travels from top to
@@ -108,13 +108,13 @@ waveform. The first is by attribution of the peaks of the response to
 individual current types. The first, positive peak corresponds to the capacitive
 current, the large second peak to the sodium current, and the final peak to the
 potassium current [@Gold2006Origin]. A second, more mathematical approach is specific to the
-nature of the axon. Due to Kirchoff's law and cable theory (see Methods), the total
-transmembrane current in an axon is proportional to the second derivative
-of the membrane voltage along the direction of the axon. Because the action
+nature of the axon. Due to Kirchoff's law and cable theory (see Methods), the local
+transmembrane current in an axon is proportional to the second spatial derivative
+of the membrane potential along the direction of the axon. Because the action
 potential is roughly a travelling wave, the currents are also proportional to
-the second temporal derivative of the membrane potential. The three extrema of the EFP
+the second *temporal* derivative of the membrane potential. The three extrema of the EFP
 are thus related to the points of maximum curvature in the action potential
-waveform, namely the onset, the maximum and the end of the spike.
+waveform, namely the onset, the maximum, and the end of the spike.
 
 Next we simulated the response of an axon that terminates ([@fig:simpletree]B).
 Here the approaching action potential (top traces) has the same, triphasic
@@ -126,13 +126,13 @@ location next to the termination, the majority of the currents flow at points
 located before the termination, and are identical to those in the
 non-terminating case; the first peak is not affected. The second and third peak
 of the extracellular action potential in the non-terminating case are generated
-by currents close to or after the electrode location. Because the terminating
-axon ends, the currents at points after the termination are no longer present,
+by currents close to or after the electrode location. In the terminating
+axon, the currents at points after the termination are no longer present,
 leading to a partial suppression of the second peak and a complete suppression
 of the third peak at locations after the termination.
 
-A common structure found in axons is a bifurcation. We simulated a single axon
-which bifurcates three times on each branch within a distance of 50 $\mu$m,
+Another generic structure found in axons is a bifurcation. We simulated a single axon
+that bifurcates three times on each branch within a distance of 50 $\mu$m,
 leading to a total number of 8 fibers leaving the bifurcation zone
 ([@fig:simpletree]C). The EFP near this bifurcation zone also has a biphasic
 shape. Although there is an initial small positive peak, the response is
@@ -163,11 +163,11 @@ Moving towards more biologically plausible axon geometries, we next considered
 a population of axons with slightly altered characteristics. The basic
 structure for each axon in the population was the same as in
 [@fig:simpletree]D, but we randomly perturbed the precise locations of
-bifurcations and terminations in the tree ([@fig:simpletree]E, left). We
+bifurcations and terminations in the axon tree ([@fig:simpletree]E, left). We
 furthermore stimulated each axon with an inhomogeneous Poisson spike train. The
 driving rate of the inhomogeneous Poisson process was the same for all axons
 and was consisted of a constant background rate and a Gaussian pulse of
-heightened activity. The resulting extracellular waveform ([@fig:simpletree]E,
+heightened activity. The resulting extracellular waveforms ([@fig:simpletree]E,
 right) showed a polarity reversal similar to that seen in the single action potential and axon
 EFP ([@fig:simpletree]D). In contrast to the single-spike and single-axon case, the potential at
 the center of the terminal zone largely cancelled out because the differences
