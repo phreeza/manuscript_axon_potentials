@@ -168,40 +168,43 @@ furthermore stimulated each axon with an inhomogeneous Poisson spike train. The
 driving rate of the inhomogeneous Poisson process was the same for all axons
 and was consisted of a constant background rate and a Gaussian pulse of
 heightened activity. The resulting extracellular waveforms ([@fig:simpletree]E,
-right) showed a polarity reversal similar to that seen in the single action potential and axon
-EFP ([@fig:simpletree]D). In contrast to the single-spike and single-axon case, the potential at
-the center of the terminal zone largely cancelled out because the differences
-in spike timing across fibers.
+right) showed a polarity reversal similar to that seen in the single action
+potential and axon EFP ([@fig:simpletree]D). In the bifurcation zone, the
+summed contribution from many fibers and action potentials lead to a monophasic
+negative peak, and in the termination zone there was a monophasic positive
+peak, due to the differences in exact spike timings across fibers.
+Interestingly, the summed potential at the center of the terminal zone largely
+cancelled out.
 
-The reversal behaviour is similar to the polarity reversal associated with a
-dipole observed in experimental studies (@Swadlow2002Activation;
-@Blot2014Ultrarapid; this study). We have shown that simple model axon
-structures can produce complex and diverse spatiotemporal responses comparable
-to some experimental responses.
+The reversal behaviour shown in [@fig:simpletree]E is similar to the polarity
+reversal associated with a dipole observed in experimental studies
+(@Swadlow2002Activation; @Blot2014Ultrarapid; this study). To summarize,
+simple model axon structures can produce complex and diverse spatiotemporal
+responses comparable to some experimental responses.
 
 Axonal projections generate a dipole-like field potential
 -----
 
 To understand how axons can generate a dipolar EFP, we simulated a
 parallel fiber bundle that at first runs at constant diameter without
-bifurcations and then reaches a terminal zone. Within this projection zone,
-the fibers first bifurcate, which increases the number of fibers. Finally, the
-axons reach a termination zone, in which the number of fibers decreases to zero
+bifurcations and then reaches a terminal zone. Within this terminal zone,
+the fibers first bifurcate, which increases the number of fibers. Finally, as the
+axons reach the end of the terminal zone, and the number of fibers decreases to zero
 ([@fig:bigtree]A). To model more closely the actual axonal structures found in
 nature, we also extended the model axons to include a radial fanning out of the
 branches, as well as a more diverse set of morphologies including a variable
-number of bifurcations and terminations.
+number of bifurcations and terminations (see Materials and Methods for details).
 
 The spiking activity of a generic axon bundle was simulated by stimulating
-fibers that had a background spontaneous firing rate of 100 spikes/second with
-a pulse of increased activity. We chose a Gaussian pulse with an amplitude of
-2900 spikes/second and a standard deviation of 2.8 ms. These numbers are
+fibers that had a background spontaneous firing rate of 100 spikes/s with a
+pulse of increased activity. We chose a Gaussian pulse with an amplitude of
+2900 spikes/s and a standard deviation of 2.8 ms. These numbers are
 motivated by the early auditory system
-[@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls]. However, we do not model
-the phase locking which is specific to the auditory system, so this pulse of
-activity could relate to any kind of evoked activity in the nervous system,
-such as a sensory stimulation, motor activity or a spontaneous transient
-increase in population spiking activity. 
+[@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls]. However, our approach is
+not limited to the auditory system (which would also require to include phase
+locking), and this pulse of activity could relate to various kinds of evoked
+activity in the nervous system, such as sensory stimulation, motor activity
+or a spontaneous transient increase in population spiking activity. 
 
 ![Relationship between axon structure and extracellular potential. The top row
 shows simulated action potentials travelling along a single axon with varying
@@ -225,25 +228,28 @@ limit of infinitely many trials.](../figs/fig_1_nocsd.pdf){#fig:simpletree}
 To characterize the spatiotemporal dynamics of the evoked EFP, the time course
 of the potential was calculated for several locations along the axon trunk. We
 divided our analysis into 2 frequency bands by filtering the responses. These
-frequency components are sometimes referred to as the LFP and the MUA (see Methods).
+frequency components are sometimes referred to as the LFP and the MUA (see
+Materials and Methods).
 
-Because we first wanted to study the effect of the rate pulse on the EFP, we
+Because we first wanted to study the effect of the Gaussian rate pulse on the EFP, we
 low-pass filtered the EFP responses with a cut-off frequency of 1 kHz
-([@fig:bigtree]B). This removed most of the contributions of individual spikes,
-while the population-level signal remained. The distribution of maximum
+([@fig:bigtree]B). This filtering removed most of the contributions of individual spikes,
+while a population-level signal remained. The distribution of maximum
 amplitudes of these responses are shown by the  colored contour lines in
 [@fig:bigtree]A and the colored voltage traces in [@fig:bigtree]B. Surrounding
-the terminal zone of the axon bundle, amplitudes showed the double-lobed
-shape typical of a dipole.
+the terminal zone of the axon bundle, amplitudes showed a double-lobed
+shape that is typical of a dipole.
 
-In [@fig:bigtree]B, all the responses showed a biphasic or monophasic
-deflection that was elicited by the population firing rate pulse. This
-deflection was visible at all recording locations. The deflection reverses
-polarity in the middle of the terminal zone of the bundle ([@fig:bigtree]B).
-The polarity reversal occurs by a decrease of the amplitude to zero and a
-subsequent reappearance with reversed polarity, as opposed to a polarity
-reversal through a gradual shift in phase. This behaviour is also typical for a
-dipolar field potential.
+In [@fig:bigtree]B, the responses mostly showed monophasic deflection that was
+elicited by the population firing rate pulse. This deflection was visible at
+all recording locations. In the radial direction from the axon tree, i.e. in
+horizontal direction in the figure, the amplitude decays. In the axial
+direction along the axon tree, ie in vertical direction in the figure, the
+voltage deflection reverses polarity in the middle of the terminal zone of the
+bundle ([@fig:bigtree]B). The polarity reversal occurs by a decrease of the
+amplitude to zero and a subsequent reappearance with reversed polarity (as
+opposed to a polarity reversal through a gradual shift in phase). This behaviour
+is also typical for a dipolar field potential.
 
 The point of the polarity reversal coincides roughly with the middle of the
 terminal zone. This means that the absolute value of the response amplitude
@@ -252,18 +258,19 @@ maximum. To better understand how anatomical features and response amplitude
 are related, we compared the signed maximum value (meaning the *signed* value
 corresponding to the maximum *absolute* amplitude) of the EFP (black line in
 [@fig:bigtree]C) with the difference in the number of branchings and
-terminations (blue histogram in [@fig:bigtree]C).
+terminations per 200 $\mu$m bin (blue histogram in [@fig:bigtree]C).
 
-Along the nerve trunk the number of fibers is constant. As the axon bundle reaches
-its terminal zone, the number of bifurcations increases. The increase of
-bifurcations is followed by an increase of terminations. In the middle of the
-terminal zone, the number of bifurcations and terminations are equal. At
-the same depth, the amplitude of the low-frequency component crosses zero.  At
-the end of the terminal zone, the terminations outweigh the bifurcations. As
-the axon bundle ends, there are no longer any bifurcations or terminations, and
-the number of fibers decays toward zero. Overall, the amplitude of the maximum response
-(black trace) follows the distribution of branchings and terminations (blue
-histogram). 
+Along the nerve trunk the number of fibers is constant. As the axon bundle
+reaches its terminal zone, the number of bifurcations increases(blue bars point
+right in [@fig:bigtree]C). The increase of bifurcations is followed by an
+increase of terminations. In the middle of the terminal zone, the number of
+bifurcations and terminations are equal. At the same depth, the amplitude of
+the low-frequency component crosses zero.  At the end of the terminal zone, the
+terminations outweigh the bifurcations (blue bars point
+left in [@fig:bigtree]C). As the axon bundle ends, there are no
+longer any bifurcations or terminations, and the number of fibers decays toward
+zero. Overall, the amplitude of the maximum response (black trace) follows the
+distribution of branchings and terminations (blue histogram). 
 
 The progression of amplitudes in the low-frequency components seen in
 [@fig:bigtree]C is also visible in [@fig:bigtree]B, most clearly in the first
@@ -314,57 +321,61 @@ the firing rate pulse at locations close to the nerve bundle, but at locations
 further away from the trunk it is no longer distinguishable from the background
 activity.-->
 
-To understand the contributions related to individual spikes, we next turned
-our attention to the high-frequency range. We calculated the MUA of the
-response, which contains the high-frequency (>1 kHz) components, and is thought
-to reflect spiking activity in extracellular recordings. The MUA did not show a
+To understand the EFP contributions related to individual spikes, we next turned
+our attention to the high-frequency range. The MUA of the
+response, which contains the high-frequency (>1 kHz) components, is thought
+to reflect spiking activity when calculated in extracellular recordings. In out
+example in [@fig:bigtree], the MUA did not show a
 double-lobe, but rather appeared like an ellipsoid centered at the terminal zone
 ([@fig:bigtree]D).
 
 The shape of the MUA response was not modulated heavily in space, the main
 change across locations lies in the scaling of the amplitude ([@fig:bigtree]E).
-The amplitude decays with radial distance from the trunk. The amplitude reaches
+The amplitude decays with radial distance from the trunk. In the axial
+direction, the amplitude reaches
 its maximum at the middle of the fiber bundle.
 
-The longitudinal behaviour is further examined in [@fig:bigtree]F. The
-amplitude of the MUA component (red trace) changes its amplitude in the
-longitudinal direction in accordance to the local number of fibers (black
-histogram). It has an approximately constant amplitude along the nerve trunk
-and then increases in amplitude as the number of fibers is increased by
-bifurcations. As the fibers terminate and the number of fibers decreases, so does the
-amplitude of the MUA.
+The axial behaviour is further examined in [@fig:bigtree]F. The
+amplitude of the MUA component (black trace) changes its amplitude in the
+longitudinal direction in accordance to the local number of fibers (green
+histogram). The local number of fibers and the MUA amplitude are both constant
+along the nerve trunk. Both measures then increases in amplitude as the number
+of fibers is increased by bifurcations. As the fibers terminate and the number
+of fibers decreases, so does the amplitude of the MUA.
 
 We have thus shown a qualitatively different behaviour in the low- and
-high-frequency components of the EFP. Both appear to be related to anatomy,
-though each in a different way. Together, these relationships suggest that the
-particular branching and terminating structure of the axon bundle may give rise to
-a dipolar field potential.
+high-frequency components of the EFP, i.e. LFP and MUA.The particular branching
+and terminating structure of the axon bundle may give rise to a dipolar field
+potential.
 
 Effects of bifurcations and terminations on distance scaling behaviour of EFPs
 --------
 
-Because dipolar fields are associated with a longer spatial reach than the
-quadrupolar fields typically associated with axonal spikes, we decided to
-investigate the effect of axon structure on the spatial reach of the
-frequency components ([@fig:distscaling]). To do this we performed a further
-simulation of an axon bundle. In this case we simulated two versions of the
-axon bundle, one containing a terminal zone with bifurcations, and one
-without bifurcations in which a fixed number of fibers arrives and then
-terminates.
+Because dipolar fields have a weaker spatial decay than quadrupolar fields,
+which are typically associated with axonal spikes, we investigated the effect
+of axon structure on the spatial reach of the EFP. Motivated by the
+fundamentally different behaviour of the low-frequency LFP and the
+high-frequency MUA, we differentiated between these frequency components
+([@fig:distscaling]). To do this, we performed further simulations of an axon
+bundle. As before, we simulated an axon bundle containing a terminal zone with
+bifurcations and terminations. Moreover, as a control, we also simulated an
+axon bundle without bifurcations in which a fixed number of fibers arrives and
+then terminates.
 
 To avoid confounding effects in the spatial reach of the potentials due to the
-arrangement of axon branches, and afford better analytic tractability, we
-transitioned to a simplified model of the axon bundle. This model omitted the
-radial fanning out of the bundle in the terminal zone used in the simulation
-of [@fig:bigtree]. Furthermore, the simplified model discarded the detailed
-conductance-based simulation of the membrane potential, and instead assumed a
-given membrane potential travelling along the axon trunk with constant
-propagation velocity. Using linear cable theory, it was then possible to
-calculate the membrane currents necessary for determination of the EFP. The
-simplified model also allowed us to consider a continuous number of fibers instead
-of simulating discrete bifurcations and bifurcations. While highly simplified,
-this model captures all effects described for the more complex model so far.
-All following simulations are based on this simplified model.
+specific arrangement of axon branches in a single realization of an axon tree,
+and to afford better analytic tractability, we transitioned to a simpler model
+of the axon bundle. This model omitted the radial fanning out of the bundle in
+the terminal zone used in the simulation of [@fig:bigtree]. Furthermore, the
+simplified model discarded the detailed conductance-based simulation of the
+membrane potential, and instead assumed a fixed membrane potential waveform travelling
+along the axon trunk with constant propagation velocity. Using linear cable
+theory, it was then possible to calculate the membrane currents necessary for
+determination of the EFP. The simplified model also allowed us to consider a
+continuous number of fibers instead of simulating discrete bifurcations and
+bifurcations. While highly simplified, this model captures all effects
+described for the more complex model so far. All following simulations are
+based on this simplified model.
 
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
 aligned with the axon trunk. We therefore expected the field potential to decay
