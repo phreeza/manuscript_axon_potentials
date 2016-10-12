@@ -232,7 +232,7 @@ frequency components are sometimes referred to as the LFP and the MUA (see
 Materials and Methods).
 
 Because we first wanted to study the effect of the Gaussian rate pulse on the EFP, we
-low-pass filtered the EFP responses with a cut-off frequency of 1 kHz
+low-pass filtered the EFP responses with a cut-off frequency of 1\ kHz
 ([@fig:bigtree]B). This filtering removed most of the contributions of individual spikes,
 while a population-level signal remained. The distribution of maximum
 amplitudes of these responses are shown by the  colored contour lines in
@@ -323,7 +323,7 @@ activity.-->
 
 To understand the EFP contributions related to individual spikes, we next turned
 our attention to the high-frequency range. The MUA of the
-response, which contains the high-frequency (>1 kHz) components, is thought
+response, which contains the high-frequency (>1\ kHz) components, is thought
 to reflect spiking activity when calculated in extracellular recordings. In out
 example in [@fig:bigtree], the MUA did not show a
 double-lobe, but rather appeared like an ellipsoid centered at the terminal zone
@@ -344,9 +344,8 @@ of fibers is increased by bifurcations. As the fibers terminate and the number
 of fibers decreases, so does the amplitude of the MUA.
 
 We have thus shown a qualitatively different behaviour in the low- and
-high-frequency components of the EFP, i.e. LFP and MUA.The particular branching
-and terminating structure of the axon bundle may give rise to a dipolar field
-potential.
+high-frequency components of the EFP, i.e. LFP and MUA. The particular branching
+and terminating structure of the axon bundle may thus give rise to a dipolar LFP.
 
 Effects of bifurcations and terminations on distance scaling behaviour of EFPs
 --------
@@ -365,96 +364,111 @@ then terminates.
 To avoid confounding effects in the spatial reach of the potentials due to the
 specific arrangement of axon branches in a single realization of an axon tree,
 and to afford better analytic tractability, we transitioned to a simpler model
-of the axon bundle. This model omitted the radial fanning out of the bundle in
-the terminal zone used in the simulation of [@fig:bigtree]. Furthermore, the
-simplified model discarded the detailed conductance-based simulation of the
-membrane potential, and instead assumed a fixed membrane potential waveform travelling
-along the axon trunk with constant propagation velocity. Using linear cable
-theory, it was then possible to calculate the membrane currents necessary for
-determination of the EFP. The simplified model also allowed us to consider a
-continuous number of fibers instead of simulating discrete bifurcations and
-bifurcations. While highly simplified, this model captures all effects
-described for the more complex model so far. All following simulations are
-based on this simplified model.
+of the axon bundle (see Materials and Methods). This model omitted the radial
+fanning out of the bundle in the terminal zone used in the simulation of
+[@fig:bigtree]. Furthermore, the simplified model discarded the detailed
+conductance-based simulation of the membrane potential, and instead assumed a
+fixed membrane potential waveform travelling along the axon trunk with constant
+propagation velocity. Using linear cable theory, it was then possible to
+calculate the membrane currents necessary for determination of the EFP. The
+simplified model also allowed us to consider a continuous number of fibers
+instead of simulating discrete bifurcations and bifurcations. While highly
+simplified, this model captures all effects described for the more complex
+model so far. All following simulations are based on this simplified model.
 
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
 aligned with the axon trunk. We therefore expected the field potential to decay
 as $r^{-2}$ in this direction, which we call the axial direction. To test
-this, we plotted the amplitude of the low-frequency component (<1 kHz) in axial
+this, we plotted the amplitude of the low-frequency component (<1\ kHz) in axial
 direction in [@fig:distscaling]A. The plot is on a double logarithmic scale,
 meaning that the slope of the curve corresponds to the scaling exponent, and
-the vertical offset corresponds to the amplitude of the component. We observe
+the vertical offset corresponds to the amplitude of the component. We observed
 $r^{-2}$ scaling for distances larger than the extent of the
-bifurcation zone ($\approx 1$ mm), but the amplitude of the low-frequency
-component remains an order of magnitude larger in the bifurcating case (solid
-line) than in the non-bifurcating case (dashed line). Next we examined the
-high-frequency component ([@fig:distscaling]B). Here the asymptotic scaling is
-also $r^{-2}$ for distances $\gtrsim 1$ mm, but the amplitudes are similar between bifurcating and non-bifurcating case .
-The difference between the amplitudes of bifurcating and non-bifurcating
-bundles is much smaller than in the low-frequency case, even though the
-difference in amplitudes are the same at short distances $\lesssim 100 \mu$m.
-At these distances, the difference is proportional to the number of fibers,
-which is larger in the bifurcating case. To conclude, the terminal zone
-contributes mainly to the low-frequency dipole moment of the EFP.
+bifurcation zone ($\gtrsim 1$\ mm). Interestingly, the amplitude of the low-frequency
+component remained an order of magnitude larger in the bifurcating case (solid
+line) than in the non-bifurcating case (dashed line).
+
+Next we examined the high-frequency component ([@fig:distscaling]B). Here the
+asymptotic scaling was also $r^{-2}$ for axial distances $\gtrsim 1$\ mm, but
+the amplitudes were similar between bifurcating and non-bifurcating case. The
+difference between the amplitudes of bifurcating and non-bifurcating bundles is
+much smaller than in the low-frequency case, even though the difference in
+amplitudes was the same at short distances $\lesssim 100$\ $\mu$m. At these
+distances, the difference is proportional to the number of fibers, which is
+larger in the bifurcating case. To conclude, the terminal zone contributed mainly
+to the low-frequency dipole moment of the EFP. Because of this, the magnitude of the
+low-frequency component exceeded the magnitude of the high-frequency component
+by two orders of magnitude in the far field. 
 
 In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component
 becomes zero in the direction perpendicular to the dipole axis, and we thus
 expected quadrupolar or higher-order scaling behaviour in this case. In
 [@fig:distscaling]C we can see that this is indeed the case for the
-low-frequency component. The potentials scale as $r^{-3}$ and the difference in
+low-frequency component. The potentials scale as $r^{-3}$, and the difference in
 logarithmic amplitude between bifurcating and non-bifurcating case is roughly
 the same at all distances. The high-frequency component also decayed as
-$r^{-3}$ in the radial direction ([@fig:distscaling]D), and the difference in
-amplitudes was slightly diminished at larger distances.
+$r^{-3}$ in the radial direction ([@fig:distscaling]D), but the difference in
+logarithmic amplitudes was slightly diminished at larger distances.
 
 To better understand the frequency-specific contributions to the dipole
 moments, we calculated the scaling behaviour as a function of frequency. The
 amplitude of the dipole moment was determined by fitting a straight line with
 slope $-2$ to the double logarithmic scaling of the power spectral density. The
-power spectral density was averaged over a frequency band 500 Hz wide, and the
-fit was performed for distances $> 1$ mm. The y-intecept of this straight line
-then gave the dipole moments. Frequency-specific dipole moments are shown in
-[@fig:distscaling]E. We can see that the dipole moment in the bifurcating case
-(solid line) exceeds the non-bifurcating case (dashed line) for low
-frequencies. The dipole moment of the bifurcating case has a maximum at around
-1 kHz, while in the non-bifurcating case it decays monotonically. For higher
-frequencies, the moments become roughly equal.
+power spectral density was averaged over a frequency band 500\ Hz wide, and the
+fit was performed for distances $> 1$\ mm. The value of this straight line at
+axial distance 1\ $\mu$m then gave the dipole moments.
 
-We thus conclude that the dipolar component will dominate the EFP at long
-distances in all directions except for those perpendicular to the dipole axis.
-At shorter distances, and in the plane perpendicular to the dipole axis, the
-quadrupolar component becomes important (as in any multipole expansion). For
-this reason we performed the same analysis for the quadrupole moments
-([@fig:distscaling]F). Here the moments are similar for low frequencies below 500 Hz,
-then diverge at frequencies up to 2 kHz, before approaching each other again
-for frequencies above 2 kHz. The quadrupole moment of the bifurcating case has a
-maximum at around 2kHz.
+These frequency-specific dipole moments are shown in [@fig:distscaling]E. The
+dipole moment of the bifurcating case (solid line) has a maximum at around 1
+kHz, while in the non-bifurcating case (dashed line) it decays monotonically.
+We can see that the dipole moment in the bifurcating case exceeds the
+non-bifurcating case for low frequencies. For higher frequencies, the moments
+become roughly equal, meaning that they are formed by the incoming fibers, and
+the bifurcation zone does not contribute strongly.
 
-In [@fig:distscaling]G we compare the relative impact of the terminal zone on
-dipole (red line) and quadrupole moments (black line), by plotting their ratios
-of across frequencies. Here we can see that for low frequencies, the ratio for
-the quadrupole moment approaches unity, meaning that there is no additional
-contribution from the terminal zone. The dipole moment approaches a factor of
-10, meaning that the terminal zone contributes. In both components, the
-contribution is maximal for intermediate frequencies, with the maximal dipolar
-contribution lying at lower frequencies than the quadrupolar component. For
-very high frequencies, both contributions return to values below 5. The
-terminal zone has a supralinear contribution (factor greater than 10) for the
-dipole at frequencies below 3.5 kHz and for the quadrupolar component at
-frequencies between 1 and 4.5 kHz.
+As in any multipole expansion, the dipolar component will dominate the EFP at
+long distances in all directions except for those perpendicular to the dipole
+axis. At shorter distances, as well as in the plane perpendicular to the dipole
+axis, the quadrupolar component becomes important. For this reason we performed
+the same analysis for the quadrupole moments. This meant fitting a line with
+slope -3 instead of -2 to the power spectral density. The resulting quadrupole
+moments are shown in [@fig:distscaling]F. The quadrupole moment of the
+bifurcating case (solid line) has a maximum at around 2\ kHz, and the
+quadrupole moment of the non-bifurcating case (dashed line) is monotonically
+decreasing. The moments are increasingly different with increasing frequencies
+up to 2\ kHz, after which they approach each other again. As for the dipole
+moments, this can be interpreted as a low contribution of the terminal zone to
+the high-frequency moments. 
+
+In the bifurcating case, the number of fibers was increased by a factor of 10.
+This means that an increase in the moments due to the bifurcations greater than
+10 can be called supralinear. In [@fig:distscaling]G we compare this relative
+impact of the terminal zone on dipole moments (red line) and quadrupole moments (black
+line), by plotting their ratios across frequencies. Here we can see that for
+low frequencies, the ratio for the quadrupole moment approaches values lower
+than 10, meaning that there is only little additional contribution from the
+terminal zone. The dipole moment approaches a factor of 10 for low frequencies,
+meaning that the terminal zone contributes in proportion to the number of added
+fibers. In both components, the contribution is maximal for intermediate
+frequencies, with the maximal dipolar contribution lying at lower frequencies
+than the quadrupolar component. For very high frequencies, both contributions
+return to values below 10. The terminal zone has a supralinear contribution
+(factor greater than 10) for the dipole at frequencies below 3.5\ kHz and for
+the quadrupolar component at frequencies between 1 and 4.5\ kHz.
 
 Together, these observations show us that the terminal zone makes a strong
 contribution to the far-reaching dipole field potential of the axon bundle. At
-higher frequencies, the more local quadrupolar potential is also affected.
+somewhat higher frequencies, the more local quadrupolar potential is also
+increased.
 
 ![The low-frequency component of the axon bundle EFP exceeds the high-frequency
 component in reach, in a manner depending on axon structure. Subplots
 **A**-**D** show the scaling of the low-frequency (blue lines) and
 high-frequency (green lines) frequency components for the bifurcating (solid
-lines) and non-bifurcating (dashed lines) on a doubly-logarithmic scale. All
+lines) and non-bifurcating (dashed lines) cases on a doubly-logarithmic scale. All
 distances are calculated from the center of the terminal zone. For
-comparison, pure scalings that follow $r^{-2}$ (red lines) and $r^{-3}$ (black
+comparison, scalings that follow $r^{-2}$ (red lines) and $r^{-3}$ (black
 lines) are also shown. (**A**) Scaling behaviour in the axial direction for the
 low-frequency component. (**B**) Scaling of the high-frequency components in
 the axial direction. (**C**) and (**D**) Scaling behaviour of low- and
@@ -476,7 +490,7 @@ the neurophonic. In NL, the input from the two ears is first integrated to
 calculate the azimuthal location of a sound source, and this information is
 encoded in the EFP. The EFP in this region is mainly due to the efferent axons
 and synaptic currents, and the spiking contribution of postsynaptic neurons is
-minimal [@Kuokkanen2010Origin]. Furthermore, the anatomy of the efferent axons
+minimal [@Kuokkanen2010Origin;@Kuokkanen2013Linear]. Furthermore, the anatomy of the efferent axons
 is well known and follows a stereotypical pattern [@carr90]: Two fiber bundles
 enter the nucleus, with fibers from the contralateral ear entering ventrally,
 and from the ipsilateral ear entering dorsally. The axon bundles reach the
@@ -493,7 +507,7 @@ component as previously reported [@wagner09]. The high-frequency ringing
 corresponds to the position on the frequency map within NL being recorded from
 and reflects the tuning of the axons to the stimulus frequency. We filtered the
 data to roughly separate these components. The cutoff to split the components
-was set to 2 kHz, because this frequency was always well below
+was set to 2\ kHz, because this frequency was always well below
 the high-frequency ringing component, which usually dominated the spectra.
 
 The model was fit to the data by performing a nonlinear least squares
@@ -503,20 +517,20 @@ location next to the most dorsal electrode, (3) the conduction velocity and (4)
 the distance between bundle and electrode array.
 
 ![ Spatial structure of EFPs recorded from the barn owl can be explained by
-model of axonal field potentials. (**A**) High-frequency ($\geq 2$ kHz) component of the EFP
+model of axonal field potentials. (**A**) High-frequency ($\geq 2$\ kHz) component of the EFP
 in response to a click stimulus at $t=0$ ms, at different depths in nucleus
 laminaris. The depth is measured in the direction from dorsal to ventral.
 Recorded responses (orange lines) are shown along with model fit (purple lines).
-(**B**) Low frequency ($\leq 2$ kHz) responses in recordings (orange) and model (purple). (**C**)
+(**B**) Low frequency ($\leq 2$\ kHz) responses in recordings (orange) and model (purple). (**C**)
 Average membrane voltage across fibers in the model when fit to the data
 shown in A. (**D**) Fitted number of fibers in the model at the recording
 locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
 
 The resulting EFP responses and the model fit are shown in [@fig:barnowl]A.
-[@fig:barnowl]A shows the high-frequency ($\geq 2$ kHz) response. The orange
+[@fig:barnowl]A shows the high-frequency ($\geq 2$\ kHz) response. The orange
 lines show the actual responses in the data. The responses are have a
 Gabor-like shape, as expected [@wagner09], and have their maximal amplitude in
-the center of the recording array, at around $850 \mu$m recording depth. The
+the center of the recording array, at around 850\ $\mu$m recording depth. The
 velocity was calculated to be 4.0 m/s. A previously published estimate of the
 axonal conduction velocity in this nucleus was 1.6 m/s in
 @McColgan2014Functional. Toward the edges, the amplitude decays. In the
@@ -534,7 +548,7 @@ progression. Another possible explanation is that the additional amplitude
 could be due to non-axonal sources such as postsynaptic spikes, which do not
 follow the assumptions underlying the model being fit.
 
-The low-frequency ($30$ Hz - $2$ kHz, [@fig:barnowl]B) responses reveal
+The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]B) responses reveal
 the typical polarity reversal observed in earlier figures. The
 responses at the dorsal and ventral edges show the same shape, but with opposite
 polarity. The central responses show a diminished maximum amplitude,
@@ -702,10 +716,10 @@ analysis.
 
 Acoustic stimuli were digitally generated by a custom-made \textsc{Matlab}
 (MathWorks, Natick, MA, USA) script driving a signal-processing board (RX6,
-Tucker-Davis Techonologies) at a sampling rate of 195.3125 kHz. The sound stimuli
+Tucker-Davis Techonologies) at a sampling rate of 195.3125\ kHz. The sound stimuli
 were attenuated using a programmable attenuator (PA5, Tucker-Davis
 Techonologies, Alachua, FL, USA). Click stimuli were generated as a single
-half-wave of a 5 kHz sine tone. Miniature earphones were inserted into the
+half-wave of a 5\ kHz sine tone. Miniature earphones were inserted into the
 owl's ear canals and fixed to the headplate. Acoustic stimuli were fed to these
 earphones. Stimulus delivery was triggered by National Instruments equipment
 (NI USB-6259 and BNC-2090A, National Instruments Inc, Austin, TX, USA), and
@@ -723,14 +737,14 @@ modeled as a sequence of active nodes and passive myelinated segments. Unlike
 previous models, we included branching axons in our simulations. These were
 generated by connecting two passive segments to a node, and continuing the
 alternation of active and passive segment in each resulting branch. The
-myelinated segments and nodes had lengths of 75 $\mu$m and 2 $\mu$m,
+myelinated segments and nodes had lengths of 75\ $\mu$m and 2\ $\mu$m,
 respectively. In cases where the positions of the bifurcations or terminations
 were fixed, the last segment was shortened in order to obtain the total length
 before the next bifurcation or termination.
 
 At the designated spike times, a special conductance was temporarily activated
 in the first node of Ranvier, causing the axon to fire. The conductance had a reversal
-potential of 0 mV, a maximal amplitude of 0.05 $\mu$S, and a timecourse
+potential of 0 mV, a maximal amplitude of 0.05\ $\mu$S, and a timecourse
 described by an alpha-function with time constant 0.01 ms. Soma and axon
 initial segment were not modeled explicitly. 
 
@@ -778,9 +792,9 @@ through the small nondes of Ranvier, we used the point source approximation; we
 did not use the line source approximation [@Holt1999Electrical].
 
 All filtering was performed with third order Butterworth filters. The MUA was
-calculated by high-pass filtering the signal with a cutoff of 2500 Hz, setting
+calculated by high-pass filtering the signal with a cutoff of 2500\ Hz, setting
 all samples with negative values to zero, and then low-pass filtering the
-resulting response with a cutoff of 500 Hz. The LFP was calculated by low-pass filtering the signal with a cutoff of 1000 Hz.
+resulting response with a cutoff of 500\ Hz. The LFP was calculated by low-pass filtering the signal with a cutoff of 1000\ Hz.
 
 Simplified axon-bundle model
 ----------------------------
@@ -877,7 +891,7 @@ an initial guess of a Gaussian with amplitude 12, centered at penetration depth
 725 $\mu$m, and standard deviation 400 $\mu$m.
 
 Because of the linearity of equations 1-4 in $I$ and $V$, inferring the
-membrane voltage $V$ from the average over trials of the EFP $\Phi$ produces
+membrane voltage $V$ from the average over trials of the EFP $\phi$ produces
 the average membrane voltage $V$. This in turn is the membrane voltage response
 of a single spike convolved with the peri-stimulus time histogram (PSTH).
 
