@@ -465,8 +465,8 @@ increased.
 ![The low-frequency component of the axon bundle EFP exceeds the high-frequency
 component in reach, in a manner depending on axon structure. Subplots
 **A**-**D** show the scaling of the low-frequency (blue lines) and
-high-frequency (green lines) frequency components for the bifurcating (solid
-lines) and non-bifurcating (dashed lines) cases on a doubly-logarithmic scale. All
+high-frequency (green lines) components for the bifurcating (solid
+lines) and non-bifurcating (dashed lines) axons on a doubly-logarithmic scale. All
 distances are calculated from the center of the terminal zone. For
 comparison, scalings that follow $r^{-2}$ (red lines) and $r^{-3}$ (black
 lines) are also shown. (**A**) Scaling behaviour in the axial direction for the
@@ -516,24 +516,25 @@ location, (2) the average membrane potential over time in a single fiber at the
 location next to the most dorsal electrode, (3) the conduction velocity and (4)
 the distance between bundle and electrode array.
 
-![ Spatial structure of EFPs recorded from the barn owl can be explained by
-model of axonal field potentials. (**A**) High-frequency ($\geq 2$\ kHz) component of the EFP
-in response to a click stimulus at $t=0$ ms, at different depths in nucleus
-laminaris. The depth is measured in the direction from dorsal to ventral.
-Recorded responses (orange lines) are shown along with model fit (purple lines).
-(**B**) Low frequency ($\leq 2$\ kHz) responses in recordings (orange) and model (purple). (**C**)
-Average membrane voltage across fibers in the model when fit to the data
-shown in A. (**D**) Fitted number of fibers in the model at the recording
+![ The spatial structure of EFPs recorded from the nucleus laminaris of the
+barn owl can be explained by a model of axonal field potentials. (**A**)
+High-frequency ($\geq 2$\ kHz) component of the EFP in response to a click
+stimulus at $t=0$ ms, at different recording depths. The depth is measured in
+the direction from dorsal to ventral. Recorded responses (orange lines) are
+shown along with model fit (purple lines). (**B**) Low frequency ($\leq 2$\
+kHz) responses in recordings (orange) and model (purple). (**C**) Average
+membrane voltage across fibers in the model when fit to the data shown in A.
+(**D**) Fitted number of fibers in the model at the recording
 locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
 
-The resulting EFP responses and the model fit are shown in [@fig:barnowl]A.
+The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
 [@fig:barnowl]A shows the high-frequency ($\geq 2$\ kHz) response. The orange
-lines show the actual responses in the data. The responses are have a
-Gabor-like shape, as expected [@wagner09], and have their maximal amplitude in
-the center of the recording array, at around 850\ $\mu$m recording depth. The
-velocity was calculated to be 4.0 m/s. A previously published estimate of the
-axonal conduction velocity in this nucleus was 1.6 m/s in
-@McColgan2014Functional. Toward the edges, the amplitude decays. In the
+lines indicate the actual responses in the data. The responses have a
+Gabor-like shape, as expected [@wagner09], with maximum amplitude in the center
+of the recording array, at around 850\ $\mu$m penetration depth. The velocity
+was calculated to be 4.0 m/s. A previously published estimate of the axonal
+conduction velocity in this nucleus was 1.6 m/s in @McColgan2014Functional.
+Toward the edges (< 100 and > 1400 $\mu$m), the amplitude decays. In the
 central region, a systematic shift in delay can be observed, while the response
 seems to be stationary in the more dorsal and ventral electrodes. The delay
 increases from ventral to dorsal, which is consistent with the anatomy for
@@ -541,12 +542,12 @@ contralateral stimulation. All these aspects are qualitatively reproduced by
 the model (purple traces). The main deviation between model and data lies in a
 slightly diminished amplitude of the oscillation at the most central electrode
 sites. Because the phase shift in the central region is mainly determined by
-the conduction velocity, this might be due to a
-slightly changing conduction velocity in the nucleus. A diminished amplitude in
-the model fit could reflect an inability to exactly match the phase
-progression. Another possible explanation is that the additional amplitude
-could be due to non-axonal sources such as postsynaptic spikes, which do not
-follow the assumptions underlying the model being fit.
+the conduction velocity, this might be due to a slightly changing conduction
+velocity in the nucleus. A diminished amplitude in the model fit could reflect
+an inability to exactly match the phase progression. Another possible
+explanation is that the additional amplitude could be due to non-axonal sources
+such as postsynaptic spikes, which do not follow the assumptions underlying the
+model being fit.
 
 The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]B) responses reveal
 the typical polarity reversal observed in earlier figures. The
@@ -573,8 +574,8 @@ equation essentially imposes a high-pass filter on the membrane voltage.
 
 The inferred number of fibers is shown in [@fig:barnowl]D. The density (number
 of fibers per unit length) is shown as a function of dorsoventral depth,
-meaning that the y-axis of [@fig:barnowl]A and [@fig:barnowl]B corresponds to
-the x-axis in [@fig:barnowl]D. The density has its maximum at the center of the
+meaning that the vertical axis of [@fig:barnowl]A and [@fig:barnowl]B corresponds to
+the horizontal axis in [@fig:barnowl]D. The density has its maximum at the center of the
 electrode array, and decays steadily to both sides. This profile of the number of fibers
 is consistent with the known anatomy of axons in NL. The density does not decay
 to zero on either side, which may be due to the limited range of recording
@@ -585,40 +586,41 @@ terminate within the nucleus.
 Discussion
 ==============
 Based on numerical simulations, analytical calculations and experimental data,
-we show that axonal fiber bundles can contribute significantly to the EFP, and
-how the contributions are shaped by axonal morphology. We characterize three
-principal effects of axon bundle structure on the EFP. Firstly, the
+we show how axonal fiber bundles contribute significantly to the EFP, and we
+explain how the contributions are shaped by axonal morphology. There are
+three principal effects of axon bundle structure on the EFP. Firstly, the
 low-frequency components of the EFP are governed by the densities of
-bifurcations and terminations and can have a dipolar
-structure ([@fig:simpletree] and [@fig:bigtree]). Secondly, the high-frequency
-components are governed by the local number of fibers ([@fig:bigtree]).
-Furthermore we show that the low-frequency components exceed the high-frequency
-components in spatial reach. In particular, the dipolar low-frequency
-components are not negligible and exceed the reach of the presumed quadrupolar
-nature of axonal EFPs ([@fig:distscaling]).
+bifurcations and terminations and can have a dipolar structure
+([@fig:simpletree] and [@fig:bigtree]). Secondly, the high-frequency components
+are governed by the local number of fibers ([@fig:bigtree]). Furthermore we
+show that the low-frequency components exceed the high-frequency components in
+spatial reach. In particular, the dipolar low-frequency components are not
+negligible and exceed the reach of the presumed quadrupolar nature of axonal
+EFPs ([@fig:distscaling]).
 
 Relevance to interpretation of electrophysiological recordings
 ----
 
-The two frequency components show qualitatively different behaviour across
-recording locations. The low-frequency component is a largely stationary
+The low- and high-frequency components show qualitatively different behaviours
+across recording locations. The low-frequency component is a largely stationary
 phenomenon, while the high-frequency component shifts in space as a function of
-the axonal conduction velocity ([@fig:barnowl]). Due to the difference in reach,
-the high-frequency component is most suitable for the
-study of local phenomena, while the low-frequency component bears information
-about locations more distant from the recording site ([@fig:distscaling]).
+the axonal conduction velocity ([@fig:barnowl]). Due to the difference in
+reach, the high-frequency component is most suitable for the study of local
+phenomena, while the low-frequency component bears information about locations
+more distant from the recording site ([@fig:distscaling]).
 
 These findings relate to the interpretation of a wide range of
-electrophysiological data. Heuristics which are valid for the analysis of EFPs
+electrophysiological data. Heuristics that are valid for the analysis of EFPs
 of synaptic, dendritic, or somatic currents may not be valid for axon bundles.
 When performing a typical current source density analysis, the local number of
 fibers cannot be disentangled from membrane current density
-[@Nicholson1973Theoretical]. The membrane voltage, and thus the
-membrane current densities, may vary with time and location independently. In
-the case of an axonal fiber bundle as discussed here, the opposite is the case:
-the number of fibers is variable in space, in particular in the terminal zone,
-but the membrane voltages are highly correlated over space and time. The sink
-and source distribution found in classical CSD analysis of axon bundles
+[@Nicholson1973Theoretical]. The membrane voltage, and thus the membrane
+current densities, can vary with time and location independently. In the case
+of an axonal fiber bundle as discussed here, the opposite is the case: the
+number of fibers is variable in space, in particular in the terminal zone, but
+the membrane voltages are highly correlated over space and time due to the
+signal propagation in the axon. The sink and source distribution found in
+classical CSD analysis of axon bundles
 [@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show a
 dipolar structure in terminal zones. Our modelling approach provides a novel
 way of interpreting these findings.
