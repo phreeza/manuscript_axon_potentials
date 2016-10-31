@@ -293,9 +293,10 @@ difference in number between bifurcations and terminations (blue histogram).
 (**D**) Iso-amplitude contours for the MUA component, which does not exhibit a
 double-lobed structure. (**E**) Response waveforms of the MUA component. The
 responses do not reverse their polarity. The same is true for the high-pass
-filtered components (the first processing stage for calculation of MUA, see Methods), example shown in black trace. (**F**) Maximum amplitude of
-the high-pass filtered component (black line) follows the number of fibers
-(green histogram).
+filtered components (the first processing stage for calculation of MUA, see
+Methods), example shown in black trace. (**F**) Maximum amplitude of the
+high-pass filtered component (black line) follows the number of fibers (green
+histogram).
 ](../figs/fig_2.pdf){#fig:bigtree height=110%}
 
 <!--To better understand the relationship between axonal anatomy and this spatial
@@ -926,51 +927,30 @@ $$\left|\tilde{I}(z,\omega)\right| = \sqrt{\left(\frac{dn}{dz}(z)\right)^2+\left
 Todos
 =====
 - Code
-    - adapt generic bundle params to be more typical
-    - make click psth more generic
     - check units
-- Introduction
-    - find more examples in literature
+    - Model fit
+      - set density at border to zero in fit
+      - calculate R^2
+      - annotate contra/ipsi from labbooks
+      - fit many units
+      - Inspect cases in which fit doesn't work great
 - Results
-    - move forward effect explanation and describe [@fig:simpletree]
-    - Page 4 changes
-    - much more substantial explanation of [@fig:distscaling]
-    - describe differences between barn owl and generic model
-    - Add more biological motivation for [@fig:distscaling] normalization
+    - Order of magnitude estimate
 - Figures
-    - [@fig:simpletree]
-        - add input intensity Gaussian
-        - use labels E1, E2, E3, F1, F2
-        - switch E2 and E3
-        - more space between panels
-        - add scalebars to each panel
-        - superimpose CSD and EFP?
-    - [@fig:bigtree]
-        - lower density of axons
-        - Add scalebar for time
-        - change color of axis label
-        - change color of box
-        - add PSTH
-        - align zeros in C
-        - add contour labels?
-    - [@fig:barnowl]
-        - redo with new data
-    - [@fig:distscaling]
-        - add diagrams
-        - space between B and C
-        - better location for axial scaling
-    - [@fig:anamodel]Bb log scale
+    - Methods figure
+    - Reorder fit figure (C,D)<->(A,B)
 - Methods
-    - Adapt analytical model to new method
-    - Add simplified explanations of:
-        - spatial filtering
-        - dipole/stationary potentials
-    - relationship to CSD
 - Discussion
+    - mismatch in conduction velocities
 - Abstract
 
 Done
-* Code
+====
+- Introduction
+    - find more examples in literature
+- Code
+    - adapt generic bundle params to be more typical
+    - make click psth more generic
     - pandoc figure refs
     - implement new simplification
 - Figures
@@ -990,6 +970,32 @@ Done
         - better alignment in D
     - [@fig:bigtree]
         - version with MUA
+        - lower density of axons
+        - Add scalebar for time
+        - change color of axis label
+        - change color of box
+        - add PSTH
+        - align zeros in C
+        - add contour labels?
+    - [@fig:barnowl]
+        - redo with new data
+    - [@fig:distscaling]
+        - add diagrams
+        - space between B and C
+        - better location for axial scaling
+    - [@fig:anamodel]Bb log scale
+- Results
+    - move forward effect explanation and describe [@fig:simpletree]
+    - Page 4 changes
+    - much more substantial explanation of [@fig:distscaling]
+    - describe differences between barn owl and generic model
+    - Add more biological motivation for [@fig:distscaling] normalization
+- Methods
+    - Adapt analytical model to new method
+    - Add simplified explanations of:
+        - spatial filtering
+        - dipole/stationary potentials
+    - relationship to CSD
 -->
 
 Bibliophraphy
