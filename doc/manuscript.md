@@ -521,7 +521,9 @@ location, (2) the average membrane potential over time in a single fiber at the
 location next to the most dorsal electrode, (3) the axonal conduction velocity, and (4)
 the distance between bundle and electrode array.
 
-![ The spatial structure of EFPs recorded from the nucleus laminaris of the
+![(**A**) Multielectrode array aligned with a trace](../figs/with_probe.pdf){#fig:expmethod}
+
+![The spatial structure of EFPs recorded from the nucleus laminaris of the
 barn owl can be explained by a model of axonal field potentials. (**A**)
 High-frequency ($\geq 2$\ kHz) component of the EFP in response to a click
 stimulus at $t=0$ ms, at different recording depths. The depth is measured in
@@ -539,7 +541,7 @@ Gabor-like shape, as expected [@wagner09], with maximum amplitude in the center
 of the recording array, at around 850\ $\mu$m penetration depth. The velocity
 was calculated to be 4.0 m/s. A previously published estimate of the axonal
 conduction velocity in this nucleus was 1.6 m/s in @McColgan2014Functional.
-Toward the edges (< 100 and > 1400 $\mu$m), the amplitude decays. In the
+Toward the edges (< 100 and > 1400\ $\mu$m), the amplitude decays. In the
 central region (400-1200\ $\mu$m, a systematic shift in delay can be observed, while the response
 seems to be stationary in the more dorsal and ventral electrodes. The delay
 increases from ventral to dorsal, which is consistent with the anatomy for
@@ -587,6 +589,29 @@ to zero on either side, which may be due to the limited range of recording
 locations. The number of fibers beyond the border of the nucleus in dorsal
 direction should be zero, because it is known from anatomy that all fibers
 terminate within the nucleus.
+
+Dipole moments of idealized axon bundles
+----
+
+Based on our model we were also able to analytically derive the dipole moment
+$p$ of a simplified axon bundle with a projection zone. We assumed a Gaussian
+waveform for the membrane potential of a single spike, with an amplitude of
+$\bar{V}_{\text{spike}}$ and a standard deviation of $\sigma_{\text{spike}}$.
+The resting membrane potential was irrelevant because only the first and second
+derivative of the membrane potential contribute. The axon bundle population was
+assumed to be driven with a gaussian firing rate pulse with maximum firing rate
+$\bar{\lambda }_{\text{pulse}}$ and standard deviation $\sigma_{\text{pulse}}$.
+The distribution of the number of fibers at a given depth location was also
+described with a Gaussian, with width $\sigma_n$ and maximum number $\bar{n}$.
+This is an adequate approximation, because the spikes in the incoming fibers
+contribute little or nothing to the dipole moment before reaching the
+projection zone. The further variables are explained in the Methods section. In
+this scenario, we calculated the dipole moment of the bundle to be 
+
+$$p = \frac{a^2 \pi}{2 \sqrt{e} \sigma  r_L} \cdot
+\frac{v \sigma_n \sigma_{\text{pulse}} \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}
+{\left(\sigma_n^2+v^2 \left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)}$$.
+
 
 Discussion
 ==============
