@@ -521,7 +521,15 @@ location, (2) the average membrane potential over time in a single fiber at the
 location next to the most dorsal electrode, (3) the axonal conduction velocity, and (4)
 the distance between bundle and electrode array.
 
-![(**A**) Multielectrode array aligned with a trace](../figs/with_probe.pdf){#fig:expmethod}
+![(**A**) Multielectrode array aligned with a trace. The electrode track can be
+seen in the dorsal brain regions, highlightes with the asterisk. The recordings
+where made in NL, and electrodes extended to both sides of the nucleus. The
+outline of the electrode is shown in light green, with the recording electrodes
+indicated by magenta circles, and the reference electrode as a magenta
+rectangle. The low-frequency component (**B**) and high-frequency component
+(**C**) are ordered the same as the electrodes, with three examples connected
+to their recording sites by black lines. Time scale in B and C is identical as indicated by the scale bar, and voltage scale as indicated by individual scalebars.
+](../figs/with_probe.pdf){#fig:expmethod}
 
 ![The spatial structure of EFPs recorded from the nucleus laminaris of the
 barn owl can be explained by a model of axonal field potentials. (**A**)
