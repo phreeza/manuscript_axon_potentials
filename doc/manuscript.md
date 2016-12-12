@@ -199,7 +199,7 @@ number of bifurcations and terminations (see Materials and Methods for details).
 The spiking activity of a generic axon bundle was simulated by stimulating
 fibers that had a background spontaneous firing rate of 100 spikes/s with a
 pulse of increased activity. We chose a Gaussian pulse with an amplitude of
-2900 spikes/s and a standard deviation of 2.8 ms. These numbers are
+2900 spikes/s and a standard deviation of 2.8\ ms. These numbers are
 motivated by the early auditory system
 [@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls]. However, our approach is
 not limited to the auditory system (which would also require to include phase
@@ -526,7 +526,7 @@ the distance between bundle and electrode array.
 ![The spatial structure of EFPs recorded from the nucleus laminaris of the
 barn owl can be explained by a model of axonal field potentials. (**A**)
 High-frequency ($\geq 2$\ kHz) component of the EFP in response to a click
-stimulus at $t=0$ ms, at different recording depths. The depth is measured in
+stimulus at $t=0$\ ms, at different recording depths. The depth is measured in
 the direction from dorsal to ventral. Recorded responses (orange lines) are
 shown along with model fit (purple lines). (**B**) Low frequency ($\leq 2$\ kHz)
 responses in recordings (orange) and model (purple). (**C**) Average
@@ -565,8 +565,8 @@ amplitude. In the data shown here, central responses show a diminished maximum
 amplitude, which reveals the contribution of the quadrupole component. The
 model is able to capture the behaviour of this quadrupolar component as well, with a slight
 underestimation of the amplitude of the peak at ventral locations. The model
-even captures a small oscillation in the data with period of
-$\approx 1$ ms in the center of the recording. Here, too, the small deviations are likely
+even captures a small oscillation in the data with period\ of\ 
+$\approx 1$\ ms in the center of the recording. Here, too, the small deviations are likely
 due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
 [@fig:barnowl]C shows the inferred average over trials of the membrane voltage
