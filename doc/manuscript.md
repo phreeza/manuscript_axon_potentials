@@ -598,6 +598,11 @@ locations. The number of fibers beyond the border of the nucleus in dorsal
 direction should be zero, because it is known from anatomy that all fibers
 terminate within the nucleus.
 
+We performed the fitting procedure for 26 recordings from 3 different owls,
+with stimulation from both ears (implying the activation of distinct axonal
+populations). The average correlation coefficient for all recordings was
+$R^2=0.56\pm 0.15$.
+
 Dipole moments of idealized axon bundles
 ----
 
