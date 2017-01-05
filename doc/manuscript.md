@@ -168,14 +168,16 @@ bifurcations and terminations in the axon tree ([@fig:simpletree]E, left). We
 furthermore stimulated each axon with an inhomogeneous Poisson spike train. The
 driving rate of the inhomogeneous Poisson process was the same for all axons
 and was consisted of a constant background rate and a Gaussian pulse of
-heightened activity. The resulting extracellular waveforms ([@fig:simpletree]E,
-right) showed a polarity reversal similar to that seen in the single action
-potential and axon EFP ([@fig:simpletree]D). In the bifurcation zone, the
-summed contribution from many fibers and action potentials lead to a monophasic
-negative peak, and in the termination zone there was a monophasic positive
-peak, due to the differences in exact spike timings across fibers.
-Interestingly, the summed potential at the center of the terminal zone largely
-cancelled out.
+heightened activity. The standard deviation of the pulse was 1 ms, and the
+amplitude was 2 spikes/ms, resulting in an additional 3.5 spikes being fired on
+average due to the pulse. The resulting extracellular waveforms
+([@fig:simpletree]E, right) showed a polarity reversal similar to that seen in
+the single action potential and axon EFP ([@fig:simpletree]D). In the
+bifurcation zone, the summed contribution from many fibers and action
+potentials lead to a monophasic negative peak, and in the termination zone
+there was a monophasic positive peak, due to the differences in exact spike
+timings across fibers. Interestingly, the summed potential at the center of the
+terminal zone largely cancelled out.
 
 The reversal behaviour shown in [@fig:simpletree]E is similar to the polarity
 reversal associated with a dipole observed in experimental studies
@@ -288,15 +290,15 @@ show the typical double-lobe of a dipole. (**B**) The waveforms, recorded at
 the locations of the colored dots in *A*, also show a polarity reversal. The
 reversal ocurrs by inverting the amplitude with aproximately unchanged shape,
 not by a shifting of phase with constant envelope. (**C**) Progression of the
-maximum amplitude with depth (black line). It closely follows the local
-difference in number between bifurcations and terminations (blue histogram).
-(**D**) Iso-amplitude contours for the MUA component, which does not exhibit a
+maximum amplitude with depth (black line) at a distance of 100 $\mu$m from the
+trunk (indicated by arrow in A). It closely follows the local change in number of fibers, i.e. the difference
+in number between bifurcations and terminations (purple histogram). (**D**)
+Iso-amplitude contours for the MUA component, which does not exhibit a
 double-lobed structure. (**E**) Response waveforms of the MUA component. The
 responses do not reverse their polarity. The same is true for the high-pass
 filtered components (the first processing stage for calculation of MUA, see
-Methods), example shown in black trace. (**F**) Maximum amplitude of the
-high-pass filtered component (black line) follows the number of fibers (green
-histogram).
+Methods), example shown in black trace. (**F**) Maximum amplitude of the MUA
+component (black line) follows the number of fibers (teal histogram).
 ](../figs/fig_2.pdf){#fig:bigtree height=110%}
 
 <!--To better understand the relationship between axonal anatomy and this spatial
@@ -376,9 +378,8 @@ fixed membrane potential waveform travelling along the axon trunk with constant
 propagation velocity. Using linear cable theory, it was then possible to
 calculate the membrane currents necessary for determination of the EFP. The
 simplified model also allowed us to consider a continuous number of fibers
-instead of simulating discrete bifurcations and bifurcations. While highly
-simplified, this model captures all effects described for the more complex
-model so far. All following simulations are based on this simplified model.
+instead of simulating discrete bifurcations and bifurcations. All following
+simulations are based on this simplified model.
 
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
 aligned with the axon trunk. We therefore expected the field potential to decay
@@ -504,12 +505,13 @@ well studied physiology and anatomy makes the system an ideal candidate to
 study the EFPs of axon bundles.
 
 To study the spatiotemporal structure of the EFP in NL, we performed
-simultaneous multi-electrode recordings of the response in NL to contralateral
-monaural click stimuli. The click responses showed  distinct high- and
-low-frequency components as previously reported [@wagner09]. The high-frequency
-ringing corresponds to the position on the frequency map within NL being
-recorded from and reflects the tuning and phase locking of the incoming axons
-to the stimulus frequency. The origin of the low-frequency component remains
+simultaneous multi-electrode recordings of the response in NL (Figure
+[@fig:expmethod]A) to contralateral monaural click stimuli. The click responses
+showed distinct high- and low-frequency components as previously reported
+[@wagner09]. The high-frequency (Figure [@fig:expmethod]B) ringing corresponds
+to the position on the frequency map within NL being recorded from and reflects
+the tuning and phase locking of the incoming axons to the stimulus frequency.
+The origin of the low-frequency component (Figure [@fig:expmethod]C) remains
 unexplained. We filtered the data to roughly separate these components. The
 cutoff to split the components was set to 2\ kHz, because this frequency was
 always well below the high-frequency ringing component, which usually dominated
@@ -521,50 +523,56 @@ location, (2) the average membrane potential over time in a single fiber at the
 location next to the most dorsal electrode, (3) the axonal conduction velocity, and (4)
 the distance between bundle and electrode array.
 
-![(**A**) Multielectrode array aligned with a trace. The electrode track can be
-seen in the dorsal brain regions, highlightes with the asterisk. The recordings
-where made in NL, and electrodes extended to both sides of the nucleus. The
-outline of the electrode is shown in light green, with the recording electrodes
-indicated by magenta circles, and the reference electrode as a magenta
-rectangle. The low-frequency component (**B**) and high-frequency component
-(**C**) are ordered the same as the electrodes, with three examples connected
-to their recording sites by black lines. Time scale in B and C is identical as indicated by the scale bar, and voltage scale as indicated by individual scalebars.
+
+![(**A**) Photomicrograph of a 40µm thick transverse Nissl stained section
+through the dorsal brain stem, containing a superimposed, to scale, diagram of
+the multielectrode probe. The probe produced a small slit in a cerebellar
+folium overlying the IVth ventricle (\*), and penetrated into the nucleus
+laminaris (NL) Scale bar, 1mm. The recordings where made in NL, and electrodes
+extended to both sides of the nucleus. The outline of the probe is shown in
+light green, with the recording electrodes indicated by magenta circles, and
+the reference electrode as a magenta rectangle. The low-frequency component
+(**B**) and high-frequency component (**C**) are ordered the same as the
+electrodes, with three examples connected to their recording sites by black
+lines. Time scale in B and C is identical as indicated by the scale bar, and
+voltage scale as indicated by individual scalebars.
 ](../figs/with_probe.pdf){#fig:expmethod}
 
-![The spatial structure of EFPs recorded from the nucleus laminaris of the
-barn owl can be explained by a model of axonal field potentials. (**A**)
-High-frequency ($\geq 2$\ kHz) component of the EFP in response to a click
-stimulus at $t=0$\ ms, at different recording depths. The depth is measured in
-the direction from dorsal to ventral. Recorded responses (orange lines) are
-shown along with model fit (purple lines). (**B**) Low frequency ($\leq 2$\ kHz)
-responses in recordings (orange) and model (purple). (**C**) Average
-membrane voltage across fibers in the model when fit to the data shown in A.
-(**D**) Fitted number of fibers in the model at the recording
-locations.](../figs/fig_4.pdf){#fig:barnowl height=115%}
+![The spatial structure of EFPs recorded from the nucleus laminaris of the barn
+owl can be explained by a model of axonal field potentials. (**A**) Average
+membrane voltage across fibers in the model when fit to the data.
+(**B**) Fitted number of fibers in the model at the recording locations.
+(**C**) High-frequency ($\geq 2$\ kHz) component of the EFP in response to a
+click stimulus at $t=0$\ ms, at different recording depths. The depth is
+measured in the direction from dorsal to ventral. Recorded responses (orange
+lines) are shown along with model fit (purple lines). (**D**) Low frequency
+($\leq 2$\ kHz) responses in recordings (orange) and model (purple).
+](../figs/fig_4.pdf){#fig:barnowl height=115%}
 
 The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
-[@fig:barnowl]A shows the high-frequency ($\geq 2$\ kHz) response. The orange
+[@fig:barnowl]C shows the high-frequency ($\geq 2$\ kHz) response. The orange
 lines indicate the actual responses in the data. The responses have a
 Gabor-like shape, as expected [@wagner09], with maximum amplitude in the center
 of the recording array, at around 850\ $\mu$m penetration depth. The velocity
 was calculated to be 4.0 m/s. A previously published estimate of the axonal
-conduction velocity in this nucleus was 1.6 m/s in @McColgan2014Functional.
-Toward the edges (< 100 and > 1400\ $\mu$m), the amplitude decays. In the
-central region (400-1200\ $\mu$m, a systematic shift in delay can be observed, while the response
-seems to be stationary in the more dorsal and ventral electrodes. The delay
-increases from ventral to dorsal, which is consistent with the anatomy for
-contralateral stimulation. All these aspects of the data are qualitatively reproduced by
-the model (purple traces). The main deviation between model and data lies in a
-diminished amplitude of the oscillation at the most central electrode
-sites. Because the phase shift in the central region is mainly determined by
-the conduction velocity, this mismatch might be due to a slightly changing conduction
-velocity in the nucleus. A diminished amplitude in the fit could reflect
-an inability of the model to exactly match the phase progression. Another possible
-explanation is that the additional amplitude could be due to non-axonal sources
-such as synaptic currents or postsynaptic spikes, which do not follow the assumptions underlying the
-model being fit.
+conduction velocity in this nucleus was 1.1 m/s in @McColgan2014Functional,
+with a upper confidence bound of 6 m/s. Toward the edges (< 100 and > 1400\
+$\mu$m), the amplitude decays. In the central region (400-1200\ $\mu$m, a
+systematic shift in delay can be observed, while the response seems to be
+stationary in the more dorsal and ventral electrodes. The delay increases from
+ventral to dorsal, which is consistent with the anatomy for contralateral
+stimulation. All these aspects of the data are qualitatively reproduced by the
+model (purple traces). The main deviation between model and data lies in a
+diminished amplitude of the oscillation at the most central electrode sites.
+Because the phase shift in the central region is mainly determined by the
+conduction velocity, this mismatch might be due to a slightly changing
+conduction velocity in the nucleus. A diminished amplitude in the fit could
+reflect an inability of the model to exactly match the phase progression.
+Another possible explanation is that the additional amplitude could be due to
+non-axonal sources such as synaptic currents or postsynaptic spikes, which do
+not follow the assumptions underlying the model being fit.
 
-The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]B) responses reveal the
+The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]D) responses reveal the
 typical polarity reversal that we predicted for an axonal terminal zone
 (Figures 1 and 2). The responses at the dorsal and ventral edges show the same
 shape, but with opposite polarity, as expected for a dipolar field. Note that
@@ -577,7 +585,7 @@ even captures a small oscillation in the data with period\ of\
 $\approx 1$\ ms in the center of the recording. Here, too, the small deviations are likely
 due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
-[@fig:barnowl]C shows the inferred average over trials of the membrane voltage
+[@fig:barnowl]A shows the inferred average over trials of the membrane voltage
 in response to the stimulus, at a location in the axon next to the first
 electrode. The voltage is composed of high- and low-frequency components similar to those
 observed in the EFP. When comparing this inferred membrane potential response
@@ -587,10 +595,10 @@ component, but in the membrane voltage the low-frequency component is much
 larger. This is due to the fact that the second derivative term in the current
 equation essentially imposes a high-pass filter on the membrane voltage.
 
-The inferred number of fibers is shown in [@fig:barnowl]D. The density (number
+The inferred number of fibers is shown in [@fig:barnowl]B. The density (number
 of fibers per unit length) is shown as a function of dorsoventral depth,
-meaning that the vertical axis of [@fig:barnowl]A and [@fig:barnowl]B corresponds to
-the horizontal axis in [@fig:barnowl]D. The density has its maximum at the center of the
+meaning that the vertical axis of [@fig:barnowl]C and [@fig:barnowl]D corresponds to
+the horizontal axis in [@fig:barnowl]B. The density has its maximum at the center of the
 electrode array, and decays steadily to both sides. This profile of the number of fibers
 is consistent with the known anatomy of axons in NL. The density does not decay
 to zero on either side, which may be due to the limited range of recording
