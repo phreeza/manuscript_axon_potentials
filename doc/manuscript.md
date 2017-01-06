@@ -288,7 +288,7 @@ along with iso-amplitude lines for the low-pass filtered EFP signature of the
 activity pulse. The contours (maximum amplitude in mV as indicated by colorbar)
 show the typical double-lobe of a dipole. (**B**) The waveforms, recorded at
 the locations of the colored dots in *A*, also show a polarity reversal. The
-reversal ocurrs by inverting the amplitude with aproximately unchanged shape,
+reversal ocurrs by inverting the amplitude with approximately unchanged shape,
 not by a shifting of phase with constant envelope. (**C**) Progression of the
 maximum amplitude with depth (black line) at a distance of 100 $\mu$m from the
 trunk (indicated by arrow in A). It closely follows the local change in number of fibers, i.e. the difference
@@ -627,12 +627,27 @@ described with a Gaussian, with width $\sigma_n$ and maximum number $\bar{n}$.
 This is an adequate approximation, because the spikes in the incoming fibers
 contribute little or nothing to the dipole moment before reaching the
 projection zone. The further variables are explained in the Methods section. In
-this scenario, we calculated the dipole moment of the bundle to be 
+this scenario, we calculated the maximum dipole moment of the bundle to be 
 
-$$p = \frac{a^2 \pi}{2 \sqrt{e} \sigma  r_L} \cdot
+$$p_\text{max} = \frac{2 a^2 \pi^2}{r_L\sqrt{e}} \cdot
 \frac{v \sigma_n \sigma_{\text{pulse}} \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}
 {\left(\sigma_n^2+v^2 \left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)}$$.
 
+Using this formula, it is then possible to calculate the expected contributions
+to the EFP for different scenarios. To test the approximation in the case of
+the barn owl, we chose the following values: $a$\ =\ 2$\mu$m, $v$\ =\ 1 $\frac{\text{m}}{\text{s}}$,
+$\sigma_n$\ =\ 250 $\mu$m, $\sigma_\text{spike}$\ =\ 250 $\mu$s,
+$\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$,
+$\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\ 70 mV,
+$\bar{\lambda}_\text{spike}$\ =\ 2000 $\text{s}^{-1}$ $r_L$\ =\ 1 $\Omega\text{m}$. This 
+lead to a value for the dipole moment of $p_\text{max} \approx$ 0.8
+$\mu\text{A}\cdot\text{mm}$. At a distance of 750 $\mu$m, roughly the furthest
+distance recorded with the multielectrode array in Figures [@fig:expmethod] and
+[@fig:barnowl], this corresponded to a field potential of 0.35 mV, consistent
+with our experimental findings. We also calculated the contribution expected at
+2 cm from NL, aiming to estimate the contribution to the ABR. Multiplying by a
+factor of 2 to account for the fact that there is a NL on each hemisphere, the
+predicted contribution was 0.98 $\mu$V.
 
 Discussion
 ==============
@@ -679,13 +694,22 @@ way of interpreting these findings.
 Dipolar fields also play an important role in the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
 these is the EEG, which is commonly attributed to the dipolar contributions of
-pyramidal cells [@Nunez2006Electric]. We propose that axonal contributions might also be
-relevant in the analysis of these fields. This is particularly true for the
-auditory brainstem response, which is closely related to the EEG and involves
-brain structures that display high degrees of synchrony as well as 
-axonal organization, and are thus ideal candidates for
-the generation of axonal field potentials visible at long ranges. This would in
-turn have implications for the interpretation of the ABR in clinical contexts.
+pyramidal cells [@Nunez2006Electric]. We propose that axonal contributions
+might also be relevant in the analysis of these fields. This is particularly
+true for the auditory brainstem response, which is closely related to the EEG
+and involves brain structures that display high degrees of synchrony as well as
+axonal organization, and are thus ideal candidates for the generation of axonal
+field potentials visible at long ranges. This would in turn have implications
+for the interpretation of the ABR in clinical contexts.
+
+The ABR of the barn owl has been reported to be on the order of 10 $\mu$V
+[@PalancaCastan2016Binaural], while we estimated a contribution on the order of
+1 $\mu$V from the incoming axons in NL alone. This initial estimate suggests
+that there may indeed be measurable components due to axons in the EEG.
+However, this estimate is crude because it did not take into account the
+anatomy of the skull except for its size. Future studies based on a more
+detailed skull model and paired recordings of ABR and EFP will hopefully
+improve our understanding of the true contributions axons make to the ABR.
 
 Dipolar EFPs in other animals and brain regions
 ----
