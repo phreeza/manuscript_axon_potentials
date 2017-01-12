@@ -290,23 +290,23 @@ The progression of amplitudes in the low-frequency components seen in
 column. The polarity reversal in the center of [@fig:bigtree]B corresponds to
 the crossing of zero amplitude in [@fig:bigtree]C.
 
-![An activity pulse in an axonal projections generates a dipole-like
-extracellular field potential (EFP). (**A**) Modeled axon bundle in black,
-along with iso-amplitude lines for the low-pass filtered EFP signature of the
-activity pulse. The contours (maximum amplitude in mV as indicated by colorbar)
-show the typical double-lobe of a dipole. (**B**) The waveforms, recorded at
-the locations of the colored dots in *A*, also show a polarity reversal. The
-reversal ocurrs by inverting the amplitude with approximately unchanged shape,
-not by a shifting of phase with constant envelope. (**C**) Progression of the
-maximum amplitude with depth (black line) at a distance of 100 $\mu$m from the
-trunk (indicated by arrow in A). It closely follows the local change in number of fibers, i.e. the difference
-in number between bifurcations and terminations (purple histogram). (**D**)
-Iso-amplitude contours for the MUA component, which does not exhibit a
-double-lobed structure. (**E**) Response waveforms of the MUA component. The
-responses do not reverse their polarity. The same is true for the high-pass
-filtered components (the first processing stage for calculation of MUA, see
-Methods), example shown in black trace. (**F**) Maximum amplitude of the MUA
-component (black line) follows the number of fibers (teal histogram).
+![An activity pulse in an axonal projection generates a dipole-like local field
+potential (LFP). (**A**) Modeled axon bundle in black, along with iso-amplitude
+lines for the low-pass filtered (<1\ kHz) EFP signature of the activity pulse.
+The contours (maximum amplitude in mV as indicated by colorbar) show the
+typical double-lobe of a dipole. (**B**) The LFP waveforms, recorded at the
+locations of the colored dots in *A*, also show a polarity reversal. The
+reversal ocurrs by inverting the amplitude with approximately unchanged shape.
+(**C**) Progression of the maximum LFP amplitude with depth (black line) at a
+distance of 100\ $\mu$m from the trunk (indicated by arrow in A). It closely
+follows the local change in number of fibers, i.e. the difference in number
+between bifurcations and terminations (purple histogram). (**D**) Modeled axon
+bundle as in A, and iso-amplitude contours for the MUA component. (**E**)
+Response waveforms of the MUA component. The responses do not reverse their
+polarity. High-pass filtered (>2.5\ kHz) component (the first processing stage
+for calculation of MUA, see Materials and Methods) in black.
+(**F**) Maximum amplitude of the MUA component (black line) follows the number
+of fibers (teal histogram).
 ](../figs/fig_2.pdf){#fig:bigtree height=110%}
 
 <!--To better understand the relationship between axonal anatomy and this spatial
@@ -370,48 +370,51 @@ of an axon terminal structure on the spatial reach of the EFP. Motivated by the
 fundamentally different spatial behaviour of the low-frequency LFP and the
 high-frequency MUA, we differentiated between these frequency components
 ([@fig:distscaling]). To do this, we performed further simulations of an axon
-bundle. As before, we simulated an axon bundle containing a terminal zone with
+bundle. As in [@fig:bigtree], we simulated an axon bundle containing a terminal zone with
 bifurcations and terminations. Moreover, as a control, we also simulated an
 axon bundle without bifurcations in which a fixed number of fibers arrives and
 then terminates.
 
 To avoid confounding effects in the spatial reach of the potentials due to the
-specific arrangement of axon branches in a single realization of an axon tree,
-and to afford better analytic tractability, we transitioned to a simpler model
-of the axon bundle (see Materials and Methods). This model omitted the radial
-fanning out of the bundle in the terminal zone used in the simulation of
-[@fig:bigtree]. Furthermore, the simplified model discarded the detailed
-conductance-based simulation of the membrane potential, and instead assumed a
-fixed membrane potential waveform travelling along the axon trunk with constant
-propagation velocity. Using linear cable theory, it was then possible to
-calculate the membrane currents necessary for determination of the EFP. The
-simplified model also allowed us to consider a continuous number of fibers
-instead of simulating discrete bifurcations and bifurcations. All following
-simulations are based on this simplified model.
+specific spatial arrangement of axon branches in a single realization of an
+axon tree, and to afford better analytic tractability, we transitioned to a simpler
+one-dimensional model of the axon bundle (see Materials and Methods). This
+model omitted the radial fanning out of the bundle in the terminal zone, as in [@fig:simpletree].
+Furthermore, the simplified model discarded the detailed conductance-based
+simulation of the membrane potential, and instead assumed a fixed membrane
+potential waveform travelling along the axon trunk with constant propagation
+velocity. In order to measure the EFP responses at all frequencies, we set the
+membrane potential with white noise. Using linear cable theory, it was then
+possible to calculate the membrane currents necessary for determination of the
+EFP. The simplified model also allowed us to consider a continuous number of
+fibers instead of simulating discrete bifurcations and bifurcations. All
+following simulations are based on the simplified model.
 
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
-aligned with the axon trunk. We therefore expected the field potential to decay
+aligned with the axon trunk. We therefore expected the amplitude of the field potential to decay
 as $r^{-2}$ in this direction, which we call the axial direction. To test
-this, we plotted the amplitude of the low-frequency component (<1\ kHz) in axial
+this, we first plotted the amplitude of the low-frequency component (<2.5 \ kHz) in axial
 direction in [@fig:distscaling]A. The plot is on a double logarithmic scale,
 meaning that the slope of the curve corresponds to the scaling exponent, and
-the vertical offset corresponds to the amplitude of the component. We observed
+the vertical offset corresponds to the amplitude of the component. We observed the expected
 $r^{-2}$ scaling for distances larger than the extent of the
 bifurcation zone ($\gtrsim 1$\ mm). Interestingly, the amplitude of the low-frequency
-component remained an order of magnitude larger in the bifurcating case (solid
+component was an order of magnitude larger in the bifurcating case (solid
 line) than in the non-bifurcating case (dashed line).
 
-Next we examined the high-frequency component ([@fig:distscaling]B). Here the
-asymptotic scaling was also $r^{-2}$ for axial distances $\gtrsim 1$\ mm, but
-the amplitudes were similar between bifurcating and non-bifurcating case. The
-difference between the amplitudes of bifurcating and non-bifurcating bundles is
-much smaller than in the low-frequency case, even though the difference in
-amplitudes was the same at short distances $\lesssim 100$\ $\mu$m. At these
-distances, the difference is proportional to the number of fibers, which is
-larger in the bifurcating case. To conclude, the terminal zone contributed mainly
-to the low-frequency dipole moment of the EFP. Because of this, the magnitude of the
+Next, we examined the high-frequency (>2.5\ kHz)  component
+([@fig:distscaling]B). Here the asymptotic scaling was also $r^{-2}$ for axial
+distances $> 1$\ mm, but at $> 10$\ mm the amplitudes were similar between
+bifurcating and non-bifurcating cases. The difference between the amplitudes of
+bifurcating and non-bifurcating bundles is much smaller than in the
+low-frequency case, even though the difference in amplitudes was the same at
+short distances $< 100$\ $\mu$m. At these short distances, the difference is
+proportional to the number of fibers, as in [@fig:distscaling]A. To conclude,
+the terminal zone contributed mainly to the low-frequency dipole moment of the
+EFP. Because of this, in the far field (>1\ mm) the magnitude of the
 low-frequency component exceeded the magnitude of the high-frequency component
-by two orders of magnitude in the far field. 
+by an order of magnitude.
+
 
 In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component
@@ -424,63 +427,87 @@ the same at all distances. The high-frequency component also decayed as
 $r^{-3}$ in the radial direction ([@fig:distscaling]D), but the difference in
 logarithmic amplitudes was slightly diminished at larger distances.
 
-To better understand the frequency-specific contributions to the dipole
-moments, we calculated the scaling behaviour as a function of frequency. The
+These findings show that there is a dependence of the dipole moment on both the
+anatomy (i.e. the presence of a projection zone), and temporal frequency. This
+relationship can be qualitatively understood by considering the extent of the
+currents due to activity at a given temporal frequency. The temporal frequency
+will correspond to a spatial frequency, and the dipole moment will be maximal
+if the spatial frequency of the membrane potential and the width of the
+projection zone agree, meaning that positive currents flow on one half of the
+projection zone whenever negative currents flow on the other side. This notion is
+formalized in the last section of the Results. A similar argument can be made
+for the quadrupole moment, except that here the frequency must be higher, such
+that the projection zone contains two minima and one maximum in the current
+distribution, or vice versa.
+
+To quantitatively understand the frequency-specific contributions to the dipole
+moments, we examined the scaling behaviour as a function of frequency. The
 amplitude of the dipole moment was determined by fitting a straight line with
 slope $-2$ to the double logarithmic scaling of the power spectral density. The
 power spectral density was averaged over a frequency band 500\ Hz wide, and the
-fit was performed for distances $> 1$\ mm. The value of this straight line at
-axial distance 1\ $\mu$m then gave the dipole moments.
+fit was performed for distances $> 1$\ mm. The extrapolation of this straight line to
+axial distance 1\ $\mu$m was then proportional to the dipole moments.
 
 These frequency-specific dipole moments are shown in [@fig:distscaling]E. The
 dipole moment of the bifurcating case (solid line) has a maximum at around 1
-kHz, while in the non-bifurcating case (dashed line) it decays monotonically.
-We can see that the dipole moment in the bifurcating case exceeds the
-non-bifurcating case for low frequencies. For higher frequencies, the moments
-become roughly equal, meaning that they are formed by the incoming fibers, and
-the bifurcation zone does not contribute strongly.
+kHz, as expected due to the agreement of spatial frequency and projection zone
+width. In the non-bifurcating case (dashed line) there is no projection zone
+width, and the dipole moment decays monotonically. Here lower frequencies
+correspond to a higher spatial separation of positive and negative currents,
+and thus a higher dipole moment. We can see that the dipole moment in the
+bifurcating case exceeds the non-bifurcating case for low frequencies. For
+higher frequencies, there is a mismatch in spatial frequency and projection
+zone width, meaning that the projection zone contributes only little to the
+dipole moment. This is reflected in the fact that the difference between the
+dipole moments diminishes, meaning that they are formed by the incoming fibers,
+and not the bifurcation zone.
 
 As in any multipole expansion, the dipolar component will dominate the EFP at
 long distances in all directions except for those perpendicular to the dipole
 axis. At shorter distances, as well as in the plane perpendicular to the dipole
-axis, the quadrupolar component becomes important. For this reason we performed
-the same analysis for the quadrupole moments. This meant fitting a line with
-slope -3 instead of -2 to the power spectral density. The resulting quadrupole
-moments are shown in [@fig:distscaling]F. The quadrupole moment of the
-bifurcating case (solid line) has a maximum at around 2\ kHz, and the
-quadrupole moment of the non-bifurcating case (dashed line) is monotonically
-decreasing. The moments are increasingly different with increasing frequencies
-up to 2\ kHz, after which they approach each other again. As for the dipole
-moments, this can be interpreted as a low contribution of the terminal zone to
-the high-frequency moments. 
+axis, the quadrupolar component becomes important. For this reason we also
+examined the frequency specific quadrupole moments. This meant fitting a line
+in radial direction with slope -3 to the power spectral density.
+
+The resulting quadrupole moments are shown in [@fig:distscaling]F. From the
+qualitative argument made above, we expect the existence of an optimal
+frequency for the contribution of the projection zone. Indeed we find that the
+quadrupole moment of the bifurcating case (solid line) has a maximum at around
+2\ kHz, and the quadrupole moment of the non-bifurcating case (dashed line) is
+monotonically decreasing (as was the case for the dipole moment). As expected,
+the maximum lies at a higher frequency than that for the dipole moment.
 
 In the bifurcating case, the number of fibers was increased by a factor of 10.
 This means that an increase in the moments due to the bifurcations greater than
 10 can be called supralinear. In [@fig:distscaling]G we compare this relative
 impact of the terminal zone on dipole moments (red line) and quadrupole moments (black
 line), by plotting their ratios across frequencies. Here we can see that for
-low frequencies, the ratio for the quadrupole moment approaches values lower
+low frequencies the ratio for the quadrupole moment approaches values lower
 than 10, meaning that there is only little additional contribution from the
 terminal zone. The dipole moment approaches a factor of 10 for low frequencies,
 meaning that the terminal zone contributes in proportion to the number of added
 fibers. In both components, the contribution is maximal for intermediate
 frequencies, with the maximal dipolar contribution lying at lower frequencies
-than the quadrupolar component. For very high frequencies, both contributions
+than the quadrupolar component, as predicted. For very high frequencies, both contributions
 return to values below 10. The terminal zone has a supralinear contribution
-(factor greater than 10) for the dipole at frequencies below 3.5\ kHz and for
-the quadrupolar component at frequencies between 1 and 4.5\ kHz.
+(factor greater than 10) for the dipole at frequencies below $\approx$ 3.5\ kHz and for
+the quadrupolar component at frequencies between $\approx$ 1 and 4.5\ kHz.
 
 Together, these observations show us that the terminal zone makes a strong
 contribution to the far-reaching dipole field potential of the axon bundle. At
 somewhat higher frequencies, the more local quadrupolar potential is also
-increased.
+increased. This gives us a deeper understanding of the findings of
+[@fig:bigtree]: At low frequencies, we observed a dipolar behaviour due to the
+strong contribution of the bundle at these frequencies, with the projection
+zone forming the dipole axis. At high frequencies, the quadrupolar moments
+dominate the responses, meaning that we do not observe a dipolar structure. 
 
-![The low-frequency component of the axon bundle EFP exceeds the high-frequency
-component in reach, in a manner depending on axon structure. Subplots
-**A**-**D** show the scaling of the low-frequency (blue lines) and
-high-frequency (green lines) components for the bifurcating (solid
-lines) and non-bifurcating (dashed lines) axons on a doubly-logarithmic scale. All
-distances are calculated from the center of the terminal zone. For
+![The low-frequency (<2.5\ kHz) component of the axon bundle EFP exceeds the
+high-frequency (>2.5\ kHz) component in reach, in a manner depending on axon
+structure. Subplots **A**-**D** show the scaling of the low-frequency (blue
+lines) and high-frequency (green lines) components for the bifurcating (solid
+lines) and non-bifurcating (dashed lines) axons on a doubly-logarithmic scale.
+All distances are calculated from the center of the terminal zone. For
 comparison, scalings that follow $r^{-2}$ (red lines) and $r^{-3}$ (black
 lines) are also shown. (**A**) Scaling behaviour in the axial direction for the
 low-frequency component. (**B**) Scaling of the high-frequency components in
@@ -494,56 +521,57 @@ quadrupole moment (black line) between bifurcating and non-bifurcating cases.
 The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal terminal zone.
 ----
 
-In order to test predictions of our model of the extracellular field of axon
+In order to test the dipole prediction of our model of the extracellular field of axon
 bundles, we recorded EFP responses from the barn owl auditory brain stem. The
 barn owl has a highly developed auditory system with a strong frequency
-following response in the EFP in the nucleus laminaris (NL), called the
+following response in the EFP (up to 9 kHz) in the nucleus laminaris (NL), called the
 neurophonic. In NL, the input from the two ears is first integrated to
 calculate the azimuthal location of a sound source, and this information is
 encoded in the EFP. The EFP in this region is mainly due to the efferent
-activity, and the spiking contribution of postsynaptic neurons is minimal
+activity, and the contribution of spikes of NL neurons is small
 [@Kuokkanen2010Origin;@Kuokkanen2013Linear]. Furthermore, the anatomy of the
 efferent axons is well known and follows a stereotypical pattern [@carr90]: Two
 fiber bundles enter the nucleus, with fibers from the contralateral ear
 entering ventrally, and from the ipsilateral ear entering dorsally. The axon
 bundles reach the nucleus from the previous nucleus without bifurcating, then
-bifrucate multiple times at the border of the NL, and then terminate within NL.
-They have a strong directional preference and run roughly in parallel. This
+bifurcate multiple times at the border of the NL, and then terminate within NL.
+Axon bundles have a strong directional preference and run roughly in parallel. This
 well studied physiology and anatomy makes the system an ideal candidate to
 study the EFPs of axon bundles.
 
 To study the spatiotemporal structure of the EFP in NL, we performed
-simultaneous multi-electrode recordings of the response in NL (Figure
+simultaneous multi-electrode recordings of the response in NL (
 [@fig:expmethod]A) to contralateral monaural click stimuli. The click responses
 showed distinct high- and low-frequency components as previously reported
-[@wagner09]. The high-frequency (Figure [@fig:expmethod]B) ringing corresponds
-to the position on the frequency map within NL being recorded from and reflects
-the tuning and phase locking of the incoming axons to the stimulus frequency.
-The origin of the low-frequency component (Figure [@fig:expmethod]C) remains
+[@wagner09]. The frequency of the high-frequency ([@fig:expmethod]B) ringing corresponds to the
+recording location on the frequency map within NL and ringing reflects the frequency
+tuning and phase locking of the incoming axons. The
+origin of the low-frequency component ([@fig:expmethod]C) remains
 unexplained. We filtered the data to roughly separate these components. The
-cutoff to split the components was set to 2\ kHz, because this frequency was
-always well below the high-frequency ringing component, which usually dominated
-the spectra.
+cutoff to split the components was set to 2\ kHz because this frequency was
+always well below the high-frequency ringing component.
 
-The model was fit to the data by performing a nonlinear least squares
-optimization. Free parameters were (1) the number of fibers at the depth of each recording
-location, (2) the average membrane potential over time in a single fiber at the
-location next to the most dorsal electrode, (3) the axonal conduction velocity, and (4)
-the distance between bundle and electrode array.
+The same simplified model used in @fig:distscaling] was fit to the data by
+performing a nonlinear least squares optimization. Free parameters were (1) the
+number of fibers at the depth of each recording location, (2) the average
+membrane potential over time in a single fiber at the location next to the most
+dorsal electrode, (3) the axonal conduction velocity, and (4) the distance
+between bundle and electrode array.
 
 
-![(**A**) Photomicrograph of a 40µm thick transverse Nissl stained section
-through the dorsal brain stem, containing a superimposed, to scale, diagram of
-the multielectrode probe. The probe produced a small slit in a cerebellar
-folium overlying the IVth ventricle (\*), and penetrated into the nucleus
-laminaris (NL) Scale bar, 1mm. The recordings where made in NL, and electrodes
-extended to both sides of the nucleus. The outline of the probe is shown in
-light green, with the recording electrodes indicated by magenta circles, and
-the reference electrode as a magenta rectangle. The low-frequency component
-(**B**) and high-frequency component (**C**) are ordered the same as the
-electrodes, with three examples connected to their recording sites by black
-lines. Time scale in B and C is identical as indicated by the scale bar, and
-voltage scale as indicated by individual scalebars.
+![Multielectrode recordings in the barn owl show dipolar axonal EFPs. (**A**) Photomicrograph
+of a 40µm thick transverse Nissl stained section through the dorsal brain stem,
+containing a superimposed, to scale, diagram of the multielectrode probe. The
+probe produced a small slit in a cerebellar folium overlying the IVth ventricle
+(\*), and penetrated into the nucleus laminaris (NL) Scale bar, 1mm. The
+recordings where made in NL, and electrodes extended to both sides of the
+nucleus. The outline of the probe is shown in light green, with the recording
+electrodes indicated by magenta circles, and the reference electrode as a
+magenta rectangle. The low-frequency component (**B**) and high-frequency
+component (**C**) are ordered the same as the electrodes, with three examples
+connected to their recording sites by black lines. Time scale in B and C is
+identical as indicated by the scale bar, and voltage scale as indicated by
+individual scalebars.
 ](../figs/with_probe.pdf){#fig:expmethod}
 
 ![The spatial structure of EFPs recorded from the nucleus laminaris of the barn
@@ -561,21 +589,21 @@ The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
 [@fig:barnowl]C shows the high-frequency ($\geq 2$\ kHz) response. The orange
 lines indicate the actual responses in the data. The responses have a
 Gabor-like shape, as expected [@wagner09], with maximum amplitude in the center
-of the recording array, at around 850\ $\mu$m penetration depth. The velocity
-was calculated to be 4.0 m/s. A previously published estimate of the axonal
-conduction velocity in this nucleus was 1.1 m/s in @McColgan2014Functional,
-with a upper confidence bound of 6 m/s. Toward the edges (< 100 and > 1400\
-$\mu$m), the amplitude decays. In the central region (400-1200\ $\mu$m, a
-systematic shift in delay can be observed, while the response seems to be
-stationary in the more dorsal and ventral electrodes. The delay increases from
-ventral to dorsal, which is consistent with the anatomy for contralateral
-stimulation. All these aspects of the data are qualitatively reproduced by the
-model (purple traces). The main deviation between model and data lies in a
-diminished amplitude of the oscillation at the most central electrode sites.
-Because the phase shift in the central region is mainly determined by the
-conduction velocity, this mismatch might be due to a slightly changing
-conduction velocity in the nucleus. A diminished amplitude in the fit could
-reflect an inability of the model to exactly match the phase progression.
+of the recording array, at around 850\ $\mu$m penetration depth. The axonal
+conduction velocity was calculated to be 4.0 m/s. A previously published
+estimate of the axonal conduction velocity in this nucleus was 1.1 m/s in
+@McColgan2014Functional, with a upper confidence bound of 6 m/s. Toward the
+edges (< 100 and > 1400\ $\mu$m), the amplitude decays. In the central region
+(400-1200\ $\mu$m, a systematic shift in delay can be observed, while the
+response seems to be stationary in the more dorsal and ventral electrodes. The
+delay increases from ventral to dorsal, which is consistent with the anatomy
+for contralateral stimulation. All these aspects of the data are qualitatively
+reproduced by the model (purple traces). The main deviation between model and
+data lies in a diminished amplitude of the oscillation at the most central
+electrode sites. Because the phase shift in the central region is mainly
+determined by the conduction velocity, this mismatch might be due to a slightly
+changing conduction velocity in the nucleus. A diminished amplitude in the fit
+could reflect an inability of the model to exactly match the phase progression.
 Another possible explanation is that the additional amplitude could be due to
 non-axonal sources such as synaptic currents or postsynaptic spikes, which do
 not follow the assumptions underlying the model being fit.
@@ -593,15 +621,17 @@ even captures a small oscillation in the data with period\ of\
 $\approx 1$\ ms in the center of the recording. Here, too, the small deviations are likely
 due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
-[@fig:barnowl]A shows the inferred average over trials of the membrane voltage
-in response to the stimulus, at a location in the axon next to the first
-electrode. The voltage is composed of high- and low-frequency components similar to those
-observed in the EFP. When comparing this inferred membrane potential response
-to the measured EFP response, the most salient difference is that in the EFP,
-the low-frequency component has a comparable amplitude to the high-frequency
-component, but in the membrane voltage the low-frequency component is much
-larger. This is due to the fact that the second derivative term in the current
-equation essentially imposes a high-pass filter on the membrane voltage.
+[@fig:barnowl]A shows the inferred average over trials of the deviation of the
+membrane voltage from the resting potential in response to the stimulus, at a
+location in the axon next to the first electrode. The voltage is composed of
+high- and low-frequency components similar to those observed in the EFP. When
+comparing this inferred membrane potential response to the measured EFP
+response, the most salient difference is the different sizes of the frequency
+components. In the EFP, the low-frequency component has a comparable amplitude
+to the high-frequency component, but in the membrane voltage the low-frequency
+component is much larger. This is due to the fact that the second derivative
+term in the current equation essentially imposes a high-pass filter on the
+membrane voltage.
 
 The inferred number of fibers is shown in [@fig:barnowl]B. The density (number
 of fibers per unit length) is shown as a function of dorsoventral depth,
@@ -625,15 +655,15 @@ Dipole moments of idealized axon bundles
 Based on our model we were also able to analytically derive the dipole moment
 $p$ of a simplified axon bundle with a projection zone. We assumed a Gaussian
 waveform for the membrane potential of a single spike, with an amplitude of
-$\bar{V}_{\text{spike}}$ and a standard deviation of $\sigma_{\text{spike}}$.
+$\bar{V}_{\text{spike}}$ and a width of $\sigma_{\text{spike}}$.
 The resting membrane potential was irrelevant because only the first and second
-derivative of the membrane potential contribute. The axon bundle population was
-assumed to be driven with a gaussian firing rate pulse with maximum firing rate
-$\bar{\lambda }_{\text{pulse}}$ and standard deviation $\sigma_{\text{pulse}}$.
+derivatives of the membrane potential contribute. The axon bundle population was
+assumed to be driven with a Gaussian firing-rate pulse with maximum firing rate
+$\bar{\lambda }_{\text{pulse}}$ and width $\sigma_{\text{pulse}}$.
 The distribution of the number of fibers at a given depth location was also
 described with a Gaussian, with width $\sigma_n$ and maximum number $\bar{n}$.
-This is an adequate approximation, because the spikes in the incoming fibers
-contribute little or nothing to the dipole moment before reaching the
+This is an adequate approximation, if the spikes in the incoming fibers
+contribute little to the dipole moment before reaching the
 projection zone. The further variables are explained in the Methods section. In
 this scenario, we calculated the maximum dipole moment of the bundle to be 
 
@@ -659,14 +689,14 @@ predicted contribution was 0.98 $\mu$V.
 
 Discussion
 ==============
-Based on numerical simulations, analytical calculations and experimental data,
-we show how axonal fiber bundles contribute significantly to the EFP, and we
+Based on numerical simulations, analytical calculations, and experimental data,
+we show how axonal fiber bundles contribute to the EFP, and we
 explain how the contributions are shaped by axonal morphology. There are
 three principal effects of axon bundle structure on the EFP. Firstly, the
 low-frequency components of the EFP are governed by the densities of
 bifurcations and terminations and can have a dipolar structure
 ([@fig:simpletree] and [@fig:bigtree]). Secondly, the high-frequency components
-are governed by the local number of fibers ([@fig:bigtree]). Furthermore we
+are governed by the local number of fibers ([@fig:bigtree]). Furthermore, we
 show that the low-frequency components exceed the high-frequency components in
 spatial reach. In particular, the dipolar low-frequency components are not
 negligible and exceed the reach of the presumed quadrupolar nature of axonal
@@ -676,8 +706,9 @@ Relevance to interpretation of electrophysiological recordings
 ----
 
 The low- and high-frequency components show qualitatively different behaviours
-across recording locations. The low-frequency component is a largely stationary
-phenomenon, while the high-frequency component shifts in space as a function of
+as a function of recording location relative location with respect to the
+terminal zone. The low-frequency component is a largely stationary
+phenomenon, while the high-frequency component shifts gradually in space as a function of
 the axonal conduction velocity ([@fig:barnowl]). Due to the difference in
 reach, the high-frequency component is most suitable for the study of local
 phenomena, while the low-frequency component bears information about locations
@@ -688,13 +719,12 @@ electrophysiological data. Heuristics that are valid for the analysis of EFPs
 of synaptic, dendritic, or somatic currents may not be valid for axon bundles.
 When performing a typical current source density analysis, the local number of
 fibers cannot be disentangled from membrane current density
-[@Nicholson1973Theoretical]. The membrane voltage, and thus the membrane
-current densities, can vary with time and location independently. In the case
-of an axonal fiber bundle as discussed here, the opposite is the case: the
-number of fibers is variable in space, in particular in the terminal zone, but
-the membrane voltages are highly correlated over space and time due to the
-signal propagation in the axon. The sink and source distribution found in
-classical CSD analysis of axon bundles
+[@Nicholson1973Theoretical]. The membrane current densities can vary with time
+and location independently. In the case of an axonal fiber bundle as discussed
+here, the situation is different: the number of fibers is variable in space, in
+particular in the terminal zone, but the membrane voltages are highly
+determined over space and time due to the signal propagation in the axon. The
+sink and source distribution found in classical CSD analysis of axon bundles
 [@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show a
 dipolar structure in terminal zones. Our modelling approach provides a novel
 way of interpreting these findings.
@@ -762,7 +792,7 @@ analysis of the responses provides insight into both the underlying anatomy as
 well as the activity of axons. Future studies of axonal EFPs will shed light on
 the temporal and spatial structure of efferent activity in many brain regions.
 
-Methods
+Materials and Methods
 ==============
 
 Experimental recordings
@@ -838,7 +868,7 @@ the axial position of the branching points in [@fig:simpletree]E, where a random
 offset between branching points was drawn from a gamma distribution with mean
 400 $\mu$m and standard deviation 300 $\mu$m. The initial branching point was
 offset from the original location by a distance drawn from a
-Gaussian distribution with mean zero and a standard deviation of 300 $\mu$m.
+Gaussian distribution with mean zero and a width of 300 $\mu$m.
 This was done to smooth out the effects of individual branchings or
 terminations and show the population response.
 
@@ -958,8 +988,8 @@ between the measured potential $\phi_\text{measured}$ and the model prediction
 $\phi_\text{model}$ for ${N=32}$ measurement locations $z_n$\ ($n=1,\dots,N$)
 and ${M=600}$ time points $t_m$ ($m = 1,\dots,M$): $\epsilon
 = \frac{1}{NM}\sum_{n=1}^{N}\sum_{m=1}^{M}\left[\phi_\text{measured}(z_n,t_m)-\phi_\text{model}(z_n,t_m)\right]^2$.
-The separation between electrodes was given by the electrode layout as 50\
-$\mu$m. The time between sampling points was 5.12\ $\mu$s. We achieved the
+The separation between electrodes was given by the electrode layout as 50\ $\mu$m.
+The time between sampling points was 5.12\ $\mu$s. We achieved the
 minimization of the error $\epsilon$ using the "optimize.minimize" routine
 provided by the \textsc{SciPy} package [@scipy]. The free parameters to be
 determined by the optimization routine were the distance $\rho$, the conduction

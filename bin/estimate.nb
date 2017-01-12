@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17156,        476]
-NotebookOptionsPosition[     15877,        430]
-NotebookOutlinePosition[     16385,        450]
-CellTagsIndexPosition[     16342,        447]
+NotebookDataLength[     17214,        478]
+NotebookOptionsPosition[     15934,        432]
+NotebookOutlinePosition[     16441,        452]
+CellTagsIndexPosition[     16398,        449]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -411,24 +411,26 @@ Cell[BoxData[{
        RowBox[{"\"\<Siemens\>\"", "/", "\"\<Meters\>\""}]}], "]"}], "*", 
      RowBox[{
       RowBox[{"Quantity", "[", 
-       RowBox[{"1.5", ",", "\"\<Centimeters\>\""}], "]"}], "^", "2"}]}], 
+       RowBox[{"2", ",", "\"\<Centimeters\>\""}], "]"}], "^", "2"}]}], 
     ")"}]}]}], "\[IndentingNewLine]", 
  RowBox[{"UnitConvert", "[", 
   RowBox[{"dipoleABR", ",", "\"\<uV\>\""}], "]"}]}], "Input",
  CellChangeTimes->{{3.687692090970635*^9, 3.6876921120911617`*^9}, {
-  3.687692286697769*^9, 3.687692304217477*^9}, {3.6876925552759733`*^9, 
-  3.687692555683372*^9}, {3.692694310637196*^9, 3.692694347660571*^9}}],
+   3.687692286697769*^9, 3.687692304217477*^9}, {3.6876925552759733`*^9, 
+   3.687692555683372*^9}, {3.692694310637196*^9, 3.692694347660571*^9}, 
+   3.6926953402627707`*^9}],
 
 Cell[BoxData[
  TemplateBox[{
-  "0.8709841593705955`","\"\[Mu]V\"","microvolts","\"Microvolts\""},
+  "0.48992858964596003`","\"\[Mu]V\"","microvolts","\"Microvolts\""},
   "Quantity"]], "Output",
  CellChangeTimes->{{3.68769229929384*^9, 3.6876923051056633`*^9}, 
    3.687692504743065*^9, {3.6876925440504923`*^9, 3.687692577493697*^9}, 
-   3.6926940642627974`*^9, 3.692694349153886*^9, 3.6926946107560673`*^9}]
+   3.6926940642627974`*^9, 3.692694349153886*^9, 3.6926946107560673`*^9, 
+   3.6926953413115053`*^9}]
 }, Open  ]]
 },
-WindowSize->{1916, 1161},
+WindowSize->{636, 1161},
 WindowMargins->{{0, Automatic}, {Automatic, 18}},
 PrintingCopies->1,
 PrintingPageRange->{Automatic, Automatic},
@@ -450,33 +452,33 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 471, 13, 51, "Input"],
-Cell[1032, 35, 583, 17, 32, "Input"],
+Cell[1032, 35, 583, 17, 55, "Input"],
 Cell[1618, 54, 1109, 26, 55, "Input"],
 Cell[2730, 82, 477, 14, 36, "Input"],
 Cell[3210, 98, 391, 11, 38, "Input"],
-Cell[3604, 111, 1330, 36, 34, "Input"],
-Cell[4937, 149, 932, 26, 34, "Input"],
-Cell[5872, 177, 1058, 29, 40, "Input"],
+Cell[3604, 111, 1330, 36, 101, "Input"],
+Cell[4937, 149, 932, 26, 56, "Input"],
+Cell[5872, 177, 1058, 29, 88, "Input"],
 Cell[CellGroupData[{
 Cell[6955, 210, 583, 12, 32, "Input"],
-Cell[7541, 224, 582, 12, 23, "Message"]
+Cell[7541, 224, 582, 12, 58, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[8160, 241, 96, 1, 32, "Input"],
 Cell[8259, 244, 1126, 30, 65, "Output"]
 }, Open  ]],
-Cell[9400, 277, 3532, 72, 115, "Input"],
+Cell[9400, 277, 3532, 72, 302, "Input"],
 Cell[CellGroupData[{
 Cell[12957, 353, 322, 7, 32, "Input"],
 Cell[13282, 362, 280, 6, 36, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13599, 373, 874, 18, 55, "Input"],
+Cell[13599, 373, 874, 18, 121, "Input"],
 Cell[14476, 393, 283, 5, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14796, 403, 724, 16, 55, "Input"],
-Cell[15523, 421, 338, 6, 36, "Output"]
+Cell[14796, 403, 752, 17, 77, "Input"],
+Cell[15551, 422, 367, 7, 36, "Output"]
 }, Open  ]]
 }
 ]
