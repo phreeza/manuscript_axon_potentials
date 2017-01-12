@@ -816,7 +816,7 @@ The multi-electrode array was lowered using a microdrive (MP225, Sutter
 Instruments Co., Novato, CA, USA) during continuous presentation of a
 white-noise burst stimulus until visual inspection of the waveform showed that
 NL was at the center of the array. A grounded silver chloride pellet, placed
-under the animal's skin around the incision, served as the reference electrode.
+under the animal's skin around the incision, served as the animal ground electrode.
 Electrode signals were amplified by a headstage (HS36, Neuralynx Inc., Tucson,
 AZ, USA). An adapter (ADPT-HS36-N2T-32A, Neuralynx Inc.) was used between the
 electrode and the headstage. A further adapter (ADPT-HS-36-ERP-27, Neuralynx
