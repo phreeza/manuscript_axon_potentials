@@ -390,6 +390,19 @@ EFP. The simplified model also allowed us to consider a continuous number of
 fibers instead of simulating discrete bifurcations and bifurcations. All
 following simulations are based on the simplified model.
 
+We simulated two axon bundle morphologies. The first was a non-bifurcating
+bundle, which had a constant number of 50 fibers for $z<0$\ $\mu$m, and tapered
+out as a Gaussian centered at $z=0$\ $\mu$m with a height of 50 fibers and
+standard deviation of 500\ $\mu$m for $z>0$\ $\mu$m. The second case was that
+of an axon bundle with a projection zone containing bifurcations. Here we
+simulated the same distribution as for the non-bifurcating case, but added a
+further Gaussian distribution to account for the bifurcating axons. This
+additional Gaussian was also centered at $z=0$\ $\mu$m, had the same standard
+deviation of 500\ $\mu$m but an amplitude of 450 fibers. Unlike the
+tapering-out, this component was added for all values of $z$. It resulted in a
+maximal fiber number of 500 at $z=0$. Both distributions constructed in this
+way were smooth, and had smooth first derivatives in space.
+
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
 aligned with the axon trunk. We therefore expected the amplitude of the field potential to decay
 as $r^{-2}$ in this direction, which we call the axial direction. To test
@@ -524,13 +537,13 @@ The barn owl neurophonic potential in nucleus laminaris as an example for a dipo
 In order to test the dipole prediction of our model of the extracellular field of axon
 bundles, we recorded EFP responses from the barn owl auditory brain stem. The
 barn owl has a highly developed auditory system with a strong frequency
-following response in the EFP (up to 9 kHz) in the nucleus laminaris (NL), called the
+following response in the EFP (up to 9\ kHz, @Koppl1997b) in the nucleus laminaris (NL), called the
 neurophonic. In NL, the input from the two ears is first integrated to
 calculate the azimuthal location of a sound source, and this information is
-encoded in the EFP. The EFP in this region is mainly due to the efferent
+encoded in the EFP [@carr90]. The EFP in this region is mainly due to the efferent
 activity, and the contribution of spikes of NL neurons is small
 [@Kuokkanen2010Origin;@Kuokkanen2013Linear]. Furthermore, the anatomy of the
-efferent axons is well known and follows a stereotypical pattern [@carr90]: Two
+efferent axons is well known and follows a stereotypical pattern [@carr88;@carr90]: Two
 fiber bundles enter the nucleus, with fibers from the contralateral ear
 entering ventrally, and from the ipsilateral ear entering dorsally. The axon
 bundles reach the nucleus from the previous nucleus without bifurcating, then
@@ -542,7 +555,7 @@ study the EFPs of axon bundles.
 To study the spatiotemporal structure of the EFP in NL, we performed
 simultaneous multi-electrode recordings of the response in NL (
 [@fig:expmethod]A) to contralateral monaural click stimuli. The click responses
-showed distinct high- and low-frequency components as previously reported
+showed distinct high- and low-frequency components, as previously reported
 [@wagner09]. The frequency of the high-frequency ([@fig:expmethod]B) ringing corresponds to the
 recording location on the frequency map within NL and ringing reflects the frequency
 tuning and phase locking of the incoming axons. The
