@@ -205,14 +205,15 @@ Materials and Methods for details).
 
 The spiking activity of a generic axon bundle was simulated by a background
 spontaneous firing rate of 100 spikes/s and a short pulse of increased
-activity. We chose a Gaussian pulse with an amplitude of 2900 spikes/s and
-a standard deviation of 2.8\ ms. These numbers are motivated by the early
-auditory system [@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls]. However,
-our approach is not limited to the auditory system (which would also require to
-include phase locking), and this pulse of activity could relate to various
-kinds of evoked activity in the nervous system, such as sensory stimulation,
-motor activity or a spontaneous transient increase in population spiking
-activity. 
+activity. We chose a Gaussian pulse with an amplitude of 2900 spikes/s and a
+standard deviation of 2.8\ ms. These numbers are motivated by the early
+auditory system [@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls], where
+instantaneous spike rates of 3000 spikes/s occur in repsonse to click stimuli
+[@Carr2016Role]. However, our approach is not limited to the auditory system
+(which would also require to include phase locking), and this pulse of activity
+could relate to various kinds of evoked activity in the nervous system, such as
+sensory stimulation, motor activity or a spontaneous transient increase in
+population spiking activity. 
 
 ![Relationship between axon morphology and extracellular potential. Simulated
 action potentials travelling along axons with varying morphologies, as
@@ -427,7 +428,6 @@ the terminal zone contributed mainly to the low-frequency dipole moment of the
 EFP. Because of this, in the far field (>1\ mm) the magnitude of the
 low-frequency component exceeded the magnitude of the high-frequency component
 by an order of magnitude.
-
 
 In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component
