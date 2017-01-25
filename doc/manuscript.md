@@ -56,7 +56,7 @@ distance than synaptic sources, which are typically dipolar
 axonal responses can also have a dipolar structure. For example,
 @Blot2014Ultrarapid recorded from the vicinity of cerebellar Purkinje cell
 axons and reported an EFP with a characteristic dipolar structure;
-@Swadlow2002Activation showed that the axonal part of the EFP of
+other studies [@Swadlow2002Activation;@Swadlow2000Influence] showed that the axonal part of the EFP of
 thalamocortical afferents showed a polarity reversal as associated with a
 dipolar source, and classical current source density studies found dipolar current
 distributions in axonal terminal zones in the cortex and lateral geniculate
@@ -180,9 +180,17 @@ a monophasic negative peak, and in the termination zone there was a monophasic
 positive peak. Interestingly, the summed potential at the center of the
 terminal zone largely cancelled out.
 
+The fact that the responses in [@fig:simpletree]E were mostly monophasic was
+due to the presence of a non-zero bias in the biphasic responses observed for
+the single spike responses, meaning that the area under the negative part of
+the curve slightly exceeded that of the positive part in close to a
+bifurcation, and vice versa close to a termination. This discrepancy
+effectively induced a very low-frequency component in the single-spike
+responses which is reflected in the population response in [@fig:simpletree]E.
+
 The reversal behaviour shown in [@fig:simpletree]E is similar to the polarity
 reversal associated with a dipole observed in experimental studies
-(@Swadlow2002Activation; @Blot2014Ultrarapid). To summarize, simple
+[@Swadlow2000Influence;@Swadlow2002Activation;@Blot2014Ultrarapid]. To summarize, simple
 one-dimensional model axon structures can produce complex and diverse
 spatiotemporal responses comparable to experimental responses.
 
@@ -205,14 +213,15 @@ Materials and Methods for details).
 
 The spiking activity of a generic axon bundle was simulated by a background
 spontaneous firing rate of 100 spikes/s and a short pulse of increased
-activity. We chose a Gaussian pulse with an amplitude of 2900 spikes/s and
-a standard deviation of 2.8\ ms. These numbers are motivated by the early
-auditory system [@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls]. However,
-our approach is not limited to the auditory system (which would also require to
-include phase locking), and this pulse of activity could relate to various
-kinds of evoked activity in the nervous system, such as sensory stimulation,
-motor activity or a spontaneous transient increase in population spiking
-activity. 
+activity. We chose a Gaussian pulse with an amplitude of 2900 spikes/s and a
+standard deviation of 2.8\ ms. These numbers are motivated by the early
+auditory system [@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls], where
+instantaneous spike rates of 3000 spikes/s occur in repsonse to click stimuli
+[@Carr2016Role]. However, our approach is not limited to the auditory system
+(which would also require to include phase locking), and this pulse of activity
+could relate to various kinds of evoked activity in the nervous system, such as
+sensory stimulation, motor activity or a spontaneous transient increase in
+population spiking activity. 
 
 ![Relationship between axon morphology and extracellular potential. Simulated
 action potentials travelling along axons with varying morphologies, as
@@ -386,6 +395,19 @@ EFP. The simplified model also allowed us to consider a continuous number of
 fibers instead of simulating discrete bifurcations and terminations. All
 following simulations are based on the simplified model.
 
+We simulated two axon bundle morphologies. The first was a non-bifurcating
+bundle, which had a constant number of 50 fibers for $z<0$\ $\mu$m, and tapered
+out as a Gaussian centered at $z=0$\ $\mu$m with a height of 50 fibers and
+standard deviation of 500\ $\mu$m for $z>0$\ $\mu$m. The second case was that
+of an axon bundle with a projection zone containing bifurcations. Here we
+simulated the same distribution as for the non-bifurcating case, but added a
+further Gaussian distribution to account for the bifurcating axons. This
+additional Gaussian was also centered at $z=0$\ $\mu$m, had the same standard
+deviation of 500\ $\mu$m but an amplitude of 450 fibers. Unlike the
+tapering-out, this component was added for all values of $z$. It resulted in a
+maximal fiber number of 500 at $z=0$. Both distributions constructed in this
+way were smooth, and had smooth first derivatives in space.
+
 The dipole-like component observed in [@fig:bigtree] had it's dipole axis
 aligned with the axon trunk. We therefore expected the amplitude of the field potential to decay
 as $r^{-2}$ in this direction, which we call the axial direction. To test
@@ -410,7 +432,6 @@ the terminal zone contributed mainly to the low-frequency dipole moment of the
 EFP. Because of this, in the far field (>1\ mm) the magnitude of the
 low-frequency component exceeded the magnitude of the high-frequency component
 by an order of magnitude.
-
 
 In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component
@@ -520,13 +541,13 @@ The barn owl neurophonic potential in nucleus laminaris as an example for a dipo
 In order to test the dipole prediction of our model of the extracellular field of axon
 bundles, we recorded EFP responses from the barn owl auditory brain stem. The
 barn owl has a highly developed auditory system with a strong frequency
-following response in the EFP (up to 9 kHz) in the nucleus laminaris (NL), called the
+following response in the EFP (up to 9\ kHz, @Koppl1997b) in the nucleus laminaris (NL), called the
 neurophonic. In NL, the input from the two ears is first integrated to
 calculate the azimuthal location of a sound source, and this information is
-encoded in the EFP. The EFP in this region is mainly due to the efferent
+encoded in the EFP [@carr90]. The EFP in this region is mainly due to the efferent
 activity, and the contribution of spikes of NL neurons is small
 [@Kuokkanen2010Origin;@Kuokkanen2013Linear]. Furthermore, the anatomy of the
-efferent axons is well known and follows a stereotypical pattern [@carr90]: Two
+efferent axons is well known and follows a stereotypical pattern [@carr88;@carr90]: Two
 fiber bundles enter the nucleus, with fibers from the contralateral ear
 entering ventrally, and from the ipsilateral ear entering dorsally. The axon
 bundles reach the nucleus from the previous nucleus without bifurcating, then
@@ -537,21 +558,21 @@ well studied physiology and anatomy makes the system an ideal candidate to inves
 To explore the spatiotemporal structure of the EFP in NL, we performed
 simultaneous multi-electrode recordings of the response in NL
 ([@fig:expmethod]A) to contralateral monaural click stimuli. The click responses
-showed distinct high- and low-frequency components as previously reported
-[@wagner09]. The frequency of the high-frequency ([@fig:expmethod]C) ringing corresponds to the
-recording location on the frequency map within NL, and ringing reflects the frequency
-tuning and phase locking of the incoming axons. The
-origin of the low-frequency component ([@fig:expmethod]B) remains
-unexplained. We filtered the data to roughly separate these components. The
-cutoff to split the components was set to 2\ kHz because this frequency was
+showed distinct high- and low-frequency components, as previously reported
+[@wagner09]. The frequency of the high-frequency ([@fig:expmethod]C) ringing
+corresponds to the recording location on the frequency map within NL and
+ringing reflects the frequency tuning and phase locking of the incoming axons.
+In addition, there is a low-frequency component in the response
+([@fig:expmethod]B). We filtered the data to roughly separate these components.
+The cutoff to split the components was set to 2\ kHz because this frequency was
 always well below the high-frequency ringing component.
 
 The same simplified model used in [@fig:distscaling] was fit to the data by
 performing a nonlinear least squares optimization. Free parameters were (1) the
 number of fibers at the depth of each recording location, (2) the average
-membrane potential over time in a single fiber at the location next to the most
-dorsal electrode, (3) the axonal conduction velocity, and (4) the distance
-between bundle and electrode array.
+spatial derivative of the membrane potential over time in a single fiber at the
+location next to the most dorsal electrode, (3) the axonal conduction velocity,
+and (4) the distance between bundle and electrode array.
 
 
 ![Multielectrode recordings in the barn owl show dipolar axonal EFPs. (**A**) Photomicrograph
@@ -618,15 +639,16 @@ due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
 [@fig:barnowl]A shows the inferred average over trials of the deviation of the
 membrane voltage from the resting potential in response to the stimulus, at a
-location in the axon next to the first electrode. The voltage is composed of
-high- and low-frequency components similar to those observed in the EFP. When
-comparing this inferred membrane potential response to the measured EFP
-response, the most salient difference is the different sizes of the frequency
-components. In the EFP, the low-frequency component has a comparable amplitude
-to the high-frequency component, but in the membrane voltage the low-frequency
-component is much larger. This is due to the fact that the second derivative
-term in the current equation essentially imposes a high-pass filter on the
-membrane voltage.
+location in the axon next to the first electrode, obtained by integrating the
+derivative $\frac{\text{d}V}{\text{d}z}$ that was the subject of the fit. The
+voltage is composed of high- and low-frequency components similar to those
+observed in the EFP. When comparing this inferred membrane potential response
+to the measured EFP response, the most salient difference is the different
+sizes of the frequency components. In the EFP, the low-frequency component has
+a comparable amplitude to the high-frequency component, but in the membrane
+voltage the low-frequency component is much larger. This is due to the fact
+that the second derivative term in the current equation essentially imposes a
+high-pass filter on the membrane voltage.
 
 The inferred number of fibers is shown in [@fig:barnowl]B. The density (number
 of fibers per unit length) is shown as a function of dorsoventral depth,
@@ -681,6 +703,19 @@ with our experimental findings. We also calculated the contribution expected at
 2 cm from NL, aiming to estimate the contribution to the ABR. Multiplying by a
 factor of 2 to account for the fact that there is an NL on each hemisphere, the
 predicted contribution was 0.98 µV.
+
+For thalamocortical projections, @Swadlow2000Influence reported amplitudes of
+single extracellular spikes at various locations. At 400 $\mu$m from the center
+of the dipole, the amplitude of the response was $\approx$ 1 $\mu$V. Individual thalamocortical axons are thin and have large and highly
+branched projection zones [@Feldmeyer2012Excitatory], so we estimated $\sigma_n$\ =\ 250 $\mu$m
+and $\bar{n}$\ =\ 30 and $a$\ =\ 1\ $\mu$m. We assumed a jitter in the arrival
+time instead of a true activity pulse, $\sigma_\text{pulse}$\ =\ 125 $\mu$s,
+and normalized the pulse to have area 1, because we were considering a spike
+triggered average. The conduction velocity has been reported to be higher
+[@Simons2007Thalamocortical], so we chose $v$\ =\ 8.5\ m/s. Leaving all other
+values as in the previous approximation, we arrived at a dipole moment of
+$p_\text{max} \approx$ 1.5 $\mu\text{A}\cdot\mu\text{m}$, yielding an
+extracellular spike amplitude of $\approx$ 2.3\ $\mu$V at the distance of 400 $\mu$m, on the same order of magnitude as the value reported by @Swadlow2000Influence.
 
 Discussion
 ==============
@@ -977,8 +1012,8 @@ respect to the variable $z$.
 Model fitting to experimental data
 ----------------------------
 
-In order to relate the model to experimentally obtained data, we performed
-a nonlinear least squares fit, minimizing the mean squared error $\epsilon$
+In order to relate the model to experimentally obtained data, we performed a
+nonlinear least squares fit, minimizing the mean squared error $\epsilon$
 between the measured potential $\phi_\text{measured}$ and the model prediction
 $\phi_\text{model}$ for ${N=32}$ measurement locations $z_n$\ ($n=1,\dots,N$)
 and ${M=600}$ time points $t_m$ ($m = 1,\dots,M$): $\epsilon
@@ -989,14 +1024,18 @@ minimization of the error $\epsilon$ using the "optimize.minimize" routine
 provided by the \textsc{SciPy} package [@scipy]. The free parameters to be
 determined by the optimization routine were the distance $\rho$, the conduction
 velocity $v$, the number of fibers per unit length $n(z_n)$ for each
-measurement location\ $z_n$, and the membrane voltage $V(z_1,t_m)$ at electrode
-location $z_1$ for each time point\ $t_m$. The membrane voltage at the other
-locations was then determined by the traveling-wave assumption: $V(z_n,t_m)
-= V(z_1,t_m-\frac{z_n-z_1}{v})$, using a linear interpolation between
-timepoints. The model assumption of a single line of axons with electrodes at
-a fixed distance is a simplification of a three-dimensional axon tree where the
-fibers are distributed at various distances. The distance parameter $\rho$ can
-be interpreted as an average distance in this simplification.
+measurement location\ $z_n$, and the spatial derivative of the membrane voltage
+$\frac{\text{d}V}{\text{d}z}(z_1,t_m)$ at electrode location $z_1$ for each
+time point\ $t_m$. We fit the first derivative of the membrane potential in
+order to better capture the low-frequency components that we found in
+@fig:simpletree E, and because the membrane potential only appears as the
+derivative in the model. The derivative of the membrane voltage at the other
+locations was then determined by the traveling-wave assumption: $\frac{\text{d}V}{\text{d}z}V(z_n,t_m) =
+\frac{\text{d}V}{\text{d}z}V(z_1,t_m-\frac{z_n-z_1}{v})$, using a linear interpolation between timepoints.
+The model assumption of a single line of axons with electrodes at a fixed
+distance is a simplification of a three-dimensional axon tree where the fibers
+are distributed at various distances. The distance parameter $\rho$ can be
+interpreted as an average distance in this simplification.
 
 To aid the convergence of the fit algorithm, an
 initial guess for the number of fibers $n(z_z)$ was set by hand.
