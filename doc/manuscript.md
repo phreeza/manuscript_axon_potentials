@@ -108,7 +108,7 @@ current types. The first, small positive peak corresponds to the capacitive
 current, the large and negative second peak to the sodium current, and the
 final positive peak to the potassium current [@Gold2006Origin]. Another, more
 mathematical way of understanding the triphasic shape is specific to the nature
-of the axon. Due to Kirchoff's law and cable theory (see Materials and
+of the axon. Due to Kirchhoff's law and cable theory (see Materials and
 Methods), the local transmembrane current in an axon is proportional to the
 second spatial derivative of the membrane potential along the direction of the
 axon. Because the action potential is roughly a travelling wave, the currents
@@ -182,11 +182,11 @@ terminal zone largely cancelled out.
 
 The fact that the responses in [@fig:simpletree]E were mostly monophasic was
 due to the presence of a non-zero bias in the biphasic responses observed for
-the single spike responses, meaning that the area under the negative part of
-the curve slightly exceeded that of the positive part in close to a
-bifurcation, and vice versa close to a termination. This discrepancy
-effectively induced a very low-frequency component in the single-spike
-responses which is reflected in the population response in [@fig:simpletree]E.
+the single spike responses. Close to a bifurcation, the area under the negative
+part of the curve slightly exceeded that of the positive part, and vice versa
+close to a termination. This bias effectively induced a low-frequency component
+in the single-spike responses, that is reflected in the population response in
+[@fig:simpletree]E.
 
 The reversal behaviour shown in [@fig:simpletree]E is similar to the polarity
 reversal associated with a dipole observed in experimental studies
@@ -233,7 +233,7 @@ position, spaced by 200\ µm. Horizontal distances are for illustration
 only, all axons were simulated to lie in a straight line. (**A**) Action
 potential in an infinitely long, straight axon. (**B**) Terminating axon.
 Action potential waveform closest to the termination thickened for emphasis.
-(**C**) Branching axon. The axon branches multiple times in the range of 200\
+(**C**) Branching axon. The axon branches multiple times in the range of 200\ 
 µm. Thicker waveform at the center of the bifurcation zone.  (**D**)
 Combined bifurcations and terminations. Note the reduced voltage scales in
 C and D, which correspond to the different number of fibers. (**E**) Response
@@ -396,14 +396,14 @@ fibers instead of simulating discrete bifurcations and terminations. All
 following simulations are based on the simplified model.
 
 We simulated two axon bundle morphologies. The first was a non-bifurcating
-bundle, which had a constant number of 50 fibers for $z<0$\ $\mu$m, and tapered
-out as a Gaussian centered at $z=0$\ $\mu$m with a height of 50 fibers and
-standard deviation of 500\ $\mu$m for $z>0$\ $\mu$m. The second case was that
+bundle, which had a constant number of 50 fibers for $z<0$\ µm, and tapered
+out as a Gaussian centered at $z=0$\ µm with a height of 50 fibers and
+standard deviation of 500\ µm for $z>0$\ µm. The second case was that
 of an axon bundle with a projection zone containing bifurcations. Here we
 simulated the same distribution as for the non-bifurcating case, but added a
 further Gaussian distribution to account for the bifurcating axons. This
-additional Gaussian was also centered at $z=0$\ $\mu$m, had the same standard
-deviation of 500\ $\mu$m but an amplitude of 450 fibers. Unlike the
+additional Gaussian was also centered at $z=0$\ µm, had the same standard
+deviation of 500\ µm but an amplitude of 450 fibers. Unlike the
 tapering-out, this component was added for all values of $z$. It resulted in a
 maximal fiber number of 500 at $z=0$. Both distributions constructed in this
 way were smooth, and had smooth first derivatives in space.
@@ -538,22 +538,24 @@ quadrupole moment (black line) between bifurcating and non-bifurcating cases.
 The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal terminal zone.
 ----
 
-In order to test the dipole prediction of our model of the extracellular field of axon
-bundles, we recorded EFP responses from the barn owl auditory brain stem. The
-barn owl has a highly developed auditory system with a strong frequency
-following response in the EFP (up to 9\ kHz, @Koppl1997b) in the nucleus laminaris (NL), called the
-neurophonic. In NL, the input from the two ears is first integrated to
-calculate the azimuthal location of a sound source, and this information is
-encoded in the EFP [@carr90]. The EFP in this region is mainly due to the efferent
-activity, and the contribution of spikes of NL neurons is small
-[@Kuokkanen2010Origin;@Kuokkanen2013Linear]. Furthermore, the anatomy of the
-efferent axons is well known and follows a stereotypical pattern [@carr88;@carr90]: Two
-fiber bundles enter the nucleus, with fibers from the contralateral ear
-entering ventrally, and from the ipsilateral ear entering dorsally. The axon
-bundles reach the nucleus from the previous nucleus without bifurcating, then
-bifurcate multiple times at the border of the NL, and then terminate within NL.
-Axon bundles have a strong directional preference and run roughly in parallel. This
-well studied physiology and anatomy makes the system an ideal candidate to investigate the EFPs of axon bundles.
+In order to test the dipole prediction of our model of the extracellular field
+of axon bundles, we recorded EFP responses from the barn owl auditory brain
+stem. The barn owl has a highly developed auditory system with a strong
+frequency following response (up to 9\ kHz, @Koppl1997b) in the EFP, called the
+neurophonic, which can be recorded in the nucleus laminaris (NL). In NL, the
+input from the two ears is first integrated to calculate the azimuthal location
+of a sound source, and this information is encoded in the EFP [@carr90]. The
+EFP in this region is mainly due to the efferent activity, and the contribution
+of spikes of NL neurons is small [@Kuokkanen2010Origin;@Kuokkanen2013Linear].
+Furthermore, the anatomy of the efferent axons is well known and follows a
+stereotypical pattern [@carr88;@carr90]: Two fiber bundles enter the nucleus,
+with fibers from the contralateral ear entering ventrally, and from the
+ipsilateral ear entering dorsally. The axon bundles reach the nucleus from the
+previous nucleus without bifurcating, then bifurcate multiple times at the
+border of the NL, and then terminate within NL. Axon bundles have a strong
+directional preference and run roughly in parallel. This well studied
+physiology and anatomy makes the system an ideal candidate to investigate the
+EFPs of axon bundles.
 
 To explore the spatiotemporal structure of the EFP in NL, we performed
 simultaneous multi-electrode recordings of the response in NL
@@ -607,22 +609,22 @@ lines indicate the actual responses in the data. The responses have a
 Gabor-like shape, as expected [@wagner09], with maximum amplitude in the center
 of the recording array, at around 850\ µm penetration depth. The axonal
 conduction velocity was calculated to be 4.0 m/s. A previously published
-estimate of the axonal conduction velocity in this nucleus was 1.1 m/s in
-@McColgan2014Functional, gave a confidence bound of 6 m/s. Toward the
+estimate of the axonal conduction velocity in this nucleus
+[@McColgan2014Functional] gave a confidence bound of 0.4-6 m/s . Toward the
 edges (< 100 and > 1400\ µm), the amplitude decays. In the central region
-(400-1200\ µm recording depth, a systematic shift in delay can be observed, while the
-response seems to be stationary in the more dorsal and ventral electrodes. The
-delay increases from ventral to dorsal, which is consistent with the anatomy
-for contralateral stimulation. All these aspects of the data are qualitatively
-reproduced by the model (purple traces). The main deviation between model and
-data lies in a diminished amplitude of the oscillation at the most central
-electrode sites. Because the phase shift in the central region is mainly
-determined by the conduction velocity, this mismatch might be due to a slightly
-changing conduction velocity in the nucleus. A diminished amplitude in the fit
-could reflect an inability of the model to exactly match the phase progression.
-Another possible explanation is that the additional amplitude could be due to
-non-axonal sources such as synaptic currents or postsynaptic spikes, which do
-not follow the assumptions underlying the model being fit.
+(400-1200\ µm recording depth, a systematic shift in delay can be observed,
+while the response seems to be stationary in the more dorsal and ventral
+electrodes. The delay increases from ventral to dorsal, which is consistent
+with the anatomy for contralateral stimulation. All these aspects of the data
+are qualitatively reproduced by the model (purple traces). The main deviation
+between model and data lies in a diminished amplitude of the oscillation at the
+most central electrode sites. Because the phase shift in the central region is
+mainly determined by the conduction velocity, this mismatch might be due to a
+slightly changing conduction velocity in the nucleus. A diminished amplitude in
+the fit could reflect an inability of the model to exactly match the phase
+progression. Another possible explanation is that the additional amplitude
+could be due to non-axonal sources such as synaptic currents or postsynaptic
+spikes, which do not follow the assumptions underlying the model being fit.
 
 The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]D) responses reveal the
 typical polarity reversal that we predicted for an axonal terminal zone
@@ -639,8 +641,7 @@ due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
 [@fig:barnowl]A shows the inferred average over trials of the deviation of the
 membrane voltage from the resting potential in response to the stimulus, at a
-location in the axon next to the first electrode, obtained by integrating the
-derivative $\frac{\text{d}V}{\text{d}z}$ that was the subject of the fit. The
+location in the axon next to the first electrode, obtained from the fit. The
 voltage is composed of high- and low-frequency components similar to those
 observed in the EFP. When comparing this inferred membrane potential response
 to the measured EFP response, the most salient difference is the different
@@ -682,7 +683,8 @@ described with a Gaussian, with width $\sigma_n$ and maximum number $\bar{n}$.
 This is an adequate approximation, if the spikes in the incoming fibers
 contribute little to the dipole moment before reaching the
 projection zone. The further variables are explained in the Methods section. In
-this scenario, we calculated the maximum dipole moment of the bundle to be 
+this scenario, we calculated the maximum dipole moment of the bundle (see
+Materials and Methods for derivation) to be:
 
 $$p_\text{max} = \frac{2 a^2 \pi^2}{r_L\sqrt{e}} \cdot
 \frac{v \sigma_n \sigma_{\text{pulse}} \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}
@@ -690,32 +692,36 @@ $$p_\text{max} = \frac{2 a^2 \pi^2}{r_L\sqrt{e}} \cdot
 
 Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
-the barn owl, we chose the following values: $a$\ =\ 2µm, $v$\ =\ 1 $\frac{\text{m}}{\text{s}}$,
-$\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\ 250 µs,
-$\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$,
-$\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\ 70 mV,
-$\bar{\lambda}_\text{pulse}$\ =\ 2000 $\text{s}^{-1}$ $r_L$\ =\ 1 $\Omega\text{m}$. This 
-lead to a value for the dipole moment of $p_\text{max} \approx$ 0.8
-$\mu\text{A}\cdot\text{mm}$. At a distance of 750 µm, roughly the furthest
-distance recorded with the multielectrode array in [@fig:expmethod] and
-[@fig:barnowl], this corresponded to a field potential of 0.35 mV, consistent
-with our experimental findings. We also calculated the contribution expected at
-2 cm from NL, aiming to estimate the contribution to the ABR. Multiplying by a
-factor of 2 to account for the fact that there is an NL on each hemisphere, the
-predicted contribution was 0.98 µV.
+the barn owl, we chose the following values: $a$\ =\ 2\ µm, $v$\ =\ 1\ 
+$\frac{\text{m}}{\text{s}}$, $\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\
+250 µs, $\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33
+$\frac{\text{S}}{\text{m}}$, $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\
+70 mV, $\bar{\lambda}_\text{pulse}$\ =\ 2000\ spikes/s, $r_L$\ =\ 1
+$\Omega\text{m}$. This lead to a value for the dipole moment of $p_\text{max}
+\approx$ 0.8 $\text{µA}\cdot\text{mm}$. At a distance of 750 µm, roughly the
+furthest distance recorded with the multielectrode array in [@fig:expmethod]
+and [@fig:barnowl], this corresponded to a field potential of 0.35 mV,
+consistent with our experimental findings. We also calculated the contribution
+expected at 2 cm from NL, aiming to estimate the contribution to the ABR.
+Multiplying by a factor of 2 to account for the fact that there is an NL on
+each hemisphere, the predicted contribution was 0.98 µV.
 
 For thalamocortical projections, @Swadlow2000Influence reported amplitudes of
-single extracellular spikes at various locations. At 400 $\mu$m from the center
-of the dipole, the amplitude of the response was $\approx$ 1 $\mu$V. Individual thalamocortical axons are thin and have large and highly
-branched projection zones [@Feldmeyer2012Excitatory], so we estimated $\sigma_n$\ =\ 250 $\mu$m
-and $\bar{n}$\ =\ 30 and $a$\ =\ 1\ $\mu$m. We assumed a jitter in the arrival
-time instead of a true activity pulse, $\sigma_\text{pulse}$\ =\ 125 $\mu$s,
-and normalized the pulse to have area 1, because we were considering a spike
-triggered average. The conduction velocity has been reported to be higher
-[@Simons2007Thalamocortical], so we chose $v$\ =\ 8.5\ m/s. Leaving all other
+extracellular spike-related potentials called axon terminal potentials (AxTP),
+at various locations. At 400 µm from the center of the dipole, the
+amplitude of the response was $\approx$ 1 µV. Individual thalamocortical
+axons are thin and have large and highly branched projection zones
+[@Feldmeyer2012Excitatory], so we estimated $\sigma_n$\ =\ 250 µm and
+$\bar{n}$\ =\ 30 and $a$\ =\ 1\ µm. We assumed a jitter in the arrival time
+instead of a true activity pulse, $\sigma_\text{pulse}$\ =\ 125 µs, and
+normalized the pulse to have area 1, because we were considering a spike
+triggered average. The conduction velocity has been reported
+as $v$\ =\ 8.5\ m/s [@Simons2007Thalamocortical]. Leaving all other
 values as in the previous approximation, we arrived at a dipole moment of
-$p_\text{max} \approx$ 1.5 $\mu\text{A}\cdot\mu\text{m}$, yielding an
-extracellular spike amplitude of $\approx$ 2.3\ $\mu$V at the distance of 400 $\mu$m, on the same order of magnitude as the value reported by @Swadlow2000Influence.
+$p_\text{max} \approx$ 1.5 $\text{µA}\cdot\text{µm}$, yielding an
+extracellular spike amplitude of $\approx$ 2.3\ µV at the distance of 400
+µm, on the same order of magnitude as the value reported by
+@Swadlow2000Influence.
 
 Discussion
 ==============
