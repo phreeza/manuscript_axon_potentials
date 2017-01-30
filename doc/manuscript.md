@@ -682,7 +682,7 @@ The distribution of the number of fibers at a given depth location was also
 described with a Gaussian, with width $\sigma_n$ and maximum number $\bar{n}$.
 This is an adequate approximation, if the spikes in the incoming fibers
 contribute little to the dipole moment before reaching the
-projection zone. The further variables are explained in the Methods section. In
+projection zone. In
 this scenario, we calculated the maximum dipole moment of the bundle (see
 Materials and Methods for derivation) to be:
 
@@ -690,37 +690,48 @@ $$p_\text{max} = \frac{2 a^2 \pi^2}{r_L\sqrt{e}} \cdot
 \frac{v \sigma_n \sigma_{\text{pulse}} \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}
 {\left(\sigma_n^2+v^2 \left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)}$$.
 
+This formula tells us that the dipole moment is maximal whenever the three
+(spatial) widths $\sigma_n$, $v\sigma_{\text{pulse}}$ and
+$v\sigma_{\text{spike}}$ are of the form $w_1^1=w_2^2+w_3^3$, where $w_1$ is
+the largest of the three terms, while $w_2$ and $w_3$ are the other two terms,
+regardless of order. The dipole moment is thus maximal when the widths of the
+pulses agree. In particular, if $\sigma_n$ is the widest, then the dipole
+moment is maximal if $\sigma_n$ is equal to the width of $\lambda(t)\ast
+V_\text{spike}(t,x)$, which is
+$v\sqrt{\sigma_{\text{spike}}+\sigma_{\text{pulse}}}$.
+
 Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
-the barn owl, we chose the following values: $a$\ =\ 2\ µm, $v$\ =\ 1\ 
-$\frac{\text{m}}{\text{s}}$, $\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\
-250 µs, $\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33
-$\frac{\text{S}}{\text{m}}$, $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\
-70 mV, $\bar{\lambda}_\text{pulse}$\ =\ 2000\ spikes/s, $r_L$\ =\ 1
-$\Omega\text{m}$. This lead to a value for the dipole moment of $p_\text{max}
-\approx$ 0.8 $\text{µA}\cdot\text{mm}$. At a distance of 750 µm, roughly the
-furthest distance recorded with the multielectrode array in [@fig:expmethod]
-and [@fig:barnowl], this corresponded to a field potential of 0.35 mV,
-consistent with our experimental findings. We also calculated the contribution
-expected at 2 cm from NL, aiming to estimate the contribution to the ABR.
-Multiplying by a factor of 2 to account for the fact that there is an NL on
-each hemisphere, the predicted contribution was 0.98 µV.
+the barn owl, we chose the following values: axon diameter $a$\ =\ 2\ µm,
+conduction velocity $v$\ =\ 1\ $\frac{\text{m}}{\text{s}}$, axial resistivity
+$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\
+250 µs, $\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33\ $\frac{\text{S}}{\text{m}}$,
+$\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\ 70 mV,
+$\bar{\lambda}_\text{pulse}$\ =\ 2000\ spikes/s. This lead to a value
+for the dipole moment of $p_\text{max} \approx$ 0.8 $\text{µA}\cdot\text{mm}$.
+At a distance of 750 µm, roughly the furthest distance recorded with the
+multielectrode array in [@fig:expmethod] and [@fig:barnowl], this corresponded
+to a field potential of 0.35 mV, consistent with our experimental findings. We
+also calculated the contribution expected at 2 cm from NL, aiming to estimate
+the contribution to the ABR. Multiplying by a factor of 2 to account for the
+fact that there is an NL on each hemisphere, the predicted contribution was
+0.98 µV.
 
 For thalamocortical projections, @Swadlow2000Influence reported amplitudes of
 extracellular spike-related potentials called axon terminal potentials (AxTP),
 at various locations. At 400 µm from the center of the dipole, the
-amplitude of the response was $\approx$ 1 µV. Individual thalamocortical
+amplitude of the response was $\approx$\ 1\ µV. Individual thalamocortical
 axons are thin and have large and highly branched projection zones
 [@Feldmeyer2012Excitatory], so we estimated $\sigma_n$\ =\ 250 µm and
 $\bar{n}$\ =\ 30 and $a$\ =\ 1\ µm. We assumed a jitter in the arrival time
-instead of a true activity pulse, $\sigma_\text{pulse}$\ =\ 125 µs, and
+instead of a true activity pulse, $\sigma_\text{pulse}$\ =\ 125\ µs, and
 normalized the pulse to have area 1, because we were considering a spike
 triggered average. The conduction velocity has been reported
 as $v$\ =\ 8.5\ m/s [@Simons2007Thalamocortical]. Leaving all other
 values as in the previous approximation, we arrived at a dipole moment of
 $p_\text{max} \approx$ 1.5 $\text{µA}\cdot\text{µm}$, yielding an
-extracellular spike amplitude of $\approx$ 2.3\ µV at the distance of 400
-µm, on the same order of magnitude as the value reported by
+extracellular spike amplitude of $\approx$ 2.3\ µV at the distance of 400\ 
+µm, which is on the same order of magnitude as the value ($\approx$ 1\ µV) reported by
 @Swadlow2000Influence.
 
 Discussion
@@ -998,6 +1009,60 @@ only at $\rho = 0$, we obtained
 \end{align}
 
 which is independent of the angle $\varphi$.
+
+To derive the dipole moment of a simplified projection zone, we consider an
+axon bundle in which identical spikes with the waveform $V_\text{spike}(t,z)$
+propagate as travelling waves with a velocity $v$: $V_\text{spike}(t,z) =
+V_\text{spike}(z/v-t)$. If each of the fibers is stimulated with an
+inhomogeneous Poisson process, with the driving rate $\lambda(t)$ shared among
+all axons, the average membrane potential across fibers will be
+$V_\text{membrane}(z,t) = V_\text{spike}(z/v-t)\ast \lambda(t)$, where $\ast$
+denotes the convolution in time. Plugging this into [@eqn:current], we obtain
+\begin{align} i_m(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial
+z}(z)\cdot\frac{\partial}{\partial z}(V_\text{spike}(z/v-t)\ast
+\lambda(t))+n(z)\cdot\frac{\partial ^2}{\partial z^2}(V_\text{spike}(z/v-t)\ast
+\lambda(t)) \right) \\ & = \frac{\pi
+a^2}{r_L}\lambda(t)\ast\left(\frac{\partial n}{\partial
+z}(z)\cdot\frac{\partial}{\partial
+z}(V_\text{spike}(z/v-t))+n(z)\cdot\frac{\partial ^2}{\partial
+z^2}(V_\text{spike}(z/v-t)) \right) \end{align}
+
+Assuming Gaussian shapes for the firing rate pulse $\lambda(t) = \bar\lambda
+e^{-\frac{t^2}{2\sigma_\text{pulse}}}$, the spike $V_\text{spike}(z/v-t) =
+\bar{V}_\text{spike} e^{-\frac{(z/v-t)^2}{2\sigma_\text{spike}}}$ and the fiber
+bundle projection zone $n(z) = \bar{n} e^{-\frac{z^2}{2\sigma_\text{n}}}$, we
+are able to take advantage of the fact that the product and the convolution of
+two Gaussians are again Gaussian, and obtain 
+
+\begin{align}\label{eqn:simple_dipole_cur} i_m(z,t)&=\bar{n} \bar{\lambda
+}_{\text{pulse}} \bar{V}_{\text{spike}}  \sqrt{2} \pi ^{3/2} a^2  \cdot \exp
+\left(-\frac{z^2}{2 \sigma _n^2}-\frac{(z-t v)^2}{2 v^2 \left(\sigma
+_{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)}\right) \\ \nonumber
+&\cdot\frac{ \sigma _n^2 \left(-v^2 \sigma _{\text{pulse}}^2-v^2 \sigma
+_{\text{spike}}^2+(z-t v)^2\right)-v^2 z \left(\sigma _{\text{pulse}}^2+\sigma
+_{\text{spike}}^2\right) (t v-z)}{v^4 r_L \sigma _n^2 \sqrt{\frac{1}{\sigma
+_{\text{pulse}}^2}+\frac{1}{\sigma _{\text{spike}}^2}} \left(\sigma
+_{\text{pulse}}^2+\sigma _{\text{spike}}^2\right){}^2} \end{align}
+
+
+The dipole moment $p(t)$ is defined as $$p(t) = \int_{-\infty}^{\infty}z\cdot
+i_m(z,t)\text{d}z$$ into which we can enter Eq. \ref{eqn:simple_dipole_cur} to
+obtain $$p(t) =- \bar{n} \bar{\lambda }_{\text{pulse}}
+\bar{V}_{\text{spike}}\frac{2 \pi ^2 a^2}{r_L }\frac{v^2 \sigma_n
+\sigma_{\text{pulse}} \sigma_{\text{spike}}}{\left(\sigma _n^2+v^2 \left(\sigma
+_{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)\right)^{3/2}}\cdot t
+e^{\frac{t^2 v^2}{2 \left(\sigma _n^2+v^2 \left(\sigma _{\text{pulse}}^2+\sigma
+_{\text{spike}}^2\right)\right)}}$$
+
+This has its maximum amplitude at $t_\text{max}=\frac{\sqrt{\sigma _n^2+v^2
+\left(\sigma _{\text{pulse}}^2+ \sigma _{\text{spike}}^2\right)}}{v}$, when the
+dipole moment takes the value $$ p_\text{max} = p(t_\text{max}) = \frac{2 a^2
+\pi^2}{r_L\sqrt{e}} \cdot \frac{v \sigma_n \sigma_{\text{pulse}}
+\sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}}
+\bar{V}_{\text{spike}}} {\left(\sigma_n^2+v^2
+\left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} $$
+
+
 <!--
 &=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{\frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
 
