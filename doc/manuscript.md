@@ -553,7 +553,8 @@ entering ventrally, and from the ipsilateral ear entering dorsally. The axon
 bundles reach the nucleus from the previous nucleus without bifurcating, then
 bifurcate multiple times at the border of the NL, and then terminate within NL.
 Axon bundles have a strong directional preference and run roughly in parallel. This
-well studied physiology and anatomy makes the system an ideal candidate to investigate the EFPs of axon bundles.
+well studied physiology and anatomy makes the system an ideal candidate to
+investigate the EFPs of axon bundles.
 
 To explore the spatiotemporal structure of the EFP in NL, we performed
 simultaneous multi-electrode recordings of the response in NL
@@ -637,18 +638,17 @@ even captures a small oscillation in the data with period\ of\
 $\approx 1$\ ms in the center of the recording. Here, too, the small deviations are likely
 due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
-[@fig:barnowl]A shows the inferred average over trials of the deviation of the
-membrane voltage from the resting potential in response to the stimulus, at a
-location in the axon next to the first electrode, obtained by integrating the
-derivative $\frac{\text{d}V}{\text{d}z}$ that was the subject of the fit. The
-voltage is composed of high- and low-frequency components similar to those
-observed in the EFP. When comparing this inferred membrane potential response
-to the measured EFP response, the most salient difference is the different
-sizes of the frequency components. In the EFP, the low-frequency component has
-a comparable amplitude to the high-frequency component, but in the membrane
-voltage the low-frequency component is much larger. This is due to the fact
-that the second derivative term in the current equation essentially imposes a
-high-pass filter on the membrane voltage.
+[@fig:barnowl]A shows the average response over trials of the deviation of the
+membrane voltage from the resting potential, inferred from the fit, at
+a location in the axon next to the first electrode. The voltage is composed of
+high- and low-frequency components similar to those observed in the EFP. When
+comparing this inferred membrane potential response to the measured EFP
+response, the most salient difference is the different sizes of the frequency
+components. In the EFP, the low-frequency component has a comparable amplitude
+to the high-frequency component, but in the membrane voltage the low-frequency
+component is much larger. This is due to the fact that the second derivative
+term in the current equation essentially imposes a high-pass filter on the
+membrane voltage.
 
 The inferred number of fibers is shown in [@fig:barnowl]B. The density (number
 of fibers per unit length) is shown as a function of dorsoventral depth,
