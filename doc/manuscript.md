@@ -111,7 +111,7 @@ mathematical way of understanding the triphasic shape is specific to the nature
 of the axon. Due to Kirchhoff's law and cable theory (see Materials and
 Methods), the local transmembrane current in an axon is proportional to the
 second spatial derivative of the membrane potential along the direction of the
-axon. Because the action potential is roughly a travelling wave, the currents
+axon. Because the action potential is roughly a traveling wave, the currents
 are also proportional to the second *temporal* derivative of the membrane
 potential. The three extrema of the EFP are thus related to the points of
 maximum curvature in the action potential waveform, namely the onset, the
@@ -224,7 +224,7 @@ sensory stimulation, motor activity or a spontaneous transient increase in
 population spiking activity. 
 
 ![Relationship between axon morphology and extracellular potential. Simulated
-action potentials travelling along axons with varying morphologies, as
+action potentials traveling along axons with varying morphologies, as
 indicated by the diagram in the left-hand side of each subfigure. Action
 potential propagation direction indicated by arrow. Waveforms, shown on the
 right-hand side of each subfigure, were recorded at a horizontal distance of
@@ -387,7 +387,7 @@ one-dimensional model of the axon bundle (see Materials and Methods). This
 model omitted the radial fanning out of the bundle in the terminal zone, as in [@fig:simpletree].
 Furthermore, we discarded the detailed conductance-based
 simulation of the membrane potential, and instead assumed a fixed membrane
-potential waveform travelling along the axon trunk with constant propagation
+potential waveform traveling along the axon trunk with constant propagation
 velocity. In order to measure the EFP responses at all frequencies, we set the
 membrane potential with white noise. Using linear cable theory, it was then
 possible to calculate the membrane currents necessary for the determination of the
@@ -971,18 +971,21 @@ patterns of extracellular fields, we devised an analytically tractable model of
 the responses. We defined the spatial dimension in cylindrical coordinates
 $\mathbf{r}=(\rho,\varphi,z)$, and we considered a simple model axon bundle
 that extended infinitely in the axial $z$-direction at $\rho=0$. The bundle had
-a variable number of fibers along the $z$ axis, denoted by $n(z)$. We assumed
-the axons to be perfect transmission lines, meaning that the action potential
-is a travelling wave with velocity $v$ along the axon. In particular, we
-neglected any delays and distortions that can be induced when an axon branches
-or terminates. In this case, the membrane voltage was the same in each fiber
-for a given $z$ coordinate. From linear cable theory [e.g. @Jack75Electric], we
-then obtained the following expression for the total transmembrane current
-$I(z,t)$ from a given membrane potential $V(z,t)$:
+a variable number of fibers along the $z$ axis, denoted by $n(z)$, each of
+which cylindrical with an identical radius $a$. This meant that the total cross-sectional area $A$ at a given depth $z$ was given by $A(z)=\pi a^2 n(z)$. We assumed the axons to be perfect
+transmission lines, meaning that the action potential is a traveling wave with
+velocity $v$ along the axon. In particular, we neglected any delays and
+distortions that can be induced when an axon branches or terminates. In this
+case, the membrane voltage was the same in each fiber for a given $z$
+coordinate. From linear cable theory [e.g. @Jack75Electric], we then obtained
+the following expression for the total transmembrane current per unit length $I(z,t)$ from a
+given membrane potential $V(z,t)$:
 
 \begin{align}
-I(z,t)& = \frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right)\\
-&= \frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t) 
+I(z,t)& = \frac{\partial }{\partial z}\left(\frac{A(z)}{r_L}\frac{\partial }{\partial z}V(z,t)\right)\\
+&= \frac{\pi a^2}{r_L}\frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right)\\
+&= \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t)\right)
+\label{eqn:current}
 \end{align}
 <!--
 \\
@@ -1012,13 +1015,13 @@ which is independent of the angle $\varphi$.
 
 To derive the dipole moment of a simplified projection zone, we consider an
 axon bundle in which identical spikes with the waveform $V_\text{spike}(t,z)$
-propagate as travelling waves with a velocity $v$: $V_\text{spike}(t,z) =
+propagate as traveling waves with a velocity $v$: $V_\text{spike}(t,z) =
 V_\text{spike}(z/v-t)$. If each of the fibers is stimulated with an
 inhomogeneous Poisson process, with the driving rate $\lambda(t)$ shared among
 all axons, the average membrane potential across fibers will be
 $V_\text{membrane}(z,t) = V_\text{spike}(z/v-t)\ast \lambda(t)$, where $\ast$
-denotes the convolution in time. Plugging this into [@eqn:current], we obtain
-\begin{align} i_m(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial
+denotes the convolution in time. Plugging this into \ref{eqn:current}, we obtain
+\begin{align} I(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial
 z}(z)\cdot\frac{\partial}{\partial z}(V_\text{spike}(z/v-t)\ast
 \lambda(t))+n(z)\cdot\frac{\partial ^2}{\partial z^2}(V_\text{spike}(z/v-t)\ast
 \lambda(t)) \right) \\ & = \frac{\pi
@@ -1034,7 +1037,7 @@ bundle projection zone $n(z) = \bar{n} e^{-\frac{z^2}{2\sigma_\text{n}}}$, we
 are able to take advantage of the fact that the product and the convolution of
 two Gaussians are again Gaussian, and obtain 
 
-\begin{align}\label{eqn:simple_dipole_cur} i_m(z,t)&=\bar{n} \bar{\lambda
+\begin{align}\label{eqn:simple_dipole_cur} I(z,t)&=\bar{n} \bar{\lambda
 }_{\text{pulse}} \bar{V}_{\text{spike}}  \sqrt{2} \pi ^{3/2} a^2  \cdot \exp
 \left(-\frac{z^2}{2 \sigma _n^2}-\frac{(z-t v)^2}{2 v^2 \left(\sigma
 _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)}\right) \\ \nonumber
@@ -1046,7 +1049,7 @@ _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right){}^2} \end{align}
 
 
 The dipole moment $p(t)$ is defined as $$p(t) = \int_{-\infty}^{\infty}z\cdot
-i_m(z,t)\text{d}z$$ into which we can enter Eq. \ref{eqn:simple_dipole_cur} to
+I(z,t)\text{d}z$$ into which we can enter Eq. \ref{eqn:simple_dipole_cur} to
 obtain $$p(t) =- \bar{n} \bar{\lambda }_{\text{pulse}}
 \bar{V}_{\text{spike}}\frac{2 \pi ^2 a^2}{r_L }\frac{v^2 \sigma_n
 \sigma_{\text{pulse}} \sigma_{\text{spike}}}{\left(\sigma _n^2+v^2 \left(\sigma
@@ -1096,13 +1099,13 @@ provided by the \textsc{SciPy} package [@scipy]. The free parameters to be
 determined by the optimization routine were the distance $\rho$, the conduction
 velocity $v$, the number of fibers per unit length $n(z_n)$ for each
 measurement location\ $z_n$, and the spatial derivative of the membrane voltage
-$\frac{\text{d}V}{\text{d}z}(z_1,t_m)$ at electrode location $z_1$ for each
+$\frac{\text{d}}{\text{d}z}V(z_1,t_m)$ at electrode location $z_1$ for each
 time point\ $t_m$. We fit the first derivative of the membrane potential in
 order to better capture the low-frequency components that we found in
 @fig:simpletree E, and because the membrane potential only appears as the
 derivative in the model. The derivative of the membrane voltage at the other
-locations was then determined by the traveling-wave assumption: $\frac{\text{d}V}{\text{d}z}V(z_n,t_m) =
-\frac{\text{d}V}{\text{d}z}V(z_1,t_m-\frac{z_n-z_1}{v})$, using a linear interpolation between timepoints.
+locations was then determined by the traveling-wave assumption: $\frac{\text{d}}{\text{d}z}V(z_n,t_m) =
+\frac{\text{d}}{\text{d}z}V(z_1,t_m-\frac{z_n-z_1}{v})$, using a linear interpolation between timepoints.
 The model assumption of a single line of axons with electrodes at a fixed
 distance is a simplification of a three-dimensional axon tree where the fibers
 are distributed at various distances. The distance parameter $\rho$ can be
