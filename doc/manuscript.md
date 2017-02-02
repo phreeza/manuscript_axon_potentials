@@ -409,7 +409,7 @@ values of $z$. It resulted in a maximal fiber number of 500 at $z=0$, a factor
 were smooth, and had smooth first derivatives in space. We considered
 a conduction velocity of 1 m/s. In order to understand the frequency-specific
 effects of the projection zone, we simulated the membrane potentials as
-sinusoids, i.e. $V(z,t) = \sin\left(2\pi f\left(z/v-t\right)\right)$, with
+sinusoids, i.e. $V(z,t) = \sin\left(2\pi f\cdot\left(z/v-t\right)\right)$, with
 varying frequencies $f$ between 100 Hz and 5\ kHz. We then calculated the
 average amplitude of the resulting EFP response by taking the standard
 deviation.
@@ -576,19 +576,19 @@ location next to the most dorsal electrode, (3) the axonal conduction velocity,
 and (4) the distance between bundle and electrode array.
 
 
-![Multielectrode recordings in the barn owl show dipolar axonal EFPs. (**A**) Photomicrograph
-of a 40\ µm thick transverse Nissl stained section through the dorsal brain stem,
-containing a superimposed, to scale, diagram of the multielectrode probe. The
-probe produced a small slit in a cerebellar folium overlying the IVth ventricle
-(\*), and penetrated into the nucleus laminaris (NL). The
-recordings where made in NL, and electrodes extended to both sides of the
-nucleus. The outline of the probe is shown in light green, with the recording
-electrodes indicated by magenta circles, and the reference electrode as a
-magenta rectangle. The low-frequency (<2\ kHz) component (**B**) and high-frequency (>2\ kHz)
-component (**C**) are ordered the same as the electrodes, with three examples
-connected to their recording sites by black lines. Time scale in B and C 
-identical as indicated by the scale bar. Voltage scale as indicated by
-individual scalebars.
+![Multielectrode recordings in the barn owl show dipolar axonal EFPs. (**A**)
+Photomicrograph of a 40\ µm thick transverse Nissl stained section through the
+dorsal brain stem, containing a superimposed, to scale, diagram of the
+multielectrode probe. The probe produced a small slit in a cerebellar folium
+overlying the IVth ventricle (\*), and penetrated into the nucleus laminaris
+(NL). The recordings where made in NL, and electrodes extended to both sides of
+the nucleus. The outline of the probe is shown in light green, with the
+recording electrodes indicated by magenta circles, and the reference electrode
+as a magenta rectangle. The low-frequency (<2\ kHz) component (**B**) and
+high-frequency (>2\ kHz) component (**C**) are ordered the same as the
+electrodes, with three examples connected to their recording sites by black
+lines. Time scale in B and C identical as indicated by the scale bar. Voltage
+scale as indicated by individual scalebars.
 ](../figs/with_probe.pdf){#fig:expmethod}
 
 ![The spatial structure of EFPs recorded from the nucleus laminaris of the barn
@@ -644,11 +644,12 @@ shape, but with opposite polarity, as expected for a dipolar field. Note that
 for a pure dipole field, the amplitude of the central responses have zero
 amplitude. In the data shown here, central responses show a diminished maximum
 amplitude, which reveals the contribution of the quadrupole component. The
-model is able to capture the behaviour of this quadrupolar component as well, with a slight
-underestimation of the amplitude of the peak at ventral locations. The model
-even captures a small oscillation in the data with period\ of\ 
-$\approx 1$\ ms in the center of the recording. Here, too, the small deviations are likely
-due to a slightly inhomogeneous conduction velocity or non-axonal sources.
+model is able to capture the behaviour of this quadrupolar component as well,
+with a slight underestimation of the amplitude of the peak at ventral
+locations. The model even captures a small oscillation in the data with 
+period\ of\ $\approx 1$\ ms in the center of the recording. Here, too, the small
+deviations are likely due to a slightly inhomogeneous conduction velocity or
+non-axonal sources.
 
 When comparing the inferred membrane potential response ([@fig:barnowl]A) to
 the measured EFP response ([@fig:barnowl]C and D), the most salient difference
