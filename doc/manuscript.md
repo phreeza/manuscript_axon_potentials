@@ -7,6 +7,8 @@ figPrefix:
 header-includes:
     - \usepackage{setspace}
     - \doublespacing
+    - \usepackage{lineno}
+    - \linenumbers
 author: 
     - Thomas McColgan\footnote{Institut für Theoretische Biologie, Humboldt-Universität zu Berlin, Berlin, Germany}
     - Ji Liu\footnote{Department of Biology, University of Maryland, College Park, MD, USA}
