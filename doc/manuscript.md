@@ -249,8 +249,8 @@ the time scale is different from A-D.
 To characterize the spatiotemporal dynamics of the evoked EFP, the time course
 of the potential was calculated for several locations along the axon trunk. We
 divided our analysis into 2 frequency bands by filtering the responses. These
-frequency components are sometimes referred to as the LFP (< 1 kHz) and the MUA
-(>2.5 kHz). To make the MUA easier to interpret, it was half-wave rectified and
+frequency components are sometimes referred to as the LFP (<\ 1\ kHz) and the MUA
+(>2.5\ kHz). To make the MUA easier to interpret, it was half-wave rectified and
 low-pass filtered (see Materials and Methods).
 
 Because we first wanted to study the effect of the Gaussian rate pulse on the
@@ -388,52 +388,64 @@ model omitted the radial fanning out of the bundle in the terminal zone, as in [
 Furthermore, we discarded the detailed conductance-based
 simulation of the membrane potential, and instead assumed a fixed membrane
 potential waveform traveling along the axon trunk with constant propagation
-velocity. In order to measure the EFP responses at all frequencies, we set the
-membrane potential with white noise. Using linear cable theory, it was then
+velocity. Using linear cable theory, it was then
 possible to calculate the membrane currents necessary for the determination of the
 EFP. The simplified model also allowed us to consider a continuous number of
 fibers instead of simulating discrete bifurcations and terminations. All
 following simulations are based on the simplified model.
 
-We simulated two axon bundle morphologies. The first was a non-bifurcating
-bundle, which had a constant number of 50 fibers for $z<0$\ µm, and tapered
-out as a Gaussian centered at $z=0$\ µm with a height of 50 fibers and
-standard deviation of 500\ µm for $z>0$\ µm. The second case was that
-of an axon bundle with a projection zone containing bifurcations. Here we
-simulated the same distribution as for the non-bifurcating case, but added a
-further Gaussian distribution to account for the bifurcating axons. This
-additional Gaussian was also centered at $z=0$\ µm, had the same standard
-deviation of 500\ µm but an amplitude of 450 fibers. Unlike the
-tapering-out, this component was added for all values of $z$. It resulted in a
-maximal fiber number of 500 at $z=0$. Both distributions constructed in this
-way were smooth, and had smooth first derivatives in space.
+We simulated two axon bundle morphologies. The control case was
+a non-bifurcating bundle, which had a constant number of 50 fibers for $z<0$\ µm,
+and tapered out as a Gaussian centered at $z=0$\ µm with a height of 50 fibers
+and width of 500\ µm for $z>0$\ µm. The second case was that of an axon bundle
+with a projection zone containing bifurcations. Here we simulated the same
+distribution as for the non-bifurcating control case, but added a further
+Gaussian distribution to the number of axons to account for the projection
+zone. This additional Gaussian was also centered at $z=0$\ µm, had the same
+width of 500\ µm but an amplitude of 450 fibers. Unlike the tapering-out in the
+control condition, this component was added for both positive and negative
+values of $z$. It resulted in a maximal fiber number of 500 at $z=0$, a factor
+10 larger than in the control case. Both distributions constructed in this way
+were smooth, and had smooth first derivatives in space. We considered
+a conduction velocity of 1 m/s. In order to understand the frequency-specific
+effects of the projection zone, we simulated the membrane potentials as
+sinusoids, i.e. $V(z,t) = \sin\left(2\pi f\left(t-x/v\right)\right)$, with
+varying frequencies $f$ between 100 Hz and 5\ kHz. We then calculated the
+average amplitude of the resulting EFP response by taking the standard
+deviation.
 
-The dipole-like component observed in [@fig:bigtree] had it's dipole axis
-aligned with the axon trunk. We therefore expected the amplitude of the field potential to decay
-as $r^{-2}$ in this direction, which we call the axial direction. To test
-this, we first plotted the amplitude of the low-frequency component (<2.5 \ kHz) in axial
-direction in [@fig:distscaling]A. The plot is on a double logarithmic scale,
-meaning that the slope of the curve corresponds to the scaling exponent, and
-the vertical offset corresponds to the amplitude of the component. We observed the expected
-$r^{-2}$ scaling for distances larger than the extent of the
-bifurcation zone ($\gtrsim 1$\ mm). Interestingly, the amplitude of the low-frequency
-component was an order of magnitude larger in the bifurcating case (solid
-line) than in the non-bifurcating case (dashed line).
+The dipole-like component observed in [@fig:bigtree] for the low-frequency
+component had it's dipole axis aligned with the axon trunk. We therefore
+expected the amplitude of the field potential to decay as $r^{-2}$ in this
+direction, which we call the axial direction. To test the scaling behaviour of
+this component, we first plotted the average amplitude of the low-frequency
+responses ($f$<2.5\ kHz) in axial direction in [@fig:distscaling]A. The plot
+is on a double logarithmic scale, meaning that the slope of the curve
+corresponds to the scaling exponent, and the vertical offset corresponds to the
+amplitude of the size of the dipole moment. We observed the expected $r^{-2}$ scaling for
+distances larger than the extent of the bifurcation zone ($\gtrsim 1$\ mm).
+
+Comparing the response to the control condition (dashed line in
+[@fig:distscaling]A), we can see that for short distances (< 1\ mm), the
+response of the bifurcating case is a factor 10 larger than the control. This
+is simply due to the fact that at this distance the response is due to the
+local fibers, of which there are 10 times more in the bifurcating case close to
+$z = 0$\ µm. At distances larger than 1\ mm, we observed that the distance
+scaling was also $r^{-2}$, meaning that there was a non-zero dipole moment
+in the control condition, too. However, comparing the control to the bifurcating case, we observed
+that the response in the bifurcating case is larger than the control by
+a factor greater than 10. We thus concluded that at low frequencies, the
+bifurcation zone contributes supralinearly to the dipole moment.
 
 Next, we examined the high-frequency (>2.5\ kHz)  component
-([@fig:distscaling]B). Here the asymptotic scaling was also $r^{-2}$ for axial
-distances $> 1$\ mm, but at $> 10$\ mm the amplitudes were similar between
-bifurcating and non-bifurcating cases. The difference between the amplitudes of
-bifurcating and non-bifurcating bundles is much smaller than in the
-low-frequency case, even though the difference in amplitudes was the same at
-short distances $< 100$\ µm. At these short distances, the difference is
-proportional to the number of fibers, as in [@fig:distscaling]A. To conclude,
-the terminal zone contributed mainly to the low-frequency dipole moment of the
-EFP. Because of this, in the far field (>1\ mm) the magnitude of the
-low-frequency component exceeded the magnitude of the high-frequency component
-by an order of magnitude.
+([@fig:distscaling]B). As in the low-frequency case, the response at distances
+< 1\ mm was greater in the bifurcating case by a factor of 10. The asymptotic
+scaling was also $r^{-2}$ for axial distances $> 1$\ mm in both cases. However,
+unlike in the low-frequency case, the amplitudes were similar between
+bifurcating and non-bifurcating cases. This meant that the presence of a bifurcation zone
+did not contribute strongly to the high-frequency dipole moments in the EFP.
 
-In contrast to the axial direction, the dipole hypothesis predicts a different
+<!--In contrast to the axial direction, the dipole hypothesis predicts a different
 scaling behaviour of the EFP for the radial direction. The dipole component
 becomes zero in the direction perpendicular to the dipole axis, and we thus
 expected quadrupolar or higher-order scaling behaviour in this case. In
@@ -442,44 +454,42 @@ low-frequency component. The potentials scale as $r^{-3}$, and the difference in
 logarithmic amplitude between bifurcating and non-bifurcating case is roughly
 the same at all distances. The high-frequency component also decayed as
 $r^{-3}$ in the radial direction ([@fig:distscaling]D), but the difference in
-logarithmic amplitudes was slightly diminished at larger distances.
+logarithmic amplitudes was slightly diminished at larger distances. -->
 
 These findings show that there is a dependence of the dipole moment on both the
-anatomy (i.e. the presence of a projection zone), and temporal frequency. This
-relationship can be qualitatively understood by considering the extent of the
-currents due to activity at a given temporal frequency. The temporal frequency
-will correspond to a spatial frequency, and the dipole moment will be maximal
-if the spatial frequency of the membrane potential and the width of the
-projection zone agree, meaning that positive currents flow on one half of the
-projection zone whenever negative currents flow on the other side. This notion is
-formalized in the last section of the Results. A similar argument can be made
-for the quadrupole moment, except that here the frequency must be higher, such
-that the projection zone contains two minima and one maximum in the current
-distribution, or vice versa.
+anatomy (i.e. the presence of a projection zone), and temporal frequency if the
+underlying activity. This relationship can be qualitatively understood by
+considering the extent of the currents due to activity at a given temporal
+frequency. The temporal frequency will correspond to a spatial frequency
+(mediated by the conduction velocity), and the dipole moment will be maximal if
+the spatial frequency of the membrane potential and the width of the projection
+zone agree, meaning that positive currents flow on one half of the projection
+zone whenever negative currents flow on the other side. This notion is
+formalized in the last section of the Results.
+<!--In the
+situation described here, this should be the case for $f\approx 2\ln (2) 500 $\
+µm $\approx$\ 693 Hz. -->
 
 To quantitatively understand the frequency-specific contributions to the dipole
 moments, we examined the scaling behaviour as a function of frequency. The
 amplitude of the dipole moment was determined by fitting a straight line with
-slope $-2$ to the double logarithmic scaling of the power spectral density. The
-power spectral density was averaged over a frequency band 500\ Hz wide, and the
-fit was performed for distances $> 1$\ mm. The extrapolation of this straight line to
-axial distance 1\ µm was then proportional to the dipole moments.
+slope $-2$ to the double logarithmic scaling of the standard deviation of the
+response at a given frequency. The fit was performed for distances $> 1$\ mm.
+The extrapolation of this straight line to axial distance 1\ µm was then
+proportional to the dipole moments.
 
-These frequency-specific dipole moments are shown in [@fig:distscaling]E. The
+The normalized frequency-specific dipole moments are shown in [@fig:distscaling]C. The
 dipole moment of the bifurcating case (solid line) has a maximum at around 1
 kHz, as expected due to the agreement of spatial frequency and projection zone
-width. In the non-bifurcating case (dashed line) there is no projection zone
-width, and the dipole moment decays monotonically. Here lower frequencies
-correspond to a higher spatial separation of positive and negative currents,
-and thus a higher dipole moment. We can see that the dipole moment in the
-bifurcating case exceeds the non-bifurcating case for low frequencies. For
-higher frequencies, there is a mismatch in spatial frequency and projection
-zone width, meaning that the projection zone contributes only little to the
-dipole moment. This is reflected in the fact that the difference between the
-dipole moments diminishes, meaning that they are formed by the incoming fibers,
-and not the bifurcation zone.
+width. For higher frequencies, there is a mismatch in spatial frequency and
+projection zone width, meaning that the projection zone contributes only little
+to the dipole moment, as observed in [@fig:distscaling]B. In the
+non-bifurcating control case (dashed line) there is no projection zone width,
+and the dipole moment decays monotonically. Here lower frequencies correspond
+to a higher spatial separation of positive and negative currents, and thus
+a higher dipole moment. 
 
-As in any multipole expansion, the dipolar component will dominate the EFP at
+<!--As in any multipole expansion, the dipolar component will dominate the EFP at
 long distances in all directions except for those perpendicular to the dipole
 axis. At shorter distances, as well as in the plane perpendicular to the dipole
 axis, the quadrupolar component becomes important. For this reason we also
@@ -492,32 +502,24 @@ frequency for the contribution of the projection zone. Indeed we find that the
 quadrupole moment of the bifurcating case (solid line) has a maximum at around
 2\ kHz, and the quadrupole moment of the non-bifurcating case (dashed line) is
 monotonically decreasing (as was the case for the dipole moment). As expected,
-the maximum lies at a higher frequency than that for the dipole moment.
+the maximum lies at a higher frequency than that for the dipole moment. -->
 
 In the bifurcating case, the number of fibers was increased by a factor of 10.
-This means that an increase in the moments due to the bifurcations greater than
-10 can be called supralinear. In [@fig:distscaling]G we compare this relative
-impact of the terminal zone on dipole moments (red line) and quadrupole moments (black
-line), by plotting their ratios across frequencies. Here we can see that for
-low frequencies the ratio for the quadrupole moment approaches values lower
-than 10, meaning that there is only little additional contribution from the
-terminal zone. The dipole moment approaches a factor of 10 for low frequencies,
-meaning that the terminal zone contributes in proportion to the number of added
-fibers. In both components, the contribution is maximal for intermediate
-frequencies, with the maximal dipolar contribution lying at lower frequencies
-than the quadrupolar component, as predicted. For very high frequencies, both contributions
-return to values below 10. The terminal zone has a supralinear contribution
-(factor greater than 10) for the dipole at frequencies below $\approx$ 3.5\ kHz and for
-the quadrupolar component at frequencies between $\approx$ 1 and 4.5\ kHz.
+This means that an increase in the dipole moment due to the bifurcation zone
+when compared to the control case greater than 10 can be called supralinear. In
+[@fig:distscaling]D we compared this relative impact of the terminal zone on
+dipole moments (red line), by plotting the ratios across frequencies. The
+contribution is greater than 10 (dotted line) for intermediate frequencies
+between 200 and 1000 Hz.
 
 Together, these observations show us that the terminal zone makes a strong
-contribution to the far-reaching dipole field potential of the axon bundle. At
-somewhat higher frequencies, the more local quadrupolar potential is also
-increased. This gives us a deeper understanding of the findings of
+contribution to the far-reaching dipole field potential of the axon bundle.
+his gives us a deeper understanding of the findings of
 [@fig:bigtree]: At low frequencies, we observed a dipolar behaviour due to the
 strong contribution of the bundle at these frequencies, with the projection
-zone forming the dipole axis. At high frequencies, the quadrupolar moments
-dominate the responses, meaning that we do not observe a dipolar structure. 
+zone forming the dipole axis. At high frequencies, the bifurcation zone does
+not generate an additional dipole moment, meaning that we observe mainly local
+responses.
 
 ![The low-frequency (<2.5\ kHz) component of the axon bundle EFP exceeds the
 high-frequency (>2.5\ kHz) component in reach, in a manner depending on axon
@@ -612,7 +614,7 @@ conduction velocity was calculated to be 4.0 m/s. A previously published
 estimate of the axonal conduction velocity in this nucleus
 [@McColgan2014Functional] gave a confidence bound of 0.4-6 m/s . Toward the
 edges (< 100 and > 1400\ µm), the amplitude decays. In the central region
-(400-1200\ µm recording depth, a systematic shift in delay can be observed,
+(400-1200\ µm recording depth), a systematic shift in delay can be observed,
 while the response seems to be stationary in the more dorsal and ventral
 electrodes. The delay increases from ventral to dorsal, which is consistent
 with the anatomy for contralateral stimulation. All these aspects of the data
