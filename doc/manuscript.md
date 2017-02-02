@@ -533,7 +533,7 @@ high-frequency components in the radial direction. (**E**) Dipole moment and
 (**F**) quadrupole moment of the bifurcating and non-bifurcating bundles as a
 function of frequency. (**G**) Ratio of the dipole moment (red line) and
 quadrupole moment (black line) between bifurcating and non-bifurcating cases.
-](../figs/fig_3.pdf){#fig:distscaling height=115%}
+](../figs/fig_3.pdf){#fig:distscaling}
 
 The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal terminal zone.
 ----
