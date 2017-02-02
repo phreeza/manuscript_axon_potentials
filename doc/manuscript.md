@@ -523,19 +523,16 @@ responses.
 
 ![The low-frequency (<2.5\ kHz) component of the axon bundle EFP exceeds the
 high-frequency (>2.5\ kHz) component in reach, in a manner depending on axon
-structure. Subplots **A**-**D** show the scaling of the low-frequency (blue
-lines) and high-frequency (green lines) components for the bifurcating (solid
-lines) and non-bifurcating (dashed lines) axons on a doubly-logarithmic scale.
+structure. The scaling of the low-frequency (**A**, blue lines) and
+high-frequency (**B**, green lines) components for the bifurcating (solid
+lines) and non-bifurcating (dashed lines) axons on a double-logarithmic scale.
 All distances are calculated from the center of the terminal zone. For
-comparison, scalings that follow $r^{-2}$ (red lines) and $r^{-3}$ (black
-lines) are also shown. (**A**) Scaling behaviour in the axial direction for the
-low-frequency component. (**B**) Scaling of the high-frequency components in
-the axial direction. (**C**) and (**D**) Scaling behaviour of low- and
-high-frequency components in the radial direction. (**E**) Dipole moment and
-(**F**) quadrupole moment of the bifurcating and non-bifurcating bundles as a
-function of frequency. (**G**) Ratio of the dipole moment (red line) and
-quadrupole moment (black line) between bifurcating and non-bifurcating cases.
-](../figs/fig_3.pdf){#fig:distscaling height=115%}
+comparison, scalings that follow $r^{-2}$ are shown (black lines). (**C**)
+Normalized dipole moments of the bifurcating and non-bifurcating bundles as
+a function of frequency. (**D**) Ratio of the dipole moment (red line) between
+bifurcating and non-bifurcating cases, compared to the maximum ratio of the
+number of fibers (dotted line), to show supralinear contributions.
+](../figs/fig_3.pdf){#fig:distscaling}
 
 The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal terminal zone.
 ----
@@ -601,29 +598,41 @@ membrane voltage across fibers in the model when fit to the data.
 (**C**) High-frequency ($\geq 2$\ kHz) component of the EFP in response to a
 click stimulus at $t=0$\ ms, at different recording depths. The depth is
 measured in the direction from dorsal to ventral. Recorded responses (orange
-lines) are shown along with model fit (purple lines). (**D**) Low frequency
-($\leq 2$\ kHz) responses in recordings (orange) and model (purple).
+lines) are shown along with model fit (black lines). (**D**) Low frequency
+($\leq 2$\ kHz) responses in recordings (orange) and model (black).
 ](../figs/fig_4.pdf){#fig:barnowl height=115%}
 
 The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
-[@fig:barnowl]C shows the high-frequency ($\geq 2$\ kHz) response. The orange
-lines indicate the actual responses in the data. The responses have a
-Gabor-like shape, as expected [@wagner09], with maximum amplitude in the center
-of the recording array, at around 850\ µm penetration depth. The axonal
-conduction velocity was calculated to be 4.0 m/s. A previously published
-estimate of the axonal conduction velocity in this nucleus
-[@McColgan2014Functional] gave a confidence bound of 0.4-6 m/s . Toward the
-edges (< 100 and > 1400\ µm), the amplitude decays. In the central region
+[@fig:barnowl]A shows the inferred average over trials of the deviation of the
+membrane voltage from the resting potential in response to the stimulus, at
+a location in the axon next to the first electrode, obtained from the fit. The
+voltage is composed of high- and low-frequency components similar to those
+observed in the EFP. The inferred number of fibers is shown in [@fig:barnowl]B.
+The density (number of fibers per unit length) is shown as a function of
+dorsoventral depth. The density has its maximum at the center of the electrode
+array, and decays steadily to both sides. This profile of the number of fibers
+is consistent with the known anatomy of axons in NL.
+
+[@fig:barnowl]C shows the high-frequency ($\geq 2$\ kHz) response. The
+dorsoventral depth is now on the vertical axis, meaning that the vertical axis
+of [@fig:barnowl]C and [@fig:barnowl]D corresponds to the horizontal axis in
+[@fig:barnowl]B. The orange lines indicate the actual responses in the data.
+The responses have a Gabor-like shape, as expected [@wagner09], with maximum
+amplitude in the center of the recording array, at around 850\ µm penetration
+depth. The axonal conduction velocity was calculated to be 4.0 m/s.
+A previously published estimate of the axonal conduction velocity in this
+nucleus [@McColgan2014Functional] gave a confidence bound of 0.4-6 m/s . Toward
+the edges (< 100 and > 1400\ µm), the amplitude decays. In the central region
 (400-1200\ µm recording depth), a systematic shift in delay can be observed,
 while the response seems to be stationary in the more dorsal and ventral
 electrodes. The delay increases from ventral to dorsal, which is consistent
 with the anatomy for contralateral stimulation. All these aspects of the data
-are qualitatively reproduced by the model (purple traces). The main deviation
+are qualitatively reproduced by the model (black traces). The main deviation
 between model and data lies in a diminished amplitude of the oscillation at the
 most central electrode sites. Because the phase shift in the central region is
-mainly determined by the conduction velocity, this mismatch might be due to a
-slightly changing conduction velocity in the nucleus. A diminished amplitude in
-the fit could reflect an inability of the model to exactly match the phase
+mainly determined by the conduction velocity, this mismatch might be due to
+a slightly changing conduction velocity in the nucleus. A diminished amplitude
+in the fit could reflect an inability of the model to exactly match the phase
 progression. Another possible explanation is that the additional amplitude
 could be due to non-axonal sources such as synaptic currents or postsynaptic
 spikes, which do not follow the assumptions underlying the model being fit.
@@ -641,28 +650,14 @@ even captures a small oscillation in the data with period\ of\
 $\approx 1$\ ms in the center of the recording. Here, too, the small deviations are likely
 due to a slightly inhomogeneous conduction velocity or non-axonal sources.
 
-[@fig:barnowl]A shows the inferred average over trials of the deviation of the
-membrane voltage from the resting potential in response to the stimulus, at a
-location in the axon next to the first electrode, obtained from the fit. The
-voltage is composed of high- and low-frequency components similar to those
-observed in the EFP. When comparing this inferred membrane potential response
-to the measured EFP response, the most salient difference is the different
-sizes of the frequency components. In the EFP, the low-frequency component has
-a comparable amplitude to the high-frequency component, but in the membrane
-voltage the low-frequency component is much larger. This is due to the fact
-that the second derivative term in the current equation essentially imposes a
-high-pass filter on the membrane voltage.
+When comparing the inferred membrane potential response ([@fig:barnowl]A) to
+the measured EFP response ([@fig:barnowl]C and D), the most salient difference
+is the different sizes of the frequency components. In the EFP, the
+low-frequency component has a comparable amplitude to the high-frequency
+component, but in the membrane voltage the low-frequency component is much
+larger. This is due to the fact that the second derivative term in the current
+equation essentially imposes a high-pass filter on the membrane voltage.
 
-The inferred number of fibers is shown in [@fig:barnowl]B. The density (number
-of fibers per unit length) is shown as a function of dorsoventral depth,
-meaning that the vertical axis of [@fig:barnowl]C and [@fig:barnowl]D corresponds to
-the horizontal axis in [@fig:barnowl]B. The density has its maximum at the center of the
-electrode array, and decays steadily to both sides. This profile of the number of fibers
-is consistent with the known anatomy of axons in NL. The density does not decay
-to zero on either side, which may be due to the limited range of recording
-locations. The number of fibers beyond the border of the nucleus in dorsal
-direction should be zero, because it is known from anatomy that all fibers
-terminate within the nucleus.
 
 We performed the fitting procedure for 26 recordings from 3 different owls,
 with stimulation from both ears (implying the activation of distinct axonal
