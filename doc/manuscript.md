@@ -409,7 +409,7 @@ values of $z$. It resulted in a maximal fiber number of 500 at $z=0$, a factor
 were smooth, and had smooth first derivatives in space. We considered
 a conduction velocity of 1 m/s. In order to understand the frequency-specific
 effects of the projection zone, we simulated the membrane potentials as
-sinusoids, i.e. $V(z,t) = \sin\left(2\pi f\left(t-x/v\right)\right)$, with
+sinusoids, i.e. $V(z,t) = \sin\left(2\pi f\left(z/v-t\right)\right)$, with
 varying frequencies $f$ between 100 Hz and 5\ kHz. We then calculated the
 average amplitude of the resulting EFP response by taking the standard
 deviation.
@@ -667,7 +667,8 @@ terminate within the nucleus.
 We performed the fitting procedure for 26 recordings from 3 different owls,
 with stimulation from both ears (implying the activation of distinct axonal
 populations). The average correlation coefficient for all recordings was
-$R^2=0.56\pm 0.15$.
+$R^2=0.56\pm 0.15$. The correlation coefficient for the example shown in
+[@fig:barnowl] was 0.62.
 
 Dipole moments of idealized axon bundles
 ----
@@ -706,8 +707,8 @@ Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
 the barn owl, we chose the following values: axon diameter $a$\ =\ 2\ µm,
 conduction velocity $v$\ =\ 1\ $\frac{\text{m}}{\text{s}}$, axial resistivity
-$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\
-250 µs, $\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33\ $\frac{\text{S}}{\text{m}}$,
+$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\ 250\ µs,
+$\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33\ $\frac{\text{S}}{\text{m}}$,
 $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\ 70 mV,
 $\bar{\lambda}_\text{pulse}$\ =\ 2000\ spikes/s. This lead to a value
 for the dipole moment of $p_\text{max} \approx$ 0.8 $\text{µA}\cdot\text{mm}$.
@@ -732,8 +733,8 @@ triggered average. The conduction velocity has been reported
 as $v$\ =\ 8.5\ m/s [@Simons2007Thalamocortical]. Leaving all other
 values as in the previous approximation, we arrived at a dipole moment of
 $p_\text{max} \approx$ 1.5 $\text{µA}\cdot\text{µm}$, yielding an
-extracellular spike amplitude of $\approx$ 2.3\ µV at the distance of 400\ 
-µm, which is on the same order of magnitude as the value ($\approx$ 1\ µV) reported by
+extracellular spike amplitude of $\approx$ 2.3\ µV at the distance of 400\ µm,
+which is on the same order of magnitude as the value ($\approx$\ 1\ µV) reported by
 @Swadlow2000Influence.
 
 Discussion
