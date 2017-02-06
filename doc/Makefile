@@ -49,14 +49,15 @@ docx:	clean $(DOCX)
 	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S  --filter pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
 %.tex:	%.md
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w latex -s -S --filter pandoc-crossref --latex-engine=pdflatex --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w latex -s -S --filter pandoc-crossref --latex-engine=pdflatex --natbib --bibliography=$(BIB) -o $@ $<
 
 
 %.pdf:	%.md
 	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -s -S --latex-engine=pdflatex  --filter pandoc-crossref --filter pandoc-citeproc --csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
+
 clean:
 	rm -f *.html *.pdf *.tex *.docx
 
 refs:
-		curl "http://www.citeulike.org/bibtex/user/phreeza/tag/axon_lfp_writeup?do_username_prefix=0&key_type=4&incl_amazon=0&clean_urls=1&smart_wrap=1&q=" > refs.bib
+		curl "http://www.citeulike.org/bibtex/user/phreeza/tag/axon_lfp_writeup?do_username_prefix=0&key_type=4&incl_amazon=0&clean_urls=1&smart_wrap=0&q=" > refs.bib

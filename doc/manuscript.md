@@ -244,7 +244,7 @@ schematically. Activity consists of spontaneous background activity (100
 spikes/s) superimposed with a pulse of heightened spike rate (2000 spikes/s).
 Spike rate and example spike times for the three morphologies are shown at the
 top. Right: gray lines show activity averaged over 40 trials, while the black
-lines show the analytically determined limit of infinitely many trials. Note that
+lines show the low-pass (<1 kHz) component. Note that
 the time scale is different from A-D.
 ](../figs/fig_1_nocsd.pdf){#fig:simpletree}
 
