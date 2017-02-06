@@ -592,7 +592,7 @@ high-frequency (>2\ kHz) component (**C**) are ordered the same as the
 electrodes, with three examples connected to their recording sites by black
 lines. Time scale in B and C identical as indicated by the scale bar. Voltage
 scale as indicated by individual scalebars.
-](../figs/with_probe.pdf){#fig:expmethod}
+](../figs/fig_4.pdf){#fig:expmethod}
 
 ![The spatial structure of EFPs recorded from the nucleus laminaris of the barn
 owl can be explained by a model of axonal field potentials. (**A**) Average
@@ -603,7 +603,7 @@ click stimulus at $t=0$\ ms, at different recording depths. The depth is
 measured in the direction from dorsal to ventral. Recorded responses (orange
 lines) are shown along with model fit (black lines). (**D**) Low frequency
 ($\leq 2$\ kHz) responses in recordings (orange) and model (black).
-](../figs/fig_4.pdf){#fig:barnowl height=115%}
+](../figs/fig_5.pdf){#fig:barnowl height=115%}
 
 The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
 [@fig:barnowl]A shows the inferred average over trials of the deviation of the
