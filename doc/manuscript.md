@@ -705,19 +705,19 @@ $v\sqrt{\sigma_{\text{spike}}+\sigma_{\text{pulse}}}$.
 Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
 the barn owl, we chose the following values: axon diameter $a$\ =\ 2\ µm,
-conduction velocity $v$\ =\ 1\ $\frac{\text{m}}{\text{s}}$, axial resistivity
-$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 250 µm, $\sigma_\text{spike}$\ =\ 250\ µs,
-$\sigma_\text{pulse}$\ =\ 2 ms, $\sigma_e$\ =\ 0.33\ $\frac{\text{S}}{\text{m}}$,
+conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$, axial resistivity
+$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 500 µm, $\sigma_\text{spike}$\ =\ 250\ µs,
+$\sigma_\text{pulse}$\ =\ 0.5 ms, $\sigma_e$\ =\ 0.33\ $\frac{\text{S}}{\text{m}}$,
 $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\ 70 mV,
-$\bar{\lambda}_\text{pulse}$\ =\ 2000\ spikes/s. This lead to a value
-for the dipole moment of $p_\text{max} \approx$ 0.8 $\text{µA}\cdot\text{mm}$.
+$\bar{\lambda}_\text{pulse}$\ =\ 3000\ spikes/s. This lead to a value
+for the dipole moment of $p_\text{max} \approx$ 1.9 $\text{µA}\cdot\text{mm}$.
 At a distance of 750 µm, roughly the furthest distance recorded with the
 multielectrode array in [@fig:expmethod] and [@fig:barnowl], this corresponded
-to a field potential of 0.35 mV, consistent with our experimental findings. We
+to a field potential of 0.82 mV, consistent with our experimental findings. We
 also calculated the contribution expected at 2 cm from NL, aiming to estimate
 the contribution to the ABR. Multiplying by a factor of 2 to account for the
 fact that there is an NL on each hemisphere, the predicted contribution was
-0.98 µV.
+2.3 µV.
 
 For thalamocortical projections, @Swadlow2000Influence reported amplitudes of
 extracellular spike-related potentials called axon terminal potentials (AxTP),
@@ -791,7 +791,7 @@ for the interpretation of the ABR in clinical contexts.
 
 The ABR of the barn owl has been reported to be on the order of 10 µV
 [@PalancaCastan2016Binaural], while we estimated a contribution on the order of
-1 µV from the incoming axons in NL alone. This initial estimate suggests
+2 µV from the incoming axons in NL alone. This initial estimate suggests
 that there may indeed be measurable components due to axons in the EEG.
 However, this estimate is crude because it did not take into account the
 anatomy of the skull except for its size. Future studies based on a more
