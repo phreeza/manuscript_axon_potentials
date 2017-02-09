@@ -1056,7 +1056,7 @@ obtain $$p(t) =- \bar{n} \bar{\lambda }_{\text{pulse}}
 \bar{V}_{\text{spike}}\frac{2 \pi ^2 a^2}{r_L }\frac{v^2 \sigma_n
 \sigma_{\text{pulse}} \sigma_{\text{spike}}}{\left(\sigma _n^2+v^2 \left(\sigma
 _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)\right)^{3/2}}\cdot t
-e^{\frac{t^2 v^2}{2 \left(\sigma _n^2+v^2 \left(\sigma _{\text{pulse}}^2+\sigma
+e^{\frac{-t^2 v^2}{2 \left(\sigma _n^2+v^2 \left(\sigma _{\text{pulse}}^2+\sigma
 _{\text{spike}}^2\right)\right)}}$$
 
 This has its maximum amplitude at $t_\text{max}=\frac{\sqrt{\sigma _n^2+v^2
