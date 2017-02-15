@@ -200,8 +200,8 @@ perturbed the precise locations of bifurcations and terminations in the axon
 tree ([@fig:simpletree]E, left). We simulated 100 axons and stimulated each
 axon with an inhomogeneous Poisson spike train. The driving rate of the
 inhomogeneous Poisson process was the same for all axons and consisted of
-a constant background rate (100 spikes/s) and a Gaussian pulse of heightened
-activity (2000 spikes/s). The standard deviation of the pulse was 1 ms,
+a constant background rate (100\ spikes/s) and a Gaussian pulse of heightened
+activity (2000\ spikes/s). The standard deviation of the pulse was 1 ms,
 resulting in an additional 3.5 spikes being fired on average due to the pulse.
 The resulting extracellular waveforms ([@fig:simpletree]E, right) showed
 a polarity reversal reminiscent of [@fig:simpletree]D. However, in the
@@ -702,18 +702,22 @@ concrete axonal configurations. Is it possible to generalize, and predict the
 strength of the effect for arbitrary axon and stimulus configurations? Based on
 our analytical model we were able to analytically derive the maximal dipole
 moment $p_\text{max}$ for a large range of scenarios, based on a number of
-approximations. We assumed a Gaussian waveform for the membrane potential of
-a single spike, with an amplitude of $\bar{V}_{\text{spike}}$ and a width of
-$\sigma_{\text{spike}}$. The resting membrane potential was irrelevant because
-only the first and second derivatives of the membrane potential contribute. The
-axon bundle population was assumed to be driven with a Gaussian firing-rate
-pulse with maximum firing rate $\bar{\lambda }_{\text{pulse}}$ and width
-$\sigma_{\text{pulse}}$. The distribution of the number of fibers at a given
-depth location was also described with a Gaussian, with width $\sigma_n$ and
-maximum number $\bar{n}$. This is an adequate approximation, if the spikes in
-the incoming fibers contribute little to the dipole moment before reaching the
-projection zone. In this scenario, we calculated the maximum dipole moment of
-the bundle (see Materials and Methods for derivation) to be:
+approximations. From a given dipole moment the maximum field potential at
+a distance $r$ can be calculated with the extracellular conductivity $\sigma_e$
+as $\phi_\text{max}=\frac{p_\text{max}}{4\pi \sigma_e r^2}$. We assumed
+a Gaussian waveform for the membrane potential of a single spike, with an
+amplitude of $\bar{V}_{\text{spike}}$ and a width of $\sigma_{\text{spike}}$.
+The resting membrane potential was irrelevant because only the first and second
+derivatives of the membrane potential contribute. The axon bundle population
+consisted of fibers with diameter $a$, axial resistance $r_L$ and conduction
+velocity $v$. The population was assumed to be driven with a Gaussian
+firing-rate pulse with maximum firing rate $\bar{\lambda }_{\text{pulse}}$ and
+width $\sigma_{\text{pulse}}$. The distribution of the number of fibers at
+a given depth location was also described with a Gaussian, with width
+$\sigma_n$ and maximum number $\bar{n}$. This is an adequate approximation, if
+the spikes in the incoming fibers contribute little to the dipole moment before
+reaching the projection zone. In this scenario, we calculated the maximum
+dipole moment of the bundle (see Materials and Methods for derivation) to be:
 
 $$p_\text{max} = \frac{2 a^2 \pi^2}{r_L\sqrt{e}} \cdot
 \frac{v \sigma_n \sigma_{\text{pulse}} \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}
@@ -727,26 +731,28 @@ $v\sigma_{\text{pulse}}$ and $v\sigma_{\text{spike}}$ are of the form
 $w_1^1=w_2^2+w_3^3$, where $w_1$ is the largest of the three terms, while $w_2$
 and $w_3$ are the other two terms, regardless of order. The dipole moment is
 thus maximal when the widths of the pulses agree. In particular, if $\sigma_n$
-is the widest, then the dipole moment is maximal if $\sigma_n$ is equal to the
-spatial width of the activity in the axons, which is
-$v\sqrt{\sigma_{\text{spike}}^2+\sigma_{\text{pulse}}^2}$.
+(the width of the terminal zone) is the widest, then the dipole moment is
+maximal if $\sigma_n$ is equal to the spatial width of the overall activity in
+the axons, which is $v\sqrt{\sigma_{\text{spike}}^2+\sigma_{\text{pulse}}^2}$.
+The widths add in this way because the overall activity is the convolution of
+two gaussians.
 
 Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
 the barn owl, we chose the following values: axon diameter $a$\ =\ 2\ µm,
 conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$, axial resistivity
-$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 500 µm, $\sigma_\text{spike}$\ =\ 250\ µs,
-$\sigma_\text{pulse}$\ =\ 0.5 ms, $\sigma_e$\ =\ 0.33\ $\frac{\text{S}}{\text{m}}$,
-$\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\ 70 mV,
-$\bar{\lambda}_\text{pulse}$\ =\ 3000\ spikes/s. This lead to a value
+$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 500 µm, $\sigma_\text{spike}$\ =\
+250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms, $\sigma_e$\ =\ 0.33\
+$\frac{\text{S}}{\text{m}}$, $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\
+70 mV, $\bar{\lambda}_\text{pulse}$\ =\ 3000\ spikes/s. This lead to a value
 for the dipole moment of $p_\text{max} \approx$ 1.9 $\text{µA}\cdot\text{mm}$.
 At a distance of 750 µm, roughly the furthest distance recorded with the
-multielectrode array in [@fig:expmethod] and [@fig:barnowl], this corresponded
-to a field potential of 0.82 mV, consistent with our experimental findings. We
-also calculated the contribution expected at 2 cm from NL, aiming to estimate
-the contribution to the ABR. Multiplying by a factor of 2 to account for the
-fact that there is an NL on each hemisphere, the predicted contribution was
-2.3 µV.
+multielectrode array in [@fig:expmethod] and [@fig:barnowl], this dipole moment
+corresponded to a field potential of 0.82 mV, consistent with our experimental
+findings. We also calculated the contribution expected at 2 cm from NL, aiming
+to estimate the contribution to the auditory brainstem response (ABR).
+Multiplying by a factor of 2 to account for the fact that there is an NL on
+each hemisphere, the predicted contribution was 2.3 µV.
 
 As a second example, we considered thalamocortical projections, for which
 @Swadlow2000Influence reported amplitudes of extracellular spike-related
@@ -754,7 +760,7 @@ potentials called axon terminal potentials (AxTP), at various locations. At 400
 µm from the center of the dipole, the amplitude of the response was $\approx$\
 1\ µV. Individual thalamocortical axons are thin and have large and highly
 branched projection zones [@Feldmeyer2012Excitatory], so we estimated
-$\sigma_n$\ =\ 250 µm and $\bar{n}$\ =\ 30 and $a$\ =\ 1\ µm. We assumed
+$\sigma_n$\ =\ 250\ µm,$\bar{n}$\ =\ 30 and $a$\ =\ 1\ µm. We assumed
 a jitter in the arrival time instead of a true activity pulse,
 $\sigma_\text{pulse}$\ =\ 125\ µs, and normalized the pulse to have area 1,
 because we were considering a spike triggered average. The conduction velocity
@@ -951,7 +957,7 @@ Gaussian distribution with mean zero and a width of 300 µm.
 This was done to smooth out the effects of individual branchings or
 terminations and show the population response.
 
-For the axon populations responses seen in [@fig:bigtree], branching patterns
+For the axon population responses seen in [@fig:bigtree], branching patterns
 were generated procedurally, starting with a root segment. In order to avoid
 artifacts from the stimulus and to simulate a fiber tract prior to the terminal
 zone, a sequence of 10 active and passive segments without bifurcations was
