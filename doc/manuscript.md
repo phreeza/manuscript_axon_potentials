@@ -711,7 +711,7 @@ The resting membrane potential was irrelevant because only the first and second
 derivatives of the membrane potential contribute. The axon bundle population
 consisted of fibers with diameter $a$, axial resistance $r_L$ and conduction
 velocity $v$. The population was assumed to be driven with a Gaussian
-firing-rate pulse with maximum firing rate $\bar{\lambda }_{\text{pulse}}$ and
+firing-rate pulse with maximum firing rate $\bar{\lambda}_{\text{pulse}}$ and
 width $\sigma_{\text{pulse}}$. The distribution of the number of fibers at
 a given depth location was also described with a Gaussian, with width
 $\sigma_n$ and maximum number $\bar{n}$. This is an adequate approximation, if
@@ -728,7 +728,7 @@ $\bar{n}$, $\bar{\lambda}_{\text{pulse}}$ and $\bar{V}_{\text{spike}}$. The
 dependence on $v$ and the widths is a bit more complicated; the response is
 maximal whenever the three (spatial) widths $\sigma_n$,
 $v\sigma_{\text{pulse}}$ and $v\sigma_{\text{spike}}$ are of the form
-$w_1^1=w_2^2+w_3^3$, where $w_1$ is the largest of the three terms, while $w_2$
+$w_1^2=w_2^2+w_3^2$, where $w_1$ is the largest of the three terms, while $w_2$
 and $w_3$ are the other two terms, regardless of order. The dipole moment is
 thus maximal when the widths of the pulses agree. In particular, if $\sigma_n$
 (the width of the terminal zone) is the widest, then the dipole moment is
