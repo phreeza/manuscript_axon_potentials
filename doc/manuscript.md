@@ -412,8 +412,7 @@ bifurcations and terminations. All following simulations are based on the
 simplified model.
 
 We simulated two axon bundle morphologies. The control case was
-a non-bifurcating bundle, which had a constant number of 50 fibers for $z<0$\
-µm, and tapered out as a Gaussian centered at $z=0$\ µm with a height of 50
+a non-bifurcating bundle, which had a constant number of 50 fibers for $z<0$ µm, and tapered out as a Gaussian centered at $z=0$\ µm with a height of 50
 fibers and width of 300\ µm for $z>0$\ µm. The second case was that of an axon
 bundle with a projection zone containing bifurcations. Here we simulated the
 same distribution as for the non-bifurcating control case, but added a further
@@ -496,8 +495,7 @@ spatial width of each period will be 1\ mm. If the spatial width of the
 termination zone is equal to this, the dipole moment will be maximal. This
 notion is formalized in the last section of the Results.
 <!--In the
-situation described here, this should be the case for $f\approx 2\ln (2) 500 $\
-µm $\approx$\ 693 Hz. -->
+situation described here, this should be the case for $f\approx 2\ln (2) 500 $ µm $\approx$\ 693 Hz. -->
 
 To quantitatively understand the frequency-specific contributions to the dipole
 moments, we examined the scaling behaviour as a function of frequency. The
@@ -746,11 +744,8 @@ Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
 the barn owl, we chose the following values: axon diameter $a$\ =\ 2\ µm,
 conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$, axial resistivity
-$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 500 µm, $\sigma_\text{spike}$\ =\
-250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms, $\sigma_e$\ =\ 0.33\
-$\frac{\text{S}}{\text{m}}$, $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ =\
-70 mV, $\bar{\lambda}_\text{pulse}$\ =\ 3000\ spikes/s. This lead to a value
-for the dipole moment of $p_\text{max} \approx 1.9 \text{µA}\cdot\text{mm}$.
+$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 500 µm, $\sigma_\text{spike}$\ = 250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms, $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$, $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ = 70 mV, $\bar{\lambda}_\text{pulse}$\ =\ 3000\ spikes/s. This lead to a value
+for the dipole moment of $p_\text{max} \approx 1.9\, \text{µA}\cdot\text{mm}$.
 At a distance of 750 µm, roughly the furthest distance recorded with the
 multielectrode array in [@fig:expmethod] and [@fig:barnowl], this dipole moment
 corresponded to a field potential of 0.82 mV, consistent with our experimental
@@ -1030,14 +1025,11 @@ the following expression for the total transmembrane current per unit length $I(
 given membrane potential $V(z,t)$:
 
 \begin{align}
-I(z,t)& = \frac{\partial }{\partial z}\left(\frac{A(z)}{r_L}\frac{\partial }{\partial z}V(z,t)\right)\\
-&= \frac{\pi a^2}{r_L}\frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right)\\
-&= \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t)\right)
+I(z,t)& = \frac{\partial }{\partial z}\left(\frac{A(z)}{r_L}\frac{\partial }{\partial z}V(z,t)\right)\ &= \frac{\pi a^2}{r_L}\frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right)\ &= \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t)\right)
 \label{eqn:current}
 \end{align}
 <!--
-\\
-&= \frac{\partial n}{\partial z}(z)\cdot\frac{1}{v}\frac{\partial V}{\partial
+\ &= \frac{\partial n}{\partial z}(z)\cdot\frac{1}{v}\frac{\partial V}{\partial
 t}(z,t)+n(z)\cdot\frac{1}{v^2}\frac{\partial ^2V}{\partial t^2}(z,t)
 
 from which, together with the fact that the axial conductivity is proportional
@@ -1045,8 +1037,7 @@ to the number of fibers $g_{tot}=ng$ we can then derive the membrane currents
 flowing at a given location:
 
 \begin{align}
-I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\\
-&= \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)
+I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\ &= \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)
 \end{align}
 -->
 Applying this membrane current to equation (\ref{eqn:basic}), we calculated the
