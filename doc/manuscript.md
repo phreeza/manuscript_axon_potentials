@@ -615,8 +615,8 @@ multielectrode probe. The probe produced a small slit in a cerebellar folium
 overlying the IVth ventricle (\*), and penetrated into the nucleus laminaris
 (NL). The recordings where made in NL, and electrodes extended to both sides of
 the nucleus. The outline of the probe is shown in light green, with the
-recording electrodes indicated by magenta circles, and the reference electrode
-as a magenta rectangle. The low-frequency (<2\ kHz) component (**B**) and
+recording electrodes indicated by magenta and white circles, and the reference electrode
+as a magenta and white rectangle. The low-frequency (<2\ kHz) component (**B**) and
 high-frequency (>2\ kHz) component (**C**) are ordered the same as the
 electrodes, with three examples connected to their recording sites by black
 lines. Time scale in B and C identical as indicated by the scale bar. Voltage
