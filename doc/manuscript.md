@@ -45,7 +45,7 @@ of a neuron [@Gold2006Origin; @Holt1999Electrical;
 and modeling efforts have revealed that active, non-synaptic membrane currents
 can play an important role in generating EFPs [@Reimann2013Biophysically;
 @Anastassiou2015Cell; @Schomburg2012Spiking; @Ray2011Different;
-@Belluscio2012CrossFrequency], including far reaching potentials detectable at
+@Belluscio2012CrossFrequency; @Waldert2013Influence], including far reaching potentials detectable at
 the scalp [@Telenczuk2011Highfrequency; @Telenczuk2015Correlates].
 Currents from the axon are still thought to be so small as to be of minor
 importance for the EFP.
@@ -200,7 +200,8 @@ towards more biologically plausible axon geometries, we considered axon bundles
 consisting of axons with slightly altered characteristics, where we randomly
 perturbed the precise locations of bifurcations and terminations in the axon
 tree ([@fig:simpletree]E, left). We simulated 100 axons and stimulated each
-axon with an inhomogeneous Poisson spike train. The driving rate of the
+axon with an inhomogeneous Poisson spike train
+[@Kuokkanen2013Linear;@Softky1993Highly]. The driving rate of the
 inhomogeneous Poisson process was the same for all axons and consisted of
 a constant background rate (100\ spikes/s) and a Gaussian pulse of heightened
 activity (2000\ spikes/s). The standard deviation of the pulse was 1 ms,
@@ -212,12 +213,13 @@ potentials lead to a monophasic negative peak, and in the termination zone
 there was a monophasic positive peak. Interestingly, the summed potential at
 the center of the terminal zone largely cancelled out.
 
-The fact that the responses in [@fig:simpletree]E were mostly monophasic can be explained by the presence of a non-zero bias in the biphasic responses observed for
-the single spike responses: close to a bifurcation, the area under the negative
-part of the curve slightly exceeded that of the positive part, and vice versa
-close to a termination. This bias effectively induced a low-frequency component
-in the single-spike responses, that is reflected in the population response in
-[@fig:simpletree]E.
+The fact that the responses in [@fig:simpletree]E were mostly monophasic can be
+explained by the presence of a non-zero bias in the biphasic responses observed
+for the single spike responses: close to a bifurcation, the area under the
+negative part of the curve slightly exceeded that of the positive part, and
+vice versa close to a termination. This bias effectively induced a
+low-frequency component in the single-spike responses, that is reflected in the
+population response in [@fig:simpletree]E.
 
 The reversal behaviour shown in [@fig:simpletree]E is similar to the polarity
 reversal associated with a dipole observed in experimental studies
@@ -297,7 +299,7 @@ zone. Interestingly, this means that the absolute value of the response
 amplitude reaches a local minimum just when the number of axonal fibers reaches
 a maximum. To better understand how the anatomical features of the axon bundle
 and the LFP response amplitude are related, we compared the signed maximum
-value (meaning the *signed* value corresponding to the maximum *absolute*
+value (meaning the *signed* value corresponding to the maximum *magnitude* of the
 amplitude) of the LFP (black line in [@fig:bigtree]C) with the difference in
 the number of branchings and terminations per 200\ µm bin (purple histogram in
 [@fig:bigtree]C). Along the nerve trunk the number of fibers is constant. As
@@ -363,8 +365,9 @@ further away from the trunk it is no longer distinguishable from the background
 activity.-->
 
 To understand the EFP contributions related to individual spikes, we next
-turned our attention to the high-frequency  MUA response. In [@fig:bigtree]D,
-the maximum amplitudes of the MUA appeared like an ellipsoid centered at the
+turned our attention to the high-frequency MUA response. The MUA is thought to
+reflect local spiking activity [@Stark2007Predicting]. In [@fig:bigtree]D, the
+maximum amplitudes of the MUA appeared like an ellipsoid centered at the
 terminal zone ([@fig:bigtree]D), and they did not show the double-lobe shape
 observed for the LFP in [@fig:bigtree]A.
 
@@ -743,16 +746,30 @@ two gaussians.
 Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
 the barn owl, we chose the following values: axon diameter $a$\ =\ 2\ µm,
-conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$, axial resistivity
-$r_L$\ =\ 1 $\Omega\text{m}$, $\sigma_n$\ =\ 500 µm, $\sigma_\text{spike}$\ = 250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms, $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$, $\bar{n}$\ =\ 4000, $\bar{V}_{\text{spike}}$\ = 70 mV, $\bar{\lambda}_\text{pulse}$\ =\ 3000\ spikes/s. This lead to a value
-for the dipole moment of $p_\text{max} \approx 1.9\, \text{µA}\cdot\text{mm}$.
-At a distance of 750 µm, roughly the furthest distance recorded with the
-multielectrode array in [@fig:expmethod] and [@fig:barnowl], this dipole moment
-corresponded to a field potential of 0.82 mV, consistent with our experimental
-findings. We also calculated the contribution expected at 2 cm from NL, aiming
-to estimate the contribution to the auditory brainstem response (ABR).
-Multiplying by a factor of 2 to account for the fact that there is an NL on
-each hemisphere, the predicted contribution was 2.3 µV.
+conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$ as inferred in the
+previous section, axial resistivity $r_L$\ =\ 1 $\Omega\text{m}$ and
+extracellular conductivity  $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$ as
+used in similar studies [@Gold2006Origin;@Holt1999Electrical], anatomical and physiological
+parameters $\sigma_n$\ =\ 500 µm, , $\bar{n}$\ =\ 4000,
+$\bar{V}_{\text{spike}}$\ = 70 mV from [@carr90] and activation patterns for
+click stimulation from [@koppl97a]: $\bar{\lambda}_\text{pulse}$\ =\ 3000 
+spikes/s, $\sigma_\text{spike}$\ = 250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms.
+This lead to a value for the dipole moment of $p_\text{max} \approx 1.9\,
+\text{µA}\cdot\text{mm}$. At a distance of 750\ µm, roughly the furthest
+distance recorded with the multielectrode array in [@fig:expmethod] and
+[@fig:barnowl], this dipole moment corresponded to a field potential of 0.82
+mV, consistent with our experimental findings.
+
+Dipole sources are also to be expected to make up the majority of the
+electrical signals recorded at the scalp [@Nunez2006Electric]. One such signal
+is the auditory brainstem response (ABR), which is recorded at the scalp in
+response to auditory stimulation with clicks or chirps [@Riedel2002Comparison].
+The amplitude of the ABR in the barn owl has recently been reported by
+@PalancaCastan2016Binaural. We calculated the contribution expected from an
+axon bundle with the same characteristics as described before at 2\ cm from NL,
+aiming to estimate the contribution to the ABR. Multiplying by a factor of 2 to
+account for the fact that there is an NL on each hemisphere, the predicted
+contribution was 2.3\ µV.
 
 As a second example, we considered thalamocortical projections, for which
 @Swadlow2000Influence reported amplitudes of extracellular spike-related
@@ -810,8 +827,9 @@ particular in the terminal zone, but the membrane voltages are highly
 determined over space and time due to the signal propagation in the axon. The
 sink and source distribution found in classical CSD analysis of axon bundles
 [@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show
-a dipolar structure in terminal zones. Our modelling approach provides a novel
-way of interpreting these findings.
+a dipolar structure in terminal zones. Our modeling approach provides a novel
+way of interpreting these findings in terms of actively propagated information
+in a fiber bundle.
 
 Dipolar fields also play an important role in the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
@@ -854,7 +872,7 @@ ephaptic interaction. Their approach centers on dendrites and is not directly
 transferable, but it seems possible that a similar mechanism might arise in the
 barn owl NL based on axonal EFPs.
 
-One assumption underlying our modelling of axonal geometries is that there
+One assumption underlying our modeling of axonal geometries is that there
 exists a preferential direction of growth of the axon arbor. In many structures
 this is the case, for example in the parts of the auditory brainstem we studied
 here. In other brain regions, this tendency is not as prominent, with a
