@@ -10,11 +10,11 @@ header-includes:
     - \usepackage{lineno}
     - \linenumbers
 author: 
-    - Thomas McColgan\footnote{Institut für Theoretische Biologie, Humboldt-Universität zu Berlin, Berlin, Germany}
-    - Ji Liu\footnote{Department of Biology, University of Maryland, College Park, MD, USA}
-    - Paula T Kuokkanen\footnotemark[1,2]
-    - Catherine E Carr\footnotemark[2]
-    - Hermann Wagner\footnote{Institute for Biology II, RWTH Aachen, Aachen, Germany}
+    - Thomas McColgan,\footnote{Institut für Theoretische Biologie, Humboldt-Universität zu Berlin, Berlin, Germany}
+    - Ji Liu,\footnote{Department of Biology, University of Maryland, College Park, MD, USA}
+    - Paula T Kuokkanen,\footnotemark[1]  \footnotemark[2]
+    - Catherine E Carr,\footnotemark[2]
+    - Hermann Wagner,\footnote{Institute for Biology II, RWTH Aachen, Aachen, Germany}
     - Richard Kempter\footnotemark[1]
 
 
