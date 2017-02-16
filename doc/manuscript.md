@@ -779,7 +779,7 @@ potentials called axon terminal potentials (AxTP), at various locations. At 400
 µm from the center of the dipole, the amplitude of the response was $\approx$\ 1\ µV.
 Individual thalamocortical axons are thin and have large and highly
 branched projection zones [@Feldmeyer2012Excitatory], so we estimated
-$\sigma_n$\ =\ 250\ µm,$\bar{n}$\ =\ 30 and $a$\ =\ 1\ µm. We assumed
+$\sigma_n$\ =\ 250\ µm, $\bar{n}$\ =\ 30 and $a$\ =\ 1\ µm. We assumed
 a jitter in the arrival time instead of a true activity pulse,
 $\sigma_\text{pulse}$\ =\ 125\ µs, and normalized the pulse to have area 1,
 because we were considering a spike triggered average. The conduction velocity
