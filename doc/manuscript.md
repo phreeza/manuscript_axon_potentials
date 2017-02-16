@@ -250,7 +250,9 @@ The spiking activity of a generic axon bundle was simulated by a background
 spontaneous firing rate of 100 spikes/s and a short pulse of increased
 activity. The responses were averaged over 10 repetitions. We chose a Gaussian
 pulse with an amplitude of 2900 spikes/s and a standard deviation of 2.8\ ms.
-These numbers are motivated by the early auditory system
+Note that this high driving rate is only the instantaneous maximum, and the
+actual firing rate is limited by the refractory period following a spike. These
+numbers are motivated by the early auditory system
 [@koppl97a;@Sullivan1984Segregation;@Konishi1985Owls], where instantaneous
 spike rates of 3000 spikes/s occur in repsonse to click stimuli
 [@Carr2016Role]. However, our approach is not limited to the auditory system
@@ -752,7 +754,7 @@ extracellular conductivity  $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$ as
 used in similar studies [@Gold2006Origin;@Holt1999Electrical], anatomical and physiological
 parameters $\sigma_n$\ =\ 500 µm, , $\bar{n}$\ =\ 4000,
 $\bar{V}_{\text{spike}}$\ = 70 mV from [@carr90] and activation patterns for
-click stimulation from [@koppl97a]: $\bar{\lambda}_\text{pulse}$\ =\ 3000 
+click stimulation from [@koppl97a;@Carr2016Role]: $\bar{\lambda}_\text{pulse}$\ =\ 3000 
 spikes/s, $\sigma_\text{spike}$\ = 250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms.
 This lead to a value for the dipole moment of $p_\text{max} \approx 1.9\,
 \text{µA}\cdot\text{mm}$. At a distance of 750\ µm, roughly the furthest
