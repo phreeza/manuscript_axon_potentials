@@ -752,7 +752,7 @@ conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$ as inferred in the
 previous section, axial resistivity $r_L$\ =\ 1 $\Omega\text{m}$ and
 extracellular conductivity  $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$ as
 used in similar studies [@Gold2006Origin;@Holt1999Electrical], anatomical and physiological
-parameters $\sigma_n$\ =\ 500 µm, , $\bar{n}$\ =\ 4000,
+parameters $\sigma_n$\ =\ 500 µm, $\bar{n}$\ =\ 4000,
 $\bar{V}_{\text{spike}}$\ = 70 mV from [@carr90] and activation patterns for
 click stimulation from [@koppl97a;@Carr2016Role]: $\bar{\lambda}_\text{pulse}$\ =\ 3000 
 spikes/s, $\sigma_\text{spike}$\ = 250\ µs, $\sigma_\text{pulse}$\ =\ 0.5 ms.
