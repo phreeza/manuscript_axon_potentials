@@ -1184,7 +1184,7 @@ Collaboration in Computational Neuroscience "Field Potentials in the Auditory
 System" as part of the NSF/NIH/ANR/BMBF/BSF Collaborative Research in
 Computational Neuroscience Program, 01GQ1505A.
 
-The authors wish to thank Anna Kraemer for help with animal handling and surgery.
+The authors wish to thank Anna Kraemer for help with animal handling and surgery and Martina Michalikova for helpful comments on a draft of this manuscript.
 
 <!--
 * Show how a dipole emerges in simple case
