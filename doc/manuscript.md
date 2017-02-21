@@ -45,7 +45,7 @@ of a neuron [@Holt1999Electrical;
 and modeling efforts have revealed that active, non-synaptic membrane currents
 can play an important role in generating population-level EFPs [@Reimann2013Biophysically;
 @Anastassiou2015Cell; @Schomburg2012Spiking; @Ray2011Different;
-@Belluscio2012CrossFrequency; @Waldert2013Influence], including far reaching potentials detectable at
+@Belluscio2012CrossFrequency; @Waldert2013Influence; @Ness2016Active], including far reaching potentials detectable at
 the scalp [@Telenczuk2011Highfrequency; @Telenczuk2015Correlates].
 Currents from the axon are still thought to be so small as to be of minor
 importance for the EFP.
