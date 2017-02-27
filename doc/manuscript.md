@@ -406,6 +406,19 @@ zone with bifurcations and terminations. Moreover, as a control, we also
 simulated an axon bundle without bifurcations in which a fixed number of fibers
 simply terminates.
 
+![The low-frequency (<1\ kHz) component of the axon bundle EFP exceeds the
+high-frequency (>2.5\ kHz) component in reach.
+The scaling of the low-frequency (**A**, blue lines) and
+high-frequency (**B**, green lines) components for the bifurcating (solid
+lines) and non-bifurcating (dashed lines) axons on a double-logarithmic scale.
+All distances are calculated from the center of the terminal zone. For
+comparison, scalings that follow $r^{-2}$ are shown (black lines). (**C**)
+Normalized dipole moments of the bifurcating and non-bifurcating bundles as
+a function of frequency. (**D**) Ratio of the dipole moments between
+bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 10 of the
+number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions.
+](../figs/fig_3.pdf){#fig:distscaling}
+
 <!-- Can you move the Fig. 3 to this point in the manuscript?!
 Please add axis label "Frequency [kHz]" in C 
 -->
@@ -580,18 +593,6 @@ zone forming the dipole axis. At higher frequencies, the bifurcation zone strong
 reduces the dipole moment, meaning that we could observe responses mainly locally.
 
 
-![The low-frequency (<1\ kHz) component of the axon bundle EFP exceeds the
-high-frequency (>2.5\ kHz) component in reach.
-The scaling of the low-frequency (**A**, blue lines) and
-high-frequency (**B**, green lines) components for the bifurcating (solid
-lines) and non-bifurcating (dashed lines) axons on a double-logarithmic scale.
-All distances are calculated from the center of the terminal zone. For
-comparison, scalings that follow $r^{-2}$ are shown (black lines). (**C**)
-Normalized dipole moments of the bifurcating and non-bifurcating bundles as
-a function of frequency. (**D**) Ratio of the dipole moments between
-bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 10 of the
-number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions.
-](../figs/fig_3.pdf){#fig:distscaling}
 
 The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal terminal zone.
 ----
@@ -1171,7 +1172,7 @@ which is independent of the angle $\varphi$.
 To derive the frequency responses in [@fig:distscaling], we simulated the
 membrane potentials as sinusoids, i.e. $V(z,t) = \sin\left(2\pi
 f\cdot\left(z-tv\right)\right)$, with varying frequencies $f$ between 100 Hz
-and 5\ kHz and calculated the standard deviation of the response for each frequency individually.
+and 5\ kHz and calculated the standard deviation of the response for each frequency individually. The amplitude was the same for all frequencies.
 
 To derive the dipole moment of a simplified projection zone, we considered an
 axon bundle in which identical spikes with the waveform $V_\text{spike}(z,t)$
@@ -1228,12 +1229,10 @@ p_\text{max} = p(t_\text{max}) = \frac{2 a^2
 \pi^2}{r_L\sqrt{e}} \cdot \frac{v \sigma_n \sigma_{\text{pulse}}
 \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}}
 \bar{V}_{\text{spike}}} {\left(\sigma_n^2+v^2
-\left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} \quad . 
+\left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} \quad ,
 \end{equation}
 
-<!-- Please refer back to the equation in the Results.
-Please adopt the same style of the equation as in the Results.
--->
+which is presented as Equation \ref{eqn:pmax} in the Results section.
 
 <!--
 &=\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{\frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
