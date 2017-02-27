@@ -802,14 +802,17 @@ contribute little to the dipole moment before reaching the projection zone. In
 this scenario, we calculated the maximum dipole moment of the bundle (see
 Materials and Methods for details) to be
 
-$$p_\text{max} = \frac{2  \pi^2  a^2 \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}{\sqrt{e} r_L } \cdot
+\begin{align}
+p_\text{max} = \frac{2  \pi^2  a^2 \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_{\text{spike}}}{\sqrt{e} r_L } \cdot
 \frac{v \sigma_n \sigma_{\text{pulse}} \sigma_{\text{spike}}}
-{\left(\sigma_n^2+v^2 \left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} \quad . $$
+{\left(\sigma_n^2+v^2 \left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} \label{eqn:pmax}
+\quad .
+\end{align}
 
 <!-- Please use an equation number because you refer to it below (at least two times)
 as "this formula" whereas "Equation XX" would be much better -->
 
-This formula tells us that the dipole moment is proportional to $a^2$,
+Equation \ref{eqn:pmax} tells us that the dipole moment is proportional to $a^2$,
 $\bar{n}$, $\bar{\lambda}_{\text{pulse}}$, $\bar{V}_{\text{spike}}$, and $1/r_L$. The
 dependence on $v$ and the widths is more complicated; the response is
 maximal with respect to the three (spatial) widths $\sigma_n$,
@@ -870,7 +873,7 @@ spike amplitude of $\approx$\ 2.3\ µV at the distance of 400\ µm, which is of
 the same order of magnitude as the value ($\approx$\ 1\ µV) reported by
 @Swadlow2000Influence.
 
-To summarize, Equation XXX quantitatively predicts the contribution of
+To summarize, Equation \ref{eqn:pmax} quantitatively predicts the contribution of
 axonal projection zones to the far field EFP, and this prediction
 matched experimental values in several cases.
 
@@ -908,7 +911,7 @@ of synaptic, dendritic or somatic currents may not be valid for axon bundles.
 When performing a typical current source density analysis, the local number of
 fibers cannot be disentangled from membrane current density
 [@Nicholson1973Theoretical]. The membrane current densities can independently vary with time
-and ?XXXXX?. In the case of an axonal fiber bundle as discussed
+and location. In the case of an axonal fiber bundle as discussed
 here, the situation is different: the number of fibers is variable in space, in
 particular in the terminal zone, but the membrane voltages at different
 locations are highly determined, because they are temporally shifted versions
@@ -1153,7 +1156,7 @@ flowing at a given location:
 I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\ &= \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)
 \end{align}
 -->
-Applying this membrane current to equation (\ref{eqn:basic}), we calculated the
+Applying this membrane current to Equation \ref{eqn:basic}, we calculated the
 corresponding extracellular field potential $\phi(\mathbf{r},t)$ of a given
 membrane potential waveform $V(z,t)$ propagating through the axon bundle.
 Due to the rotational symmetry of the system and the fact that current flows
@@ -1170,14 +1173,14 @@ membrane potentials as sinusoids, i.e. $V(z,t) = \sin\left(2\pi
 f\cdot\left(z-tv\right)\right)$, with varying frequencies $f$ between 100 Hz
 and 5\ kHz and calculated the standard deviation of the response for each frequency individually.
 
-To derive the dipole moment of a simplified projection zone in Equation XXXXX, we considered an
+To derive the dipole moment of a simplified projection zone, we considered an
 axon bundle in which identical spikes with the waveform $V_\text{spike}(z,t)$
 propagate as traveling waves with a velocity $v$ in positive $z$ direction: $V_\text{spike}(z,t) =
 V_\text{spike}(z-tv,0)$. If each of the fibers is stimulated with an
 inhomogeneous Poisson process, with the driving rate $\lambda(t)$ shared among
 all axons, the average membrane potential across fibers will be
 $V(z,t) = V_\text{spike}(z-tv,0)\ast \lambda(t)$, where $\ast$
-denotes the convolution in time. Plugging this into equation (\ref{eqn:current}), we obtained
+denotes the convolution in time. Plugging this into Equation \ref{eqn:current}, we obtained
 \begin{align}
 I(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}\left[V_\text{spike}(z-tv)\ast \lambda(t)\right]+n(z)\cdot\frac{\partial ^2}{\partial z^2}\left[V_\text{spike}(z-tv)\ast \lambda(t)\right] \right) \\ 
 & = \frac{\pi a^2}{r_L}\lambda(t)\ast\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}V_\text{spike}(z-tv)+n(z)\cdot\frac{\partial ^2}{\partial z^2}V_\text{spike}(z-tv) \right)
@@ -1202,21 +1205,31 @@ _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right){}^2} \quad .
 \end{align}
 
 
-The dipole moment $p(t)$ is defined as $$p(t) = \int_{-\infty}^{\infty}z\cdot
-I(z,t)\text{d}z$$ into which we can enter equation (\ref{eqn:simple_dipole_cur}) to
-obtain $$p(t) =- \bar{n} \bar{\lambda }_{\text{pulse}}
+The dipole moment $p(t)$ is defined as 
+\begin{equation}
+p(t) = \int_{-\infty}^{\infty}z\cdot
+I(z,t)\text{d}z
+\end{equation}
+into which we can enter Equation \ref{eqn:simple_dipole_cur} to
+obtain 
+\begin{equation}
+p(t) =- \bar{n} \bar{\lambda }_{\text{pulse}}
 \bar{V}_{\text{spike}}\frac{2 \pi ^2 a^2}{r_L }\frac{v^2 \sigma_n
 \sigma_{\text{pulse}} \sigma_{\text{spike}}}{\left(\sigma _n^2+v^2 \left(\sigma
 _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)\right)^{3/2}}\cdot t
 \exp\left(\frac{-t^2 v^2}{2 \left(\sigma _n^2+v^2 \left(\sigma _{\text{pulse}}^2+\sigma
-_{\text{spike}}^2\right)\right)}\right)$$
+_{\text{spike}}^2\right)\right)}\right)
+\end{equation}
 
 The dipole moment has its maximum amplitude at $t_\text{max}=\sqrt{\sigma_n^2+v^2
-\left(\sigma _{\text{pulse}}^2+ \sigma _{\text{spike}}^2\right)}/v$, and takes the value $$ p_\text{max} = p(t_\text{max}) = \frac{2 a^2
+\left(\sigma _{\text{pulse}}^2+ \sigma _{\text{spike}}^2\right)}/v$, and takes the value
+\begin{equation}
+p_\text{max} = p(t_\text{max}) = \frac{2 a^2
 \pi^2}{r_L\sqrt{e}} \cdot \frac{v \sigma_n \sigma_{\text{pulse}}
 \sigma_{\text{spike}} \bar{n} \bar{\lambda}_{\text{pulse}}
 \bar{V}_{\text{spike}}} {\left(\sigma_n^2+v^2
-\left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} \quad . $$
+\left(\sigma_{\text{pulse}}^2+\sigma_{\text{spike}}^2\right)\right)} \quad . 
+\end{equation}
 
 <!-- Please refer back to the equation in the Results.
 Please adopt the same style of the equation as in the Results.
@@ -1245,7 +1258,7 @@ Model fitting to experimental data
 In order to relate the model to experimentally obtained data as shown in
 [@fig:barnowl], we performed a nonlinear least squares fit, minimizing the mean
 squared error $\epsilon$ between the measured potential $\phi_\text{measured}$
-and the model prediction $\phi_\text{model}$ in equations (\ref{eqn:simple_field_pot}) and (\ref{eqn:simple_dipole_cur}) for ${N=32}$ measurement locations
+and the model prediction $\phi_\text{model}$ in Equations \ref{eqn:simple_field_pot} and \ref{eqn:simple_dipole_cur} for ${N=32}$ measurement locations
 $z_n$\ ($n=1,\dots,N$) and ${M=600}$ time points $t_m$ ($m = 1,\dots,M$):
 $\epsilon =
 \frac{1}{NM}\sum_{n=1}^{N}\sum_{m=1}^{M}\left[\phi_\text{measured}(z_n,t_m)-\phi_\text{model}(z_n,t_m)\right]^2$.
@@ -1265,7 +1278,7 @@ locations than $z_1$ was then determined by the traveling-wave assumption: $\fra
 \frac{\text{d}}{\text{d}z}V(z_1,t_m-\frac{z_n-z_1}{v})$, using a linear interpolation between timepoints.
 The model assumption of a single line of axons with electrodes at a fixed
 distance is a simplification of a three-dimensional axon tree where the fibers
-are distributed at various distances. The distance parameter $\rho$ in equation (\ref{eqn:simple_field_pot}) can be
+are distributed at various distances. The distance parameter $\rho$ in Equation \ref{eqn:simple_field_pot} can be
 interpreted as an average distance in this simplification.
 
 To aid the convergence of the fit algorithm, an
@@ -1277,7 +1290,7 @@ not alter the final fit result. The results shown in @fig:barnowl were obtained 
 an initial guess of a Gaussian with amplitude 12, centered at penetration depth
 725 µm with standard deviation 400 µm.
 
-Because of the linearity of equations 1-4
+Because of the linearity of Equations \ref{eqn:basic}-\ref{eqn:simple_field_pot}
 <!-- dangerous, if equation numbers are changed. Please use \ref instead.
 Please check for other cases in manuscript where \ref was not used-->
 both in the current $I$ and the
