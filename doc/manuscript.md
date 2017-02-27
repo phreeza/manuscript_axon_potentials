@@ -593,7 +593,7 @@ bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 
 number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions.
 ](../figs/fig_3.pdf){#fig:distscaling}
 
-The barn owl neurophonic potential in nucleus laminaris as an ; @Ness2016Activeexample for a dipolar field in an axonal terminal zone.
+The barn owl neurophonic potential in nucleus laminaris as an example for a dipolar field in an axonal terminal zone.
 ----
 
 To test our models prediction of dipolar extracellular field potential responses
