@@ -667,113 +667,88 @@ Same in Fig. 5-->
 owl can be explained by a model of axonal field potentials (for details, see
 Materials and Methods). (**A**) Membrane voltage averaged across fibers in the
 model when fit to the data. (**B**) Fitted number of fibers in the model as
-a function of penetration depth. (**C**) High-frequency ($\geq 2$\ kHz)
+a function of penetration depth. (**C**) Low-frequency ($\leq 2$\ kHz)
 components of the EFP in response to a click stimulus at time 0\ ms, at
 different recording depths. The depth is measured in the direction from dorsal
 to ventral. Recorded responses (orange) are shown along with model fits
-(black). (**D**) Low-frequency ($\leq 2$\ kHz) responses in recordings (orange)
+(black). (**D**) High-frequency ($\geq 2$\ kHz) responses in recordings (orange)
 and model (black). Recorded traces were averaged over 10 repetitions.
 ](../figs/fig_5.pdf){#fig:barnowl height=115%}
 
-<!-- What is needed to assign unit mV to the Membrane potential in A,
-and a real number to the fibers in B, and not arbitrary units? 
--->
-
 The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
 [@fig:barnowl]A shows the inferred average over trials of the deviation of the
-membrane potential from the resting potential in response to the stimulus, at
-a location in the axon next to the first electrode (penetration depth 1550\ µm),
+membrane potential from the resting potential in response to the stimulus, at a
+location in the axon next to the first electrode (penetration depth 1550\ µm),
 obtained from the fit. The voltage is composed of high- and low-frequency
-components similar to those observed in the EFP. The inferred number of fibers as a function of dorsoventral depth
-is shown in [@fig:barnowl]B. The number (scaled by an arbitrary factor) has its maximum at the
-center of the electrode array, and decays steadily to both sides. This profile
-of the number of fibers is consistent with the known anatomy of axons in NL.
-<!-- some reference here, e.g. Carr90, Kuokkanen2010, ... ?-->
+components similar to those observed in the EFP. The inferred number of fibers
+as a function of dorsoventral depth is shown in [@fig:barnowl]B. The number
+(scaled by an arbitrary factor) has its maximum at the center of the electrode
+array, and decays steadily to both sides. This profile of the number of fibers
+is consistent with the known anatomy of axons in NL
+[@carr90;@Kuokkanen2010Origin].
 
-
-<!-- I would turn around the description of low- and high-frequency
-components (and interchange C and D in the figure 5).  First low-frequncy
-then high frequency because our main focus is on the low-frequency
-component, and we should the most important part firs. And we had the
-same order (first low then high) in previous figures.
-After we have described the low-frequency component, we can then say that
-our model even fits (as a kind of "control"
-the high-frequency component to some extent (but not
-as well as for the low frequencies).
--->
-
-
-[@fig:barnowl]C shows the high-frequency ($\geq 2$\ kHz) response. The
-dorsoventral depth is now on the vertical axis, meaning that the vertical axis
-of [@fig:barnowl]C and [@fig:barnowl]D corresponds to the horizontal axis in
-[@fig:barnowl]B. The orange lines indicate the actual responses in the data.
-<!-- mean +- SD? How many repetitions?
--->
-The responses have a Gabor-like shape, as expected [@wagner09], with maximum
-amplitude in the center of the recording array, at around 850\ µm penetration
-depth. The axonal conduction velocity was calculated to be 4.0 m/s.
-A previously published estimate of the axonal conduction velocity in this
-nucleus [@McColgan2014Functional] gave a confidence bound of 0.4-6 m/s . Toward
-the edges (< 100\ µm and > 1400\ µm), the amplitude decays. In the central region
-(400-1200\ µm recording depth), a systematic shift in delay can be observed,
-while the response appears stationary in the more dorsal and ventral
-electrodes. The delay increases from ventral to dorsal, which is consistent
-with the anatomy for contralateral stimulation.
-
-All these aspects of the data
-are qualitatively reproduced by the model ([@fig:barnowl]C, black traces). The main deviation
-between model and data lies in a diminished amplitude of the oscillation modelled at the
-most central electrode sites. Because the phase shift in the central region is
-mainly determined by the conduction velocity, this mismatch might be due to
-a variable conduction velocity in the nucleus, and the constant velocity in the model.
-@McColgan2014Functional
-showed that different conduction velocities exist in the core and periphery of
-the nucleus, as predicted from variable internode distances by @carr90.
-A diminished amplitude in the fit could reflect an inability of the model to
-exactly match the phase progression. Another possible explanation is that the
-additional amplitude could be due to non-axonal sources such as synaptic
-currents or postsynaptic spikes, which do not follow the assumptions underlying
-our model; see the Discussion for arguments
-why we expect such contributions to the EFP to be small. 
-
-<!-- Here I inserted a link to the Discussion where we should
-argue that synaptic currents are
-not the cause for the dipolar field. If we do not explain this somewhere,
-our line of arguments here is too weak.
--->
-
-The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]D) responses reveal the
+The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]C) responses reveal the
 typical polarity reversal that we predicted for an axonal terminal zone
-(Figures 1 and 2). The responses at the dorsal and ventral edges show the same
-shape, but with opposite polarity, as expected for a dipolar field. Note that
-for a pure dipole field, the amplitude of the central responses have zero
-amplitude. In the data shown here, central responses show a diminished maximum
-amplitude, which we interpret as the contribution of higerh-order (mostly quadrupole)
-components. The
-model is able to capture the behaviour of this quadrupolar component as well,
-with a slight underestimation of the amplitude of the peak at ventral
-locations. The model even captures a small oscillation in the data with 
-period\ of\ $\approx 1$\ ms in the center of the recording. Here, too, the small
+(Figures [@fig:simpletree] and [@fig:bigtree]). The dorsoventral depth is now
+on the vertical axis, meaning that the vertical axis of [@fig:barnowl]C and
+[@fig:barnowl]D corresponds to the horizontal axis in [@fig:barnowl]B. The
+orange lines indicate the actual responses in the data.
+
+The responses at the dorsal and ventral edges show the same shape, but with
+opposite polarity, as expected for a dipolar field. Note that for a pure dipole
+field, the amplitude of the central responses have zero amplitude. In the data
+shown here, central responses show a diminished maximum amplitude, which we
+interpret as the contribution of higerh-order (mostly quadrupole) components.
+The model is able to capture the behaviour of this quadrupolar component as
+well, with a slight underestimation of the amplitude of the peak at ventral
+locations. The model even captures a small oscillation in the data with period\
+of\ $\approx 1$\ ms in the center of the recording. Here, too, the small
 deviations are likely due to slightly inhomogeneous conduction velocities or
 non-axonal sources.
+
+In addition to the dipolar behavior of the low-frequency response, we also
+examined the  high-frequency ($\geq 2$\ kHz) response, shown in
+[@fig:barnowl]C. The responses have a Gabor-like shape, as expected
+[@wagner09], with maximum amplitude in the center of the recording array, at
+around 850\ µm penetration depth. The axonal conduction velocity was calculated
+to be 4.0 m/s. A previously published estimate of the axonal conduction
+velocity in this nucleus [@McColgan2014Functional] gave a confidence bound of
+0.4-6 m/s . Toward the edges (< 100\ µm and > 1400\ µm), the amplitude decays.
+In the central region (400-1200\ µm recording depth), a systematic shift in
+delay can be observed, while the response appears stationary in the more dorsal
+and ventral electrodes. The delay increases from ventral to dorsal, which is
+consistent with the anatomy for contralateral stimulation.
+
+All these aspects of the data are qualitatively reproduced by the model
+([@fig:barnowl]D, black traces). The main deviation between model and data lies
+in a diminished amplitude of the oscillation modelled at the most central
+electrode sites. Because the phase shift in the central region is mainly
+determined by the conduction velocity, this mismatch might be due to a variable
+conduction velocity in the nucleus, and the constant velocity in the model.
+@McColgan2014Functional showed that different conduction velocities exist in
+the core and periphery of the nucleus, as predicted from variable internode
+distances by @carr90. A diminished amplitude in the fit could reflect an
+inability of the model to exactly match the phase progression. Another possible
+explanation is that the additional amplitude could be due to non-axonal sources
+such as synaptic currents or postsynaptic spikes, which do not follow the
+assumptions underlying our model; see the Discussion for arguments why we
+expect such contributions to the EFP to be small. 
 
 When comparing the inferred membrane potential response ([@fig:barnowl]A) to
 the measured EFP response ([@fig:barnowl]C and D), the most salient difference
 is the dissimilar sizes of the frequency components. In the EFP, the
 low-frequency component has a comparable amplitude to the high-frequency
 component, but in the membrane potential the low-frequency component is much
-larger because the EFP is related to membrane currents, which are
-proportional to the first and second derivatives of the membrane potential, and
-taking the derivative is equivalent to applying a high-pass filter.
+larger because the EFP is related to membrane currents, which are proportional
+to the first and second derivatives of the membrane potential, and taking the
+derivative is equivalent to applying a high-pass filter.
 
-We performed the fitting procedure (example in [@fig:barnowl])
-for 26 recordings from 3 different owls,
-with monaural stimulation from both ears (implying the activation of distinct axonal
-populations). The average correlation coefficient for all recordings was
-$R^2=0.56\pm 0.15$. The correlation coefficient for the example shown in
-[@fig:barnowl] was 0.62.
-<!-- what was \rho$ here? -->
-
+We performed the fitting procedure (example in [@fig:barnowl]) for 26
+recordings from 3 different owls, with monaural stimulation from both ears
+(implying the activation of distinct axonal populations). The average
+correlation coefficient for all recordings was $R^2=0.56\pm 0.15$. The
+correlation coefficient for the example shown in [@fig:barnowl] was 0.62. The
+best fit for the distance from the bundle was obtained for $\rho$\ =\ 162\ µm.
 
 Dipole moments of idealized axon bundles
 ----
@@ -929,7 +904,7 @@ fine structure of the high-frequency component shifts gradually in space as
 a function of the axonal conduction velocity ([@fig:barnowl]). Low-frequency components have a strong dipole moment, meaning that it contributes to the far-field EFP. Due to the
 difference in reach, the high-frequency component is most suitable for the
 study of local phenomena, while the low-frequency component bears information
-about locations more distant from the recording site ([@fig:distscaling]).
+about locations more distant from the recording site ([@fig:distscaling]), consistent with findings on non-axonal EFPs [@Pettersen2008Amplitude;Leski2013Frequency].
 
 Dipolar fields are essential for the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
