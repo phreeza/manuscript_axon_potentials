@@ -898,7 +898,7 @@ Relevance to interpretation of electrophysiological recordings
 
 Our findings relate to the interpretation of a wide range of
 electrophysiological data. When performing a typical current source density
-analysis, the local number of fibers cannot be disentangled from membrane
+analysis (CSD), the local number of fibers cannot be disentangled from membrane
 current density [@Nicholson1973Theoretical]. The membrane current densities can
 independently vary with time and location. In the case of an axonal fiber
 bundle as discussed here, the situation is different: the number of fibers is
