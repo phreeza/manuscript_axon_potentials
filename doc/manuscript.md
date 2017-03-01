@@ -870,41 +870,42 @@ spatial reach. In particular, the dipolar low-frequency components are not
 negligible and exceed the reach of the presumed quadrupolar nature of axonal
 EFPs ([@fig:distscaling]).
 
-Relevance to interpretation of electrophysiological recordings
+Relevance to the interpretation of electrophysiological recordings
 ----
 
 Our findings relate to the interpretation of a wide range of
-electrophysiological data. When performing a typical current source density
+electrophysiological data in general, and to the estimation of current sources in particular. When performing a typical current source density
 analysis (CSD), the local number of fibers cannot be disentangled from membrane
-current density [@Nicholson1973Theoretical]. The membrane current densities can
+current density [@Nicholson1973Theoretical;@Potworowski2011Kernel]. In CSD analysis, the membrane current densities can
 independently vary with time and location. In the case of an axonal fiber
 bundle as discussed here, the situation is different: the number of fibers is
-variable in space, in particular in the terminal zone, but the membrane
-voltages at different locations are highly determined, because they are
-temporally shifted versions of each other. In the case presented here
-([@fig:barnowl]), where axonal potentials dominate the EFP, it was even
-possible to recover the (normalized) fiber densities and membrane potentials
-from the recording.
+variable in space, in particular in the terminal zone, but the current sources at different locations are highly determined, because they are
+caused by propagating action potentials. In the case presented here
+([@fig:barnowl]), where axonal action potentials dominate the EFP, it was 
+possible to recover from the recording the (normalized) fiber densities and average membrane potentials.
 
 Beyond recovering actual fiber densities and membrane potentials, our approach
-could also be useful in the conceptual interpretation of CSD results in the
+enables the interpretation of CSD results in the
 presence of axon fiber bundles. For example, the sink and source distribution
 found in classical CSD analysis of axon bundles
-[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show
-a dipolar structure in terminal zones, but a conclusive explanation of their origin was not given. Our modeling approach provides a novel
-way of interpreting these findings in terms of actively propagated action
-potentials in a fiber bundle.
-<!-- Let us discuss the contents of the previous paragraph. I think the arguments are not clear enough. And the location of this very general paragraph in the Discussion (surrounded by contents related mostly specifically to the barn owl example) might need to be changed. -->
+[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar] shows a
+dipolar structure in terminal zones, but a conclusive explanation of their
+origin was not given. Our modeling approach provides a novel way of
+interpreting these findings in terms of actively propagated action potentials
+in a fiber bundle.
 
-Our recordings from the barn owl nucleus laminaris ([@fig:expmethod] and [@fig:barnowl]) confirmed that 
-the low- and high-frequency components show qualitatively different behaviours
-as a function of recording location relative to the terminal
-zone. The low-frequency component is a largely stationary phenomenon, while the
-fine structure of the high-frequency component shifts gradually in space as
-a function of the axonal conduction velocity ([@fig:barnowl]). Low-frequency components have a strong dipole moment, meaning that it contributes to the far-field EFP. Due to the
-difference in reach, the high-frequency component is most suitable for the
-study of local phenomena, while the low-frequency component bears information
-about locations more distant from the recording site ([@fig:distscaling]), consistent with findings on non-axonal EFPs [@Pettersen2008Amplitude;@Leski2013Frequency].
+As an example case for a fiber bundle, we recorded from the barn owl nucleus laminaris. [@fig:expmethod] and
+[@fig:barnowl] showed that the low- and high-frequency components show
+qualitatively different behaviours as a function of recording location relative
+to the terminal zone. The low-frequency component is a largely stationary
+phenomenon, while the fine structure of the high-frequency component shifts
+gradually in space as a function of the axonal conduction velocity
+([@fig:barnowl]). Low-frequency components have a strong dipole moment, meaning
+that it contributes to the far-field EFP. Due to the difference in reach, the
+high-frequency component is most suitable for the study of local phenomena
+while the low-frequency component bears information about locations more
+distant from the recording site ([@fig:distscaling]), consistent with findings
+on non-axonal EFPs [@Pettersen2008Amplitude;@Leski2013Frequency].
 
 Dipolar fields are essential for the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
