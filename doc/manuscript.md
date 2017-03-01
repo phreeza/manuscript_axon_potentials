@@ -732,7 +732,7 @@ exactly match the phase progression. Another possible explanation is that the
 additional amplitude could be due to non-axonal sources such as synaptic
 currents or postsynaptic spikes, which do not follow the assumptions underlying
 our model; see the Discussion for arguments
-why such contributions to the EFP are typically small. 
+why we expect such contributions to the EFP to be small. 
 
 <!-- Here I inserted a link to the Discussion where we should
 argue that synaptic currents are
