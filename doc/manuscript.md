@@ -456,7 +456,7 @@ a conduction velocity of 1 m/s in this example, though results are
 qualitatively the same for other values. In order to understand the
 frequency-specific effects of the projection zone, we calculated
 the responses to membrane potential components with temporal frequencies 
-between 100 Hz and 5\ kHz. Due to the linear nature
+between 100 Hz and 5\ kHz, with the same amplitude for each frequency component. Due to the linear nature
 of our model, the frequency responses obtained in this manner are applicable to
 the Fourier components of any membrane potential
 time-course. We then calculated the average amplitude of the resulting EFP
@@ -896,33 +896,38 @@ EFPs ([@fig:distscaling]).
 Relevance to interpretation of electrophysiological recordings
 ----
 
-Our recordings from the barn owl nucleus laminaris ([@fig:expmethod] and [@fig:barnowl]) confirmed that 
-the low- and high-frequency components show qualitatively different behaviours
-as a function of recording location relative to the terminal
-zone. The low-frequency component is a largely stationary phenomenon, while the
-fine structure of the high-frequency component shifts gradually in space as
-a function of the axonal conduction velocity ([@fig:barnowl]). Due to the
-difference in reach, the high-frequency component is most suitable for the
-study of local phenomena, while the low-frequency component bears information
-about locations more distant from the recording site ([@fig:distscaling]).
+Our findings relate to the interpretation of a wide range of
+electrophysiological data. When performing a typical current source density
+analysis, the local number of fibers cannot be disentangled from membrane
+current density [@Nicholson1973Theoretical]. The membrane current densities can
+independently vary with time and location. In the case of an axonal fiber
+bundle as discussed here, the situation is different: the number of fibers is
+variable in space, in particular in the terminal zone, but the membrane
+voltages at different locations are highly determined, because they are
+temporally shifted versions of each other. In the case presented here
+([@fig:barnowl]), where axonal potentials dominate the EFP, it was even
+possible to recover the (normalized) fiber densities and membrane potentials
+from the recording.
 
-These findings relate to the interpretation of a wide range of
-electrophysiological data. Heuristics that are valid for the analysis of EFPs
-of synaptic, dendritic or somatic currents may not be valid for axon bundles.
-When performing a typical current source density analysis, the local number of
-fibers cannot be disentangled from membrane current density
-[@Nicholson1973Theoretical]. The membrane current densities can independently vary with time
-and location. In the case of an axonal fiber bundle as discussed
-here, the situation is different: the number of fibers is variable in space, in
-particular in the terminal zone, but the membrane voltages at different
-locations are highly determined, because they are temporally shifted versions
-of each other. The sink and source distribution found in classical CSD analysis
-of axon bundles
+Beyond recovering actual fiber densities and membrane potentials, our approach
+could also be useful in the conceptual interpretation of CSD results in the
+presence of axon fiber bundles. For example, the sink and source distribution
+found in classical CSD analysis of axon bundles
 [@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show
 a dipolar structure in terminal zones. Our modeling approach provides a novel
 way of interpreting these findings in terms of actively propagated action
 potentials in a fiber bundle.
 <!-- Let us discuss the contents of the previous paragraph. I think the arguments are not clear enough. And the location of this very general paragraph in the Discussion (surrounded by contents related mostly specifically to the barn owl example) might need to be changed. -->
+
+Our recordings from the barn owl nucleus laminaris ([@fig:expmethod] and [@fig:barnowl]) confirmed that 
+the low- and high-frequency components show qualitatively different behaviours
+as a function of recording location relative to the terminal
+zone. The low-frequency component is a largely stationary phenomenon, while the
+fine structure of the high-frequency component shifts gradually in space as
+a function of the axonal conduction velocity ([@fig:barnowl]). Low-frequency components have a strong dipole moment, meaning that it contributes to the far-field EFP. Due to the
+difference in reach, the high-frequency component is most suitable for the
+study of local phenomena, while the low-frequency component bears information
+about locations more distant from the recording site ([@fig:distscaling]).
 
 Dipolar fields are essential for the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
@@ -956,7 +961,6 @@ superior olive (MSO) [@McLaughlin2010Oscillatory]. The phase reversal in this ca
 MSO dendrites with their bipolar morphology generate the dipolar EFP response
 [@McLaughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
 morphology of neurons is largely absent [@carr90], making dendritic sources unlikely.
-In NL, synaptic currents cannot explain a dipolar EFP. 
 This
 suggests that similar dipolar field potentials in owls and mammals emerge from
 different physiological substrates. Such a convergence might point towards an
@@ -966,6 +970,11 @@ potential enhances the function of coincidence detectors through a form of
 ephaptic interaction. Their approach centers on dendrites and is not directly
 transferable, but it seems possible that a similar mechanism might arise in the
 barn owl NL based on axonal EFPs.
+
+Synaptic EFP sources also require a spatial separation of currents, which is
+hard to achieve in NL because of the symmetrical arrangement of synapses on the
+spherical NL cell bodies [@carr90], meaning that synaptic sources can also not explain
+a dipolar EFP, and are thus expected to contribute little to the EFP.
 
 
 The key assumption underlying our modeling of axonal geometries is that there
@@ -1099,13 +1108,13 @@ fields. This procedure is described in detail by @Gold2006Origin. Briefly, the
 extracellular medium is assumed to be a homogeneous volume conductor with
 conductivity $\sigma_e$, and a quasi-static approximation of the electrical
 field potential $\phi$ is made. The extracellular potential
-$\phi(\mathbf{r},t)$ at location $\mathbf{r}$ and time $t$ due to a membrane current
-distribution $I(\mathbf{r},t)$ is then governed by the equation $\Delta
-\phi(\mathbf{r},t) = \frac{1}{\sigma_e} I(\mathbf{r},t)$, with $\Delta$
+$\phi(\mathbf{r},t)$ at location $\mathbf{r}$ and time $t$ due to a membrane current density
+distribution $i(\mathbf{r},t)$ is then governed by the equation $\Delta
+\phi(\mathbf{r},t) = \frac{1}{\sigma_e} i(\mathbf{r},t)$, with $\Delta$
 denoting the Laplace operator [@Nunez2006Electric]. If the currents $I$ are
 constrained to a volume $W$, this equation has the solution
 \begin{equation}
-\phi(\mathbf{r},t)=\frac{1}{4\pi\sigma_{e}}\int_{W}\frac{I(\mathbf{r}',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'
+\phi(\mathbf{r},t)=\frac{1}{4\pi\sigma_{e}}\int_{W}\frac{i(\mathbf{r}',t)}{|\mathbf{r}-\mathbf{r}'|}\textrm{d}\mathbf{r}'
 \label{eqn:basic}
 \end{equation}
 Since the majority of the current flows through the small nodes of Ranvier in
@@ -1157,11 +1166,14 @@ flowing at a given location:
 I(z,t)& = \frac{d}{dz}\left(n(z)\frac{d}{dz}V(z,t)\right)\ &= \frac{dn}{dz}(z)\cdot\frac{1}{v}\frac{dV}{dt}(z,t)-n(z)\cdot\frac{1}{v^2}\frac{d^2V}{dt^2}(z,t)
 \end{align}
 -->
-Applying this membrane current to Equation \ref{eqn:basic}, we calculated the
-corresponding extracellular field potential $\phi(\mathbf{r},t)$ of a given
-membrane potential waveform $V(z,t)$ propagating through the axon bundle.
-Due to the rotational symmetry of the system and the fact that current flows
-only at $\rho = 0$, we obtained
+We next calculated the corresponding extracellular field potential
+$\phi(\mathbf{r},t)$ of a given membrane potential waveform $V(z,t)$
+propagating through the axon bundle. Due to the rotational symmetry of the
+system and the fact that current flows only at $\rho = 0$, and the membrane
+current can be described as $i(\mathbf{r},t)=I(z,t)\frac{\delta(\rho)}{\rho}$,
+where $\frac{\delta(\rho)}{\rho}$ is the Dirac delta distribution for a line at
+$\rho=0$. Applying this membrane current to Equation \ref{eqn:basic}, we
+obtained
 
 \begin{align}\label{eqn:simple_field_pot}
     \phi(\mathbf{r},t) =\frac{1}{4\pi\sigma_{e}}\int_{-\infty}^{\infty}\frac{I(z',t)}{\sqrt{(z-z')^2 + \rho^2}}\textrm{d}z'
@@ -1180,17 +1192,17 @@ propagate as traveling waves with a velocity $v$ in positive $z$ direction: $V_\
 V_\text{spike}(z-tv,0)$. If each of the fibers is stimulated with an
 inhomogeneous Poisson process, with the driving rate $\lambda(t)$ shared among
 all axons, the average membrane potential across fibers will be
-$V(z,t) = V_\text{spike}(z-tv,0)\ast \lambda(t)$, where $\ast$
-denotes the convolution in time. Plugging this into Equation \ref{eqn:current}, we obtained
+$V(z,t) = V_\text{spike}(z,t)\ast \lambda(t)$, where $\ast$
+denotes the convolution with respect to the time $t$. Plugging this into Equation \ref{eqn:current}, we obtained
 \begin{align}
-I(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}\left[V_\text{spike}(z-tv)\ast \lambda(t)\right]+n(z)\cdot\frac{\partial ^2}{\partial z^2}\left[V_\text{spike}(z-tv)\ast \lambda(t)\right] \right) \\ 
-& = \frac{\pi a^2}{r_L}\lambda(t)\ast\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}V_\text{spike}(z-tv)+n(z)\cdot\frac{\partial ^2}{\partial z^2}V_\text{spike}(z-tv) \right)
+I(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}\left[V_\text{spike}(z,t)\ast \lambda(t)\right]+n(z)\cdot\frac{\partial ^2}{\partial z^2}\left[V_\text{spike}(z,t)\ast \lambda(t)\right] \right) \\ 
+& = \frac{\pi a^2}{r_L}\lambda(t)\ast\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}V_\text{spike}(z,t)+n(z)\cdot\frac{\partial ^2}{\partial z^2}V_\text{spike}(z,t) \right)
 \end{align}
 
 Assuming Gaussian shapes for the firing-rate pulse $\lambda(t) = \bar\lambda_{\text{pulse}}
-\exp\left(-\frac{t^2}{2\sigma_\text{pulse}}\right)$, the spike $V_\text{spike}(z-tv) =
-\bar{V}_\text{spike} \exp\left(-\frac{(z-tv)^2}{2\sigma_\text{spike}}\right)$, and the fiber
-bundle projection zone $n(z) = \bar{n} \exp\left(-\frac{z^2}{2\sigma_\text{n}}\right)$, we
+\exp\left(-\frac{t^2}{2\sigma_\text{pulse}^2}\right)$, the spike $V_\text{spike}(z,t) = V_\text{spike}(z-tv) =
+\bar{V}_\text{spike} \exp\left(-\frac{(z-tv)^2}{2\sigma_\text{spike}^2}\right)$, and the fiber
+bundle projection zone $n(z) = \bar{n} \exp\left(-\frac{z^2}{2\sigma_\text{n}^2}\right)$, we
 were able to take advantage of the fact that the product and the convolution of
 two Gaussians are again Gaussian, and obtained 
 
