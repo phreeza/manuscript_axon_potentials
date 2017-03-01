@@ -341,7 +341,9 @@ component.
 High-pass filtered
 (>2.5\ kHz) component (the first processing stage for calculation of MUA, see
 Materials and Methods) in black. (**F**) Maximum amplitude of the MUA component
-(black line) follows the number of fibers (teal-colored histogram).
+(black line) follows the number of fibers (teal-colored histogram). Note the
+different units of the histograms in (C) and (F), due to the fact that (C) is
+the derivative in space of (F).
 ](../figs/fig_2.pdf){#fig:bigtree height=110%}
 
 <!--To better understand the relationship between axonal anatomy and this spatial
@@ -654,7 +656,7 @@ recording electrodes indicated by magenta dots, and the reference electrode
 as a magenta rectangle. The low-frequency (<2\ kHz) component (**B**) and
 the high-frequency (>2\ kHz) component (**C**) are ordered in the same way as the
 electrodes, with three examples connected to their recording sites by black
-lines. The time scales in B and C are identical (indicated by scale bar). Voltage
+lines. The time scales in B and C are identical (indicated by scale bar). Traces were averaged over 10 repetitions. Voltage
 scales are indicated by individual scalebars.
 ](../figs/fig_4.pdf){#fig:expmethod}
 
@@ -670,7 +672,7 @@ components of the EFP in response to a click stimulus at time 0\ ms, at
 different recording depths. The depth is measured in the direction from dorsal
 to ventral. Recorded responses (orange) are shown along with model fits
 (black). (**D**) Low-frequency ($\leq 2$\ kHz) responses in recordings (orange)
-and model (black).
+and model (black). Recorded traces were averaged over 10 repetitions.
 ](../figs/fig_5.pdf){#fig:barnowl height=115%}
 
 <!-- What is needed to assign unit mV to the Membrane potential in A,
@@ -914,7 +916,7 @@ could also be useful in the conceptual interpretation of CSD results in the
 presence of axon fiber bundles. For example, the sink and source distribution
 found in classical CSD analysis of axon bundles
 [@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar], show
-a dipolar structure in terminal zones. Our modeling approach provides a novel
+a dipolar structure in terminal zones, but a conclusive explanation of their origin was not given. Our modeling approach provides a novel
 way of interpreting these findings in terms of actively propagated action
 potentials in a fiber bundle.
 <!-- Let us discuss the contents of the previous paragraph. I think the arguments are not clear enough. And the location of this very general paragraph in the Discussion (surrounded by contents related mostly specifically to the barn owl example) might need to be changed. -->
@@ -951,31 +953,38 @@ based on a more detailed skull model and paired recordings of ABR and EFP
 should improve our understanding of axonal contributions to the
 ABR.
 
+We have shown that the EFP in the barn owl NL is consistent with a model of
+axonal sources. We believe synaptic contributions to be small in this case for
+the following reasons: Deflection of the somatic membrane potential due to
+synaptic currents is much smaller than the impact of postsynaptic spikes
+[@Ashida2007Passive;@Funabiki2011Computation]. Since postsynaptic spikes
+contribute little to the EFP [@Kuokkanen2010Origin], we suspect that the
+synaptic contributions to the EFP are also small. Furthermore, synaptic EFP
+contributions would require a spatial separation of currents, which is not
+possible to achieve in NL because of the symmetrical arrangement of synapses on
+the spherical NL cell bodies [@carr90], meaning that synaptic sources can also
+not explain a dipolar EFP, and are thus expected to contribute little to the
+EFP.
+
 Dipolar EFPs in other animals and brain regions
 ----
 
 It is interesting to note that a similar dipole-like reversal of polarity as
 shown here for the barn owl NL has been reported in the chicken NL
 [@Schwarz1992Can], as well as in the mammalian analog to NL, the medial
-superior olive (MSO) [@McLaughlin2010Oscillatory]. The phase reversal in this case was modeled based on the assumption that the postsynaptic NL and
-MSO dendrites with their bipolar morphology generate the dipolar EFP response
-[@McLaughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this dipolar
-morphology of neurons is largely absent [@carr90], making dendritic sources unlikely.
-This
-suggests that similar dipolar field potentials in owls and mammals emerge from
-different physiological substrates. Such a convergence might point towards an
-evolutionary pressure favouring such an EFP structure in coincidence detection
-systems, and indeed, @Goldwyn2016Neuronal have proposed a model in which this extracellular
-potential enhances the function of coincidence detectors through a form of
-ephaptic interaction. Their approach centers on dendrites and is not directly
-transferable, but it seems possible that a similar mechanism might arise in the
-barn owl NL based on axonal EFPs.
-
-Synaptic EFP sources also require a spatial separation of currents, which is
-hard to achieve in NL because of the symmetrical arrangement of synapses on the
-spherical NL cell bodies [@carr90], meaning that synaptic sources can also not explain
-a dipolar EFP, and are thus expected to contribute little to the EFP.
-
+superior olive (MSO) [@McLaughlin2010Oscillatory]. The phase reversal in this
+case was modeled based on the assumption that the postsynaptic NL and MSO
+dendrites with their bipolar morphology generate the dipolar EFP response
+[@McLaughlin2010Oscillatory; @Goldwyn2014Model]. However, in the owl this
+dipolar morphology of neurons is largely absent [@carr90], making dendritic
+sources unlikely. This suggests that similar dipolar field potentials in owls
+and mammals emerge from different physiological substrates. Such a convergence
+might point towards an evolutionary pressure favouring such an EFP structure in
+coincidence detection systems, and indeed, @Goldwyn2016Neuronal have proposed a
+model in which this extracellular potential enhances the function of
+coincidence detectors through a form of ephaptic interaction. Their approach
+centers on dendrites and is not directly transferable, but it seems possible
+that a similar mechanism might arise in the barn owl NL based on axonal EFPs.
 
 The key assumption underlying our modeling of axonal geometries is that there
 exists a preferential direction of the axon arbor. In many structures
@@ -1050,7 +1059,7 @@ earphones. Stimulus delivery was triggered by National Instruments equipment
 (NI USB-6259 and BNC-2090A, National Instruments Inc, Austin, TX, USA), and
 stimulus presentation times were recorded along with the responses. Trigger
 pulses were configured in \textsc{MatLab} through Ephus software (Vidrio
-Technologies LLC, Ashburn, VA, USA).
+Technologies LLC, Ashburn, VA, USA). Responses were averaged over 10 repetitions.
 
 Multi-compartment model of axons
 ---------------------
