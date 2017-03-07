@@ -20,7 +20,6 @@ author:
 
 title: Dipolar\ extracellular\ potentials generated\ by\ axonal\ projections
 
-date: \today
 
 abstract: Extracellular field potentials (EFPs) are an important source of information in neuroscience, but their physiological basis is in many cases still a matter of debate. Axonal sources are typically discounted in modeling and data analysis because their contributions are assumed to be negligible. Here, we show experimentally and theoretically that contributions of axons to EFPs can be significant. Modeling action potentials propagating along axons, we showed that EFPs were prominent in the presence of a terminal zone where axons branch and terminate in close succession, as found in many brain regions. Our models predicted a dipolar far field and a polarity reversal at the center of the terminal zone. We confirmed these predictions using EFPs from the barn owl auditory brainstem where we recorded in nucleus laminaris using a multielectrode array. These results demonstrate that axonal terminal zones produce EFPs with considerable amplitude and spatial reach.
 ...
