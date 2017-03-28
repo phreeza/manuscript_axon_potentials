@@ -875,14 +875,17 @@ caused by propagating action potentials. In the case presented here
 possible to recover from the recording the (normalized) fiber densities and average membrane potentials.
 
 Beyond recovering actual fiber densities and membrane potentials, our approach
-enables the interpretation of CSD results in the
-presence of axon fiber bundles. For example, the sink and source distribution
-found in classical CSD analysis of axon bundles
-[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar] shows a
-dipolar structure in terminal zones, but a conclusive explanation of their
-origin was not given. Our modeling approach provides a novel way of
-interpreting these findings in terms of actively propagated action potentials
-in a fiber bundle.
+enables the interpretation of CSD results in the presence of axon fiber
+bundles. For example, the sink and source distribution found in classical CSD
+analysis of axon bundles
+[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar] shows
+a dipolar structure in terminal zones, but a conclusive explanation of their
+origin was not given. @Tenke1993Interpretation studied the dipole at an axonal
+terminal zone in the macaque striate cortex for a fixed point in time, attributing the sinks to the
+depolarized axon endings, and the sources to the return currents distributed
+along the axons, while not taking account of additional currents flowing at
+bifurcations. Our modeling approach provides a novel way of interpreting these
+findings in terms of actively propagated action potentials in a fiber bundle.
 
 As an example case for a fiber bundle, we recorded from the barn owl nucleus laminaris. [@fig:expmethod] and
 [@fig:barnowl] showed that the low- and high-frequency components show
