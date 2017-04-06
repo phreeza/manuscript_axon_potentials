@@ -10,9 +10,9 @@ header-includes:
     - \usepackage{lineno}
     - \linenumbers
 author: 
-    - Thomas McColgan,\footnote{Institut für Theoretische Biologie, Humboldt-Universität zu Berlin, Berlin, Germany}
+    - Thomas McColgan,\footnote{Department of Biology, Institute of Theoretical Biology, Humboldt-Universität zu Berlin, Berlin, Germany}
     - Ji Liu,\footnote{Department of Biology, University of Maryland, College Park, MD, USA}
-    - Paula T Kuokkanen,\footnotemark[1]  \footnotemark[2]
+    - Paula T Kuokkanen,\footnotemark[1] \footnotemark[2]
     - Catherine E Carr,\footnotemark[2]
     - Hermann Wagner,\footnote{Institute for Biology II, RWTH Aachen, Aachen, Germany}
     - Richard Kempter\footnotemark[1]
@@ -21,7 +21,7 @@ author:
 title: Dipolar\ extracellular\ potentials generated\ by\ axonal\ projections
 
 
-abstract: Extracellular field potentials (EFPs) are an important source of information in neuroscience, but their physiological basis is in many cases still a matter of debate. Axonal sources are typically discounted in modeling and data analysis because their contributions are assumed to be negligible. Here, we show experimentally and theoretically that contributions of axons to EFPs can be significant. Modeling action potentials propagating along axons, we showed that EFPs were prominent in the presence of a terminal zone where axons branch and terminate in close succession, as found in many brain regions. Our models predicted a dipolar far field and a polarity reversal at the center of the terminal zone. We confirmed these predictions using EFPs from the barn owl auditory brainstem where we recorded in nucleus laminaris using a multielectrode array. These results demonstrate that axonal terminal zones produce EFPs with considerable amplitude and spatial reach.
+abstract: Extracellular field potentials (EFPs) are an important source of information in neuroscience, but their physiological basis is in many cases still a matter of debate. Axonal sources are typically discounted in modeling and data analysis because their contributions are assumed to be negligible. Here, we showed experimentally and theoretically that contributions of axons to EFPs can be significant. Modeling action potentials propagating along axons, we showed that EFPs were prominent in the presence of a terminal zone where axons branch and terminate in close succession, as found in many brain regions. Our models predicted a dipolar far field and a polarity reversal at the center of the terminal zone. We confirmed these predictions using EFPs from the barn owl auditory brainstem where we recorded in nucleus laminaris using a multielectrode array. These results demonstrate that axonal terminal zones produce EFPs with considerable amplitude and spatial reach.
 ...
 
 Introduction
