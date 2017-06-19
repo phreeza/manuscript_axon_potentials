@@ -126,7 +126,7 @@ rate (2000 spikes/s). Spike rate and example spike times for the three
 morphologies are shown at the top. Right: gray lines show activity of full
 population averaged over 40 trials, while the black lines show the low-pass (<1
 kHz) component. Note that the time and voltage scales are different from A-D.
-](../figs/fig_1_nocsd.pdf){#fig:simpletree}
+](figs/fig_1_nocsd.pdf){#fig:simpletree}
 
 There are two ways of understanding the triphasic shape of the extracellular
 waveform. One way is by attribution of the peaks of the response to individual
@@ -343,7 +343,7 @@ Materials and Methods) in black. (**F**) Maximum amplitude of the MUA component
 (black line) follows the number of fibers (teal-colored histogram). Note the
 different units of the histograms in (C) and (F), due to the fact that (C) is
 the derivative in space of (F).
-](../figs/fig_2.pdf){#fig:bigtree height=110%}
+](figs/fig_2.pdf){#fig:bigtree height=110%}
 
 <!--To better understand the relationship between axonal anatomy and this spatial
 structure of the EFP, we plotted the change in density of the bundle, meaning
@@ -418,7 +418,7 @@ Normalized dipole moments of the bifurcating and non-bifurcating bundles as
 a function of frequency. (**D**) Ratio of the dipole moments between
 bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 10 of the
 number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions.
-](../figs/fig_3.pdf){#fig:distscaling}
+](figs/fig_3.pdf){#fig:distscaling}
 
 <!-- Can you move the Fig. 3 to this point in the manuscript?!
 Please add axis label "Frequency [kHz]" in C 
@@ -650,7 +650,7 @@ the high-frequency (>2\ kHz) component (**C**) are ordered in the same way as th
 electrodes, with three examples connected to their recording sites by black
 lines. The time scales in B and C are identical (indicated by scale bar). Traces were averaged over 10 repetitions. Voltage
 scales are indicated by individual scalebars.
-](../figs/fig_4.pdf){#fig:expmethod}
+](figs/fig_4.pdf){#fig:expmethod}
 
 
 ![The spatial structure of EFPs recorded from the nucleus laminaris of the barn
@@ -663,7 +663,7 @@ different recording depths. The depth is measured in the direction from dorsal
 to ventral. Recorded responses (orange) are shown along with model fits
 (black). (**D**) High-frequency ($\geq 2$\ kHz) responses in recordings (orange)
 and model (black). Recorded traces were averaged over 10 repetitions.
-](../figs/fig_5.pdf){#fig:barnowl height=115%}
+](figs/fig_5.pdf){#fig:barnowl height=115%}
 
 The resulting EFP responses and the model fit are depicted in [@fig:barnowl].
 [@fig:barnowl]A shows the inferred average over trials of the deviation of the
