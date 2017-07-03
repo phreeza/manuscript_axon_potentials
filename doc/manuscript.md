@@ -1075,7 +1075,7 @@ Thus, an initial phase dominated by bifurcations was followed by a phase
 dominated by terminations, with the probability of termination reaching 100\%
 at the end of the terminal zone. The distribution of bifurcations had its
 maximum at axial location $z=0$ with a standard deviation of 200 µm. The
-distribution of terminations had its maximum at at $z=500$ µm, with a standard
+distribution of terminations had its maximum at $z=500$ µm, with a standard
 deviation of 100 µm. The branching angle had an average of $20^\circ$, with
 a standard deviation of $5^\circ$. At branching points, the plane containing
 the branches had a uniform random orientation, resulting in a 3-dimensional
@@ -1130,7 +1130,7 @@ given membrane potential $V(z,t)$:
 \begin{align}
 I(z,t)& = \frac{\partial }{\partial z}\left(\frac{A(z)}{r_L}\frac{\partial }{\partial z}V(z,t)\right)\\
 &= \frac{\pi a^2}{r_L}\frac{\partial }{\partial z}\left(n(z)\frac{\partial }{\partial z}V(z,t)\right) \\
-&= \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial V}{\partial z}(z,t)+n(z)\cdot\frac{\partial ^2V}{\partial z^2}(z,t)\right)
+&= \frac{\pi a^2}{r_L}\left(\frac{\partial}{\partial z}n(z)\cdot\frac{\partial}{\partial z}V(z,t)+n(z)\cdot\frac{\partial ^2}{\partial z^2}V(z,t)\right)
 \label{eqn:current}
 \end{align}
 <!--
@@ -1174,8 +1174,8 @@ all axons, the average membrane potential across fibers will be
 $V(z,t) = V_\text{spike}(z,t)\ast \lambda(t)$, where $\ast$
 denotes the convolution with respect to the time $t$. Plugging this into Equation \ref{eqn:current}, we obtained
 \begin{align}
-I(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}\left[V_\text{spike}(z,t)\ast \lambda(t)\right]+n(z)\cdot\frac{\partial ^2}{\partial z^2}\left[V_\text{spike}(z,t)\ast \lambda(t)\right] \right) \\ 
-& = \frac{\pi a^2}{r_L}\lambda(t)\ast\left(\frac{\partial n}{\partial z}(z)\cdot\frac{\partial}{\partial z}V_\text{spike}(z,t)+n(z)\cdot\frac{\partial ^2}{\partial z^2}V_\text{spike}(z,t) \right)
+I(z,t)& = \frac{\pi a^2}{r_L}\left(\frac{\partial}{\partial z}n(z)\cdot\frac{\partial}{\partial z}\left[V_\text{spike}(z,t)\ast \lambda(t)\right]+n(z)\cdot\frac{\partial ^2}{\partial z^2}\left[V_\text{spike}(z,t)\ast \lambda(t)\right] \right) \\ 
+& = \frac{\pi a^2}{r_L}\lambda(t)\ast\left(\frac{\partial}{\partial z}n(z)\cdot\frac{\partial}{\partial z}V_\text{spike}(z,t)+n(z)\cdot\frac{\partial ^2}{\partial z^2}V_\text{spike}(z,t) \right)
 \end{align}
 
 Assuming Gaussian shapes for the firing-rate pulse $\lambda(t) = \bar\lambda_{\text{pulse}}
@@ -1213,7 +1213,7 @@ _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)\right)^{3/2}}\cdot t
 _{\text{spike}}^2\right)\right)}\right) \quad .
 \end{equation}
 
-The dipole moment has its maximum amplitude at $t_\text{max}=\sqrt{\sigma_n^2+v^2
+The dipole moment has its maximum amplitude at $t_\text{max}=-\sqrt{\sigma_n^2+v^2
 \left(\sigma _{\text{pulse}}^2+ \sigma _{\text{spike}}^2\right)}/v$, and takes the value
 \begin{equation}
 p_\text{max} = p(t_\text{max}) = \frac{2 a^2
