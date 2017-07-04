@@ -44,7 +44,7 @@ of a neuron [@Holt1999Electrical;
 and modeling efforts have revealed that active, non-synaptic membrane currents
 can play an important role in generating population-level EFPs [@Reimann2013Biophysically;
 @Anastassiou2015Cell; @Schomburg2012Spiking; @Ray2011Different;
-@Belluscio2012CrossFrequency; @Waldert2013Influence; @Ness2016Active], including far reaching potentials detectable at
+@Belluscio2012CrossFrequency; @Waldert2013Influence; @Ness2016Active; @SchefferTeixeira2013HighFrequency; Reichinnek2010Field; Sinha2015HCN;Taxidis2015Local], including far reaching potentials detectable at
 the scalp [@Telenczuk2011Highfrequency; @Telenczuk2015Correlates].
 Currents from the axon are still thought to be so small as to be of minor
 importance for the EFP.
@@ -493,6 +493,15 @@ the response in the bifurcating case exceeded the control by a factor 20. We thu
 low frequencies, the bifurcation zone contributes supralinearly to the dipole
 moment.
 
+The reason that supralinear contributions to the dipole moment exist is that
+contributions from different parts of the axon bundle interfere constructively
+or destructively based on their relative locations. The maximum constructive
+interference occurs when the spatial width of the oscillation agrees with that
+of the projection zone. In this case the currents from fibers outside the
+projection zone on average interact destructively with the overall response. It
+follows that increasing the number of fibers outside the bifurcation zone
+diminishes the overall response amplitude.
+
 Next, we examined the high-frequency (>2.5\ kHz)  component
 ([@fig:distscaling]B). As in the low-frequency case, the response at distances
 < 1\ mm was greater in the bifurcating case by a factor of 10. The asymptotic
@@ -570,25 +579,25 @@ quadrupole moment of the bifurcating case (solid line) has a maximum at around
 monotonically decreasing (as was the case for the dipole moment). As expected,
 the maximum lies at a higher frequency than that for the dipole moment. -->
 
-In the bifurcating case,
-the maximum number of fibers was increased by
-a factor of 10.  Accordingly, an increase in the dipole moment by a
-factor of 10 from the non-bifurcating to the bifurcating case could be
-explained by just linearly summing the dipole moments of individual fibers. 
-An increase in the dipole moment by a factor greater than 10 would be supralinear.
-In [@fig:distscaling]D we compared this relative impact of the terminal zone on
-dipole moments (red line) by plotting the dipole moment ratios across
-frequencies. The contribution of the terminal zone is greater than 10 (dotted
-line) for intermediate frequencies between about 200 and 1300 Hz, and smaller
-than a factor 10 outside this frequency range. 
+In the bifurcating case, the maximum number of fibers was increased by a factor
+of 10.  Accordingly, an increase in the dipole moment by a factor of 10 from
+the non-bifurcating to the bifurcating case could be explained by just linearly
+summing the dipole moments of individual fibers. An increase in the dipole
+moment by a factor greater than 10 would be supralinear. In [@fig:distscaling]D
+we compared this relative impact of the terminal zone on dipole moments (red
+line) by plotting the dipole moment ratios across frequencies. The contribution
+of the terminal zone is greater than 10 (dotted line) for intermediate
+frequencies between about 200 and 1300 Hz, and smaller than a factor 10 outside
+this frequency range. 
 
-Together, these observations show us that the terminal zone makes a frequency specific 
-contribution to the far-reaching dipole field potential of the axon bundle.
-This provides a deeper understanding of the findings of
-[@fig:bigtree]: At low frequencies ($<1$\ kHz), we observed a supralinear dipolar behaviour due to the
-strong contribution of the bundle at these frequencies, with the projection
-zone forming the dipole axis. At higher frequencies, the bifurcation zone strongly
-reduces the dipole moment, meaning that we could observe responses mainly locally.
+Together, these observations show us that the terminal zone makes a frequency
+specific contribution to the far-reaching dipole field potential of the axon
+bundle. This provides a deeper understanding of the findings of [@fig:bigtree]:
+At low frequencies ($<1$\ kHz), we observed a supralinear dipolar behaviour due
+to the strong contribution of the bundle at these frequencies, with the
+projection zone forming the dipole axis. At higher frequencies, the bifurcation
+zone strongly reduces the dipole moment, meaning that we could observe
+responses mainly locally.
 
 
 
@@ -767,7 +776,7 @@ distribution of the number of fibers at a given depth location was also
 described with a Gaussian, with width $\sigma_n$ and maximum number $\bar{n}$.
 This is an adequate approximation if the spikes in the incoming fibers
 contribute little to the dipole moment before reaching the projection zone. In
-this scenario, we calculated the maximum dipole moment of the bundle (see
+this scenario, we calculated the peak dipole moment of the bundle (see
 Materials and Methods for details) to be
 
 \begin{align}
@@ -823,6 +832,15 @@ account for the fact that there is an NL in each hemisphere, the predicted
 contribution was 2.3\ µV, which is of the same order of magnitude as the
 value reported in the experiments.
 
+Using the membrane currents and locations obtained by fitting to the data in
+the previous section, we were also able to calculate the expected dipole
+contribution from the vicinity of the multielectrode array. We obtained a value
+of $\approx 58 \text{µA}\cdot\text{µm}$. This was significantly smaller than
+the value obtained for the entire NL above. It is plausible that the
+neighborhood of the multielectrode only contributes a small fraction of the
+dipole moment, because the average distance of the contributing fibers was fit
+as 162\ µm, corresponding to a small part of NL, which extends to more than 1
+mm in mediolateral direction.
 
 As a second example, we considered thalamocortical projections, for which
 @Swadlow2000Influence reported amplitudes of extracellular spike-related
@@ -840,6 +858,23 @@ $p_\text{max} \approx 1.5 \text{µA}\cdot\text{µm}$, yielding an extracellular
 spike amplitude of $\approx$\ 2.3\ µV at the distance of 400\ µm, which is of
 the same order of magnitude as the value ($\approx$\ 1\ µV) reported by
 @Swadlow2000Influence.
+
+In cases in which the pulse activation is longer, as is often the case for more
+in visual evoked potentials, where the durations can exceed 10 ms
+[@Mitzdorf1985Current;Schroeder1991Striate;Schroeder1998Spatiotemporal;Self2013Distinct],
+the situation was different. Using the same parameters as for the
+thalamocortical projection used before, but increasing the number of fibers by
+a factor of 100, increasing the width of the pulse to 10 ms and the maximal
+firing rate to 10 Hz, we found that the value of the dipole moment was
+$p_\text{max} \approx 0.018 \text{µA}\cdot\text{µm}$, 2 orders of magnitude
+smaller than in the case of the brief pulse discussed above. Such long duration
+pulses can only be expected to contain axonal signals in the case of extremely
+low conduction velocities. For example, when reducing the conduction velocity
+to 0.4 m/s, the same 10 ms pulse produces a dipole moment of $0.39
+\text{µA}\cdot\text{µm}$. Such low conduction velocities can for example be
+found in cortico-cortical projections [@Swadlow1989Efferent].
+
+<!-- 2*(1um)^2*pi^2/(1 Ohm*m*sqrt(e))*.4m/s*250um*10ms*250us*3000*10Hz*70mV/((250um)^2+(0.4m/s)^2*((250us)^2+(10ms)^2)) -->
 
 To summarize, Equation \ref{eqn:pmax} quantitatively predicts the contribution of
 axonal projection zones to the far field EFP, and this prediction
@@ -970,7 +1005,11 @@ minimal conduction time leads to highly directed structures, while optimizing
 wiring cost leads to more tortuous, undirected growth. This suggests that
 directed structures - and thus also strong, dipolar EFPs due to axons - may be
 more prevalent in systems which require high temporal precision in the
-information processing.
+information processing. This tendency of temporal precision also aligns well with
+the fact that our model predicts that the dipole moment is maximal when the
+spatial spread of the activation is equal to the size of the projection zone,
+favouring short activation times of < 10 ms for typical brain region sizes and
+conduction velocities.
 
 Conclusion
 ----
@@ -1037,13 +1076,18 @@ Multi-compartment model of axons
 We modeled axons using NEURON [@Hines1997NEURON; @Hines2009NEURON] and extended
 previous work by @Kuba2009Roles, which included the high- and low-threshold
 potassium channels used by @Rathouz1998Characterization. The axon was modeled
-as a sequence of active nodes and passive myelinated segments. The nodes
-and myelinated segments had lengths of 2\ µm and 75\ µm, respectively. We included branching axons in our simulations. Branches were generated by
-connecting two passive segments to a node, and continuing the alternation of
-active and passive segments in each resulting branch. In cases where
-the positions of bifurcations or terminations of axons were fixed, the closest passive segment
-was shortened in order to obtain the total length before the bifurcation
-or termination.
+as a sequence of active nodes and passive myelinated segments. The nodes and
+myelinated segments had lengths of 2\ µm and 75\ µm, respectively. We included
+branching axons in our simulations. Branches were generated by connecting two
+passive segments to a node, and continuing the alternation of active and
+passive segments in each resulting branch. In cases where the positions of
+bifurcations or terminations of axons were fixed, the closest passive segment
+was shortened in order to obtain the total length before the bifurcation or
+termination. To approximate the infinitely long axons, we added segments of
+appropriate length before and after the shown portions of the axon. We chose
+the additional length by incrementally increasing the length until there was no
+visual difference between successive each lengthening of the axon segments,
+arriving at a length of 3 mm at each end.
 
 To evoke an action potential at a designated time, a special conductance was temporarily activated
 in the first node of Ranvier. The conductance had a reversal
@@ -1060,6 +1104,7 @@ offset from the original location by a distance drawn from a
 Gaussian distribution with mean zero and a width of 300 µm.
 This was done to smooth out the effects of individual branchings or
 terminations.
+
 
 For the axons in [@fig:bigtree], branching patterns
 were generated procedurally, starting with a root segment. In order to avoid
@@ -1115,16 +1160,20 @@ Mean field model of an axon bundle
 To better understand the processes leading to the complex spatio-temporal
 patterns of extracellular fields, we devised an analytically tractable model of
 axon bundles. We defined the spatial dimension in cylindrical coordinates
-$\mathbf{r}=(\rho,\varphi,z)$, and we considered a simple model axon bundle
-that extended infinitely in the axial $z$-direction at $\rho=0$. The bundle had
-a variable number of fibers along the $z$ axis, denoted by $n(z)$, each of
-which cylindrical with an identical radius $a$. This meant that the total cross-sectional area $A$ of the bundle at a given depth $z$ was given by $A(z)=\pi a^2 n(z)$. We assumed the axons to be perfect
-transmission lines, meaning that the action potential is a traveling wave with
-velocity $v$ along the axon. In particular, we neglected delays and
-distortions that can be induced when an axon branches or terminates. In this
-case, we could assume that the membrane voltage was the same in each fiber for a given $z$
-coordinate. From linear cable theory [e.g. @Jack75Electric], we then obtained
-the following expression for the total transmembrane current per unit length $I(z,t)$ from a
+$\mathbf{r}=(\rho,\varphi,z)$, where $\rho$ was the radial distance from the
+cylindrical axis, $\varphi$ the angle of azimuth, and $z$ the axial distance
+along the cylinder axis. We considered a simple model axon bundle that extended
+infinitely in the axial $z$-direction at $\rho=0$. The bundle had a variable
+number of fibers along the $z$ axis, denoted by $n(z)$, each of which
+cylindrical with an identical radius $a$. This meant that the total
+cross-sectional area $A$ of the bundle at a given depth $z$ was given by
+$A(z)=\pi a^2 n(z)$. We assumed the axons to be perfect transmission lines,
+meaning that the action potential is a traveling wave with velocity $v$ along
+the axon. In particular, we neglected delays and distortions that can be
+induced when an axon branches or terminates. In this case, we could assume that
+the membrane voltage was the same in each fiber for a given $z$ coordinate.
+From linear cable theory [e.g. @Jack75Electric], we then obtained the following
+expression for the total transmembrane current per unit length $I(z,t)$ from a
 given membrane potential $V(z,t)$:
 
 \begin{align}
@@ -1213,7 +1262,7 @@ _{\text{pulse}}^2+\sigma _{\text{spike}}^2\right)\right)^{3/2}}\cdot t
 _{\text{spike}}^2\right)\right)}\right) \quad .
 \end{equation}
 
-The dipole moment has its maximum amplitude at $t_\text{max}=-\sqrt{\sigma_n^2+v^2
+The dipole moment has its peak amplitude at $t_\text{max}=-\sqrt{\sigma_n^2+v^2
 \left(\sigma _{\text{pulse}}^2+ \sigma _{\text{spike}}^2\right)}/v$, and takes the value
 \begin{equation}
 p_\text{max} = p(t_\text{max}) = \frac{2 a^2
