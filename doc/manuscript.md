@@ -883,57 +883,62 @@ matched experimental values in several cases.
 
 Discussion
 ==============
-Numerical simulations, analytical calculations, and experimental data allow us to 
- show how axonal fiber bundles may contribute to the EFP, and 
-explain how the contributions are shaped by axonal morphology. There are
-three principal effects of axon bundle structure on the EFP. First, the
-low-frequency components of the EFP are governed by the densities of
-bifurcations and terminations and can have a dipolar structure
-([@fig:simpletree] and [@fig:bigtree]A-C). Second, the high-frequency components
-are governed by the local number of fibers ([@fig:bigtree]D-F). Third, the low-frequency components exceed the high-frequency components in
-spatial reach. In particular, the dipolar low-frequency components are not
-negligible and exceed the reach of the presumed quadrupolar nature of axonal
-EFPs ([@fig:distscaling]).
+Numerical simulations, analytical calculations, and experimental data allow us
+to show how axonal fiber bundles may contribute to the EFP, and explain how the
+contributions are shaped by axonal morphology. There are three principal
+effects of axon bundle structure on the EFP. First, the low-frequency
+components of the EFP are governed by the densities of bifurcations and
+terminations and can have a dipolar structure ([@fig:simpletree] and
+[@fig:bigtree]A-C). Second, the high-frequency components are governed by the
+local number of fibers ([@fig:bigtree]D-F). Third, the low-frequency components
+exceed the high-frequency components in spatial reach. In particular, the
+dipolar low-frequency components are not negligible and exceed the reach of the
+presumed quadrupolar nature of axonal EFPs ([@fig:distscaling]).
 
 Relevance to the interpretation of electrophysiological recordings
 ----
 
 Our findings relate to the interpretation of a wide range of
-electrophysiological data in general, and to the estimation of current sources in particular. When performing a typical current source density (CSD)
-analysis, the local number of fibers cannot be disentangled from membrane
-current density [@Nicholson1973Theoretical;@Potworowski2011Kernel]. In CSD analysis, the membrane current densities can
-independently vary with time and location. In the case of an axonal fiber
-bundle as discussed here, the situation is different: the number of fibers is
-variable in space, in particular in the terminal zone, but the current sources at different locations are highly correlated, because they are
-caused by propagating action potentials. In the case presented here
-([@fig:barnowl]), where axonal action potentials dominate the EFP, it was 
-possible to recover from the recording the (normalized) fiber densities and average membrane potentials.
+electrophysiological data in general, and to the estimation of current sources
+in particular. When performing a typical current source density (CSD) analysis,
+the local number of fibers cannot be disentangled from membrane current density
+[@Nicholson1973Theoretical;@Potworowski2011Kernel]. In CSD analysis, the
+membrane current densities can independently vary with time and location. In
+the case of an axonal fiber bundle as discussed here, the situation is
+different: the number of fibers is variable in space, in particular in the
+terminal zone, but the current sources at different locations are highly
+correlated, because they are caused by propagating action potentials. In the
+case presented here ([@fig:barnowl]), where axonal action potentials dominate
+the EFP, it was possible to recover from the recording the (normalized) fiber
+densities and average membrane potentials.
 
 Beyond recovering actual fiber densities and membrane potentials, our approach
 enables the interpretation of CSD results in the presence of axon fiber
 bundles. For example, the sink and source distribution found in classical CSD
 analysis of axon bundles
-[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar] shows
-a dipolar structure in terminal zones, but a conclusive explanation of their
+[@Mitzdorf1978Prominent;@Mitzdorf1985Current;@Mitzdorf1977Laminar] shows a
+dipolar structure in terminal zones, but a conclusive explanation of their
 origin was not given. @Tenke1993Interpretation studied the dipole at an axonal
-terminal zone in the macaque striate cortex for a fixed point in time, attributing the sinks to the
-depolarized axon endings, and the sources to the return currents distributed
-along the axons, while not taking account of additional currents flowing at
-bifurcations. Our modeling approach provides a novel way of interpreting these
-findings in terms of actively propagated action potentials in a fiber bundle.
+terminal zone in the macaque striate cortex for a fixed point in time,
+attributing the sinks to the depolarized axon endings, and the sources to the
+return currents distributed along the axons, while not taking account of
+additional currents flowing at bifurcations. Our modeling approach provides a
+novel way of interpreting these findings in terms of actively propagated action
+potentials in a fiber bundle.
 
-As an example case for a fiber bundle, we recorded from the barn owl nucleus laminaris. [@fig:expmethod] and
-[@fig:barnowl] showed that the low- and high-frequency components show
-qualitatively different behaviours as a function of recording location relative
-to the terminal zone. The low-frequency component is a largely stationary
-phenomenon, while the fine structure of the high-frequency component shifts
-gradually in space as a function of the axonal conduction velocity
-([@fig:barnowl]). Low-frequency components have a strong dipole moment, meaning
-that it contributes to the far-field EFP. Due to the difference in reach, the
-high-frequency component is most suitable for the study of local phenomena
-while the low-frequency component bears information about locations more
-distant from the recording site ([@fig:distscaling]), consistent with findings
-on non-axonal EFPs [@Pettersen2008Amplitude;@Leski2013Frequency].
+As an example case for a fiber bundle, we recorded from the barn owl nucleus
+laminaris. [@fig:expmethod] and [@fig:barnowl] showed that the low- and
+high-frequency components show qualitatively different behaviours as a function
+of recording location relative to the terminal zone. The low-frequency
+component is a largely stationary phenomenon, while the fine structure of the
+high-frequency component shifts gradually in space as a function of the axonal
+conduction velocity ([@fig:barnowl]). Low-frequency components have a strong
+dipole moment, meaning that it contributes to the far-field EFP. Due to the
+difference in reach, the high-frequency component is most suitable for the
+study of local phenomena while the low-frequency component bears information
+about locations more distant from the recording site ([@fig:distscaling]),
+consistent with findings on non-axonal EFPs
+[@Pettersen2008Amplitude;@Leski2013Frequency].
 
 Dipolar fields are essential for the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
@@ -1011,15 +1016,68 @@ spatial spread of the activation is equal to the size of the projection zone,
 favouring short activation times of < 10 ms for typical brain region sizes and
 conduction velocities.
 
+Relationships to more detailed biophysical models
+-----------
+
+In the systems we were aiming to approximate with our model, NL and
+thalamocortical projections, synaptic boutons are typically small, and we did
+not model them explicitly. In other systems, such as the neuromuscular
+junction, the synaptic ultrastructure can be very large when compared to the
+axon bundle.(**ref that is not Gydkov**) Such a large junction with an overall
+length of 1 mm was modeled by @Gydikov1986Extracellular. They found a
+significant effect of this structure on the extracellular field potential. The
+single flaring and tapering neuromuscular junction had a similar effect to the
+entire projection zone in our model, with the flaring causing a similar effect
+as the bifurcations, and the tapering taking the role of the terminations in
+our model. Given that synaptic boutons are several orders of magnitude smaller
+in NL and cortex, we do not expect a similar effect in our system.
+
+The currents flowing in somewhat smaller synaptic boutons were studied by
+@Geiger, who recorded from the terminals of hippocampal mossy fibers. They
+examined the effects of both the calcium and potassium conductances. The
+potassium conductances had the effect of broadening the incoming spikes in an
+activity-dependent manner. This spike broadening is hypothesised to be mediated
+by slow inactivation of the potassium channels and takes place on a timescale
+of > 100 ms, and is therefor not relevant to the present study. It could be
+captured by incorporating a variable $\sigma_\text{spike}$ in Equation
+\ref{eqn:pmax}.
+
+The calcium currents reported by @Geiger are triggered by individual spikes and
+take place on a timescale of a few ms, and are as such more relevant to this
+study. They show only inflowing currents in the bouton compartment. This
+implies that the return currents flow along the axon, leading to an axial
+dipole moment. Because the current only flows in one direction in the bouton,
+this dipole moment will have only one peak in its time course, unlike the
+biphasic time course observed in our experiments and models. This means that
+depending on the exact relative timing of the calcium currents relative to the
+spike-related currents, the bouton could contribute to either an enhancement or
+reduction of the overall dipole moment, depending on whether it coincides with
+the phase with the same or opposite polarity. Based on the small size of the
+synaptic boutons and the monopolar currents associated with them, we expect
+this contribution to be small is most cases observed here. The addition of
+synaptic bouton compartments could nonetheless an interesting extension of the
+model for further refinement in future work.
+
+Modeling the myelinated compartments, we took the classical view that they are
+purely passive and strongly insulated from extracellular space. Recent work
+(**refs, Einevoll???**) has shown that myelinated compartments do in fact express active
+conductances, and that such active conductances shape the spectrum of the EFP (**refs**),
+leading to 1/f scaling. We expect such a modification to lead to a different
+shape of the spectrum at any given point, as predicted by **refs**. The
+conclusions drawn by our analytical model are, however, independent of the
+precise active conductances and distribution of myelinated and active segments
+along the axons, as it only considers averages across an entire bundle, and
+effective waveforms of the action potential. We therefor do not expect the
+spatial scaling of the entire waveform or individual frequency components to be
+affected by active conductances in the myelinated segments.
+
 Conclusion
-----
+----------
 
 Axonal projections can contribute substantially to EFPs. Our results
 quantitatively show how the anatomy of axon terminal zones and the
 activity in axons determine its frequency-specific far-field
 contribution to the EFP.
-
-
 
 Materials and Methods
 ==============
@@ -1077,17 +1135,19 @@ We modeled axons using NEURON [@Hines1997NEURON; @Hines2009NEURON] and extended
 previous work by @Kuba2009Roles, which included the high- and low-threshold
 potassium channels used by @Rathouz1998Characterization. The axon was modeled
 as a sequence of active nodes and passive myelinated segments. The nodes and
-myelinated segments had lengths of 2\ µm and 75\ µm, respectively. We included
-branching axons in our simulations. Branches were generated by connecting two
-passive segments to a node, and continuing the alternation of active and
-passive segments in each resulting branch. In cases where the positions of
-bifurcations or terminations of axons were fixed, the closest passive segment
-was shortened in order to obtain the total length before the bifurcation or
-termination. To approximate the infinitely long axons, we added segments of
-appropriate length before and after the shown portions of the axon. We chose
-the additional length by incrementally increasing the length until there was no
-visual difference between successive each lengthening of the axon segments,
-arriving at a length of 3 mm at each end.
+myelinated segments had lengths of 2\ µm and 75\ µm, respectively. In order to
+avoid nodes ligning up in axial direction, the very first myelinated segment
+had a length drawn from a uniform distribution between 0 and 75\ µm. We
+included branching axons in our simulations. Branches were generated by
+connecting two passive segments to a node, and continuing the alternation of
+active and passive segments in each resulting branch. In cases where the
+positions of bifurcations or terminations of axons were fixed, the closest
+passive segment was shortened in order to obtain the total length before the
+bifurcation or termination. To approximate the infinitely long axons, we added
+segments of appropriate length before and after the shown portions of the axon.
+We chose the additional length by incrementally increasing the length until
+there was no visual difference between each successive lengthening of the axon
+segments, arriving at a length of 3 mm at each end.
 
 To evoke an action potential at a designated time, a special conductance was temporarily activated
 in the first node of Ranvier. The conductance had a reversal
