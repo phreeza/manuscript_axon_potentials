@@ -111,7 +111,7 @@ varying morphologies, as indicated by the diagram on the left-hand side of each
 subfigure. Action potential propagation direction indicated by arrow.
 Waveforms, shown on the right-hand side of each subfigure, were recorded at a
 horizontal distance of 150\ µm from the axons. The vertical depth is indicated
-by the plot position, spaced by 200\ µm. Horizontal distances between axons are for
+by the plot position, spaced by 200\ µm. Horizontal plot location and distances between axons are for
 illustration only, all axons were simulated to lie on a straight line. (**A**)
 Action potential in an infinitely long, straight axon. (**B**) Terminating
 axon. Action potential waveform closest to the termination thickened for
@@ -126,6 +126,7 @@ rate (2000 spikes/s). Spike rate and example spike times for the three
 morphologies are shown at the top. Right: gray lines show activity of full
 population averaged over 40 trials, while the black lines show the low-pass (<1
 kHz) component. Note that the time and voltage scales are different from A-D.
+All spatial scales are the same, indicated by scalebar in A.
 ](figs/fig_1_nocsd.pdf){#fig:simpletree}
 
 There are two ways of understanding the triphasic shape of the extracellular
@@ -749,6 +750,27 @@ recordings from 3 different owls, with monaural stimulation from both ears
 correlation coefficient for all recordings was $R^2=0.56\pm 0.15$. The
 correlation coefficient for the example shown in [@fig:barnowl] was 0.62.
 
+We note that in fitting the model to the data, we are referring to the membrane
+voltage averaged over many trials. In order to asses how valid this
+approximation is for a single trial, we referred to the work of
+@Kuokkanen2010Origin, who showed that in the case of a sinusoidal stimulation,
+this question can be answered in frequency space. They show that the signal to
+noise ratio (SNR), i\.e\. the ratio between the signal power related to the
+sinusoidal stimulation to the power related to random fluctuations is given by
+$\text{SNR}=N\lambda\nu^2T$, where $N$ is the number of independent sources,
+i.e. incoming axons, $\lambda$ is the mean firing rate of the axons, $\nu$ is
+the vector strength, meaning the degree of synchronization between the fibers,
+and $T$ is the time over which the response is recorded. The recording length
+$T$ (or equivalently, the number of repetitions) has to be chosen such that the
+SNR is large enough, e\.g\. > 100, to be fit to the model. In the case of the barn
+owl, the SNR for a recording of 80 ms was given as 417 by @Kuokkanen2010Origin
+for tonal stimulation. The data shown here used the average over 10 trials with
+a duration of 5 ms each corresponding to a total duration of 50ms. This would
+lead to an SNR of 260 which is sufficiently large. In general, as long as there
+is some non-zero degree of synchronization between axon fibers, a desired SNR
+can be obtained by increasing the recording time.
+
+
 Dipole moments of idealized axon bundles
 ----
 
@@ -861,7 +883,7 @@ the same order of magnitude as the value ($\approx$\ 1\ µV) reported by
 
 In cases in which the pulse activation is longer, as is often the case for more
 in visual evoked potentials, where the durations can exceed 10 ms
-[@Mitzdorf1985Current;Schroeder1991Striate;Schroeder1998Spatiotemporal;Self2013Distinct],
+[@Mitzdorf1985Current;@Schroeder1991Striate;@Schroeder1998Spatiotemporal;@Self2013Distinct],
 the situation was different. Using the same parameters as for the
 thalamocortical projection used before, but increasing the number of fibers by
 a factor of 100, increasing the width of the pulse to 10 ms and the maximal
@@ -1033,7 +1055,7 @@ our model. Given that synaptic boutons are several orders of magnitude smaller
 in NL and cortex, we do not expect a similar effect in our system.
 
 The currents flowing in somewhat smaller synaptic boutons were studied by
-@Geiger, who recorded from the terminals of hippocampal mossy fibers. They
+@Geiger2000Dynamic, who recorded from the terminals of hippocampal mossy fibers. They
 examined the effects of both the calcium and potassium conductances. The
 potassium conductances had the effect of broadening the incoming spikes in an
 activity-dependent manner. This spike broadening is hypothesised to be mediated
@@ -1042,7 +1064,7 @@ of > 100 ms, and is therefor not relevant to the present study. It could be
 captured by incorporating a variable $\sigma_\text{spike}$ in Equation
 \ref{eqn:pmax}.
 
-The calcium currents reported by @Geiger are triggered by individual spikes and
+The calcium currents reported by @Geiger2000Dynamic are triggered by individual spikes and
 take place on a timescale of a few ms, and are as such more relevant to this
 study. They show only inflowing currents in the bouton compartment. This
 implies that the return currents flow along the axon, leading to an axial
@@ -1132,17 +1154,24 @@ Multi-compartment model of axons
 ---------------------
 
 We modeled axons using NEURON [@Hines1997NEURON; @Hines2009NEURON] and extended
-previous work by @Kuba2009Roles, which included the high- and low-threshold
-potassium channels used by @Rathouz1998Characterization. The axon was modeled
-as a sequence of active nodes and passive myelinated segments. The nodes and
-myelinated segments had lengths of 2\ µm and 75\ µm, respectively. In order to
-avoid nodes ligning up in axial direction, the very first myelinated segment
-had a length drawn from a uniform distribution between 0 and 75\ µm. We
-included branching axons in our simulations. Branches were generated by
-connecting two passive segments to a node, and continuing the alternation of
-active and passive segments in each resulting branch. In cases where the
-positions of bifurcations or terminations of axons were fixed, the closest
-passive segment was shortened in order to obtain the total length before the
+previous work by @Simon1999Dendritic and @Kuba2009Roles, which included the
+high- and low-threshold potassium channels used by
+@Rathouz1998Characterization. The axon was modeled as a sequence of active
+nodes and passive myelinated segments. The nodes and myelinated segments had
+lengths of 2\ µm and 75\ µm, respectively. We used the model of an NM axon
+provided by @Simon1999Dendritic in ModelDB (@Hines2004ModelDB, Accession number:
+153998). The parameters of the conductances that were modified from those
+provided by @Simon1999Dendritic are shown in Table 1. The Q10 values were set
+to 3 and the teperature was set to 40$,^{\circ}\text{C}$ as done by
+@Kuba2009Roles. In order to avoid nodes lining up in axial direction, the very
+first myelinated segment had a length drawn from a uniform distribution between
+0 and 75\ µm. We included branching axons in our simulations. Branches were
+generated by connecting the incoming passive segment to one end of a node, and
+the two outgoing passive segments to the other end of the node, and then
+continuing the alternation of active and passive segments in each resulting
+branch. In cases where the positions of bifurcations or terminations of axons
+were fixed, the last node was placed in the axon as usual, and the last
+myelinated segment was shortened in order to obtain the total length before the
 bifurcation or termination. To approximate the infinitely long axons, we added
 segments of appropriate length before and after the shown portions of the axon.
 We chose the additional length by incrementally increasing the length until
@@ -1210,7 +1239,67 @@ filtering was performed with third-order Butterworth filters. The multiunit
 activity (MUA) was calculated by high-pass filtering the signal with a cutoff
 of 2500\ Hz, setting all samples with negative values to zero, and then
 low-pass filtering the resulting response with a cutoff of 500\ Hz. The LFP was
-calculated by low-pass filtering the signal with a cutoff of 1000\ Hz.
+calculated by low-pass filtering the signal with a cutoff of 1000\ Hz. To
+exclude spectral leakage effects we also performed the same analysis with 20th
+order Butterworth filters and found qualitatively identical results.
+
+Symbol                          Meaning                              Value
+------                          --------                             -----
+$R_a$                           axial resistance                     50 $\Omega$cm
+$\bar{g}_\text{Na}$             maximum sodium conductance           2.4 $\text{S}/\text{cm}^2$
+$\bar{g}_\text{KLVA}$           maximum KLVA potassium conductance   0.1 $\text{S}/\text{cm}^2$
+$\bar{g}_\text{KHVA}$           maximum KHVA potassium conductance   1.5 $\text{S}/\text{cm}^2$
+$g_\text{leak}^\text{node}$     leak conductance in node             1 $\text{mS}/\text{cm}^2$
+$g_\text{leak}^\text{myelin}$   leak conductance in myelin           1 \textmu$\text{S}/\text{cm}^2$
+$E_\text{leak}$                 leak reversal potential              -72 mV
+$E_\text{K}$                    potassium reversal potential         -80 mV
+$E_\text{Na}$                   sodium reversal potential            50 mV
+$c_m^\text{node}$               membrane capacitance in node         1 \textmu$\text{F}/\text{cm}^2$
+$c_m^\text{myelin}$             membrane capacitance in myelin       1 $\text{nF}/\text{cm}^2$
+
+Table: Parameter values used for the multi-compartment model.
+<!--
+KLVA
+
+alpha0 = 0.2 (/ms)		
+alphaVHalf = -60 (mV)
+alphaK = 21.8 (mV)		
+beta0 = 0.17 (/ms)		
+betaVHalf = -60 (mV)
+betaK = 14 (mV)			
+q10	= 2.0				
+T0	= 23 (degC)			
+
+KHVA
+
+gkbar = 0.04 (S/cm2)
+alpha0 = 0.11 (/ms)	
+alphaVHalf = -19 (mV)
+alphaK = 9.10 (mV)	
+beta0 = 0.103 (/ms)	
+betaVHalf = -19 (mV)
+betaK = 20.0 (mV)	
+q10	= 2.0			
+T0	= 23 (degC)		
+
+NA
+
+alpham0 = 1.0 (/ms)		
+alphamVHalf = -40 (mV)
+alphamK = 10.0 (mV)		
+betam0 = 4.0 (/ms)		
+betamVHalf = -65 (mV)
+betamK = 18.0 (mV)		
+alphah0 = 0.07 (/ms)	
+alphahVHalf = -65 (mV)
+alphahK = 20.0 (mV)		
+betah0 = 1.0 (/ms)		
+betahVHalf = -35 (mV)
+betahK = 10.0 (mV)		
+q10	= 3.0				
+T0	= 6.3 (degC)		
+-->
+
 
 Mean field model of an axon bundle
 ----------------------------
@@ -1380,14 +1469,15 @@ distance is a simplification of a three-dimensional axon tree where the fibers
 are distributed at various distances. The distance parameter $\rho$ in Equation \ref{eqn:simple_field_pot} can be
 interpreted as an average distance in this simplification.
 
-To aid the convergence of the fit algorithm, an
-initial guess for the number of fibers $n(z_z)$ was set by hand.
-Initializing the guess to a constant or a fully random number of fibers resulted in
-a failure to converge. However, Gaussian-like initial guesses converged
-to a single solution, meaning that the specific initial guess did
-not alter the final fit result. The results shown in @fig:barnowl were obtained with
-an initial guess of a Gaussian with amplitude 12, centered at penetration depth
-725 µm with standard deviation 400 µm.
+To aid the convergence of the fit algorithm, an initial guess for the number of
+fibers $n(z_n)$ was set by hand. Initializing the guess to a constant or a
+fully random number of fibers resulted in a failure to converge. However,
+different Gaussian-like initial guesses converged to a single solution, meaning
+that the specific initial guess did not alter the final fit result. Setting the
+initial guess for the membrane voltage with different normally distributed
+values did not affect the outcome of the fit. The results shown in @fig:barnowl
+were obtained with an initial guess of a Gaussian with amplitude 12, centered
+at penetration depth 725 µm with standard deviation 400 µm.
 
 Because of the linearity of Equations \ref{eqn:basic}-\ref{eqn:simple_field_pot}
 <!-- dangerous, if equation numbers are changed. Please use \ref instead.
