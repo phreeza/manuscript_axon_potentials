@@ -44,7 +44,7 @@ of a neuron [@Holt1999Electrical;
 and modeling efforts have revealed that active, non-synaptic membrane currents
 can play an important role in generating population-level EFPs [@Reimann2013Biophysically;
 @Anastassiou2015Cell; @Schomburg2012Spiking; @Ray2011Different;
-@Belluscio2012CrossFrequency; @Waldert2013Influence; @Ness2016Active; @SchefferTeixeira2013HighFrequency; Reichinnek2010Field; Sinha2015HCN;Taxidis2015Local], including far reaching potentials detectable at
+@Belluscio2012CrossFrequency; @Waldert2013Influence; @Ness2016Active; @SchefferTeixeira2013HighFrequency; @Reichinnek2010Field; @Sinha2015HCN;@Taxidis2015Local], including far reaching potentials detectable at
 the scalp [@Telenczuk2011Highfrequency; @Telenczuk2015Correlates].
 Currents from the axon are still thought to be so small as to be of minor
 importance for the EFP.
@@ -638,13 +638,17 @@ In addition, there is a low-frequency component in the response
 The cutoff to split the components was set to 2\ kHz because this frequency was
 always well below the high-frequency ringing component.
 
-The same simplified model used in [@fig:distscaling]
-was fit to the data (example in [@fig:expmethod]) by
-performing a nonlinear least squares optimization. Free parameters were (1) the
-number of fibers at the depth of each recording location, (2) the average
-spatial derivative of the membrane potential over time in the fibers at the
-location next to the most dorsal electrode, (3) the axonal conduction velocity,
-and (4) the distance between the axon bundle and electrode array.
+The same simplified model used in [@fig:distscaling] was fit to the data
+(example in [@fig:expmethod]) by performing a nonlinear least squares
+optimization. The model only considered the average membrane potential across
+the fibers, and calculated the membrane currents based on a density of fibers
+instead of simulating individual fibers. The model also discarded the radial
+extent of the bundle, treating it as a line. See Materials and Methods section
+for more details on the model. Free parameters to be fit were (1) the number of
+fibers at the depth of each recording location, (2) the average spatial
+derivative of the membrane potential over time in the fibers at the location
+next to the most dorsal electrode, (3) the axonal conduction velocity, and (4)
+the distance between the axon bundle and electrode array.
 
 
 ![Multielectrode recordings in the barn owl show dipolar axonal EFPs. (**A**)
@@ -808,9 +812,6 @@ p_\text{max} = \frac{2  \pi^2  a^2 \bar{n} \bar{\lambda}_{\text{pulse}} \bar{V}_
 \quad .
 \end{align}
 
-<!-- Please use an equation number because you refer to it below (at least two times)
-as "this formula" whereas "Equation XX" would be much better -->
-
 Equation \ref{eqn:pmax} tells us that the dipole moment is proportional to $a^2$,
 $\bar{n}$, $\bar{\lambda}_{\text{pulse}}$, $\bar{V}_{\text{spike}}$, and $1/r_L$. The
 dependence on $v$ and the widths is more complicated; the response is
@@ -962,6 +963,15 @@ about locations more distant from the recording site ([@fig:distscaling]),
 consistent with findings on non-axonal EFPs
 [@Pettersen2008Amplitude;@Leski2013Frequency].
 
+Note that the cutoff frequencies used to separate LFP and MUA are relatively
+high compared to those used in cortical or hippocampal studies, because our
+modeling and experiments were performed in the auditory system of the barn owl,
+which operates on very short time scales and, consequently, high frequencies.
+We expect other systems operating on slower time scales to have lower optimal
+cutoff frequencies separating the components. Equation \ref{eqn:pmax} gives and
+indication of how the different spatial and temporal system properties relate
+to each other.
+
 Dipolar fields are essential for the generation of electrical
 field potentials at greater distances from the brain. The most prominent of
 these is the EEG, which is commonly attributed to the dipolar contributions of
@@ -1081,17 +1091,28 @@ synaptic bouton compartments could nonetheless an interesting extension of the
 model for further refinement in future work.
 
 Modeling the myelinated compartments, we took the classical view that they are
-purely passive and strongly insulated from extracellular space. Recent work
-(**refs, Einevoll???**) has shown that myelinated compartments do in fact express active
-conductances, and that such active conductances shape the spectrum of the EFP (**refs**),
-leading to 1/f scaling. We expect such a modification to lead to a different
-shape of the spectrum at any given point, as predicted by **refs**. The
-conclusions drawn by our analytical model are, however, independent of the
-precise active conductances and distribution of myelinated and active segments
-along the axons, as it only considers averages across an entire bundle, and
-effective waveforms of the action potential. We therefor do not expect the
+purely passive and strongly insulated from extracellular space. It has been
+shown that myelinated compartments do in fact express active conductances, in
+particular in the paranodal region of the myelinated sections
+[@Chiu1981Evidence;@Waxman1985Organization]. Including this more detailed
+distribution of ion channels should could lead to a different shape of the
+spectrum at any given point, in a similar manner to the effect described by
+@Ness2016Active for active conductances on dendrites. The conclusions drawn by
+our analytical model are, however, independent of the precise active
+conductances and distribution of myelinated and active segments along the
+axons, as the model only considers averages across an entire bundle,
+and effective waveforms of the action potential. We therefore do not expect the
 spatial scaling of the entire waveform or individual frequency components to be
 affected by active conductances in the myelinated segments.
+
+Because of the treatment of effective waveforms, our analytical model does not
+include any intrinsic low-pass filtering as can be derived for dendritic models
+[@Linden2010Intrinsic;@Einevoll2013Modelling; for reviews see @Buzsaki2012Origin]. The effective additional currents
+flowing at bifurcations and terminations, as well as the capacitive currents,
+are low-frequency contributions to the overall membrane currents in our model.
+Extending our model to treat these currents separately might show if axons
+could contribute to the observed $1/f$ scaling of the EFP
+[@Pritchard1992Brain].
 
 Conclusion
 ----------
@@ -1194,7 +1215,6 @@ Gaussian distribution with mean zero and a width of 300 µm.
 This was done to smooth out the effects of individual branchings or
 terminations.
 
-
 For the axons in [@fig:bigtree], branching patterns
 were generated procedurally, starting with a root segment. In order to avoid
 artifacts from the stimulus and to simulate a long fiber tract prior to the terminal
@@ -1257,7 +1277,7 @@ $E_\text{Na}$                   sodium reversal potential            50 mV
 $c_m^\text{node}$               membrane capacitance in node         1 \textmu$\text{F}/\text{cm}^2$
 $c_m^\text{myelin}$             membrane capacitance in myelin       1 $\text{nF}/\text{cm}^2$
 
-Table: Parameter values used for the multi-compartment model.
+Table: Parameter values used for the multi-compartment model which were modified from those used by @Simon1999Dendritic.
 <!--
 KLVA
 
