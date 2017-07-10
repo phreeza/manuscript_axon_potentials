@@ -1055,8 +1055,8 @@ In the systems we were aiming to approximate with our model, NL and
 thalamocortical projections, synaptic boutons are typically small, and we did
 not model them explicitly. In other systems, such as the neuromuscular
 junction, the synaptic ultrastructure can be very large when compared to the
-axon bundle.(**ref that is not Gydkov**) Such a large junction with an overall
-length of 1 mm was modeled by @Gydikov1986Extracellular. They found a
+axon bundle [@Harris1979Relationship]. Such a large junction with an overall
+length of up to1 mm was modeled by @Gydikov1986Extracellular. They found a
 significant effect of this structure on the extracellular field potential. The
 single flaring and tapering neuromuscular junction had a similar effect to the
 entire projection zone in our model, with the flaring causing a similar effect

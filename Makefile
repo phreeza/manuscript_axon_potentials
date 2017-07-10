@@ -49,10 +49,10 @@ cleanrefs:
 figs: $(FIGS)
 
 figs/fig_1.pdf: bin/build_fig1.py 
-	python bin/build_fig1.py
+	python bin/build_fig3.py
 
 figs/fig_2.pdf: bin/build_fig2.py
-	python bin/build_fig2.py
+	python bin/build_fig3.py
 
 figs/fig_3.pdf: bin/build_fig3.py
 	python bin/build_fig3.py
