@@ -39,7 +39,7 @@ def run_fig2(pot, n_rows, n_cols, **params):
           gridspec.GridSpec(10, 14, top=0.48, bottom=0.1)]
     raw_pot = pot['pot']/1e6
     dt = 0.0025
-    filt_freq = params['filt_freq']
+    filt_freq = params['filt_freq']t
 
     filter_type = ['lowpass', 'highpass']
 

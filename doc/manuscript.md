@@ -15,7 +15,7 @@ author:
     - Paula T Kuokkanen,\footnotemark[1] \footnotemark[2]
     - Catherine E Carr,\footnotemark[2]
     - Hermann Wagner,\footnote{Institute for Biology II, RWTH Aachen, Aachen, Germany}
-    - Richard Kempter\footnotemark[1]
+    - Richard Kempter\footnotemark[1] \footnote{Bernstein Center for Computational Neuroscience, Berlin, Germany} \footnote{Einstein Center for Neurosciences, Berlin, Germany}
 
 
 title: Dipolar\ extracellular\ potentials generated\ by\ axonal\ projections
@@ -265,7 +265,7 @@ increase in population spiking activity.
 To characterize the spatiotemporal dynamics of the evoked EFP, the time course
 of the potential was calculated for several locations along the axon trunk. We
 divided our analysis into two frequency bands by filtering the responses. The
-first frequency band was the local field potential (LFP) obtained by low-pass
+first frequency band was obtained by low-pass
 filtering with a cutoff frequency of 1\ kHz ([@fig:bigtree]A--C). The second frequency band was the
 multiunit activity (MUA) obtained by high-pass filtering with a cutoff
 frequency of 2.5\ kHz ([@fig:bigtree]D--F). To make the MUA easier to interpret in terms of overall
@@ -273,7 +273,7 @@ activity reflected, it was half-wave rectified and low-pass filtered (<500\ Hz, 
 Materials and Methods). The two frequency bands showed a qualitatively different spatiotemporal
 response in the vicinity of the projection zone, as we will show in the following.
 
-We first studied the effect of the Gaussian rate pulse on the LFP
+We first studied the effect of the Gaussian rate pulse on the low-pass filtered EFP
 ([@fig:bigtree]B). The filtering used to obtain the LFP removed most of the
 identifiable components of individual spikes, while a population-level LFP signal
 remained. The distribution of the maximum amplitudes of these responses is shown
@@ -318,10 +318,6 @@ progression of amplitudes in the low-frequency components seen in
 column. The polarity reversal in the center of [@fig:bigtree]B corresponds to
 the crossing of zero amplitude in [@fig:bigtree]C.
 
-<!-- Why are the units for the density of nodes in Figs 2C and 2F different:
-node/um^2 vs.  node/um ? 
--->
-
 ![An activity pulse in an axonal projection generates a dipole-like local field
 potential (LFP). (**A**) Modeled example axon from the simulated bundle in
 black, along with iso-potential lines for the low-pass filtered (<1\ kHz) EFP
@@ -345,32 +341,6 @@ Materials and Methods) in black. (**F**) Maximum amplitude of the MUA component
 different units of the histograms in (C) and (F), due to the fact that (C) is
 the derivative in space of (F).
 ](figs/fig_2.pdf){#fig:bigtree height=110%}
-
-<!--To better understand the relationship between axonal anatomy and this spatial
-structure of the EFP, we plotted the change in density of the bundle, meaning
-the number of terminations subtracted from the number of bifurcations at a
-given 
-
-The low-frequency component shows a distinct relationship to the anatomy: it
-appears to be governed by the local density of bifurcations and terminations.
-Along the nerve trunk the fiber density is constant, and the low frequency
-component is unchanged. As the axon bundle reaches its projection zone, the
-number of bifurcations increases, and the low frequency component increases in
-amplitude. In the middle of the projection zone, the number of bifurcations and
-terminations cancels out.  Correspondingly, the low-frequency component
-amplitude reaches a local minimum.  As the end of the projection zone
-approaches, the terminations outweigh the bifurcations, and the amplitude
-increases, but the polarity is reversed (red box in [@fig:bigtree]B). As the
-axon bundle ends, there are no longer any bifurcations or terminations, and the
-amplitude decays.
-
-The same distribution of maximum amplitudes for the high-frequency component,
-shown in [@fig:bigtree]D, did not show the same lobed shape. Instead it decayed
-much faster with distance in both axial and radial direction. This was also
-reflected in the waveforms (Fig 1E). There is an increase in amplitude due to
-the firing rate pulse at locations close to the nerve bundle, but at locations
-further away from the trunk it is no longer distinguishable from the background
-activity.-->
 
 To understand how the EFP contributions are related to individual spikes, we next
 turned our attention to the high-frequency MUA response. The MUA is thought to
@@ -421,10 +391,6 @@ bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 
 number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions.
 ](figs/fig_3.pdf){#fig:distscaling}
 
-<!-- Can you move the Fig. 3 to this point in the manuscript?!
-Please add axis label "Frequency [kHz]" in C 
--->
-
 In order to separate the effects of any radial fanning out of the axon bundle
 from the effects of bifurcations and terminations, and to afford better
 analytic tractability, we transitioned back to a simpler one-dimensional model of
@@ -463,9 +429,6 @@ of our model, the frequency responses obtained in this manner are applicable to
 the Fourier components of any membrane potential
 time-course. We then calculated the average amplitude of the resulting EFP
 response by taking the standard deviation.
-<!-- What was the spectrum of the membrane potential time course in Figs3 A and B?
-I think that it is important to know this spectrum because we show amplitudes
-in frequency ranges < 1kHz and > 2.5 kHz, and the amplitude depends on the shape of the spectrum. -->
 
 The dipole-like component observed in [@fig:bigtree] for the low-frequency
 component had its dipole axis aligned with the axon trunk. We therefore
@@ -510,17 +473,6 @@ scaling was also $r^{-2}$ for axial distances $> 1$\ mm in both cases. However,
 unlike in the low-frequency case, the amplitudes were similar between
 bifurcating and non-bifurcating cases. This meant that the presence of a bifurcation zone
 did not contribute to the high-frequency dipole moments in the EFP.
-
-<!--In contrast to the axial direction, the dipole hypothesis predicts a different
-scaling behaviour of the EFP for the radial direction. The dipole component
-becomes zero in the direction perpendicular to the dipole axis, and we thus
-expected quadrupolar or higher-order scaling behaviour in this case. In
-[@fig:distscaling]C we can see that this is indeed the case for the
-low-frequency component. The potentials scale as $r^{-3}$, and the difference in
-logarithmic amplitude between bifurcating and non-bifurcating case is roughly
-the same at all distances. The high-frequency component also decayed as
-$r^{-3}$ in the radial direction ([@fig:distscaling]D), but the difference in
-logarithmic amplitudes was slightly diminished at larger distances. -->
 
 Frequency-dependence of dipolar axonal EFPs
 ----
@@ -1500,8 +1452,6 @@ were obtained with an initial guess of a Gaussian with amplitude 12, centered
 at penetration depth 725 µm with standard deviation 400 µm.
 
 Because of the linearity of Equations \ref{eqn:basic}-\ref{eqn:simple_field_pot}
-<!-- dangerous, if equation numbers are changed. Please use \ref instead.
-Please check for other cases in manuscript where \ref was not used-->
 both in the current $I$ and the
 membrane potential $V$, inferring the membrane voltage $V$ from the average
 over trials of the EFP $\phi$ produces the average membrane voltage $V$. This
@@ -1517,88 +1467,6 @@ System" as part of the NSF/NIH/ANR/BMBF/BSF Collaborative Research in
 Computational Neuroscience Program, 01GQ1505A.
 
 The authors wish to thank Anna Kraemer for help with animal handling and surgery; and Martina Michalikova and Tiziano D'Albis for helpful comments on a draft of this manuscript.
-
-<!--
-* Show how a dipole emerges in simple case
-* Flesh out frequency response
-* Can the inverse problem be solved ($v$,$n$,$V$)?
-
-$$\tilde{I}(z,\omega) = i\frac{dn}{dz}(z)\cdot\frac{\omega}{v}\tilde{V}(z,\omega)-n(z)\cdot\frac{\omega^2}{v^2}\tilde{V}(z,\omega)$$
-$$\left|\tilde{I}(z,\omega)\right| = \sqrt{\left(\frac{dn}{dz}(z)\right)^2+\left(n(z)\cdot\frac{\omega}{v}\right)^2}\cdot\frac{\omega}{v}\left|\tilde{V}(z,\omega)\right|$$
-
-Todos
-=====
-- Code
-    - check units
-    - Model fit
-      - set density at border to zero in fit
-      - calculate R^2
-      - annotate contra/ipsi from labbooks
-      - fit many units
-      - Inspect cases in which fit doesn't work great
-- Results
-    - Order of magnitude estimate
-- Figures
-    - Methods figure
-    - Reorder fit figure (C,D)<->(A,B)
-- Methods
-- Discussion
-    - mismatch in conduction velocities
-- Abstract
-
-Done
-====
-- Introduction
-    - find more examples in literature
-- Code
-    - adapt generic bundle params to be more typical
-    - make click psth more generic
-    - pandoc figure refs
-    - implement new simplification
-- Figures
-    - [@fig:simpletree]
-        - caption
-        - single axons
-            - straight
-            - branching
-            - terminating
-        - compound
-        - single axons
-            - multibranch
-            - endings and snips
-        - Figures E and F
-          - PSTH
-          - CSD
-        - better alignment in D
-    - [@fig:bigtree]
-        - version with MUA
-        - lower density of axons
-        - Add scalebar for time
-        - change color of axis label
-        - change color of box
-        - add PSTH
-        - align zeros in C
-        - add contour labels?
-    - [@fig:barnowl]
-        - redo with new data
-    - [@fig:distscaling]
-        - add diagrams
-        - space between B and C
-        - better location for axial scaling
-    - [@fig:anamodel]Bb log scale
-- Results
-    - move forward effect explanation and describe [@fig:simpletree]
-    - Page 4 changes
-    - much more substantial explanation of [@fig:distscaling]
-    - describe differences between barn owl and generic model
-    - Add more biological motivation for [@fig:distscaling] normalization
-- Methods
-    - Adapt analytical model to new method
-    - Add simplified explanations of:
-        - spatial filtering
-        - dipole/stationary potentials
-    - relationship to CSD
--->
 
 Bibliography
 ===
