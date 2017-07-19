@@ -21,7 +21,7 @@ author:
 title: Dipolar\ extracellular\ potentials generated\ by\ axonal\ projections
 
 
-abstract: Extracellular field potentials (EFPs) are an important source of information in neuroscience, but their physiological basis is in many cases still a matter of debate. Axonal sources are typically discounted in modeling and data analysis because their contributions are assumed to be negligible. Here, we showed experimentally and theoretically that contributions of axons to EFPs can be significant. Modeling action potentials propagating along axons, we showed that EFPs were prominent in the presence of a terminal zone where axons branch and terminate in close succession, as found in many brain regions. Our models predicted a dipolar far field and a polarity reversal at the center of the terminal zone. We confirmed these predictions using EFPs from the barn owl auditory brainstem where we recorded in nucleus laminaris using a multielectrode array. These results demonstrate that axonal terminal zones produce EFPs with considerable amplitude and spatial reach.
+abstract: Extracellular field potentials (EFPs) are an important source of information in neuroscience, but their physiological basis is in many cases still a matter of debate. Axonal sources are typically discounted in modeling and data analysis because their contributions are assumed to be negligible. Here, we showed experimentally and theoretically that contributions of axons to EFPs can be significant. Modeling action potentials propagating along axons, we showed that EFPs were prominent in the presence of terminal zones where axons branch and terminate in close succession, as found in many brain regions. Our models predicted a dipolar far field and a polarity reversal at the center of the terminal zone. We confirmed these predictions using EFPs from the barn owl auditory brainstem where we recorded in nucleus laminaris using a multielectrode array. These results demonstrate that axonal terminal zones produce EFPs with considerable amplitude and spatial reach.
 ...
 
 Introduction
@@ -378,17 +378,17 @@ zone with bifurcations and terminations. Moreover, as a control, we also
 simulated an axon bundle without bifurcations in which a fixed number of fibers
 simply terminates.
 
-![The low-frequency (<1\ kHz) component of the axon bundle EFP exceeds the
-high-frequency (>2.5\ kHz) component in reach.
-The scaling of the low-frequency (**A**, blue lines) and
-high-frequency (**B**, green lines) components for the bifurcating (solid
-lines) and non-bifurcating (dashed lines) axons on a double-logarithmic scale.
+![The low-frequency (<1\ kHz) component of the axon bundle EFP is influenced supralinearly by a projection zone, while the
+high-frequency (>2.5\ kHz) component is not.
+(**A**, ) Low-frequency and (**B**) membrane potential oscillations in comparison to the with $\sigma$ of the projection zone (top diagram). The scaling of the low-frequency (**A**, blue lines) and
+high-frequency  EFP components for the bifurcating (solid
+lines) and non-bifurcating (dashed lines) axons decay with axial distance from the axon bundle on a double-logarithmic scale (bottom row).
 All distances are calculated from the center of the terminal zone. For
 comparison, scalings that follow $r^{-2}$ are shown (black lines). (**C**)
 Normalized dipole moments of the bifurcating and non-bifurcating bundles as
 a function of frequency. (**D**) Ratio of the dipole moments between
 bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 10 of the
-number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions.
+number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions. Vertical gray line in C and D indicates the width of the projection zone $\sigma$.
 ](figs/fig_3.pdf){#fig:distscaling}
 
 In order to separate the effects of any radial fanning out of the axon bundle
@@ -466,7 +466,7 @@ interference occurs when the spatial width of the oscillation agrees with that
 of the projection zone. In this case the currents from fibers outside the
 projection zone on average interact destructively with the overall response. It
 follows that increasing the number of fibers outside the bifurcation zone
-diminishes the overall response amplitude.
+diminishes the overall response amplitude (diagrams at top of [@fig:distscaling]A and B).
 
 Next, we examined the high-frequency (>2.5\ kHz)  component
 ([@fig:distscaling]B). As in the low-frequency case, the response at distances
@@ -588,9 +588,7 @@ high-frequency  ([@fig:expmethod]C) components, as previously reported
 corresponds to the recording location on the frequency map within NL, and
 the ringing reflects the frequency tuning and phase locking of the incoming axons.
 In addition, there is a low-frequency component in the response
-([@fig:expmethod]B). We filtered the data to roughly separate these components.
-The cutoff to split the components was set to 2\ kHz because this frequency was
-always well below the high-frequency ringing component.
+([@fig:expmethod]B). We filtered the data to separate these components, using the same cutoff frequencies as before for low-frequency (<1 kHz) and high-frequency (>2.5 kHz) EFP.
 
 The same simplified model used in [@fig:distscaling] was fit to the data
 (example in [@fig:expmethod]) by performing a nonlinear least squares
@@ -613,8 +611,8 @@ overlying the IVth ventricle (\*), and penetrated into the nucleus laminaris
 (NL). The recordings were made in NL, and electrodes extended to both sides of
 the nucleus. The outline of the probe is shown in light green, with the
 recording electrodes indicated by magenta dots, and the reference electrode
-as a magenta rectangle. The low-frequency (<2\ kHz) component (**B**) and
-the high-frequency (>2\ kHz) component (**C**) are ordered in the same way as the
+as a magenta rectangle. The low-frequency (<1\ kHz) component (**B**) and
+the high-frequency (>2.5\ kHz) component (**C**) are ordered in the same way as the
 electrodes, with three examples connected to their recording sites by black
 lines. The time scales in B and C are identical (indicated by scale bar). Traces were averaged over 10 repetitions. Voltage
 scales are indicated by individual scalebars.
@@ -625,11 +623,11 @@ scales are indicated by individual scalebars.
 owl can be explained by a model of axonal field potentials (for details, see
 Materials and Methods). (**A**) Membrane voltage averaged across fibers in the
 model when fit to the data. (**B**) Fitted number of fibers in the model as
-a function of penetration depth. (**C**) Low-frequency ($\leq 2$\ kHz)
+a function of penetration depth. (**C**) Low-frequency ($> 1$\ kHz)
 components of the EFP in response to a click stimulus at time 0\ ms, at
 different recording depths. The depth is measured in the direction from dorsal
 to ventral. Recorded responses (orange) are shown along with model fits
-(black). (**D**) High-frequency ($\geq 2$\ kHz) responses in recordings (orange)
+(black). (**D**) High-frequency ($> 2.5$\ kHz) responses in recordings (orange)
 and model (black). Recorded traces were averaged over 10 repetitions.
 ](figs/fig_5.pdf){#fig:barnowl height=115%}
 
@@ -645,7 +643,7 @@ array, and decays steadily to both sides. This profile of the number of fibers
 is consistent with the known anatomy of axons in NL
 [@carr90;@Kuokkanen2010Origin].
 
-The low-frequency ($30$\ Hz - $2$\ kHz, [@fig:barnowl]C) responses reveal the
+The low-frequency ($<1$\ kHz, [@fig:barnowl]C) responses reveal the
 typical polarity reversal that we predicted for an axonal terminal zone
 ([@fig:simpletree;@fig:bigtree]). The dorsoventral depth is now
 on the vertical axis, meaning that the vertical axis of [@fig:barnowl]C and
@@ -665,7 +663,7 @@ deviations are likely due to slightly inhomogeneous conduction velocities or
 non-axonal sources.
 
 In addition to the dipolar behavior of the low-frequency response, we also
-examined the  high-frequency ($\geq 2$\ kHz) response, shown in
+examined the  high-frequency ($> 2.5$\ kHz) response, shown in
 [@fig:barnowl]C. The responses have a Gabor-like shape, as expected
 [@wagner09], with maximum amplitude in the center of the recording array, at
 around 850\ µm penetration depth. The axonal conduction velocity was calculated
@@ -708,11 +706,11 @@ recordings from 3 different owls, with monaural stimulation from both ears
 correlation coefficient for all recordings was $R^2=0.56\pm 0.15$. The
 correlation coefficient for the example shown in [@fig:barnowl] was 0.62.
 
-We note that in fitting the model to the data, we are referring to the membrane
-voltage averaged over many trials. In order to asses how valid this
+For fitting the model to the data, we have used the membrane
+voltage averaged over many trials. To assess how valid this
 approximation is for a single trial, we referred to the work of
 @Kuokkanen2010Origin, who showed that in the case of a sinusoidal stimulation,
-this question can be answered in frequency space. They show that the signal to
+this question can be answered in frequency space. They showed that the signal to
 noise ratio (SNR), i\.e\. the ratio between the signal power related to the
 sinusoidal stimulation to the power related to random fluctuations is given by
 $\text{SNR}=N\lambda\nu^2T$, where $N$ is the number of independent sources,
@@ -734,7 +732,7 @@ Dipole moments of idealized axon bundles
 
 We have shown theoretically and experimentally for
 specific examples of axonal projection zones and inputs 
-how dipolar EFPs emerge. We now generalize this approach and predict the
+how dipolar EFPs emerge. We now generalize this approach to predict the
 resulting dipolar EFP for arbitrary axon and stimulus configurations. Based on
 our cable-theory model, we analytically derived the maximal dipole
 moment $p_\text{max}$ for a large range of scenarios.
@@ -801,7 +799,7 @@ Dipole sources are also to be expected to make up the majority of the
 electrical signals recorded at the scalp [@Nunez2006Electric]. One such signal
 is the auditory brainstem response (ABR), which is recorded at the scalp in
 response to auditory stimulation with clicks or chirps [@Riedel2002Comparison].
-The amplitude of about 10\ µV of the ABR in the barn owl has recently been reported by
+An amplitude of about 10\ µV of the ABR in the barn owl has recently been reported by
 @PalancaCastan2016Binaural. We calculated the contribution expected from an
 axon bundle with the same characteristics as described before at 2\ cm from NL,
 aiming to estimate the contribution to the ABR. Multiplying by a factor of 2 to
@@ -809,19 +807,19 @@ account for the fact that there is an NL in each hemisphere, the predicted
 contribution was 2.3\ µV, which is of the same order of magnitude as the
 value reported in the experiments.
 
-Using the membrane currents and locations obtained by fitting to the data in
+Using the membrane currents and locations obtained from fitting the data in
 the previous section, we were also able to calculate the expected dipole
 contribution from the vicinity of the multielectrode array. We obtained a value
 of $\approx 58 \text{µA}\cdot\text{µm}$. This was significantly smaller than
 the value obtained for the entire NL above. It is plausible that the
 neighborhood of the multielectrode only contributes a small fraction of the
 dipole moment, because the average distance of the contributing fibers was fit
-as 162\ µm, corresponding to a small part of NL, which extends to more than 1
+as 162\ µm, corresponding to a small part of NL, which extends more than 1
 mm in mediolateral direction.
 
 As a second example, we considered thalamocortical projections, for which
 @Swadlow2000Influence reported amplitudes of extracellular spike-related
-potentials, called axon terminal potentials (AxTP), at various locations; for example, at 400
+potentials, called axon terminal potentials, at various locations; for example, at 400
 µm from the center of the dipole, they reported an amplitude of the response of $\approx$\ 1\ µV.
 Individual thalamocortical axons are thin and have large and highly
 branched projection zones [@Feldmeyer2012Excitatory], so we estimated
@@ -846,6 +844,8 @@ smaller than in the case of the brief pulse discussed above. However, when we fu
 to 0.4 m/s, the same 10 ms pulse produced a dipole moment of $0.39\,
 \text{µA}\cdot\text{µm}$. Such low conduction velocities can, for example, be
 found in cortico-cortical projections [@Swadlow1989Efferent].
+
+We do not predict that axonal projections contribute to the far fields of local and intrinsically generated brain oscillations, such as the hippocampal ripple or gamma oscillations. This is due to the mismatch between the spatial width and oscillation wavelength. For example, for 200 Hz ripple oscillations and ~0.5 m/s conduction velocity (Schaffer collaterals) the spatial wavelength is ~2.5 mm, which is much larger than typical projection zones in the hippocampal formation.
 
 <!-- 2*(1um)^2*pi^2/(1 Ohm*m*sqrt(e))*.4m/s*250um*10ms*250us*3000*10Hz*70mV/((250um)^2+(0.4m/s)^2*((250us)^2+(10ms)^2)) -->
 
@@ -876,14 +876,14 @@ electrophysiological data in general, and to the estimation of current sources
 in particular. When performing a typical current source density (CSD) analysis,
 the local number of fibers cannot be disentangled from membrane current density
 [@Nicholson1973Theoretical;@Potworowski2011Kernel]. In CSD analysis, the
-membrane current densities can independently vary with time and location. In
-the case of an axonal fiber bundle as discussed here, the situation is
+membrane current densities can vary independently with time and location. In
+the case of an axonal fiber bundle here, the situation is
 different: the number of fibers is variable in space, in particular in the
 terminal zone, but the current sources at different locations are highly
 correlated because they are caused by propagating action potentials. In the
 case presented here ([@fig:barnowl]) where axonal action potentials dominate
-the EFP, it was possible to recover from the recording the (normalized) fiber
-densities and average membrane potentials.
+the EFP, it was possible to recover the (normalized) fiber
+densities and average membrane potentials from the recordings.
 
 Beyond recovering actual fiber densities and membrane potentials, our approach
 enables the interpretation of CSD results in the presence of axon fiber
@@ -901,11 +901,11 @@ potentials in a fiber bundle.
 
 As an example case for a fiber bundle, we recorded from the barn owl nucleus
 laminaris. [@fig:expmethod] and [@fig:barnowl] showed that the low- (<1\ kHz) and
-high-frequency  (>2.5\ kHz) components show qualitatively different behaviours as a function
+high-frequency  (>2.5\ kHz) components exhibit qualitatively different behaviours as a function
 of recording location relative to the terminal zone. The low-frequency
 component is a largely stationary phenomenon, while the fine structure of the
 high-frequency component shifts gradually in space as a function of the axonal
-conduction velocity ([@fig:barnowl]). Low-frequency components have a strong
+conduction velocity ([@fig:barnowl], see also @Carr2015Maps). Low-frequency components have a strong
 dipole moment, meaning that they contribute to the far-field EFP. Due to the
 difference in reach, the high-frequency component is most suitable for the
 study of local phenomena while the low-frequency component bears information
@@ -915,7 +915,7 @@ consistent with findings on non-axonal EFPs
 
 Note that the low-pass filtered EFP is calculated in a similar way to the LFP, with the exception that the cutoff frequencies used to separate the low- and high-pass filtered EFP are relatively
 high compared to those used in cortical or hippocampal studies to separate LFP and MUA. We applied these high cut-offs because our
-modeling and experiments were performed in the auditory system of the barn owl,
+modeling and experiments were performed in the auditory brainstem of the barn owl,
 which operates on very short time scales and, consequently, higher frequencies.
 We expect other systems operating on slower time scales to have lower optimal
 cutoff frequencies separating the components. Equation \ref{eqn:pmax} indicates how the different spatial and temporal system properties relate
@@ -946,8 +946,8 @@ ABR.
 
 We have shown that the EFP in the barn owl NL is consistent with a model of
 axonal sources. We believe synaptic contributions to be small in this case for
-the following reasons: Deflection of the somatic membrane potential due to
-synaptic currents is much smaller than the impact of postsynaptic spikes
+the following reasons: The somatic membrane potentials due to
+synaptic currents are much smaller than the impact of postsynaptic spikes
 [@Ashida2007Passive;@Funabiki2011Computation]. Since postsynaptic spikes
 contribute little to the EFP [@Kuokkanen2010Origin], we suspect that the
 synaptic contributions to the EFP are also small. Furthermore, synaptic EFP
@@ -970,7 +970,7 @@ dendrites with their bipolar morphology generate the dipolar EFP response
 dipolar morphology of neurons is largely absent [@carr90], making dendritic
 sources unlikely. This differential morphology suggests that similar dipolar field potentials in owls
 and mammals emerge from different physiological substrates. Such a convergence
-might point towards an evolutionary pressure favoring such an EFP structure in
+might point towards an evolutionary pressure favoring a bipolar EFP structure in
 coincidence detection systems, and indeed, @Goldwyn2016Neuronal have proposed a
 model in which this extracellular potential enhances the function of
 coincidence detectors through a form of ephaptic interaction. Their approach
@@ -1003,8 +1003,8 @@ Relationships to more detailed biophysical models
 In the systems we were aiming to describe with our model, for example NL and
 thalamocortical projections, synaptic boutons are typically small, and we did
 not model them explicitly. In other systems such as the neuromuscular
-junction, the synaptic ultrastructure can be very large when compared to the
-axon bundle [@Harris1979Relationship;@Katz1950]. Such a large junction with an overall
+junction, the synaptic structure can be very large when compared to the
+axon bundle [@Harris1979Relationship;@Katz1961Terminations]. Such a large junction with an overall
 length of up to 1 mm was modeled by @Gydikov1986Extracellular. They found a
 significant effect of this structure on the EFP. The
 single flaring and tapering neuromuscular junction in their model had a similar effect as the
@@ -1022,14 +1022,14 @@ by slow inactivation of the potassium channels and takes place on a timescale
 of > 100 ms, and is thus not relevant to the present study. Spike broadening could be
 captured in our model by incorporating a $\sigma_\text{spike}$ that is variable in time in Equation \ref{eqn:pmax}.
 
-The calcium currents reported by @Geiger2000Dynamic, further quantified by @Alle2009 (their Figure 1D). Calcium currents were much smaller in amplitude than and temporally overlapping with sodium and potassium currents. We therefore neglegted calcium currents in our model.
+The calcium currents reported by @Geiger2000Dynamic, further quantified by @Alle2009EnergyEfficient (their Figure 1D). Calcium currents were much smaller in amplitude than and temporally overlapping with sodium and potassium currents. We therefore neglected calcium currents in our model.
 
 Modeling the myelinated compartments, we took the classical view that they are
 purely passive and strongly insulated from extracellular space. Myelinated compartments do in fact express active conductances, in
-particular in the paranodal and juxtaparanodal region of the myelinated sections
+particular in the paranodal and juxtaparanodal region
 [@Chiu1981Evidence;@Waxman1985Organization]. Including such a detailed
-distribution of ion channels in our model leads to a different shape of the
-waveform  and spectrum of the EFP of an action potential, possibly in a similar manner to the effect described by
+distribution of ion channels in our model could lead to a different shape of the
+waveform and spectrum of the EFP of an action potential, possibly in a similar manner to the effect described by
 @Ness2016Active for active conductances on dendrites. The conclusions drawn by
 our model are, however, independent of the precise active
 conductances and distribution of myelinated and active segments along the
@@ -1131,7 +1131,7 @@ To evoke an action potential at a designated time, a special conductance was tem
 in the first node of Ranvier. The conductance had a reversal
 potential of 0 mV, a maximal amplitude of 0.05\ µS, and a time course
 described by an alpha-function with time constant 0.01\ ms. Soma and axon
-initial segment were not modeled explicitly. 
+initial segment were not modeled explicitly. This conductance resembled a synaptic conductance, except for the lack of a somatic or dendritic compartment on which synapses typically impinge.
 
 For the simplified axon geometries used in [@fig:simpletree], the branching
 pattern was fixed as described in the caption, with the exception of
@@ -1162,6 +1162,8 @@ deviation of 100 µm. The branching angle had an average of $20^\circ$, with
 a standard deviation of $5^\circ$. At branching points, the plane containing
 the branches had a uniform random orientation, resulting in a 3-dimensional
 structure of the axon bundle.
+
+In all cases except for the simulations in  [@fig:bigtree], the radial position of all node and myelin compartments was set to zero, meaning they were placed on a straight line extending axially.
 
 Numerical simulations of action potentials propagating along axons
 yielded the membrane currents from which we calculated extracellular
