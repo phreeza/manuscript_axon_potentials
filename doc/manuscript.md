@@ -1,5 +1,3 @@
-git revision f05c745
-
 ---
 geometry: a4paper
 documentclass: article
@@ -384,7 +382,7 @@ Normalized dipole moments of the bifurcating and non-bifurcating bundles as
 a function of frequency. (**D**) Ratio of the dipole moments between
 bifurcating and non-bifurcating cases (red line), compared to the maximum ratio 10 of the
 number of fibers (dotted line), to indicate supralinear (>10) and sublinear (<10) contributions. Vertical gray line in C and D indicates the width (~2 mm) of the projection zone.
-](figs/fig_3.pdf){#fig:distscaling}
+](figs/fig_3.pdf){#fig:distscaling height=110%}
 
 In order to separate the effects of any radial fanning out of the axon bundle
 from the effects of bifurcations and terminations, and to afford better
@@ -696,7 +694,7 @@ much as possible, we assumed a Gaussian waveform for the membrane potential of
 a single spike, with an amplitude $\bar{V}_{\text{spike}}$ and a width
 $\sigma_{\text{spike}}$. The resting membrane potential was irrelevant because
 only the first and second derivatives of the membrane potential contribute. The
-axon bundle population consisted of fibers with diameter $a$, axial resistance
+axon bundle population consisted of fibers with radius $a$, axial resistance
 $r_L$, and conduction velocity $v$. The population was assumed to be driven with
 a Gaussian firing-rate pulse with maximum firing rate
 $\bar{\lambda}_{\text{pulse}}$ and width $\sigma_{\text{pulse}}$. The
@@ -730,7 +728,7 @@ two Gaussians.
 
 Using this formula, it is then possible to calculate the expected contributions
 to the EFP for different scenarios. To test the approximation in the case of
-the barn owl, we chose the following values: axon diameter $a$\ =\ 1\ µm,
+the barn owl, we chose the following values: axon radius $a$\ =\ 1\ µm,
 conduction velocity $v$\ =\ 4\ $\frac{\text{m}}{\text{s}}$ as inferred in the
 previous section, axial resistivity $r_L$\ =\ 1 $\Omega\text{m}$, and
 extracellular conductivity  $\sigma_e$\ =\ 0.33 $\frac{\text{S}}{\text{m}}$ as
@@ -947,7 +945,7 @@ In the systems we were aiming to describe with our model, for example NL and
 thalamocortical projections, synaptic boutons are typically small, and we did
 not model them explicitly. In other systems such as the neuromuscular
 junction, the synaptic structure can be very large when compared to the
-axon bundle [@Harris1979Relationship;@Katz1961Terminations]. Such a large junction with an overall length of up to 1\ mm was modeled by @Gydikov1986Extracellular. They found a
+axon bundle [@Harris1979Relationship;@Katz1961Terminations;Katz1965Propagation]. Such a large junction with an overall length of up to 1\ mm was modeled by @Gydikov1986Extracellular. They found a
 significant effect of this structure on the EFP. The
 single flaring and tapering neuromuscular junction in their model had a comparable effect as the
 entire projection zone in our model, with the flaring causing a similar effect
@@ -1127,7 +1125,9 @@ filtering was performed with third-order Butterworth filters. The multi unit
 activity (MUA) was calculated by high-pass filtering the signal with a cutoff
 of 2500\ Hz, setting all samples with negative values to zero, and then
 low-pass filtering the resulting response with a cutoff of 500\ Hz. The low-pass filtered EFP was
-calculated with a cutoff of 1000\ Hz. To exclude influences of spectral leakage on our results, we also performed the same analysis with 20th-order Butterworth filters and found qualitatively identical results. The specific filtering (3rd or 20th order Butterworth) did not affect our conclusions.
+calculated with a cutoff of 1000\ Hz. To exclude influences of spectral leakage on our results, 
+we also performed the same analysis with 20th-order Butterworth filters and found qualitatively
+identical results. The specific filtering (3rd or 20th order Butterworth) did not affect our conclusions.
 
 Symbol                          Meaning                                         Value                               Value used by @Simon1999Dendritic
 ------                          --------                                        -----                               ------
