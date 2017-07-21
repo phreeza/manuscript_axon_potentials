@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5569,        182]
+NotebookOptionsPosition[      4996,        157]
+NotebookOutlinePosition[      5332,        172]
+CellTagsIndexPosition[      5289,        169]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "\[Phi]"}], "*", 
+     RowBox[{"(", 
+      RowBox[{"V", "/", "L"}], ")"}], "*", "z", "*", "\[Sigma]", "*", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{"2", "*", "Pi", "*", 
+         RowBox[{"z", "/", "L"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", "2"}], "}"}]}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", 
+      RowBox[{
+       RowBox[{"-", "L"}], "/", "2"}], ",", 
+      RowBox[{"L", "/", "2"}]}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.709617002972761*^9, 3.709617002972988*^9}, {
+  3.709617036763421*^9, 3.7096170502273912`*^9}, {3.7096170875968447`*^9, 
+  3.709617127118812*^9}, {3.7096171704114656`*^9, 3.709617334278557*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", "\[Pi]", " ", "V", " ", "\[Sigma]", " ", "\[Phi]"}], 
+  "L"]], "Output",
+ CellChangeTimes->{
+  3.70961705135723*^9, 3.709617128055112*^9, 3.709617180751721*^9, {
+   3.709617227427519*^9, 3.709617272682379*^9}, 3.709617338971382*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"\[Phi]", "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"2", " ", 
+       RowBox[{"Pi", "/", "L"}]}], ")"}], "^", "2"}], " ", "*", "\[Sigma]", 
+    "*", 
+    RowBox[{"(", 
+     RowBox[{"V", "/", "L"}], ")"}], "*", "z", "*", 
+    RowBox[{"Sin", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"2", " ", "Pi", " ", "z"}], ")"}], "/", "L"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{
+      RowBox[{"-", "L"}], "/", "2"}], ",", 
+     RowBox[{"L", "/", "2"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.709617241203123*^9, 3.70961724126077*^9}, {
+  3.709617346650186*^9, 3.709617350330799*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", "\[Pi]", " ", "V", " ", "\[Sigma]", " ", "\[Phi]"}], 
+  "L"]], "Output",
+ CellChangeTimes->{
+  3.7096172450164347`*^9, {3.709617340962154*^9, 3.709617351158063*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"PolarPlot", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"2", " ", "\[Pi]", " ", "V", " ", "\[Sigma]", " ", "\[Phi]"}], 
+      "L"], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Phi]", ",", "0", ",", 
+       RowBox[{"3", " ", "\[Pi]"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"L", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"V", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Sigma]", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"UnitConvert", "[", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"2", " ", "\[Pi]", " ", "V", " ", "\[Sigma]", " ", "\[Phi]"}], 
+      "L"], "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"V", "\[Rule]", 
+        RowBox[{"Quantity", "[", 
+         RowBox[{"6", ",", 
+          RowBox[{"\"\<Millimeters\>\"", "^", "3"}]}], "]"}]}], ",", 
+       RowBox[{"\[Phi]", "->", 
+        RowBox[{"Quantity", "[", 
+         RowBox[{"0.5", ",", "\"\<Millivolts\>\""}], "]"}]}], ",", 
+       RowBox[{"L", "\[Rule]", 
+        RowBox[{"Quantity", "[", 
+         RowBox[{"2", ",", "\"\<Millimeters\>\""}], "]"}]}], ",", 
+       RowBox[{"\[Sigma]", "\[Rule]", 
+        RowBox[{"Quantity", "[", 
+         RowBox[{"0.33", ",", 
+          RowBox[{"\"\<Siemens\>\"", "/", "\"\<Meters\>\""}]}], "]"}]}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\"\<Microamperes\>\"", "*", "\"\<Millimeters\>\""}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7096176223394327`*^9, 3.709617665494999*^9}, {
+  3.7096177381891823`*^9, 3.709617785963582*^9}, {3.709617820023491*^9, 
+  3.709618009305566*^9}, {3.709618169351981*^9, 3.70961817788536*^9}, {
+  3.709618212073772*^9, 3.709618224325328*^9}, {3.709618423773417*^9, 
+  3.709618430080168*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "3.110176727053895`",RowBox[{"\"mm\"", "\[ThinSpace]", "\"\[Mu]A\""}],
+   "millimeter microamperes",
+   RowBox[{"\"Microamperes\"", " ", "\"Millimeters\""}]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.709617917649592*^9, {3.709618003321498*^9, 3.709618010042725*^9}, 
+   3.709618225185224*^9, 3.7096184306825447`*^9}]
+}, Open  ]]
+},
+WindowSize->{1916, 1161},
+WindowMargins->{{0, Automatic}, {Automatic, 18}},
+FrontEndVersion->"10.1 for Linux x86 (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 840, 23, 55, "Input"],
+Cell[1423, 47, 280, 6, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1740, 58, 700, 21, 32, InheritFromParent],
+Cell[2443, 81, 213, 5, 48, "Output"]
+}, Open  ]],
+Cell[2671, 89, 640, 20, 63, "Input"],
+Cell[CellGroupData[{
+Cell[3336, 113, 1285, 31, 124, "Input"],
+Cell[4624, 146, 356, 8, 69, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
