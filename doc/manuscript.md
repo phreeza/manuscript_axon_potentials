@@ -1129,19 +1129,18 @@ of 2500\ Hz, setting all samples with negative values to zero, and then
 low-pass filtering the resulting response with a cutoff of 500\ Hz. The low-pass filtered EFP was
 calculated with a cutoff of 1000\ Hz. To exclude influences of spectral leakage on our results, we also performed the same analysis with 20th-order Butterworth filters and found qualitatively identical results. The specific filtering (3rd or 20th order Butterworth) did not affect our conclusions.
 
-Symbol                          Meaning                              Value                       Value used by @Simon1999Dendritic
-------                          --------                             -----                   ------
-$R_a$                           axial resistance                     50 $\Omega$ cm       200 $\Omega$ cm 
-$\bar{g}_\text{Na}$             maximum sodium conductance           2.4 $\text{S}/\text{cm}^2$           0.32 $\text{S}/\text{cm}^2$
-$\bar{g}_\text{KLVA}$           maximum low-threshold potassium conductance   0.1 $\text{S}/\text{cm}^2$    3 $\text{mS}/\text{cm}^2$
-$\bar{g}_\text{KHVA}$           maximum high-threshold potassium conductance   1.5 $\text{S}/\text{cm}^2$        30 $\text{mS}/\text{cm}^2$
-
-$g_\text{leak}^\text{node}$     leak conductance in node             1 $\text{mS}/\text{cm}^2$       0.28 \text{mS}/\text{cm}^2$ 
-$g_\text{leak}^\text{myelin}$   leak conductance in myelin           1 \textmu$\text{S}/\text{cm}^2$           35 \textmu$\text{S}/\text{cm}^2
-$E_\text{leak}$                 leak reversal potential              -72 mV         -45 mV
-$E_\text{K}$                    potassium reversal potential         -80 mV            -60 mV
-$E_\text{Na}$                   sodium reversal potential            50 mV        40 mV
-$c_m^\text{myelin}$             membrane capacitance in myelin       1 $\text{nF}/\text{cm}^2$    12 $\text{nF}/\text{cm}^2$
+Symbol                          Meaning                                         Value                               Value used by @Simon1999Dendritic
+------                          --------                                        -----                               ------
+$R_a$                           axial resistance                                50 $\Omega$ cm                      200 $\Omega$ cm 
+$\bar{g}_\text{Na}$             maximum sodium conductance                      2.4 $\text{S}/\text{cm}^2$          0.32 $\text{S}/\text{cm}^2$
+$\bar{g}_\text{KLVA}$           maximum low-threshold potassium conductance     0.1 $\text{S}/\text{cm}^2$          3 $\text{mS}/\text{cm}^2$
+$\bar{g}_\text{KHVA}$           maximum high-threshold potassium conductance    1.5 $\text{S}/\text{cm}^2$          30 $\text{mS}/\text{cm}^2$
+$g_\text{leak}^\text{node}$     leak conductance in node                        1 $\text{mS}/\text{cm}^2$           0.28 $\text{mS}/\text{cm}^2$ 
+$g_\text{leak}^\text{myelin}$   leak conductance in myelin                      1 \textmu$\text{S}/\text{cm}^2$     35 \textmu$\text{S}/\text{cm}^2$
+$E_\text{leak}$                 leak reversal potential                         -72 mV                              -45 mV
+$E_\text{K}$                    potassium reversal potential                    -80 mV                              -60 mV
+$E_\text{Na}$                   sodium reversal potential                       50 mV                               40 mV
+$c_m^\text{myelin}$             membrane capacitance in myelin                  1 $\text{nF}/\text{cm}^2$           12 $\text{nF}/\text{cm}^2$
 
 Table: Parameter values used for the multi-compartment model which were modified from those used by @Simon1999Dendritic.
 <!--
