@@ -182,7 +182,7 @@ example.
 
 To understand how bifurcations and terminations interact when they are present
 in the same axon, we simulated an axon with an identical number of bifurcations
-as in the previous case, but then added terminations to all the fibers 200\ µm after the bifurcation zone ([@fig:simpletree]D). We found that this
+as in the previous case, but then added terminations to all the fibers 700\ µm after the bifurcation zone ([@fig:simpletree]D). We found that this
 configuration leads to the same biphasic responses as observed in the cases of
 the isolated anatomical features. A triphasic response occurred in-between the
 bifurcation and termination zones. A notable point here is that the potential
@@ -414,7 +414,7 @@ Unlike the tapering-out in the control condition,
 this component was added for both before and after the termination point. It
 resulted in a maximal fiber number of 500 at the termination point, which is a factor 10
 larger than in the control case. Both distributions constructed in this way
-were smooth, and they had smooth first derivatives in space. We considered
+were smooth, and they had smooth first derivatives in space. In both cases, the number of fibers decreased monotonically after the termination point. We considered
 a conduction velocity of 1 m/s in this example, though results are
 qualitatively the same for other values. In order to understand the
 frequency-specific effects of the projection zone, we calculated
@@ -493,8 +493,8 @@ proportional to the dipole moment.
 
 The normalized frequency-specific dipole moments are shown in
 [@fig:distscaling]C. The dipole moment of the bifurcating case (solid line) has
-a maximum at around 750\ Hz, as expected due to the agreement of the spatial
-wavelength (1\ m/s / 750\ Hz = 1.33\ mm) and axial width (about 1\ mm) of the
+a maximum at around 500\ Hz, as expected due to the agreement of the spatial
+wavelength (1\ m/s / 500\ Hz = 2\ mm; gray vertical line in [@fig:distscaling]D and C) and axial width (about 2\ mm; gray box in [@fig:distscaling]A and B) of the
 projection zone. The match is not exact because the shapes of sine wave and
 Gaussian are different. For lower and higher frequencies, there is a mismatch
 in spatial wavelength and the width of the projection zone, meaning that the
@@ -754,7 +754,7 @@ account for the fact that there is an NL in each hemisphere, the predicted
 contribution was 3.1\ µV, which is of the same order of magnitude as the
 value reported in the experiments.
 
-. 
+
 
 To estimate the low-frequency dipole moment of NL from our multielectrode recordings, it is sufficient to use CSD analysis in one dimension, i.e. $\frac{\partial ^2}{\partial z^2}
 \phi(z) = \frac{1}{\sigma_e} i(z)$ and a simple sinusoidal approximation of the voltage within NL: 
@@ -876,7 +876,7 @@ for the interpretation of the ABR in clinical contexts.
 
 The ABR amplitude of the barn owl has been reported to be on the order of 10 µV
 [@PalancaCastan2016Binaural] while we estimated a contribution of about
-2 µV amplitude from the incoming axons in NL alone. This estimate of 20% axonal
+3 µV amplitude from the incoming axons in NL alone. This estimate of 30% axonal
 contribution to the ABR suggests that there may indeed be measurable components
 due to axons in the ABR, in particular, and the EEG, in general.
 However, this estimate is crude because it did not
@@ -933,7 +933,7 @@ wiring cost leads to more tortuous, undirected growth. This insight suggests tha
 directed structures - and thus also strong, dipolar EFPs due to axons - may be
 more prevalent in systems which require high temporal precision in the
 information processing. This requirement for high temporal precision also aligns well with
-our model prediction: the dipole moment is maximal when the
+our model prediction: the dipole moment (Equation~\ref{eqn:pmax}) is maximal when the
 spatial spread of the activation is equal to the size of the projection zone,
 favoring short activation times (< 1 ms) for typical projection zone sizes (1 mm) and
 conduction velocities (1 m/s).
@@ -960,7 +960,7 @@ potassium conductances broadened the incoming spikes in an
 activity-dependent manner. This spike broadening is hypothesised to be mediated
 by slow inactivation of the potassium channels and takes place on a timescale
 of > 100 ms, and is thus not relevant to the present study. Spike broadening could be
-captured in our model by incorporating in Equation \ref{eqn:pmax} a $\sigma_\text{spike}$ that is variable in time.
+captured in our model by incorporating in Equation~\ref{eqn:pmax} a $\sigma_\text{spike}$ that is variable in time.
 
 The calcium currents reported by @Geiger2000Dynamic were further quantified by @Alle2009EnergyEfficient. Calcium currents were temporally overlapping and much smaller in amplitude than sodium and potassium currents. We therefore neglected calcium currents in our model.
 
@@ -1049,7 +1049,7 @@ lengths of 2\ µm and 75\ µm, respectively. We used the model of a nucleus magn
 153998). In order to ensure robust spike propagation at the bifurcations, some of the model the parameters were modified. The values of the properties that were modified from those
 provided by @Simon1999Dendritic are shown in Table 1. In addition, the Q10 values were set
 to 3, and the temperature was set to 40$,^{\circ}\text{C}$ as done by
-@Kuba2009Roles. In order to avoid nodes lining up in axial direction, the very
+@Kuba2009Roles. The ratio of leak conductance and capacitance between node and myelin was changed from 80 as used by @Simon1999Dendritic to 1000 [@Koch2004Biophysics]. We removed the Hodgkin-Huxley type potassium conductivities included by @Simon1999Dendritic  (which are based on data from the squid axon) from the simulations, and increased the KLVA and KHVA conductances (which are based on physiological data from the auditory brainstem) to compensate. In order to avoid nodes lining up in axial direction, the very
 first myelinated segment had a length drawn from a uniform distribution between
 0 and 75\ µm. 
 
@@ -1125,9 +1125,7 @@ filtering was performed with third-order Butterworth filters. The multi unit
 activity (MUA) was calculated by high-pass filtering the signal with a cutoff
 of 2500\ Hz, setting all samples with negative values to zero, and then
 low-pass filtering the resulting response with a cutoff of 500\ Hz. The low-pass filtered EFP was
-calculated with a cutoff of 1000\ Hz. To exclude influences of spectral leakage on our results, 
-we also performed the same analysis with 20th-order Butterworth filters and found qualitatively
-identical results. The specific filtering (3rd or 20th order Butterworth) did not affect our conclusions.
+calculated with a cutoff of 1000\ Hz. To exclude influences of spectral leakage on our results, we also performed the same analysis with 20th-order Butterworth filters and found qualitatively identical results. The specific filtering (3rd or 20th order Butterworth) did not affect our conclusions.
 
 Symbol                          Meaning                                         Value                               Value used by @Simon1999Dendritic
 ------                          --------                                        -----                               ------
@@ -1141,6 +1139,7 @@ $E_\text{leak}$                 leak reversal potential                         
 $E_\text{K}$                    potassium reversal potential                    -80 mV                              -60 mV
 $E_\text{Na}$                   sodium reversal potential                       50 mV                               40 mV
 $c_m^\text{myelin}$             membrane capacitance in myelin                  1 $\text{nF}/\text{cm}^2$           12 $\text{nF}/\text{cm}^2$
+
 
 Table: Parameter values used for the multi-compartment model which were modified from those used by @Simon1999Dendritic.
 <!--
