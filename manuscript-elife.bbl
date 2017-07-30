@@ -1,0 +1,851 @@
+\begin{thebibliography}{91}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\urlprefix}{}
+\providecommand{\doiprefix}{doi: }
+
+\bibitem[{Abbott(1992)Abbott, L. F.}]{Abbott1992Simple}
+\textbf{\color{eLifeMediumGrey} Abbott LF}.
+\newblock Simple diagrammatic rules for solving dendritic cable problems.
+\newblock Physica A: Statistical Mechanics and its Applications.  1992 Jun;
+  185(1-4):343--356.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/0378-4371(92)90474-5},
+  \href{10.1016/0378-4371(92)90474-5}{\doiprefix
+  \detokenize{10.1016/0378-4371(92)90474-5}}.
+
+\bibitem[{Alle et~al.(2009)Alle, Henrik and Roth, Arnd and Geiger, J\"{o}rg R.
+  P.}]{Alle2009EnergyEfficient}
+\textbf{\color{eLifeMediumGrey} Alle H}, Roth A, Geiger JRP.
+\newblock Energy-Efficient Action Potentials in Hippocampal Mossy Fibers.
+\newblock Science.  2009 Sep; 325(5946):1405--1408.
+\newblock \urlprefix\url{http://dx.doi.org/10.1126/science.1174331},
+  \href{10.1126/science.1174331}{\doiprefix
+  \detokenize{10.1126/science.1174331}}.
+
+\bibitem[{Anastassiou et~al.(2015)Anastassiou, Costas A. and Perin, Rodrigo and
+  Buzs\'{a}ki, Gy\"{o}rgy and Markram, Henry and Koch,
+  Christof}]{Anastassiou2015Cell}
+\textbf{\color{eLifeMediumGrey} Anastassiou CA}, Perin R, Buzs\'{a}ki G,
+  Markram H, Koch C.
+\newblock Cell type- and activity-dependent extracellular correlates of
+  intracellular spiking.
+\newblock Journal of Neurophysiology.  2015 Jul; 114(1):608--623.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00628.2014},
+  \href{10.1152/jn.00628.2014}{\doiprefix \detokenize{10.1152/jn.00628.2014}}.
+
+\bibitem[{Ashida et~al.(2007)Ashida, Go and Abe, Kousuke and Funabiki, Kazuo
+  and Konishi, Masakazu}]{Ashida2007Passive}
+\textbf{\color{eLifeMediumGrey} Ashida G}, Abe K, Funabiki K, Konishi M.
+\newblock Passive Soma Facilitates Submillisecond Coincidence Detection in the
+  Owl's Auditory System.
+\newblock Journal of Neurophysiology.  2007 Mar; 97(3):2267--2282.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00399.2006},
+  \href{10.1152/jn.00399.2006}{\doiprefix \detokenize{10.1152/jn.00399.2006}}.
+
+\bibitem[{Belluscio et~al.(2012)Belluscio, Mariano A. and Mizuseki, Kenji and
+  Schmidt, Robert and Kempter, Richard and Buzs\'{a}ki,
+  Gy\"{o}rgy}]{Belluscio2012CrossFrequency}
+\textbf{\color{eLifeMediumGrey} Belluscio MA}, Mizuseki K, Schmidt R, Kempter
+  R, Buzs\'{a}ki G.
+\newblock Cross-Frequency Phase-phase Coupling between Theta and Gamma
+  Oscillations in the Hippocampus.
+\newblock The Journal of Neuroscience.  2012 Jan; 32(2):423--435.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.4122-11.2012},
+  \href{10.1523/jneurosci.4122-11.2012}{\doiprefix
+  \detokenize{10.1523/jneurosci.4122-11.2012}}.
+
+\bibitem[{Blot and Barbour(2014)Blot, Antonin and Barbour,
+  Boris}]{Blot2014Ultrarapid}
+\textbf{\color{eLifeMediumGrey} Blot A}, Barbour B.
+\newblock Ultra-rapid axon-axon ephaptic inhibition of cerebellar Purkinje
+  cells by the pinceau.
+\newblock Nature Neuroscience.  2014 Feb; 17(2):289--295.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nn.3624},
+  \href{10.1038/nn.3624}{\doiprefix \detokenize{10.1038/nn.3624}}.
+
+\bibitem[{Brette and Destexhe(2012)Brette, Romain and Destexhe,
+  Alain}]{Brette2012Handbook}
+Brette R, Destexhe A, editors.
+\newblock Handbook of Neural Activity Measurement.
+\newblock Cambridge: Cambridge University Press; 2012.
+\newblock \urlprefix\url{http://dx.doi.org/10.1017/cbo9780511979958},
+  \href{10.1017/cbo9780511979958}{\doiprefix
+  \detokenize{10.1017/cbo9780511979958}}.
+
+\bibitem[{Budd et~al.(2010)Budd, Julian M. L. and Kov\'{a}cs, Krisztina and
+  Ferecsk\'{o}, Alex S. and Buz\'{a}s, P\'{e}ter and Eysel, Ulf T. and
+  Kisv\'{a}rday, Zolt\'{a}n F.}]{Budd2010Neocortical}
+\textbf{\color{eLifeMediumGrey} Budd JML}, Kov\'{a}cs K, Ferecsk\'{o} AS,
+  Buz\'{a}s P, Eysel UT, Kisv\'{a}rday ZF.
+\newblock Neocortical Axon Arbors Trade-off Material and Conduction Delay
+  Conservation.
+\newblock PLoS Computational Biology.  2010 Mar; 6(3):e1000711+.
+\newblock \urlprefix\url{http://dx.doi.org/10.1371/journal.pcbi.1000711},
+  \href{10.1371/journal.pcbi.1000711}{\doiprefix
+  \detokenize{10.1371/journal.pcbi.1000711}}.
+
+\bibitem[{Buzs\'{a}ki et~al.(2012)Buzs\'{a}ki, Gy\"{o}rgy and Anastassiou,
+  Costas A. and Koch, Christof}]{Buzsaki2012Origin}
+\textbf{\color{eLifeMediumGrey} Buzs\'{a}ki G}, Anastassiou CA, Koch C.
+\newblock The origin of extracellular fields and currents - {EEG, ECoG, LFP}
+  and spikes.
+\newblock Nature Reviews Neuroscience.  2012 May; 13(6):407--420.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nrn3241},
+  \href{10.1038/nrn3241}{\doiprefix \detokenize{10.1038/nrn3241}}.
+
+\bibitem[{Carr and Konishi(1988)Carr, C. E. and Konishi, M.}]{carr88}
+\textbf{\color{eLifeMediumGrey} Carr CE}, Konishi M.
+\newblock Axonal delay lines for time measurement in the owl's brainstem.
+\newblock Proceedings of the National Academy of Sciences.  1988 Nov;
+  85(21):8311--8315.
+\newblock \urlprefix\url{http://www.pnas.org/content/85/21/8311.abstract}.
+
+\bibitem[{Carr and Konishi(1990)Carr, C. E. and Konishi, M.}]{carr90}
+\textbf{\color{eLifeMediumGrey} Carr CE}, Konishi M.
+\newblock A circuit for detection of interaural time differences in the brain
+  stem of the barn owl.
+\newblock The Journal of Neuroscience.  1990 Oct; 10(10):3227--3246.
+\newblock \urlprefix\url{http://www.jneurosci.org/content/10/10/3227.abstract}.
+
+\bibitem[{Carr et~al.(2016)Carr, Catherine E. and Ashida, Go and Wagner,
+  Hermann and McColgan, Thomas and Kempter, Richard}]{Carr2016Role}
+\textbf{\color{eLifeMediumGrey} Carr CE}, Ashida G, Wagner H, McColgan T,
+  Kempter R.
+\newblock The Role of Conduction Delay in Creating Sensitivity to Interaural
+  Time Differences.
+\newblock In: van Dijk P, Ba\c{s}kent D, Gaudrain E, de~Kleine E, Wagner A,
+  Lanting C, editors. \emph{Physiology, Psychoacoustics and Cognition in Normal
+  and Impaired Hearing}, vol. 894 of Advances in Experimental Medicine and
+  Biology Springer International Publishing; 2016.p. 189--196.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/978-3-319-25474-6\_20},
+  \href{10.1007/978-3-319-25474-6\_20}{\doiprefix
+  \detokenize{10.1007/978-3-319-25474-6\_20}}.
+
+\bibitem[{Carr et~al.(2015)Carr, Catherine E. and Shah, Sahil and McColgan,
+  Thomas and Ashida, Go and Kuokkanen, Paula T. and Brill, Sandra and Kempter,
+  Richard and Wagner, Hermann}]{Carr2015Maps}
+\textbf{\color{eLifeMediumGrey} Carr CE}, Shah S, McColgan T, Ashida G,
+  Kuokkanen PT, Brill S, Kempter R, Wagner H.
+\newblock Maps of interaural delay in the owl's nucleus laminaris.
+\newblock Journal of Neurophysiology.  2015 Sep; 114(3):1862--1873.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00644.2015},
+  \href{10.1152/jn.00644.2015}{\doiprefix \detokenize{10.1152/jn.00644.2015}}.
+
+\bibitem[{Chiu and Ritchie(1981)Chiu, S. Y. and Ritchie, J.
+  M.}]{Chiu1981Evidence}
+\textbf{\color{eLifeMediumGrey} Chiu SY}, Ritchie JM.
+\newblock Evidence for the presence of potassium channels in the paranodal
+  region of acutely demyelinated mammalian single nerve fibres.
+\newblock The Journal of Physiology.  1981 Apr; 313(1):415--437.
+\newblock \urlprefix\url{http://dx.doi.org/10.1113/jphysiol.1981.sp013674},
+  \href{10.1113/jphysiol.1981.sp013674}{\doiprefix
+  \detokenize{10.1113/jphysiol.1981.sp013674}}.
+
+\bibitem[{Cuntz et~al.(2010)Cuntz, Hermann and Forstner, Friedrich and Borst,
+  Alexander and H\"{a}usser, Michael}]{Cuntz2010One}
+\textbf{\color{eLifeMediumGrey} Cuntz H}, Forstner F, Borst A, H\"{a}usser M.
+\newblock One Rule to Grow Them All: A General Theory of Neuronal Branching and
+  Its Practical Application.
+\newblock PLoS Computational Biology.  2010 Aug; 6(8):e1000877+.
+\newblock \urlprefix\url{http://dx.doi.org/10.1371/journal.pcbi.1000877},
+  \href{10.1371/journal.pcbi.1000877}{\doiprefix
+  \detokenize{10.1371/journal.pcbi.1000877}}.
+
+\bibitem[{Einevoll et~al.(2013)Einevoll, Gaute T. and Kayser, Christoph and
+  Logothetis, Nikos K. and Panzeri, Stefano}]{Einevoll2013Modelling}
+\textbf{\color{eLifeMediumGrey} Einevoll GT}, Kayser C, Logothetis NK, Panzeri
+  S.
+\newblock Modelling and analysis of local field potentials for studying the
+  function of cortical circuits.
+\newblock Nature reviews Neuroscience.  2013 Nov; 14(11):770--785.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nrn3599},
+  \href{10.1038/nrn3599}{\doiprefix \detokenize{10.1038/nrn3599}}.
+
+\bibitem[{Feldmeyer(2012)Feldmeyer, Dirk}]{Feldmeyer2012Excitatory}
+\textbf{\color{eLifeMediumGrey} Feldmeyer D}.
+\newblock Excitatory neuronal connectivity in the barrel cortex.
+\newblock Frontiers in Neuroanatomy.  2012; 6.
+\newblock \urlprefix\url{http://dx.doi.org/10.3389/fnana.2012.00024},
+  \href{10.3389/fnana.2012.00024}{\doiprefix
+  \detokenize{10.3389/fnana.2012.00024}}.
+
+\bibitem[{Fern\'{a}ndez-Ruiz et~al.(2013)Fern\'{a}ndez-Ruiz, Antonio and
+  Mu\~{n}oz, Sagrario and Sancho, Miguel and Makarova, Julia and Makarov,
+  Valeri A. and Herreras, Oscar}]{FernandezRuiz2013Cytoarchitectonic}
+\textbf{\color{eLifeMediumGrey} Fern\'{a}ndez-Ruiz A}, Mu\~{n}oz S, Sancho M,
+  Makarova J, Makarov VA, Herreras O.
+\newblock Cytoarchitectonic and Dynamic Origins of Giant Positive Local Field
+  Potentials in the Dentate Gyrus.
+\newblock The Journal of Neuroscience.  2013 Sep; 33(39):15518--15532.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.0338-13.2013},
+  \href{10.1523/jneurosci.0338-13.2013}{\doiprefix
+  \detokenize{10.1523/jneurosci.0338-13.2013}}.
+
+\bibitem[{Funabiki et~al.(2011)Funabiki, Kazuo and Ashida, Go and Konishi,
+  Masakazu}]{Funabiki2011Computation}
+\textbf{\color{eLifeMediumGrey} Funabiki K}, Ashida G, Konishi M.
+\newblock Computation of Interaural Time Difference in the Owl's Coincidence
+  Detector Neurons.
+\newblock The Journal of Neuroscience.  2011 Oct; 31(43):15245--15256.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.2127-11.2011},
+  \href{10.1523/jneurosci.2127-11.2011}{\doiprefix
+  \detokenize{10.1523/jneurosci.2127-11.2011}}.
+
+\bibitem[{Geiger and Jonas(2000)Geiger, J. R. and Jonas,
+  P.}]{Geiger2000Dynamic}
+\textbf{\color{eLifeMediumGrey} Geiger JR}, Jonas P.
+\newblock Dynamic control of presynaptic {Ca(2+)} inflow by fast-inactivating
+  {K(+)} channels in hippocampal mossy fiber boutons.
+\newblock Neuron.  2000 Dec; 28(3):927--939.
+\newblock \urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/11163277}.
+
+\bibitem[{Gold et~al.(2006)Gold, Carl and Henze, Darrell A. and Koch, Christof
+  and Buzs\'{a}ki, Gy\"{o}rgy}]{Gold2006Origin}
+\textbf{\color{eLifeMediumGrey} Gold C}, Henze DA, Koch C, Buzs\'{a}ki G.
+\newblock On the origin of the extracellular action potential waveform: A
+  modeling study.
+\newblock Journal of Neurophysiology.  2006 May; 95(5):3113--3128.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00979.2005},
+  \href{10.1152/jn.00979.2005}{\doiprefix \detokenize{10.1152/jn.00979.2005}}.
+
+\bibitem[{Goldwyn et~al.(2014)Goldwyn, Joshua H. and Mc Laughlin, Myles and
+  Verschooten, Eric and Joris, Philip X. and Rinzel, John}]{Goldwyn2014Model}
+\textbf{\color{eLifeMediumGrey} Goldwyn JH}, Mc~Laughlin M, Verschooten E,
+  Joris PX, Rinzel J.
+\newblock A Model of the Medial Superior Olive Explains Spatiotemporal Features
+  of Local Field Potentials.
+\newblock The Journal of Neuroscience.  2014 Aug; 34(35):11705--11722.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.0175-14.2014},
+  \href{10.1523/jneurosci.0175-14.2014}{\doiprefix
+  \detokenize{10.1523/jneurosci.0175-14.2014}}.
+
+\bibitem[{Goldwyn and Rinzel(2016)Goldwyn, Joshua H. and Rinzel,
+  John}]{Goldwyn2016Neuronal}
+\textbf{\color{eLifeMediumGrey} Goldwyn JH}, Rinzel J.
+\newblock Neuronal coupling by endogenous electric fields: cable theory and
+  applications to coincidence detector neurons in the auditory brain stem.
+\newblock Journal of Neurophysiology.  2016 Apr; 115(4):2033--2051.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00780.2015},
+  \href{10.1152/jn.00780.2015}{\doiprefix \detokenize{10.1152/jn.00780.2015}}.
+
+\bibitem[{Goodman et~al.(1984)Goodman, C. S. and Bastiani, M. J. and Doe, C. Q.
+  and du Lac, S. and Helfand, S. L. and Kuwada, J. Y. and Thomas, J.
+  B.}]{Goodman1984Cell}
+\textbf{\color{eLifeMediumGrey} Goodman CS}, Bastiani MJ, Doe CQ, du~Lac S,
+  Helfand SL, Kuwada JY, Thomas JB.
+\newblock Cell recognition during neuronal development.
+\newblock Science.  1984 Sep; 225(4668):1271--1279.
+\newblock \urlprefix\url{http://dx.doi.org/10.1126/science.6474176},
+  \href{10.1126/science.6474176}{\doiprefix
+  \detokenize{10.1126/science.6474176}}.
+
+\bibitem[{Gydikov et~al.(1986)Gydikov, A. and Gerilovsky, L. and Radicheva, N.
+  and Trayanova, N.}]{Gydikov1986Influence}
+\textbf{\color{eLifeMediumGrey} Gydikov A}, Gerilovsky L, Radicheva N,
+  Trayanova N.
+\newblock Influence of the muscle fibre end geometry on the extracellular
+  potentials.
+\newblock Biological Cybernetics.  1986; 54(1):1--8.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/bf00337110},
+  \href{10.1007/bf00337110}{\doiprefix \detokenize{10.1007/bf00337110}}.
+
+\bibitem[{Gydikov and Trayanova(1986)Gydikov, A. A. and Trayanova, N.
+  A.}]{Gydikov1986Extracellular}
+\textbf{\color{eLifeMediumGrey} Gydikov AA}, Trayanova NA.
+\newblock Extracellular potentials of single active muscle fibres: Effects of
+  finite fibre length.
+\newblock Biological Cybernetics.  1986; 53(6):363--372.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/bf00318202},
+  \href{10.1007/bf00318202}{\doiprefix \detokenize{10.1007/bf00318202}}.
+
+\bibitem[{Harris and Ribchester(1979)Harris, J. B. and Ribchester, R.
+  R.}]{Harris1979Relationship}
+\textbf{\color{eLifeMediumGrey} Harris JB}, Ribchester RR.
+\newblock The relationship between end-plate size and transmitter release in
+  normal and dystrophic muscles of the mouse.
+\newblock The Journal of Physiology.  1979 Nov; 296(1):245--265.
+\newblock \urlprefix\url{http://dx.doi.org/10.1113/jphysiol.1979.sp013003},
+  \href{10.1113/jphysiol.1979.sp013003}{\doiprefix
+  \detokenize{10.1113/jphysiol.1979.sp013003}}.
+
+\bibitem[{Hentschel and van Ooyen(1999)Hentschel, H. G. E. and van Ooyen,
+  A.}]{Hentschel1999Models}
+\textbf{\color{eLifeMediumGrey} Hentschel HGE}, van Ooyen A.
+\newblock Models of axon guidance and bundling during development.
+\newblock Proceedings of the Royal Society of London B: Biological Sciences.
+  1999 Nov; 266(1434):2231--2238.
+\newblock \urlprefix\url{http://dx.doi.org/10.1098/rspb.1999.0913},
+  \href{10.1098/rspb.1999.0913}{\doiprefix
+  \detokenize{10.1098/rspb.1999.0913}}.
+
+\bibitem[{Hines and Carnevale(1997)Hines, M. L. and Carnevale, N.
+  T.}]{Hines1997NEURON}
+\textbf{\color{eLifeMediumGrey} Hines ML}, Carnevale NT.
+\newblock The {NEURON} Simulation Environment.
+\newblock Neural Computation.  1997 Aug; 9(6):1179--1209.
+\newblock \urlprefix\url{http://dx.doi.org/10.1162/neco.1997.9.6.1179},
+  \href{10.1162/neco.1997.9.6.1179}{\doiprefix
+  \detokenize{10.1162/neco.1997.9.6.1179}}.
+
+\bibitem[{Hines et~al.(2009)Hines, Michael L. and Davison, Andrew P. and
+  Muller, Eilif}]{Hines2009NEURON}
+\textbf{\color{eLifeMediumGrey} Hines ML}, Davison AP, Muller E.
+\newblock {NEURON} and {Python}.
+\newblock Frontiers in Neuroinformatics.  2009; 3.
+\newblock \urlprefix\url{http://dx.doi.org/10.3389/neuro.11.001.2009},
+  \href{10.3389/neuro.11.001.2009}{\doiprefix
+  \detokenize{10.3389/neuro.11.001.2009}}.
+
+\bibitem[{Hines et~al.(2004)Hines, MichaelL and Morse, Thomas and Migliore,
+  Michele and Carnevale, NicholasT and Shepherd, GordonM}]{Hines2004ModelDB}
+\textbf{\color{eLifeMediumGrey} Hines M}, Morse T, Migliore M, Carnevale N,
+  Shepherd G.
+\newblock ModelDB: A Database to Support Computational Neuroscience.
+\newblock Journal of Computational Neuroscience.  2004 Jul; 17(1):7--11.
+\newblock \urlprefix\url{http://dx.doi.org/10.1023/b:jcns.0000023869.22017.2e},
+  \href{10.1023/b:jcns.0000023869.22017.2e}{\doiprefix
+  \detokenize{10.1023/b:jcns.0000023869.22017.2e}}.
+
+\bibitem[{Holt and Koch(1999)Holt, Gary R. and Koch,
+  Christof}]{Holt1999Electrical}
+\textbf{\color{eLifeMediumGrey} Holt GR}, Koch C.
+\newblock Electrical Interactions via the Extracellular Potential Near Cell
+  Bodies.
+\newblock Journal of Computational Neuroscience.  1999 Mar; 6(2):169--184.
+\newblock \urlprefix\url{http://dx.doi.org/10.1023/a:1008832702585},
+  \href{10.1023/a:1008832702585}{\doiprefix
+  \detokenize{10.1023/a:1008832702585}}.
+
+\bibitem[{Jack et~al.(1975)Jack, James J. and Noble, Denis and Tsien, Richard
+  W.}]{Jack75Electric}
+\textbf{\color{eLifeMediumGrey} Jack JJ}, Noble D, Tsien RW.
+\newblock Electric current flow in excitable cells.
+\newblock Clarendon Press Oxford; 1975.
+
+\bibitem[{Jones et~al.(2001)Jones, Eric and Oliphant, Travis and Peterson,
+  Pearu and Others}]{scipy}
+\textbf{\color{eLifeMediumGrey} Jones E}, Oliphant T, Peterson P, Others,
+  {SciPy}: Open source scientific tools for {Python}; 2001.
+\newblock \urlprefix\url{http://www.scipy.org/}.
+
+\bibitem[{Kandel et~al.(2000)Kandel, Eric R. and Schwartz, James H. and
+  Jessell, Thomas M. and Others}]{kandel2000principles}
+\textbf{\color{eLifeMediumGrey} Kandel ER}, Schwartz JH, Jessell TM, Others.
+\newblock Principles of neural science, vol.~4.
+\newblock McGraw-Hill New York; 2000.
+
+\bibitem[{Katz(1961)Katz, B.}]{Katz1961Terminations}
+\textbf{\color{eLifeMediumGrey} Katz B}.
+\newblock The Terminations of the Afferent Nerve Fibre in the Muscle Spindle of
+  the Frog.
+\newblock Philosophical Transactions of the Royal Society B: Biological
+  Sciences.  1961 Feb; 243(703):221--240.
+\newblock \urlprefix\url{http://dx.doi.org/10.1098/rstb.1961.0001},
+  \href{10.1098/rstb.1961.0001}{\doiprefix
+  \detokenize{10.1098/rstb.1961.0001}}.
+
+\bibitem[{Katz and Miledi(1965)Katz, B. and Miledi, R.}]{Katz1965Propagation}
+\textbf{\color{eLifeMediumGrey} Katz B}, Miledi R.
+\newblock Propagation of Electric Activity in Motor Nerve Terminals.
+\newblock Proceedings of the Royal Society of London B: Biological Sciences.
+  1965 Feb; 161(985):453--482.
+\newblock \urlprefix\url{http://dx.doi.org/10.1098/rspb.1965.0015},
+  \href{10.1098/rspb.1965.0015}{\doiprefix
+  \detokenize{10.1098/rspb.1965.0015}}.
+
+\bibitem[{Koch(2004)Koch, Christof}]{Koch2004Biophysics}
+\textbf{\color{eLifeMediumGrey} Koch C}.
+\newblock Biophysics of computation: information processing in single neurons.
+\newblock Oxford University Press, USA; 2004.
+
+\bibitem[{Konishi et~al.(1985)Konishi, Masakazu and Sullivan, W. Edward and
+  Takahashi, Terry}]{Konishi1985Owls}
+\textbf{\color{eLifeMediumGrey} Konishi M}, Sullivan WE, Takahashi T.
+\newblock The owl's cochlear nuclei process different sound localization cues.
+\newblock The Journal of the Acoustical Society of America.  1985 Jul;
+  78(1):360--364.
+\newblock \urlprefix\url{http://dx.doi.org/10.1121/1.392499},
+  \href{10.1121/1.392499}{\doiprefix \detokenize{10.1121/1.392499}}.
+
+\bibitem[{K\"{o}ppl(1997{\natexlab{a}})K\"{o}ppl, Christine}]{koppl97a}
+\textbf{\color{eLifeMediumGrey} K\"{o}ppl C}.
+\newblock Frequency Tuning and Spontaneous Activity in the Auditory Nerve and
+  Cochlear Nucleus Magnocellularis of the Barn Owl Tyto alba.
+\newblock Journal of Neurophysiology.  1997 Jan; 77(1):364--377.
+\newblock \urlprefix\url{http://jn.physiology.org/content/77/1/364.abstract}.
+
+\bibitem[{K\"{o}ppl(1997{\natexlab{b}})K\"{o}ppl, Christine}]{Koppl1997b}
+\textbf{\color{eLifeMediumGrey} K\"{o}ppl C}.
+\newblock Phase Locking to High Frequencies in the Auditory Nerve and Cochlear
+  Nucleus Magnocellularis of the Barn Owl, Tyto alba.
+\newblock The Journal of Neuroscience.  1997 May; 17(9):3312--3321.
+\newblock \urlprefix\url{http://www.jneurosci.org/content/17/9/3312.abstract}.
+
+\bibitem[{Kuba and Ohmori(2009)Kuba, Hiroshi and Ohmori,
+  Harunori}]{Kuba2009Roles}
+\textbf{\color{eLifeMediumGrey} Kuba H}, Ohmori H.
+\newblock Roles of axonal sodium channels in precise auditory time coding at
+  nucleus magnocellularis of the chick.
+\newblock The Journal of Physiology.  2009 Jan; 587(1):87--100.
+\newblock \urlprefix\url{http://dx.doi.org/10.1113/jphysiol.2008.162651},
+  \href{10.1113/jphysiol.2008.162651}{\doiprefix
+  \detokenize{10.1113/jphysiol.2008.162651}}.
+
+\bibitem[{Kuokkanen et~al.(2013)Kuokkanen, Paula T. and Ashida, Go and Carr,
+  Catherine E. and Wagner, Hermann and Kempter, Richard}]{Kuokkanen2013Linear}
+\textbf{\color{eLifeMediumGrey} Kuokkanen PT}, Ashida G, Carr CE, Wagner H,
+  Kempter R.
+\newblock Linear Summation in the Barn Owl's Brainstem Underlies Responses to
+  Interaural Time Differences.
+\newblock Journal of Neurophysiology.  2013 Apr;
+  \urlprefix\url{http://dx.doi.org/10.1152/jn.00410.2012},
+  \href{10.1152/jn.00410.2012}{\doiprefix \detokenize{10.1152/jn.00410.2012}}.
+
+\bibitem[{Kuokkanen et~al.(2010)Kuokkanen, Paula T. and Wagner, Hermann and
+  Ashida, Go and Carr, Catherine E. and Kempter, Richard}]{Kuokkanen2010Origin}
+\textbf{\color{eLifeMediumGrey} Kuokkanen PT}, Wagner H, Ashida G, Carr CE,
+  Kempter R.
+\newblock On the origin of the extracellular field potential in the nucleus
+  laminaris of the barn owl (Tyto alba).
+\newblock Journal of Neurophysiology.  2010 Oct; 104(4):2274--2290.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00395.2010},
+  \href{10.1152/jn.00395.2010}{\doiprefix \detokenize{10.1152/jn.00395.2010}}.
+
+\bibitem[{Lind\'{e}n et~al.(2010)Lind\'{e}n, Henrik and Pettersen, KlasH and
+  Einevoll, GauteT}]{Linden2010Intrinsic}
+\textbf{\color{eLifeMediumGrey} Lind\'{e}n H}, Pettersen K, Einevoll G.
+\newblock Intrinsic dendritic filtering gives low-pass power spectra of local
+  field potentials.
+\newblock Journal of Computational Neuroscience.  2010 Dec; 29(3):423--444.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/s10827-010-0245-4},
+  \href{10.1007/s10827-010-0245-4}{\doiprefix
+  \detokenize{10.1007/s10827-010-0245-4}}.
+
+\bibitem[{Lind\'{e}n et~al.(2011)Lind\'{e}n, Henrik and Tetzlaff, Tom and
+  Potjans, Tobias C. and Pettersen, Klas H. and Gr\"{u}n, Sonja and Diesmann,
+  Markus and Einevoll, Gaute T.}]{Linden2011Modeling}
+\textbf{\color{eLifeMediumGrey} Lind\'{e}n H}, Tetzlaff T, Potjans TC,
+  Pettersen KH, Gr\"{u}n S, Diesmann M, Einevoll GT.
+\newblock Modeling the Spatial Reach of the {LFP}.
+\newblock Neuron.  2011 Dec; 72(5):859--872.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/j.neuron.2011.11.006},
+  \href{10.1016/j.neuron.2011.11.006}{\doiprefix
+  \detokenize{10.1016/j.neuron.2011.11.006}}.
+
+\bibitem[{Mc~Laughlin et~al.(2010)Mc Laughlin, Myles and Verschooten, Eric and
+  Joris, Philip X.}]{McLaughlin2010Oscillatory}
+\textbf{\color{eLifeMediumGrey} Mc~Laughlin M}, Verschooten E, Joris PX.
+\newblock Oscillatory Dipoles As a Source of Phase Shifts in Field Potentials
+  in the Mammalian Auditory Brainstem.
+\newblock The Journal of Neuroscience.  2010 Oct; 30(40):13472--13487.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.0294-10.2010},
+  \href{10.1523/jneurosci.0294-10.2010}{\doiprefix
+  \detokenize{10.1523/jneurosci.0294-10.2010}}.
+
+\bibitem[{McColgan and Liu(2017)McColgan, Thomas and Liu, Ji}]{GithubRepo}
+\textbf{\color{eLifeMediumGrey} McColgan T}, Liu J;
+\newblock 2017.
+\newblock pyLaminaris.
+\newblock GitHub
+\newblock \url{https://github.com/phreeza/pyLaminaris} f9f8a5c.
+
+\bibitem[{McColgan et~al.(2014)McColgan, Thomas and Shah, Sahil and K\"{o}ppl,
+  Christine and Carr, Catherine E. and Wagner,
+  Hermann}]{McColgan2014Functional}
+\textbf{\color{eLifeMediumGrey} McColgan T}, Shah S, K\"{o}ppl C, Carr CE,
+  Wagner H.
+\newblock A functional circuit model of interaural time difference processing.
+\newblock Journal of Neurophysiology.  2014 Sep; p. jn.00484.2014+.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00484.2014},
+  \href{10.1152/jn.00484.2014}{\doiprefix \detokenize{10.1152/jn.00484.2014}}.
+
+\bibitem[{Mitzdorf(1985)Mitzdorf, U.}]{Mitzdorf1985Current}
+\textbf{\color{eLifeMediumGrey} Mitzdorf U}.
+\newblock Current source-density method and application in cat cerebral cortex:
+  investigation of evoked potentials and {EEG} phenomena.
+\newblock Physiological Reviews.  1985 Jan; 65(1):37--100.
+\newblock
+  \urlprefix\url{http://physrev.physiology.org/content/65/1/37.abstract}.
+
+\bibitem[{Mitzdorf and Singer(1978)Mitzdorf, U. and Singer,
+  W.}]{Mitzdorf1978Prominent}
+\textbf{\color{eLifeMediumGrey} Mitzdorf U}, Singer W.
+\newblock Prominent excitatory pathways in the cat visual cortex ({A} 17 and
+  {A} 18): A current source density analysis of electrically evoked potentials.
+\newblock Experimental Brain Research.  1978; 33(3-4):371--394.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/bf00235560},
+  \href{10.1007/bf00235560}{\doiprefix \detokenize{10.1007/bf00235560}}.
+
+\bibitem[{Mitzdorf and Singer(1977)Mitzdorf, Ulla and Singer,
+  Wolf}]{Mitzdorf1977Laminar}
+\textbf{\color{eLifeMediumGrey} Mitzdorf U}, Singer W.
+\newblock Laminar segregation of afferents to lateral geniculate nucleus of the
+  cat: an analysis of current source density.
+\newblock Journal of Neurophysiology.  1977; 40(6):1227--1244.
+
+\bibitem[{Ness et~al.(2016)Ness, Torbj{\o}rn V. and Remme, Michiel W. H. and
+  Einevoll, Gaute T.}]{Ness2016Active}
+\textbf{\color{eLifeMediumGrey} Ness TV}, Remme MWH, Einevoll GT.
+\newblock Active subthreshold dendritic conductances shape the local field
+  potential.
+\newblock J Physiol.  2016 Jul; 594(13):3809--3825.
+\newblock \urlprefix\url{http://dx.doi.org/10.1113/jp272022},
+  \href{10.1113/jp272022}{\doiprefix \detokenize{10.1113/jp272022}}.
+
+\bibitem[{Nicholson(1973)Nicholson, Charles}]{Nicholson1973Theoretical}
+\textbf{\color{eLifeMediumGrey} Nicholson C}.
+\newblock Theoretical Analysis of Field Potentials in Anisotropic Ensembles of
+  Neuronal Elements.
+\newblock IEEE Transactions on Biomedical Engineering.  1973 Jul;
+  BME-20(4):278--288.
+\newblock \urlprefix\url{http://dx.doi.org/10.1109/tbme.1973.324192},
+  \href{10.1109/tbme.1973.324192}{\doiprefix
+  \detokenize{10.1109/tbme.1973.324192}}.
+
+\bibitem[{Nornes and Das(1972)Nornes, H. O. and Das, G.
+  D.}]{Nornes1972Temporal}
+\textbf{\color{eLifeMediumGrey} Nornes HO}, Das GD.
+\newblock Temporal pattern of neurogenesis in spinal cord: cytoarchitecture and
+  directed growth of axons.
+\newblock Proceedings of the National Academy of Sciences of the United States
+  of America.  1972 Jul; 69(7):1962--1966.
+\newblock \urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/4114859}.
+
+\bibitem[{Nunez and Srinivasan(2006)Nunez, Paul L. and Srinivasan,
+  Ramesh}]{Nunez2006Electric}
+\textbf{\color{eLifeMediumGrey} Nunez PL}, Srinivasan R.
+\newblock Electric Fields of the Brain.
+\newblock Oxford University Press; 2006.
+\newblock
+  \urlprefix\url{http://dx.doi.org/10.1093/acprof:oso/9780195050387.001.0001},
+  \href{10.1093/acprof:oso/9780195050387.001.0001}{\doiprefix
+  \detokenize{10.1093/acprof:oso/9780195050387.001.0001}}.
+
+\bibitem[{Palanca-Castan et~al.(2016)Palanca-Castan, Nicolas and Laumen,
+  Genevi\`{e}ve and Reed, Darrin and K\"{o}ppl,
+  Christine}]{PalancaCastan2016Binaural}
+\textbf{\color{eLifeMediumGrey} Palanca-Castan N}, Laumen G, Reed D, K\"{o}ppl
+  C.
+\newblock The Binaural Interaction Component in Barn Owl (Tyto alba) Presents
+  few Differences to Mammalian Data.
+\newblock Journal of the Association for Research in Otolaryngology : JARO.
+  2016 Dec; 17(6):577--589.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/s10162-016-0583-7},
+  \href{10.1007/s10162-016-0583-7}{\doiprefix
+  \detokenize{10.1007/s10162-016-0583-7}}.
+
+\bibitem[{Pettersen and Einevoll(2008)Pettersen, Klas H. and Einevoll, Gaute
+  T.}]{Pettersen2008Amplitude}
+\textbf{\color{eLifeMediumGrey} Pettersen KH}, Einevoll GT.
+\newblock Amplitude variability and extracellular low-pass filtering of
+  neuronal spikes.
+\newblock Biophysical journal.  2008 Feb; 94(3):784--802.
+\newblock \urlprefix\url{http://dx.doi.org/10.1529/biophysj.107.111179},
+  \href{10.1529/biophysj.107.111179}{\doiprefix
+  \detokenize{10.1529/biophysj.107.111179}}.
+
+\bibitem[{Plonsey(1977)Plonsey, R.}]{Plonsey1977Action}
+\textbf{\color{eLifeMediumGrey} Plonsey R}.
+\newblock Action potential sources and their volume conductor fields.
+\newblock Proceedings of the IEEE.  1977 May; 65(5):601--611.
+\newblock \urlprefix\url{http://dx.doi.org/10.1109/proc.1977.10539},
+  \href{10.1109/proc.1977.10539}{\doiprefix
+  \detokenize{10.1109/proc.1977.10539}}.
+
+\bibitem[{Potworowski et~al.(2011)Potworowski, Jan and Jakuczun, Wit and
+  {\L}ęski, Szymon and W\'{o}jcik, Daniel}]{Potworowski2011Kernel}
+\textbf{\color{eLifeMediumGrey} Potworowski J}, Jakuczun W, {\L}ęski S,
+  W\'{o}jcik D.
+\newblock Kernel Current Source Density Method.
+\newblock Neural Computation.  2011 Nov; 24(2):541--575.
+\newblock \urlprefix\url{http://dx.doi.org/10.1162/neco\_a\_00236},
+  \href{10.1162/neco\_a\_00236}{\doiprefix
+  \detokenize{10.1162/neco\_a\_00236}}.
+
+\bibitem[{Pritchard(1992)Pritchard, W. S.}]{Pritchard1992Brain}
+\textbf{\color{eLifeMediumGrey} Pritchard WS}.
+\newblock The brain in fractal time: 1/f-like power spectrum scaling of the
+  human electroencephalogram.
+\newblock The International journal of neuroscience.  1992 Sep;
+  66(1-2):119--129.
+\newblock \urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/1304564}.
+
+\bibitem[{Rall(1959)Rall, Wilfrid}]{Rall1959Branching}
+\textbf{\color{eLifeMediumGrey} Rall W}.
+\newblock Branching dendritic trees and motoneuron membrane resistivity.
+\newblock Experimental Neurology.  1959 Nov; 1(5):491--527.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/0014-4886(59)90046-9},
+  \href{10.1016/0014-4886(59)90046-9}{\doiprefix
+  \detokenize{10.1016/0014-4886(59)90046-9}}.
+
+\bibitem[{Rathouz and Trussell(1998)Rathouz, Margaret and Trussell,
+  Laurence}]{Rathouz1998Characterization}
+\textbf{\color{eLifeMediumGrey} Rathouz M}, Trussell L.
+\newblock Characterization of Outward Currents in Neurons of the Avian Nucleus
+  Magnocellularis.
+\newblock Journal of Neurophysiology.  1998 Dec; 80(6):2824--2835.
+\newblock \urlprefix\url{http://jn.physiology.org/content/80/6/2824.abstract}.
+
+\bibitem[{Ray and Maunsell(2011)Ray, Supratim and Maunsell, John H.
+  R.}]{Ray2011Different}
+\textbf{\color{eLifeMediumGrey} Ray S}, Maunsell JHR.
+\newblock Different Origins of Gamma Rhythm and High-Gamma Activity in Macaque
+  Visual Cortex.
+\newblock PLoS Biology.  2011 Apr; 9(4):e1000610+.
+\newblock \urlprefix\url{http://dx.doi.org/10.1371/journal.pbio.1000610},
+  \href{10.1371/journal.pbio.1000610}{\doiprefix
+  \detokenize{10.1371/journal.pbio.1000610}}.
+
+\bibitem[{Reichinnek et~al.(2010)Reichinnek, Susanne and K\"{u}nsting, Thomas
+  and Draguhn, Andreas and Both, Martin}]{Reichinnek2010Field}
+\textbf{\color{eLifeMediumGrey} Reichinnek S}, K\"{u}nsting T, Draguhn A, Both
+  M.
+\newblock Field Potential Signature of Distinct Multicellular Activity Patterns
+  in the Mouse Hippocampus.
+\newblock Journal of Neuroscience.  2010 Nov; 30(46):15441--15449.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.2535-10.2010},
+  \href{10.1523/jneurosci.2535-10.2010}{\doiprefix
+  \detokenize{10.1523/jneurosci.2535-10.2010}}.
+
+\bibitem[{Reimann et~al.(2013)Reimann, Michael W. and Anastassiou, Costas A.
+  and Perin, Rodrigo and Hill, Sean L. and Markram, Henry and Koch,
+  Christof}]{Reimann2013Biophysically}
+\textbf{\color{eLifeMediumGrey} Reimann MW}, Anastassiou CA, Perin R, Hill SL,
+  Markram H, Koch C.
+\newblock A Biophysically Detailed Model of Neocortical Local Field Potentials
+  Predicts the Critical Role of Active Membrane Currents.
+\newblock Neuron.  2013 Jul; 79(2):375--390.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/j.neuron.2013.05.023},
+  \href{10.1016/j.neuron.2013.05.023}{\doiprefix
+  \detokenize{10.1016/j.neuron.2013.05.023}}.
+
+\bibitem[{Riedel and Kollmeier(2002)Riedel, Helmut and Kollmeier,
+  Birger}]{Riedel2002Comparison}
+\textbf{\color{eLifeMediumGrey} Riedel H}, Kollmeier B.
+\newblock Comparison of binaural auditory brainstem responses and the binaural
+  difference potential evoked by chirps and clicks.
+\newblock Hearing Research.  2002 Jul; 169(1-2):85--96.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/s0378-5955(02)00342-8},
+  \href{10.1016/s0378-5955(02)00342-8}{\doiprefix
+  \detokenize{10.1016/s0378-5955(02)00342-8}}.
+
+\bibitem[{Scheffer-Teixeira et~al.(2013)Scheffer-Teixeira, Robson and Belchior,
+  Hindiael and Le\~{a}o, Richardson N. and Ribeiro, Sidarta and Tort, Adriano
+  B. L.}]{SchefferTeixeira2013HighFrequency}
+\textbf{\color{eLifeMediumGrey} Scheffer-Teixeira R}, Belchior H, Le\~{a}o RN,
+  Ribeiro S, Tort ABL.
+\newblock On High-Frequency Field Oscillations (>100 {Hz}) and the Spectral
+  Leakage of Spiking Activity.
+\newblock Journal of Neuroscience.  2013 Jan; 33(4):1535--1539.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.4217-12.2013},
+  \href{10.1523/jneurosci.4217-12.2013}{\doiprefix
+  \detokenize{10.1523/jneurosci.4217-12.2013}}.
+
+\bibitem[{Schomburg et~al.(2012)Schomburg, Erik W. and Anastassiou, Costas A.
+  and Buzs\'{a}ki, Gy\"{o}rgy and Koch, Christof}]{Schomburg2012Spiking}
+\textbf{\color{eLifeMediumGrey} Schomburg EW}, Anastassiou CA, Buzs\'{a}ki G,
+  Koch C.
+\newblock The Spiking Component of Oscillatory Extracellular Potentials in the
+  Rat Hippocampus.
+\newblock The Journal of Neuroscience.  2012 Aug; 32(34):11798--11811.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.0656-12.2012},
+  \href{10.1523/jneurosci.0656-12.2012}{\doiprefix
+  \detokenize{10.1523/jneurosci.0656-12.2012}}.
+
+\bibitem[{Schroeder et~al.(1998)Schroeder, C. E. and Mehta, A. D. and Givre, S.
+  J.}]{Schroeder1998Spatiotemporal}
+\textbf{\color{eLifeMediumGrey} Schroeder CE}, Mehta AD, Givre SJ.
+\newblock A spatiotemporal profile of visual system activation revealed by
+  current source density analysis in the awake macaque.
+\newblock Cerebral cortex (New York, NY : 1991).  1998 Oct; 8(7):575--592.
+\newblock \urlprefix\url{http://dx.doi.org/10.1093/cercor/8.7.575},
+  \href{10.1093/cercor/8.7.575}{\doiprefix
+  \detokenize{10.1093/cercor/8.7.575}}.
+
+\bibitem[{Schroeder et~al.(1991)Schroeder, C. E. and Tenke, C. E. and Givre, S.
+  J. and Arezzo, J. C. and Vaughan, H. G.}]{Schroeder1991Striate}
+\textbf{\color{eLifeMediumGrey} Schroeder CE}, Tenke CE, Givre SJ, Arezzo JC,
+  Vaughan HG.
+\newblock Striate cortical contribution to the surface-recorded
+  pattern-reversal {VEP} in the alert monkey.
+\newblock Vision research.  1991; 31(7-8):1143--1157.
+\newblock \urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/1891808}.
+
+\bibitem[{Sch\"{u}z and Braitenberg(2002)Sch\"{u}z, Almut and Braitenberg,
+  Valentino}]{Schuz2002Human}
+\textbf{\color{eLifeMediumGrey} Sch\"{u}z A}, Braitenberg V.
+\newblock The Human Cortical White Matter.
+\newblock In: Sch\"{u}z A, editor. \emph{Cortical Areas} Abingdon, UK: Taylor
+  \& Francis; 2002.p. 377--386.
+\newblock \urlprefix\url{http://dx.doi.org/10.4324/9780203219911\_chapter\_16},
+  \href{10.4324/9780203219911\_chapter\_16}{\doiprefix
+  \detokenize{10.4324/9780203219911\_chapter\_16}}.
+
+\bibitem[{Schwarz(1992)Schwarz, D. W.}]{Schwarz1992Can}
+\textbf{\color{eLifeMediumGrey} Schwarz DW}.
+\newblock Can central neurons reproduce sound waveforms? An analysis of the
+  neurophonic potential in the laminar nucleus of the chicken.
+\newblock The Journal of Otolaryngology.  1992 Feb; 21(1):30--38.
+\newblock \urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/1564747}.
+
+\bibitem[{Self et~al.(2013)Self, Matthew W. and van Kerkoerle, Timo and
+  Sup\`{e}r, Hans and Roelfsema, Pieter R.}]{Self2013Distinct}
+\textbf{\color{eLifeMediumGrey} Self MW}, van Kerkoerle T, Sup\`{e}r H,
+  Roelfsema PR.
+\newblock Distinct roles of the cortical layers of area {V1} in figure-ground
+  segregation.
+\newblock Current biology : CB.  2013 Nov; 23(21):2121--2129.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/j.cub.2013.09.013},
+  \href{10.1016/j.cub.2013.09.013}{\doiprefix
+  \detokenize{10.1016/j.cub.2013.09.013}}.
+
+\bibitem[{Simon et~al.(1999)Simon, Jonathan Z. and Carr, Catherine E. and
+  Shamma, Shihab A.}]{Simon1999Dendritic}
+\textbf{\color{eLifeMediumGrey} Simon JZ}, Carr CE, Shamma SA.
+\newblock A dendritic model of coincidence detection in the avian brainstem.
+\newblock Neurocomputing.  1999 Jun; 26-27:263--269.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/s0925-2312(99)00020-x},
+  \href{10.1016/s0925-2312(99)00020-x}{\doiprefix
+  \detokenize{10.1016/s0925-2312(99)00020-x}}.
+
+\bibitem[{Simons et~al.(2007)Simons, Daniel J. and Carvell, George E. and
+  Kyriazi, Harold T. and Bruno, Randy M.}]{Simons2007Thalamocortical}
+\textbf{\color{eLifeMediumGrey} Simons DJ}, Carvell GE, Kyriazi HT, Bruno RM.
+\newblock Thalamocortical Conduction Times and Stimulus-Evoked Responses in the
+  Rat Whisker-to-Barrel System.
+\newblock Journal of Neurophysiology.  2007 Nov; 98(5):2842--2847.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00800.2007},
+  \href{10.1152/jn.00800.2007}{\doiprefix \detokenize{10.1152/jn.00800.2007}}.
+
+\bibitem[{Sinha and Narayanan(2015)Sinha, Manisha and Narayanan,
+  Rishikesh}]{Sinha2015HCN}
+\textbf{\color{eLifeMediumGrey} Sinha M}, Narayanan R.
+\newblock HCN channels enhance spike phase coherence and regulate the phase of
+  spikes and {LFPs} in the theta-frequency range.
+\newblock Proceedings of the National Academy of Sciences.  2015 Apr;
+  112(17):E2207--E2216.
+\newblock \urlprefix\url{http://dx.doi.org/10.1073/pnas.1419017112},
+  \href{10.1073/pnas.1419017112}{\doiprefix
+  \detokenize{10.1073/pnas.1419017112}}.
+
+\bibitem[{Softky and Koch(1993)Softky, W. R. and Koch, C.}]{Softky1993Highly}
+\textbf{\color{eLifeMediumGrey} Softky WR}, Koch C.
+\newblock The highly irregular firing of cortical cells is inconsistent with
+  temporal integration of random {EPSPs}.
+\newblock The Journal of Neuroscience.  1993 Jan; 13(1):334--350.
+\newblock \urlprefix\url{http://www.jneurosci.org/content/13/1/334.abstract}.
+
+\bibitem[{Stark and Abeles(2007)Stark, Eran and Abeles,
+  Moshe}]{Stark2007Predicting}
+\textbf{\color{eLifeMediumGrey} Stark E}, Abeles M.
+\newblock Predicting Movement from Multiunit Activity.
+\newblock The Journal of Neuroscience.  2007 Aug; 27(31):8387--8394.
+\newblock \urlprefix\url{http://dx.doi.org/10.1523/jneurosci.1321-07.2007},
+  \href{10.1523/jneurosci.1321-07.2007}{\doiprefix
+  \detokenize{10.1523/jneurosci.1321-07.2007}}.
+
+\bibitem[{Sullivan and Konishi(1984)Sullivan, W. E. and Konishi,
+  M.}]{Sullivan1984Segregation}
+\textbf{\color{eLifeMediumGrey} Sullivan WE}, Konishi M.
+\newblock Segregation of stimulus phase and intensity coding in the cochlear
+  nucleus of the barn owl.
+\newblock The Journal of Neuroscience.  1984 Jul; 4(7):1787--1799.
+\newblock \urlprefix\url{http://www.jneurosci.org/content/4/7/1787.abstract}.
+
+\bibitem[{Swadlow(1989)Swadlow, H. A.}]{Swadlow1989Efferent}
+\textbf{\color{eLifeMediumGrey} Swadlow HA}.
+\newblock Efferent neurons and suspected interneurons in {S-1} vibrissa cortex
+  of the awake rabbit: receptive fields and axonal properties.
+\newblock Journal of Neurophysiology.  1989 Jul; 62(1):288--308.
+\newblock \urlprefix\url{http://jn.physiology.org/content/62/1/288.abstract}.
+
+\bibitem[{Swadlow and Gusev(2000)Swadlow, Harvey A. and Gusev, Alexander
+  G.}]{Swadlow2000Influence}
+\textbf{\color{eLifeMediumGrey} Swadlow HA}, Gusev AG.
+\newblock The Influence of Single {VB} Thalamocortical Impulses on Barrel
+  Columns of Rabbit Somatosensory Cortex.
+\newblock Journal of Neurophysiology.  2000 May; 83(5):2802--2813.
+\newblock \urlprefix\url{http://jn.physiology.org/content/83/5/2802.abstract}.
+
+\bibitem[{Swadlow et~al.(2002)Swadlow, Harvey A. and Gusev, Alexander G. and
+  Bezdudnaya, Tatiana}]{Swadlow2002Activation}
+\textbf{\color{eLifeMediumGrey} Swadlow HA}, Gusev AG, Bezdudnaya T.
+\newblock Activation of a Cortical Column by a Thalamocortical Impulse.
+\newblock The Journal of Neuroscience.  2002 Sep; 22(17):7766--7773.
+\newblock \urlprefix\url{http://www.jneurosci.org/content/22/17/7766.abstract}.
+
+\bibitem[{Taxidis et~al.(2015)Taxidis, Jiannis and Anastassiou, Costas?A and
+  Diba, Kamran and Koch, Christof}]{Taxidis2015Local}
+\textbf{\color{eLifeMediumGrey} Taxidis J}, Anastassiou C, Diba K, Koch C.
+\newblock Local Field Potentials Encode Place Cell Ensemble Activation during
+  Hippocampal Sharp Wave Ripples.
+\newblock Neuron.  2015 Aug; 87(3):590--604.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/j.neuron.2015.07.014},
+  \href{10.1016/j.neuron.2015.07.014}{\doiprefix
+  \detokenize{10.1016/j.neuron.2015.07.014}}.
+
+\bibitem[{Tele\'{n}czuk et~al.(2011)Tele\'{n}czuk, Bartosz and Baker, Stuart N.
+  and Herz, Andreas V. M. and Curio, Gabriel}]{Telenczuk2011Highfrequency}
+\textbf{\color{eLifeMediumGrey} Tele\'{n}czuk B}, Baker SN, Herz AVM, Curio G.
+\newblock High-frequency {EEG} covaries with spike burst patterns detected in
+  cortical neurons.
+\newblock Journal of Neurophysiology.  2011 Jun; 105(6):2951--2959.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00327.2010},
+  \href{10.1152/jn.00327.2010}{\doiprefix \detokenize{10.1152/jn.00327.2010}}.
+
+\bibitem[{Tele\'{n}czuk et~al.(2015)Tele\'{n}czuk, Bartosz and Baker, Stuart N.
+  and Kempter, Richard and Curio, Gabriel}]{Telenczuk2015Correlates}
+\textbf{\color{eLifeMediumGrey} Tele\'{n}czuk B}, Baker SN, Kempter R, Curio G.
+\newblock Correlates of a single cortical action potential in the epidural
+  {EEG}.
+\newblock NeuroImage.  2015 Apr; 109:357--367.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/j.neuroimage.2014.12.057},
+  \href{10.1016/j.neuroimage.2014.12.057}{\doiprefix
+  \detokenize{10.1016/j.neuroimage.2014.12.057}}.
+
+\bibitem[{Tenke et~al.(1993)Tenke, Craig E. and Schroeder, Charles E. and
+  Arezzo, Joseph C. and Vaughan, Herbert G.}]{Tenke1993Interpretation}
+\textbf{\color{eLifeMediumGrey} Tenke CE}, Schroeder CE, Arezzo JC, Vaughan HG.
+\newblock Interpretation of high-resolution current source density profiles: a
+  simulation of sublaminar contributions to the visual evoked potential.
+\newblock Experimental Brain Research.  1993 Jun; 94(2):183--192.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/bf00230286},
+  \href{10.1007/bf00230286}{\doiprefix \detokenize{10.1007/bf00230286}}.
+
+\bibitem[{Wagner et~al.(2009)Wagner, Hermann and Brill, Sandra and Kempter,
+  Richard and Carr, Catherine E.}]{wagner09}
+\textbf{\color{eLifeMediumGrey} Wagner H}, Brill S, Kempter R, Carr CE.
+\newblock Auditory responses in the barn owl's nucleus laminaris to clicks:
+  impulse response and signal analysis of neurophonic potential.
+\newblock Journal of Neurophysiology.  2009 Aug; 102(2):1227--1240.
+\newblock \urlprefix\url{http://dx.doi.org/10.1152/jn.00092.2009},
+  \href{10.1152/jn.00092.2009}{\doiprefix \detokenize{10.1152/jn.00092.2009}}.
+
+\bibitem[{Waldert et~al.(2013)Waldert, Stephan and Lemon, Roger N. and Kraskov,
+  Alexander}]{Waldert2013Influence}
+\textbf{\color{eLifeMediumGrey} Waldert S}, Lemon RN, Kraskov A.
+\newblock Influence of spiking activity on cortical local field potentials.
+\newblock The Journal of Physiology.  2013 Nov; 591(21):5291--5303.
+\newblock \urlprefix\url{http://dx.doi.org/10.1113/jphysiol.2013.258228},
+  \href{10.1113/jphysiol.2013.258228}{\doiprefix
+  \detokenize{10.1113/jphysiol.2013.258228}}.
+
+\bibitem[{Waxman and Ritchie(1985)Waxman, S. G. and Ritchie, J.
+  M.}]{Waxman1985Organization}
+\textbf{\color{eLifeMediumGrey} Waxman SG}, Ritchie JM.
+\newblock Organization of ion channels in the myelinated nerve fiber.
+\newblock Science (New York, NY).  1985 Jun; 228(4707):1502--1507.
+\newblock \urlprefix\url{http://view.ncbi.nlm.nih.gov/pubmed/2409596}.
+
+\bibitem[{Łęski et~al.(2013)Łęski, Szymon and Lind\'{e}n, Henrik and
+  Tetzlaff, Tom and Pettersen, Klas H. and Einevoll, Gaute
+  T.}]{Leski2013Frequency}
+\textbf{\color{eLifeMediumGrey} Łęski S}, Lind\'{e}n H, Tetzlaff T, Pettersen
+  KH, Einevoll GT.
+\newblock Frequency Dependence of Signal Power and Spatial Reach of the Local
+  Field Potential.
+\newblock PLOS Computational Biology.  2013 Jul; 9(7):e1003137+.
+\newblock \urlprefix\url{http://dx.doi.org/10.1371/journal.pcbi.1003137},
+  \href{10.1371/journal.pcbi.1003137}{\doiprefix
+  \detokenize{10.1371/journal.pcbi.1003137}}.
+
+\end{thebibliography}
